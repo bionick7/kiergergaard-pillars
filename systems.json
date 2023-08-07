@@ -7,11 +7,21 @@
     "license_id": "mf_midzor",
     "license_level": 1,
     "data_type": "system",
-    "effect": "<b>TODO</b>",
     "description": "<b>TODO</b>",
     "type": "Pioneering Tool",
     "sp": 1,
-    "tags": [],
+    "effect": "Deploy barbed wire in a line 3 of free spaces with at least one space adjacent to you.",
+    "deployables": [
+      {
+        "name": "Barbed wire",
+        "type": "Static Emplacement",
+        "detail": "The barbed wire counts as dangerous terrain. It is one space high. It can be removed individually by any frame as a quick action by rolling a 1+ on a d6. Falling that check deals 1ap kinetic damage. Otherwise, you clear one space from the barbed wire.",
+        "size": 1,
+        "instances": 3,
+        "activation": "quick"
+      }
+    ],
+    "tags": [{"id": "tg_quick_action"}],
     "synergies": []
   },
   {
@@ -22,11 +32,22 @@
     "license_id": "mf_midzor",
     "license_level": 1,
     "data_type": "system",
-    "effect": "<b>TODO</b>",
     "description": "<b>TODO</b>",
     "type": "Pioneering Tool",
-    "sp": 1,
-    "tags": [],
+    "sp": 2,
+    "effect": "Deploy a size 1 barricade box in a free adjacent space to you.",
+    "deployables": [
+      {
+        "name": "Barricade Box",
+        "type": "Static Emplacement",
+        "detail": "The barricade generates a line 5 barrier 5 spaces high centred on the box on the ground level. The barrier is magnetic blocking all frames and other large non-biological objects from passing, it doesn’t grant cover and won’t stop attacks however. It only prevents frames from passing through it.",
+        "size": 1,
+        "hp": 10,
+        "evasion": 5,
+        "activation": "quick"
+      }
+    ],
+    "tags": [{"id": "tg_quick_action"}, {"id": "tg_unique"}],
     "synergies": []
   },
   {
@@ -37,26 +58,52 @@
     "license_id": "mf_midzor",
     "license_level": 2,
     "data_type": "system",
-    "effect": "<b>TODO</b>",
     "description": "<b>TODO</b>",
-    "type": "Mines",
+    "type": "Mine",
     "sp": 1,
-    "tags": [],
+    "actions": [
+      {
+        "name": "Grenade",
+        "activation": "Quick",
+        "range": [{"type": "Range", "val": 8}, {"type": "Blast", "val": 2}],
+        "damage": [{"type": "Explosive", "val": 2}],
+        "detail": "You throw a pigeon shrapnel grenade. These grenades burst mid-air perforating your target area with a rain of tiny explosives dealing 2 explosive damage to all targets in a blast 2 area.",
+        "cost": 1
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Mine",
+        "type": "Mine",
+        "range": [{"type": "Blast", "val": 2}],
+        "damage": [{"type": "Explosive", "val": 2}],
+        "activation": "Quick",
+        "detail": " you launch air-deployed pigeon mines in a blast 2 area. All characters and objects within the area take 2 explosive damage when a hostile character moves adjacent to the mine.",
+        "cost": 1
+      }
+    ],
+    "tags": [{"id": "tg_limited", "val": 3}, {"id": "tg_unique"}, {"id": "tg_grenade"}],
     "synergies": []
   },
   {
-    "id": "ms_millorg_removal_device",
-    "name": "MILLORG REMOVAL DEVICE",
+    "id": "ms_milorg_removal_device",
+    "name": "MILORG REMOVAL DEVICE",
     "source": "GMS-HIPS",
     "license": "MIDZOR",
     "license_id": "mf_midzor",
     "license_level": 3,
     "data_type": "system",
-    "effect": "<b>TODO</b>",
     "description": "<b>TODO</b>",
     "type": "System",
-    "sp": 1,
-    "tags": [],
+    "sp": 2,
+    "actions": [
+      {
+        "name": "Remove Device",
+        "activation": "Quick",
+        "detail": "You can remove any deployable with this system blowing it up in an instant, destroying them in the process. You can even remove indestructible deployables in this manner, but they can be redeployed afterwards and don’t count as being destroyed"
+      }
+    ],
+    "tags": [{"id": "tg_heat_self", "val": 1}, {"id": "tg_unique"}],
     "synergies": []
   },
   {
@@ -67,11 +114,17 @@
     "license_id": "mf_midzor",
     "license_level": 3,
     "data_type": "system",
-    "effect": "<b>TODO</b>",
-    "description": "<b>TODO</b>",
+    "description": "Domovoy was developed as a tool for strategic advice being able to scan entire battlefields at moment’s notice and determine optimal positioning for static deployments. In combination with newest electronic warfare equipment the NHP is capable of emulating HOR_OS code at higher capacity",
     "type": "AI",
-    "sp": 1,
-    "tags": [{"id": "tg_ai"}],
+    "sp": 2,
+    "actions": [
+      {
+        "name": "Phantom Copy",
+        "activation": "Quick",
+        "detail": "Deploy up to 6 virtual copies of your equipped deployable systems. These copies are indistinguishable from tangible objects and act as if they were real. They last for the rest of the scene, or until destroyed by an adjacent character with a successful Systems skill check as a quick action. Activating Domovoy again also removes all previous instances of its use. Deploys within line of sight and sensors ignoring requirements for adjacency."
+      }
+    ],
+    "tags": [{"id": "tg_ai"}, {"id": "tg_limited", "val": 4}, {"id": "tg_unique"}],
     "synergies": []
   },
   {

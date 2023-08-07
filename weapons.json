@@ -8,11 +8,10 @@
     "license_level": 2,
     "mount": "Main",
     "type": "Cannon",
-    "damage": [{"type": "Kinetic", "val": 0}],
-    "range": [{"type": "Range", "val": 0}],
-    "tags": [],
+    "damage": [{"type": "Kinetic", "val": "1d3+1"}],
+    "range": [{"type": "Range", "val": 8}, {"type": "Blast", "val": 1}],
     "description": "<b>TODO</b>",
-    "on_hit": "<b>TODO</b>",
+    "tags": [{"id": "tg_reliable", "val": 1}, {"id": "tg_ordnance"}, {"id": "tg_accurate"}],
     "synergies": []
   },
   {

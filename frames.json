@@ -3,7 +3,7 @@
     "id": "mf_midzor",
     "license_id": "mf_midzor",
     "license_level": 2,
-    "y_pos": 40,
+    "y_pos": 20,
     "source": "GMS-HIPS",
     "name": "MIDZOR",
     "mechtype": [
@@ -53,13 +53,14 @@
       "active_effect": "<p>The Midzor deploys it’s integrated temporary bridge aiding allies in crossing even the harshest of terrain. You extend yourself over a line 5 (centre to centre) with width 3. Doing so:<ul><li>You become immobilised and can’t be moved by any means</li><li>You ignore all kinds of difficult or dangerous terrain beneath you as well as obstacles of up to size 1</li><li>Allies can move across the surface covered by ignoring the terrain beneath</li><li>On the turn you activated this core, you can use limited systems with the deployable tag without using any charge.</li></ul>This ability is Efficient and will refund 1 Core Point at the end of any scene in which this ability was used.</p>",
       "use": "Scene"
     },
-    "data_type": "frame"
+    "data_type": "frame",
+    "image_url": "https://cdn.discordapp.com/attachments/365511976446722048/1138180322492694608/dream_TradingCard_-_2023-08-07T162021.190.jpg"
   },
   {
     "id": "mf_attakulla",
     "license_id": "mf_attakulla",
     "license_level": 2,
-    "y_pos": 40,
+    "y_pos": 30,
     "source": "GMS-HIPS",
     "name": "ATTAKULLA",
     "mechtype": [
@@ -132,13 +133,14 @@
         }
       ]
     },
-    "data_type": "frame"
+    "data_type": "frame",
+    "image_url": "https://cdn.discordapp.com/attachments/365511976446722048/1138182600654077992/dream_TradingCard_-_2023-08-07T204900.969.jpg"
   },
   {
     "id": "mf_kilimanjaro",
     "license_id": "mf_kilimanjaro",
     "license_level": 2,
-    "y_pos": 40,
+    "y_pos": 20,
     "source": "GMS-HIPS",
     "name": "KILIMANJARO",
     "mechtype": [
@@ -218,6 +220,7 @@
       ],
       "tags": [{"id": "tg_limited", "val": 3}]
     },
-    "data_type": "frame"
+    "data_type": "frame",
+    "image_url": "https://cdn.discordapp.com/attachments/365511976446722048/1138180239151869952/dream_TradingCard_-_2023-08-07T163227.644.jpg"
   }
 ]

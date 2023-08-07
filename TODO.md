@@ -1,4 +1,9 @@
 - core system descriptions
-- manufacturer slogan
-- manufacturer picture
+- manufacturer slogans
+- manufacturer pictures
 - frame pics
+- system action names
+- systen flavor
+
+- trigger on SAM launcher
+- dmg type on whitewash monitor

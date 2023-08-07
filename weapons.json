@@ -7,7 +7,7 @@
     "license_id": "mf_midzor",
     "license_level": 2,
     "mount": "Main",
-    "type": "Cannon",
+    "type": "Rifle",
     "damage": [{"type": "Kinetic", "val": "1d3+1"}],
     "range": [{"type": "Range", "val": 8}, {"type": "Blast", "val": 1}],
     "description": "<b>TODO</b>",
@@ -23,11 +23,13 @@
     "license_level": 1,
     "mount": "Main",
     "type": "Launcher",
-    "damage": [{"type": "Kinetic", "val": 0}],
-    "range": [{"type": "Range", "val": 0}],
+    "damage": [{"type": "Explosive", "val": "1d3+3"}],
+    "range": [{"type": "Range", "val": 15}],
     "tags": [],
     "description": "<b>TODO</b>",
-    "on_hit": "<b>TODO</b>",
+    "effect": "This weapon can only be fired when consuming Lock-on",
+    "on_hit": "Your target must succeed on a system save or stay locked-on after your attack",
+    "sp": 1,
     "synergies": []
   },
   {
@@ -39,27 +41,37 @@
     "license_level": 3,
     "mount": "Main",
     "type": "Launcher",
-    "damage": [{"type": "Kinetic", "val": 0}],
-    "range": [{"type": "Range", "val": 0}],
+    "damage": [{"type": "Explosive", "val": 3}],
+    "range": [{"type": "Range", "val": 5}],
     "tags": [],
     "description": "<b>TODO</b>",
-    "on_hit": "<b>TODO</b>",
+    "no_attack": true,
+    "actions": [
+      {
+        "name": "TODO",
+        "activation": "Reaction",
+        "frequency": "X/round",
+        "trigger": "An enemy within range flies",
+        "effect": "You hit all flying characters within range."
+      }
+    ],
     "synergies": []
   },
   {
-    "id": "mw_water_cannon",
-    "name": "WATER CANNON",
+    "id": "mw_whitewash_monitor",
+    "name": "WHITEWASH MONITOR",
     "source": "GMS-HIPS",
     "license": "KILIMANJARO",
     "license_id": "mf_kilimanjaro",
     "license_level": 1,
-    "mount": "Main",
+    "mount": "Aux",
     "type": "Cannon",
-    "damage": [{"type": "Kinetic", "val": 0}],
-    "range": [{"type": "Range", "val": 0}],
+    "damage": [{"type": "Variable", "val": 1}],
+    "range": [{"type": "Range", "val": 5}],
     "tags": [],
     "description": "<b>TODO</b>",
-    "on_hit": "<b>TODO</b>",
+    "on_attack": "Your target and all adjacent characters clear all burn.",
+    "on_hit": "Your target becomes Slowed and Impaired.",
     "synergies": []
   },
   {
@@ -69,13 +81,13 @@
     "license": "KILIMANJARO",
     "license_id": "mf_kilimanjaro",
     "license_level": 3,
-    "mount": "Main",
-    "type": "Cannon",
-    "damage": [{"type": "Kinetic", "val": 0}],
-    "range": [{"type": "Range", "val": 0}],
+    "mount": "Aux",
+    "type": "Melee",
+    "damage": [{"type": "Kinetic", "val": 1}],
+    "range": [{"type": "Threat", "val": 1}],
     "tags": [],
     "description": "<b>TODO</b>",
-    "on_hit": "<b>TODO</b>",
-    "synergies": []
+    "on_crit": "Your enemy becomes shredded until the end of their next turn",
+    "synergies": [{"id": "tg_ap"}]
   }
 ]

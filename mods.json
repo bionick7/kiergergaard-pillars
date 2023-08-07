@@ -3,13 +3,13 @@
     "id": "wm_nighthawk_scope",
     "name": "NIGHTHAWK SCOPE",
     "license_id": "mf_attakulla",
-    "sp": 1,
+    "sp": 2,
     "allowed_types": [],
     "source": "GMS-HIPS",
     "license": "ATTAKULLA",
     "license_level": 2,
-    "effect": "<b>TODO</b>",
+    "effect": " Attacking an invisible character, you may spend a charge of this system to ignore their invisibility and attack them normally",
     "description": "<b>TODO</b>",
-    "tags": []
+    "tags": [{"id": "tg_unique"}, {"id": "tg_limited", "val": 4}]
   }
 ]

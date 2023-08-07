@@ -1,0 +1,4 @@
+- core system descriptions
+- manufacturer slogan
+- manufacturer picture
+- frame pics

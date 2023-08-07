@@ -1,0 +1,223 @@
+[
+  {
+    "id": "mf_midzor",
+    "license_id": "mf_midzor",
+    "license_level": 2,
+    "y_pos": 40,
+    "source": "GMS-HIPS",
+    "name": "MIDZOR",
+    "mechtype": [
+      "Controller",
+      "Support"
+    ],
+    "description": "<p>The Midzor presents the most extensive pioneering frame on the market offering great tools for hazard removal as well as area denial be it through mines or barbed wire. The frame also offering unique capability of deploying itself as a bridge to get allies safely over various obstacles making it peerless in frontline service. Since its first operation at Helibep it serves with various pioneering corps being one of few chassis from the HIPS line available on the open market.</p>",
+    "mounts": [
+      "Aux/Aux",
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 3,
+      "stress": 4,
+      "structure": 4,
+      "armor": 2,
+      "hp": 7,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 7,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "repcap": 5,
+      "save": 11,
+      "speed": 3,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "MRAP",
+        "description": "The Midzor is immune to all damage from dangerous terrain."
+      },
+      {
+        "name": "Colossus",
+        "description": "Adjacent allied characters can use the Midzor as hard cover."
+      },
+      {
+        "name": "Heavy Frame",
+        "description": "The Midzor can’t be pushed, pulled, knocked prone or knocked back by smaller characters."
+      }
+    ],
+    "core_system": {
+      "name": "Advanced Frontline Pioneering",
+      "description": "<i>TODO</i>",
+      "activation": "Protocol",
+      "active_name": "Bridge deployment",
+      "active_effect": "<p>The Midzor deploys it’s integrated temporary bridge aiding allies in crossing even the harshest of terrain. You extend yourself over a line 5 (centre to centre) with width 3. Doing so:<ul><li>You become immobilised and can’t be moved by any means</li><li>You ignore all kinds of difficult or dangerous terrain beneath you as well as obstacles of up to size 1</li><li>Allies can move across the surface covered by ignoring the terrain beneath</li><li>On the turn you activated this core, you can use limited systems with the deployable tag without using any charge.</li></ul>This ability is Efficient and will refund 1 Core Point at the end of any scene in which this ability was used.</p>",
+      "use": "Scene"
+    },
+    "data_type": "frame"
+  },
+  {
+    "id": "mf_attakulla",
+    "license_id": "mf_attakulla",
+    "license_level": 2,
+    "y_pos": 40,
+    "source": "GMS-HIPS",
+    "name": "ATTAKULLA",
+    "mechtype": [
+      "Controller",
+      "Striker"
+    ],
+    "description": "<p>Developed in a joint effort with the Union Navy, Attakulla presents one of the premiere platforms of joint arms operation offering superb tools to coordinate air strikes and orbital support. Initially received with complaints by front line troops the introduction of dedicated drone wings to every frame soon proved the capability of the chassis making it and it’s NHP assistance the preferred choice for many DOJ/HR NCOs.</p>",
+    "mounts": [
+      "Aux/Aux",
+      "Aux/Aux"
+    ],
+    "stats": {
+      "size": 0.5,
+      "stress": 4,
+      "structure": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 9,
+      "edef": 8,
+      "heatcap": 5,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "repcap": 3,
+      "save": 11,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "No-flight-zone",
+        "description": "1/round the Attakulla can force any adjacent character of its choice to land immediately (this counts as falling without any damage) and prevent them from flying until they break adjacency."
+      },
+      {
+        "name": "Fragile",
+        "description": "The Attakula receives +1 difficulty to Hull checks and saves.",
+        "synergies": [
+          {
+            "locations": ["hull", "skill_check"],
+            "detail": "The Attakula receives +1 difficulty on Hull checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Flight Coordination Relay",
+      "description": "<i>TODO</i>",
+      "activation": "Protocoll",
+      "active_name": "High Alert Status",
+      "active_effect": "<p>For the rest of this scene you can roll 2d6 at the start of each round making successful contact with strike command on 3+ for each roll. In case both d6 succeed, you gain access to <i>Double Air Strike</i></p>",
+      "passive_name": "Combat Air Patrol",
+      "passive_effect": "<p>At the start of each of your turns, you may roll at d6. On 4+ you successfully make contact with strike command and may use <i>Call Air Strike</i></p>",
+      "use": "Mission",
+      "passive_actions": [
+        {
+          "name": "Call Air Strike",
+          "activation": "Quick",
+          "detail": "<p>Roll an additional d6 to determine the wing sent to your aid. All of these can be done within range 15 ignoring requirements for line of sight.<li>Recon overhead flight : Lock-On to one enemy.</li><li>Smokebomb advance : Draw a line 5 area in which all characters benefit from soft cover until the end of your next turn, at which point the smoke disperses.</li><li>Hypersonic missile strike : deal 4 explosive damage to one enemy.</li><li>Pigeon mines : <b>TODO</b></li><li>BH-Carpet bombing : Draw a line 8 area. All targets within take 2 explosive damage</li><li>Kaneda-X orbital strike : Deal 1d6 +2 AP energy damage to one enemy</li></p>"
+        }
+      ],
+      "active_actions": [
+        {
+          "name": "Call Air Strike",
+          "activation": "Quick",
+          "detail": "<p>Roll an additional d6 to determine the wing sent to your aid. All of these can be done within range 15 ignoring requirements for line of sight.<li>Recon overhead flight : Lock-On to one enemy.</li><li>Smokebomb advance : Draw a line 5 area in which all characters benefit from soft cover until the end of your next turn, at which point the smoke disperses.</li><li>Hypersonic missile strike : deal 4 explosive damage to one enemy.</li><li>Pigeon mines : <b>TODO</b></li><li>BH-Carpet bombing : Draw a line 8 area. All targets within take 2 explosive damage</li><li>Kaneda-X orbital strike : Deal 1d6 +2 AP energy damage to one enemy</li></p>"
+        },
+        {
+          "name": "Double Air Strike",
+          "activation": "Full",
+          "detail": "<p>Calling 2 air strikes in a row c.f. <i>Call Air Strike</i></p>"
+        }
+      ]
+    },
+    "data_type": "frame"
+  },
+  {
+    "id": "mf_kilimanjaro",
+    "license_id": "mf_kilimanjaro",
+    "license_level": 2,
+    "y_pos": 40,
+    "source": "GMS-HIPS",
+    "name": "KILIMANJARO",
+    "mechtype": [
+      "Support"
+    ],
+    "description": "<p>Developed from reverse engineered Harrison reactors the Kilimanjaro fire suppression and heat management chassis presents a breakthrough in reactor safety. Ongoing Union trials even conduct trials on the system as a countermeasure to total biome kills combining the strongest heat pump ever used on chassis with superb ABC-protection. No matter if it serves on carriers at the reactor unit, pushes fast deployment units to their limit or suppresses wildfires, the Kilimanjaro is a favourite to everyone looking to fight heat..</p>",
+    "mounts": [
+      "Aux/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "stress": 4,
+      "structure": 4,
+      "armor": 2,
+      "hp": 6,
+      "evasion": 7,
+      "edef": 10,
+      "heatcap": 10,
+      "sensor_range": 10,
+      "tech_attack": 1,
+      "repcap": 4,
+      "save": 12,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Superior Reactor",
+        "description": "The Sherman gains +1 accuracy on Engineering checks and saves.",
+        "synergies": [
+          {
+            "locations": ["engineering", "skill_check"],
+            "detail": "The Sherman gains +1 accuracy on Engineering checks and saves."
+          }
+        ]
+      },
+      {
+        "name": "Reactive Heat Shielding",
+        "description": "When receiving any amount of burn damage, the Kilimanjaro first gains overshield equal to 4 + GRIT before taking damage. Additionally, it has immunity to all heat from external sources as long as it benefits from this overshield. This does not apply to heat from your Thermal Control Package.",
+        "synergies": [
+          {
+            "locations": ["overshield"],
+            "detail": "When receiving any amount of burn damage, the Kilimanjaro first gains overshield equal to 4 + GRIT before taking damage."
+          },
+          {
+            "locations": ["heat"],
+            "detail": "The Kilimanjaro has immunity to all heat from external sources as long as it benefits from overshield gained from Reactive Heat Shield. This does not apply to heat from your Thermal Control Package."
+          }
+        ]
+      },
+      {
+        "name": "Emergency heat spew",
+        "description": "When taking stress, the Kilimanjaro cools off by ejecting flaming reactor fuel in a cone 3 spew. All characters within the affected area take 1d6 explosive damage.",
+        "synergies": [
+          {
+            "locations": ["stress"],
+            "detail": "When taking stress, the Kilimanjaro cools off by ejecting flaming reactor fuel in a cone 3 spew. All characters within the affected area take 1d6 explosive damage."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Thermal Control Package",
+      "description": "<i>TODO</i>",
+      "activation": "Full",
+      "active_name": "High Enthalpy Reduction",
+      "active_effect": "<p>For the rest of this scene the Bolzman heat pump takes on all the heat instead of half once activated. You also gain the <i>Nitrogen Emergency Packs</i> quick action. <br></p>",
+      "passive_name": "Boltzmann Heat Pump",
+      "passive_effect": "<p>As a quick action, you may latch onto any character adjacent character. Until either of you breaks adjacency you may take half the heat they take no matter the source. </p>",
+      "use": "Mission",
+      "active_actions": [
+        {
+          "name": "Fire Nitrogen Emergency Pack",
+          "activation": "Quick",
+          "detail": "<p>This system can only be used when your core is active and only holds three charges. This amount can’t be raised by any means. Expending a charge, you may cool down completely. You don’t stabilize doing so and don’t get any additional advantages."
+        }
+      ],
+      "tags": [{"id": "tg_limited", "val": 3}]
+    },
+    "data_type": "frame"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "wm_nighthawk_scope",
+    "name": "NIGHTHAWK SCOPE",
+    "license_id": "mf_attakulla",
+    "sp": 1,
+    "allowed_types": [],
+    "source": "GMS-HIPS",
+    "license": "ATTAKULLA",
+    "license_level": 2,
+    "effect": "<b>TODO</b>",
+    "description": "<b>TODO</b>",
+    "tags": []
+  }
+]

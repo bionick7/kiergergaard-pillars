@@ -128,7 +128,7 @@
         "tags": [{"id": "tg_laser", "val": 5}]
       },
       {
-        "name": "TODO",
+        "name": "The Sun Unleashed",
         "skirmish": false,
         "barrage": true,
         "range": [{ "type": "Line", "val": 15}, {"type": "Burst", "val": 3}],

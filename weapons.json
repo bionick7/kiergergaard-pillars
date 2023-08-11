@@ -51,7 +51,7 @@
       {
         "name": "TODO",
         "activation": "Reaction",
-        "frequency": "X/round",
+        "frequency": "1/round",
         "trigger": "An enemy within range flies",
         "effect": "You hit all flying characters within range."
       }
@@ -77,7 +77,7 @@
   },
   {
     "id": "mw_hydrolic_rescue_tool",
-    "name": "HYDROLIC_RESCUE_TOOL",
+    "name": "HYDROLIC RESCUE TOOL",
     "source": "GMS-HIPS",
     "license": "KILIMANJARO",
     "license_id": "mf_kilimanjaro",
@@ -90,5 +90,53 @@
     "description": "<b>TODO</b>",
     "on_crit": "Your enemy becomes shredded until the end of their next turn",
     "synergies": [{"id": "tg_ap"}]
+  },
+  {
+    "id": "mw_orinoco_integrated",
+    "name": "MUGGLER’S FRIENDS",
+    "mount": "Main",
+    "type": "Nexus",
+    "description": "<b>TODO</b>",
+    "profiles": [
+      {
+        "name": "TODO",
+        "range": [{ "type": "Range", "val": 5 }],
+        "damage": [{ "type": "???", "val": "1d3+1" }],
+        "tags": []
+      },
+      {
+        "name": "TODO",
+        "range": [{ "type": "Range", "val": 5 }],
+        "damage": [{ "type": "???", "val": "1d3+1" }],
+        "on_hit": "The target can only draw line of sight to adjacent spaces until the end of their next turn.",
+        "tags": [{"id": "tg_seeking"}]
+      }
+    ]
+  },
+  {
+    "id": "mw_yukon_integrated",
+    "name": "MINIATURISED SOLAR LANCE ",
+    "mount": "Main",
+    "type": "???",
+    "description": "Creating more intense heat then similar frame-mounted laser weaponry, the miniaturised solar lance is capable of melting the area surrounding its beam.",
+    "profiles": [
+      {
+        "name": "TODO",
+        "range": [{ "type": "Line", "val": 5 }],
+        "damage": [{ "type": "Energy", "val": "6 - [Distance]" }],
+        "effect": "Hit or not, all non-flying enemies within the weapon’s line area become immobilized until the end of their next turn as the ground beneath them melts.",
+        "tags": [{"id": "tg_laser", "val": 5}]
+      },
+      {
+        "name": "TODO",
+        "skirmish": false,
+        "barrage": true,
+        "range": [{ "type": "Line", "val": 15}, {"type": "Burst", "val": 3}],
+        "damage": [{ "type": "Energy", "val": "16 - [Distance]" }],
+        "effect": "Hit or not, all non-flying enemies within the weapon’s line and burt 3 become immobilized until the end of their next turn as the ground beneath them melts. <br> Only enemies in line 15 take dammage",
+        "tags": [{"id": "tg_ordnance"}, {"id": "tg_laser", "val": 15}]
+      }
+    ]
   }
+
 ]

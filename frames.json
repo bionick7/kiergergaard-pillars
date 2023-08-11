@@ -47,7 +47,7 @@
     ],
     "core_system": {
       "name": "Advanced Frontline Pioneering",
-      "description": "<i>TODO</i>",
+      "description": "<b>TODO</b>",
       "activation": "Protocol",
       "active_name": "Bridge deployment",
       "active_effect": "<p>The Midzor deploys it’s integrated temporary bridge aiding allies in crossing even the harshest of terrain. You extend yourself over a line 5 (centre to centre) with width 3. Doing so:<ul><li>You become immobilised and can’t be moved by any means</li><li>You ignore all kinds of difficult or dangerous terrain beneath you as well as obstacles of up to size 1</li><li>Allies can move across the surface covered by ignoring the terrain beneath</li><li>On the turn you activated this core, you can use limited systems with the deployable tag without using any charge.</li></ul>This ability is Efficient and will refund 1 Core Point at the end of any scene in which this ability was used.</p>",
@@ -106,7 +106,7 @@
     ],
     "core_system": {
       "name": "Flight Coordination Relay",
-      "description": "<i>TODO</i>",
+      "description": "<b>TODO</b>",
       "activation": "Protocoll",
       "active_name": "High Alert Status",
       "active_effect": "<p>For the rest of this scene you can roll 2d6 at the start of each round making successful contact with strike command on 3+ for each roll. In case both d6 succeed, you gain access to <i>Double Air Strike</i></p>",
@@ -146,7 +146,7 @@
     "mechtype": [
       "Support"
     ],
-    "description": "<p>Developed from reverse engineered Harrison reactors the Kilimanjaro fire suppression and heat management chassis presents a breakthrough in reactor safety. Ongoing Union trials even conduct trials on the system as a countermeasure to total biome kills combining the strongest heat pump ever used on chassis with superb ABC-protection. No matter if it serves on carriers at the reactor unit, pushes fast deployment units to their limit or suppresses wildfires, the Kilimanjaro is a favourite to everyone looking to fight heat..</p>",
+    "description": "<p>Developed from reverse engineered Harrison reactors the Kilimanjaro fire suppression and heat management chassis presents a breakthrough in reactor safety. Ongoing Union trials even conduct trials on the system as a countermeasure to total biome kills combining the strongest heat pump ever used on chassis with superb ABC-protection. No matter if it serves on carriers at the reactor unit, pushes fast deployment units to their limit or suppresses wildfires, the Kilimanjaro is a favourite to everyone looking to fight heat.</p>",
     "mounts": [
       "Aux/Aux"
     ],
@@ -169,11 +169,11 @@
     "traits": [
       {
         "name": "Superior Reactor",
-        "description": "The Sherman gains +1 accuracy on Engineering checks and saves.",
+        "description": "The Kilimanjaro gains +1 accuracy on Engineering checks and saves.",
         "synergies": [
           {
             "locations": ["engineering", "skill_check"],
-            "detail": "The Sherman gains +1 accuracy on Engineering checks and saves."
+            "detail": "The Kilimanjaro gains +1 accuracy on Engineering checks and saves."
           }
         ]
       },
@@ -204,7 +204,7 @@
     ],
     "core_system": {
       "name": "Thermal Control Package",
-      "description": "<i>TODO</i>",
+      "description": "<b>TODO</b>",
       "activation": "Full",
       "active_name": "High Enthalpy Reduction",
       "active_effect": "<p>For the rest of this scene the Bolzman heat pump takes on all the heat instead of half once activated. You also gain the <i>Nitrogen Emergency Packs</i> quick action. <br></p>",
@@ -222,5 +222,271 @@
     },
     "data_type": "frame",
     "image_url": "https://cdn.discordapp.com/attachments/365511976446722048/1138180239151869952/dream_TradingCard_-_2023-08-07T163227.644.jpg"
+  },
+  {
+    "id": "mf_chang_jiang",
+    "license_id": "mf_chang_jiang",
+    "license_level": 2,
+    "y_pos": 20,
+    "source": "LANIKA",
+    "name": "CHANG JIANG",
+    "mechtype": [
+      "Support"
+    ],
+    "description": "<p>The nightmare of every hacker, the Chang Jiang comes equipped with some of the most complex coding ever seen around the Dawnline shore outside of the realm of NHPs. Exploiting the system access granted through buffering the frame can transform the software of any other frame into a labyrinth of code without escape. The frame is therefore feared by almost everyone conduction operations in cyberwarfare.</p>",
+    "mounts": [
+      "Flex", "Main"
+    ],
+    "stats": {
+      "size": 1,
+      "stress": 4,
+      "structure": 4,
+      "armor": 0,
+      "hp": 7,
+      "evasion": 7,
+      "edef": 12,
+      "heatcap": 5,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "repcap": 3,
+      "save": 11,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Castle Support Code",
+        "description": "Bolstering causes your target to inflict +4 difficulty on all tech attacks made against them while they benefit from the bolstering.",
+        "synergies": [
+          {
+            "locations": ["tech"],
+            "detail": "Bolstering causes your target to inflict +4 difficulty on all tech attacks made against them while they benefit from the bolstering."
+          }
+        ]
+      },
+      {
+        "name": "High Performance CPU",
+        "description": "The Chang Jiang gains +1 accuracy on Systems checks and saves.",
+        "synergies": [
+          {
+            "locations": ["systems", "skill_check"],
+            "detail": "The Chang Jiang gains +1 accuracy on Systems checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Viral Lock-Down Protocol",
+      "description": "<b>TODO</b>",
+      "activation": "Full",
+      "active_name": "Fortress Of The Mind",
+      "active_effect": "<p>For the rest of this scene, you gain the <b>TODO</b> reaction.</p>",
+      "use": "Mission",
+      "active_actions": [
+        {
+          "name": "TODO",
+          "frequency": "Unlimited",
+          "activation": "Reaction",
+          "trigger": "An enemy attacks you or an ally within sensors and line of sight with a tech attack",
+          "effect": "<p> You first roll 1d6, on 4+ their attack automatically fails. Instead, you may use their attack against them, using your stats. You count as the conducter of the attack.</p>"
+        }
+      ]
+    },
+    "data_type": "frame",
+    "image_url": ""
+  },
+  {
+    "id": "mf_orinoco",
+    "license_id": "mf_orinoco",
+    "license_level": 2,
+    "y_pos": 20,
+    "source": "LANIKA",
+    "name": "ORINOCO",
+    "mechtype": [
+      "Controller",
+      "Striker"
+    ],
+    "description": "<p>Seemingly purpose build for commando operations the Orinoco is built for covert cyberwarfare like no other frame invading without any need for visual confirmation of the enemy sending untraceable code to enemies’ systems and lighting their computers aflame.</p>",
+    "mounts": [
+      "Main", "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "stress": 4,
+      "structure": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 4,
+      "sensor_range": 5,
+      "tech_attack": 1,
+      "repcap": 3,
+      "save": 11,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Inflitration Scanners",
+        "description": "The Orinoco ignores line of sight requirements for tech attacks within its sensor range.",
+        "synergies": [
+          {
+            "locations": ["tech"],
+            "detail": "The Orinoco ignores line of sight requirements for tech attacks within its sensor range."
+          }
+        ]
+      },
+      {
+        "name": "Crash Code Anti-Virus",
+        "description": "Gain the Slash/Crash reaction (1/round when you are hit by a melee attack you may take any Invade option against the attacker as part of this reaction.)",
+        "actions": [
+          {
+            "name": "Slash/Crash",
+            "frequency": "1/round",
+            "activation": "Reaction",
+            "trigger": "You are hit by a melee attack",
+            "effect": "You make an invade against the attacker"
+          }
+        ]
+      },
+      {
+        "name": "Exposed reactor",
+        "description": "The Orinoco gains +1 difficulty to Engineering checks and saves.",
+        "synergies": [
+          {
+            "locations": ["engineering", "skill_check"],
+            "detail": "The Orinoco gains +1 difficulty to Engineering checks and saves."
+          }
+        ]
+      }
+    ],
+    "core_system": {
+      "name": "Covert Attack Strategy Set",
+      "description": "<b>TODO</b>",
+      "activation": "Protocol",
+      "active_name": "Scoundrel’s Luck",
+      "active_effect": "<p>Once activated, you power up your integrated nexus lasting until the end of this scene. Your Smuggler’s Friends Nexus becomes seeking. In addition, hit targets can only draw line of sight to adjacent spaces until the end of their next turn.</p>",
+      "use": "Mission",
+      "integrated": ["mw_orinoco_integrated"]
+    },
+    "data_type": "frame",
+    "image_url": ""
+  },
+  {
+    "id": "mf_mississippi",
+    "license_id": "mf_mississippi",
+    "license_level": 2,
+    "y_pos": 20,
+    "source": "LANIKA",
+    "name": "MISSISSIPPI",
+    "mechtype": [
+      "Defender"
+    ],
+    "description": "<p>Introducing a revolutionary new kind of chassis, the Mississippi is an armoured legged infantry transport and support platform introducing a new facet to combined arms warfare offering greater protection and operational flexibility to combatants on foot and daring black thumb pilots.</p>",
+    "mounts": [
+      "Flex", "Flex"
+    ],
+    "stats": {
+      "size": 2,
+      "stress": 4,
+      "structure": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 7,
+      "edef": 8,
+      "heatcap": 4,
+      "sensor_range": 5,
+      "tech_attack": 1,
+      "repcap": 3,
+      "save": 11,
+      "speed": 5,
+      "sp": 6
+    },  
+    "traits": [
+      {
+        "name": "Guardian",
+        "description": "Adjacent allied characters can use the Mississippi as hard cover."
+      },
+      {
+        "name": "Hoplite Shield",
+        "description": "Adjacent biological allied character gain 4 + GRIT overshield at the start of each of your turns.",
+        "synergies":  [
+          {
+            "locations": ["dismount"],
+            "detail": "Adjacent biological allied character gain 4 + GRIT overshield at the start of each of your turns."
+          }
+        ]
+      },
+      {
+        "name": "Armoured Crew Compartment",
+        "description": "The Mississippi offers interior space to host one entire squad of infantry or alternatively up to 6 pilots. While inside they cannot suffer from external effects or be targeted."
+      }
+    ],
+    "core_system": {
+      "name": "Tagma Combat Squad",
+      "description": "<b>TODO</b>",
+      "activation": "???",
+      "passive_name": "Urban Combat Equipment Set",
+      "passive_effect": "TODO WEAPONS SETS TO EQUIP PIOLTS AND SQUADS WITH",
+      "active_name": "Combined Arms Team",
+      "active_effect": "<p>At the start of the scene you may choose one of a selection of squads and place. <br> WIP</p>",
+      "use": "Mission"
+    },
+    "data_type": "frame",
+    "image_url": ""
+  },
+  {
+    "id": "mf_yukon",
+    "license_id": "mf_yukon",
+    "license_level": 2,
+    "y_pos": 20,
+    "source": "LANIKA",
+    "name": "YUKON",
+    "mechtype": [
+      "Striker"
+    ],
+    "description": "<b>TODO.</b>",
+    "mounts": [
+      "Main", "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "stress": 4,
+      "structure": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 7,
+      "edef": 8,
+      "heatcap": 6,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "repcap": 4,
+      "save": 11,
+      "speed": 4,
+      "sp": 7
+    },  
+    "traits": [
+      {
+        "name": "TODO",
+        "description": "<b>TODO.</b>"
+      },
+      {
+        "name": "TODO",
+        "description": "<b>TODO.</b>"
+      }
+    ],
+    
+    "core_system": {
+      "name": "Portable Facemelter",
+      "description": "<b>TODO</b>",
+      "activation": "Full",
+      "active_name": "The Sun Unleashed",
+      "active_effect": "<p>You disengage all safety measures on your Solar Lance. Doing so takes a full action and afterwards you can only fire your Lance as if it were a superheavy weapon. Without limiters, the weapon gains ordonance status but its range is raised to line 15 and the damage increases to 16-range. It also melts all ground in a burst 3 area additionally to your full line 15. It can only be fired once in this mode and reverts  back to normal operation automatically afterwards.</p>",
+      "use": "Mission",
+      "integrated": ["mw_yukon_integrated"]
+    },
+    "data_type": "frame",
+    "image_url": ""
   }
 ]

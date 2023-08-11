@@ -135,7 +135,7 @@
     "source": "GMS-HIPS",
     "license": "ATTAKULLA",
     "license_id": "mf_attakulla",
-    "license_level": 2,
+    "license_level": 1,
     "data_type": "system",
     "description": "<b>TODO</b>",
     "type": "System",

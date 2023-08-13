@@ -93,7 +93,7 @@
   },
   {
     "id": "mw_orinoco_integrated",
-    "name": "MUGGLER’S FRIENDS",
+    "name": "SMUGGLER’S FRIENDS",
     "mount": "Main",
     "type": "Nexus",
     "description": "<b>TODO</b>",
@@ -101,13 +101,13 @@
       {
         "name": "TODO",
         "range": [{ "type": "Range", "val": 5 }],
-        "damage": [{ "type": "???", "val": "1d3+1" }],
+        "damage": [{ "type": "Kinetic", "val": "1d3+1" }],
         "tags": []
       },
       {
         "name": "TODO",
         "range": [{ "type": "Range", "val": 5 }],
-        "damage": [{ "type": "???", "val": "1d3+1" }],
+        "damage": [{ "type": "Kinetic", "val": "1d3+1" }],
         "on_hit": "The target can only draw line of sight to adjacent spaces until the end of their next turn.",
         "tags": [{"id": "tg_seeking"}]
       }
@@ -117,7 +117,7 @@
     "id": "mw_yukon_integrated",
     "name": "MINIATURISED SOLAR LANCE ",
     "mount": "Main",
-    "type": "???",
+    "type": "Cannon",
     "description": "Creating more intense heat then similar frame-mounted laser weaponry, the miniaturised solar lance is capable of melting the area surrounding its beam.",
     "profiles": [
       {

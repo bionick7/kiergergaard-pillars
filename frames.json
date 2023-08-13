@@ -285,7 +285,7 @@
       "active_actions": [
         {
           "name": "TODO",
-          "frequency": "Unlimited",
+          "frequency": "1/Round",
           "activation": "Reaction",
           "trigger": "An enemy attacks you or an ally within sensors and line of sight with a tech attack",
           "effect": "<p> You first roll 1d6, on 4+ their attack automatically fails. Instead, you may use their attack against them, using your stats. You count as the conducter of the attack.</p>"

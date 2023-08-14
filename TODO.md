@@ -6,9 +6,3 @@
 - system flavors
 - weapon flavors
 - weapon profile names
-
-- smugglers friend dmg type
-- Miniturized Solar Lance weapon type
-- Viral Lock-Down Protocol unlimited?
-
-- Kilimanjaro stats OP?

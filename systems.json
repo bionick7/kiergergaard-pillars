@@ -360,7 +360,7 @@
         "name": "Systems Freeze Backup Shield",
         "activation": "Reaction",
         "trigger": "An allied character within sensors and line of sight gets hit by a tech attack",
-        "frequency": "???",
+        "frequency": "Unlimited",
         "effect": "The allied character gains immunity to all effects from the tech attack that just hit them. Additionally, they gain 1d3 + GRIT Overshield. However, in the process, their CPU get’s overburdened and they become Slowed and Impaired until the end of their next turn"
       }
     ],
@@ -452,7 +452,7 @@
   },
   {
     "id": "ms_heads_up_marker",
-    "name": "HEADS_UP_MARKER",
+    "name": "HEADS-UP MARKER",
     "source": "LANIKA",
     "license": "ORINOCO",
     "license_id": "mf_orinoco",

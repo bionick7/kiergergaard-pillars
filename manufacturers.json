@@ -11,7 +11,7 @@
   {
     "id": "LANIKA",
     "name": "LANIKA CORP.",
-    "logo_url": "https://cdn.discordapp.com/attachments/908701113212080140/975827866421968956/Laneka.png",
+    "logo_url": "https://cdn.discordapp.com/attachments/1140314412155150377/1140639277978492929/LANIKA.png",
     "light": "#fe7b52",
     "dark": "#cd5438",
     "quote": "<b>TODO</b>",
@@ -20,14 +20,16 @@
   {
     "id": "HA-SKY",
     "name": "HARRISON SKYHOPPERS",
+    "logo_url": "https://cdn.discordapp.com/attachments/1140314412155150377/1140632911373144155/blackbox.png",
     "light": "#ab094e",
     "dark": "#ab094e",
-    "quote": "<b>TODO</b>",
+    "quote": "Superior by profession",
     "description": "The Skyhoppers are an elite Harrison unit trained in elevated mobility normally not seen at the armoury. Some models in their inventory proved so successful that licenses were minted from heavily modified frames at the frontline."
   },
   {
     "id": "BLACKBOX",
     "name": "IPS-N BLACKBOX",
+    "logo_url": "https://cdn.discordapp.com/attachments/1140314412155150377/1140632911373144155/blackbox.png",
     "light": "#002060",
     "dark": "#002060",
     "quote": "<b>TODO</b>",

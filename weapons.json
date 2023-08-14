@@ -190,10 +190,10 @@
       },
       {
         "name": "Running",
-        "damage": [{"type": "Kinetic", "val": "1d6"}],
-        "range": [{"type": "Threat", "val": 3}],
+        "damage": [{"type": "Kinetic", "val": "1d3+2"}],
+        "range": [{"type": "Threat", "val": 1}],
         "on_hit": "For any subsequent against this target, add +1d6 bonus dammage. This affect stacks until a turn occurs where this target is not attacked by the chainsaw",
-        "tags": [{"id": "tg_ap"}]
+        "tags": [{"id": "tg_overkill"}]
       }
     ]
   }

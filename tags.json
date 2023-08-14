@@ -1,7 +1,7 @@
 [
   {
     "id": "tg_laser",
-    "name": "Laser {VAL}",
-    "description": "On a hit, this weapon deals {VAL} + 1 - Y dammage, where Y is the distance between the attacker and the target."
+    "name": "Laser",
+    "description": "On a hit, this weapon inflicts as much heat as it deals conventional dammage."
   }
 ]

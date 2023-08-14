@@ -125,7 +125,7 @@
         "range": [{ "type": "Line", "val": 5 }],
         "damage": [{ "type": "Energy", "val": "6 - [Distance]" }],
         "effect": "Hit or not, all non-flying enemies within the weapon’s line area become immobilized until the end of their next turn as the ground beneath them melts.",
-        "tags": [{"id": "tg_laser", "val": 5}]
+        "tags": [{"id": "tg_laser"}]
       },
       {
         "name": "The Sun Unleashed",
@@ -134,7 +134,7 @@
         "range": [{ "type": "Line", "val": 15}, {"type": "Burst", "val": 3}],
         "damage": [{ "type": "Energy", "val": "16 - [Distance]" }],
         "effect": "Hit or not, all non-flying enemies within the weapon’s line and burt 3 become immobilized until the end of their next turn as the ground beneath them melts. <br> Only enemies in line 15 take dammage",
-        "tags": [{"id": "tg_ordnance"}, {"id": "tg_laser", "val": 15}]
+        "tags": [{"id": "tg_ordnance"}, {"id": "tg_laser"}]
       }
     ]
   },
@@ -196,5 +196,212 @@
         "tags": [{"id": "tg_overkill"}]
       }
     ]
+  },
+  {
+    "id": "mw_machine_cannon",
+    "name": "MACHINE CANNON",
+    "source": "LANIKA",
+    "license": "MISSISSIPPI",
+    "license_id": "mf_mississippi",
+    "license_level": 3,
+    "mount": "Main",
+    "type": "Cannon",
+    "damage": [{"type": "Kinetic", "val": "1d6"}],
+    "range": [{"type": "Range", "val": 5}],
+    "description": "<b>TODO</b>",
+    "no_attack": true,
+    "effect": "This weapon can only be used with the TODO Reaction.",
+    "actions": [
+      {
+        "name": "TODO",
+        "activation": "Reaction",
+        "frequency": "2/round",
+        "trigger": "An enemy within range moves",
+        "effect": "You hit fire the machine cannon."
+      }
+    ],
+    "tags": [{"id": "tg_ap"}]
+  },
+  {
+    "id": "mw_shikishima_laser_rifle",
+    "name": "SHIKISHIMA LASER RIFLE",
+    "source": "LANIKA",
+    "license": "YUKON",
+    "license_id": "mf_yukon",
+    "license_level": 1,
+    "mount": "Main",
+    "type": "Rifle",
+    "damage": [{"type": "Energy", "val": "3"}],
+    "range": [{"type": "Range", "val": 10}],
+    "description": "<b>TODO</b>",
+    "effect": "You take an additional heat when attacking beyond range 5.",
+    "tags": [{"id": "tg_laser"}, {"id": "tg_accurate"}, {"id": "tg_heat_self", "val": 1}]
+  },
+  {
+    "id": "mw_turn_x_beam_cannon",
+    "name": "TURN X BEAM CANNON",
+    "source": "LANIKA",
+    "license": "YUKON",
+    "license_id": "mf_yukon",
+    "license_level": 3,
+    "mount": "Heavy",
+    "type": "Rifle",
+    "damage": [{"type": "Energy", "val": "1d3+3"}],
+    "range": [{"type": "Range", "val": 20}],
+    "description": "<b>TODO</b>",
+    "effect": "You do half damage attacking beyond range 10.",
+    "tags": [{"id": "tg_ap"}, {"id": "tg_reliable", "val": 3}, {"id": "tg_laser"}]
+  },
+  {
+    "id": "mw_thunderbreath_shotgun",
+    "name": "THUNDERBREATH SHOTGUN",
+    "source": "HA-SKY",
+    "license": "CHARLEMAGNE",
+    "license_id": "mf_charlemagne",
+    "license_level": 2,
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [{"type": "Explosive", "val": "1d3+3"}],
+    "range": [{"type": "Range", "val": 5}, {"type": "Threat", "val": 3}, {"type": "Blast", "val": 2}],
+    "description": "<b>TODO</b>",
+    "tags": [{"id": "tg_inaccurate"}, {"id": "tg_reliable", "val": 1}, {"id": "tg_heat_self", "val": 1}]
+  },
+  {
+    "id": "mw_sonic_boom_wrecking_flail",
+    "name": "SONIC BOOM WRECKING FLAIL",
+    "source": "HA-SKY",
+    "license": "CHARLEMAGNE",
+    "license_id": "mf_charlemagne",
+    "license_level": 3,
+    "mount": "Superheavy",
+    "type": "Melee",
+    "damage": [{"type": "Kinetic", "val": "3d6"}],
+    "range": [{"type": "Threat", "val": 2}],
+    "description": "<b>TODO</b>",
+    "on_attack": "You become jammed once your attack resolves. Everyone in a blast 2 zone (excluding you) must pass an agility safe or take one 1d6 +2 damage (stacks on your main target) and become jammed.",
+    "tags": [{"id": "tg_inaccurate"}]
+  },
+  {
+    "id": "mw_flashfire_cannon",
+    "name": "FLASHFIRE CANNON",
+    "source": "HA-SKY",
+    "license": "SCHWARZKOPF",
+    "license_id": "mf_schwarzkopf",
+    "license_level": 2,
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [{"type": "Burn", "val": 5}],
+    "range": [{"type": "Line", "val": 5}, {"type": "Threat", "val": 2}],
+    "description": "<b>TODO</b>",
+    "tags": [{"id": "tg_inaccurate"}, {"id": "tg_loading"}]
+  },
+  {
+    "id": "mw_panzerbuechse_phosphorus_boxcutter",
+    "name": "PANZERBÜCHSE PHOSPHORUS BOXCUTTER",
+    "source": "HA-SKY",
+    "license": "SCHWARZKOPF",
+    "license_id": "mf_schwarzkopf",
+    "license_level": 3,
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [{"type": "Kinetic", "val": "1d6+4"}],
+    "range": [{"type": "Threat", "val": 1}],
+    "description": "<b>TODO</b>",
+    "effect": "Only consumes a charge on hit.",
+    "tags": [{"id": "tg_ap"}, {"id": "tg_accurate"}, {"id": "tg_limited", "val": 5}]
+  },
+  {
+    "id": "mw_barnbuster_hesh_cannon",
+    "name": "BARNBUSTER HESH CANNON",
+    "source": "BLACKBOX",
+    "license": "COLUMBUS",
+    "license_id": "mf_columbus",
+    "license_level": 3,
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [{"type": "Explosive", "val": "1d6+4"}],
+    "range": [{"type": "Range", "val": 15}],
+    "description": "<b>TODO</b>",
+    "on_hit": "You deal +2 bonus damage per armour of your target.",
+    "on_crit": "You blow a hole in the enemy’s armour as plastic explosives punch through. The enemy becomes exposed until the end of your next turn.",
+    "tags": [{"id": "tg_ap"}, {"id": "tg_ordnance"}]
+  },
+  {
+    "id": "mw_ahab_missile",
+    "name": "AHAB MISSILE",
+    "source": "BLACKBOX",
+    "license": "COLUMBUS",
+    "license_id": "mf_columbus",
+    "license_level": 2,
+    "sp": 1,
+    "mount": "Main",
+    "type": "Launcher",
+    "damage": [{"type": "Kinetic", "val": "1d6+2"}],
+    "range": [{"type": "Range", "val": 20}],
+    "description": "<b>TODO</b>",
+    "on_hit": "You deal +2 bonus damage per armour of your target.",
+    "on_crit": "You blow a hole in the enemy’s armour as plastic explosives punch through. The enemy becomes exposed until the end of your next turn.",
+    "tags": [{"id": "tg_heat_self", "val": 1}, {"id": "tg_accurate"}]
+  },
+  {
+    "id": "mw_compass_nexus",
+    "name": "COMPASS NEXUS",
+    "source": "BLACKBOX",
+    "license": "JANSZOON",
+    "license_id": "mf_janszoon",
+    "license_level": 3,
+    "mount": "Main",
+    "type": "Launcher",
+    "damage": [{"type": "Kinetic", "val": 2}],
+    "range": [{"type": "Range", "val": 10}],
+    "description": "<b>TODO</b>",
+    "on_crit": "You jam your target. This effect can only trigger once per scene on each target.",
+    "tags": [{"id": "tg_smart"}, {"id": "tg_accurate"}, {"id": "tg_arcing"}]
+  },
+  {
+    "id": "mw_rapid_fire_missile_battery",
+    "name": "RAPID FIRE MISSILE BATTERY",
+    "source": "BLACKBOX",
+    "license": "AMUNDSEN",
+    "license_id": "mf_amundsen",
+    "license_level": 1,
+    "mount": "Heavy",
+    "type": "Launcher",
+    "damage": [{"type": "Explosive", "val": "2d6"}],
+    "range": [{"type": "Range", "val": 5}, {"type": "Blast", "val": 1}],
+    "description": "<b>TODO</b>",
+    "tags": [{"id": "tg_reliable", "val": 3}]
+  },
+  {
+    "id": "mw_speartip_repeating_cannon",
+    "name": "SPEARTIP REPEATING CANNON",
+    "source": "BLACKBOX",
+    "license": "AMUNDSEN",
+    "license_id": "mf_amundsen",
+    "license_level": 3,
+    "mount": "Heavy",
+    "type": "Cannon",
+    "damage": [{"type": "Kinetic", "val": "2d6+2"}],
+    "range": [{"type": "Range", "val": 10}],
+    "description": "<b>TODO</b>",
+    "actions": [
+      {
+        "name": "TODO",
+        "activation": "Quick",
+        "detail": "This weapon fires so fast it can attack a second time this turn, however the second attack becomes inaccurate and can’t deal bonus damage."
+      }
+    ],
+    "tags": [{"id": "tg_overkill"}, {"id": "tg_heat_self", "val": 2}]
+  },
+  {
+    "id": "mw_amundsen_integrated",
+    "name": "KRAKEN MACHINE GUN",
+    "mount": "Main",
+    "type": "Cannon",
+    "effect": "Rolling a 1 on the attack rolls, ignoring any modifiers (\"natural 1\") inflicts jam to the Amundsen.",
+    "damage": [{"type": "Kinetic", "val": "1d6+1"}],
+    "range": [{"type": "Range", "val": 8}],
+    "description": "A light and portable single barrel cousin to the Leviathan, the Kraken packs an immense punch for its size but is limited by its cumbersome ammunition. ",
+    "tags": [{"id": "tg_reliable", "val": 4}, {"id": "tg_limited", "val": 10}, {"id": "tg_accurate"}]
   }
 ]

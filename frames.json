@@ -53,7 +53,6 @@
       "active_effect": "<p>The Midzor deploys it’s integrated temporary bridge aiding allies in crossing even the harshest of terrain. You extend yourself over a line 5 (centre to centre) with width 3. Doing so:<ul><li>You become immobilised and can’t be moved by any means</li><li>You ignore all kinds of difficult or dangerous terrain beneath you as well as obstacles of up to size 1</li><li>Allies can move across the surface covered by ignoring the terrain beneath</li><li>On the turn you activated this core, you can use limited systems with the deployable tag without using any charge.</li></ul>This ability is Efficient and will refund 1 Core Point at the end of any scene in which this ability was used.</p>",
       "use": "Scene"
     },
-    "data_type": "frame",
     "image_url": "https://cdn.discordapp.com/attachments/365511976446722048/1138180322492694608/dream_TradingCard_-_2023-08-07T162021.190.jpg"
   },
   {
@@ -133,8 +132,7 @@
         }
       ]
     },
-    "data_type": "frame",
-    "image_url": "https://cdn.discordapp.com/attachments/365511976446722048/1138182600654077992/dream_TradingCard_-_2023-08-07T204900.969.jpg"
+        "image_url": "https://cdn.discordapp.com/attachments/365511976446722048/1138182600654077992/dream_TradingCard_-_2023-08-07T204900.969.jpg"
   },
   {
     "id": "mf_kilimanjaro",
@@ -220,14 +218,13 @@
       ],
       "tags": [{"id": "tg_limited", "val": 3}]
     },
-    "data_type": "frame",
-    "image_url": "https://cdn.discordapp.com/attachments/365511976446722048/1138180239151869952/dream_TradingCard_-_2023-08-07T163227.644.jpg"
+        "image_url": "https://cdn.discordapp.com/attachments/365511976446722048/1138180239151869952/dream_TradingCard_-_2023-08-07T163227.644.jpg"
   },
   {
     "id": "mf_chang_jiang",
     "license_id": "mf_chang_jiang",
     "license_level": 2,
-    "y_pos": 20,
+    "y_pos": 30,
     "source": "LANIKA",
     "name": "CHANG JIANG",
     "mechtype": [
@@ -292,14 +289,13 @@
         }
       ]
     },
-    "data_type": "frame",
-    "image_url": ""
+    "image_url": "https://ih1.redbubble.net/image.980358996.2852/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
   },
   {
     "id": "mf_orinoco",
     "license_id": "mf_orinoco",
     "license_level": 2,
-    "y_pos": 20,
+    "y_pos": 13,
     "source": "LANIKA",
     "name": "ORINOCO",
     "mechtype": [
@@ -370,14 +366,13 @@
       "use": "Mission",
       "integrated": ["mw_orinoco_integrated"]
     },
-    "data_type": "frame",
-    "image_url": ""
+    "image_url": "https://nekotwo.com/cdn/shop/products/000_d4b74050-b04b-4cb6-8720-eaee43220bea.jpg?v=1668416751"
   },
   {
     "id": "mf_mississippi",
     "license_id": "mf_mississippi",
     "license_level": 2,
-    "y_pos": 20,
+    "y_pos": 35,
     "source": "LANIKA",
     "name": "MISSISSIPPI",
     "mechtype": [
@@ -433,14 +428,13 @@
       "active_effect": "<p>At the start of the scene you may choose one of a selection of squads and place. <br> WIP</p>",
       "use": "Mission"
     },
-    "data_type": "frame",
-    "image_url": ""
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Army2016demo-007.jpg/1200px-Army2016demo-007.jpg"
   },
   {
     "id": "mf_yukon",
     "license_id": "mf_yukon",
     "license_level": 2,
-    "y_pos": 20,
+    "y_pos": 50,
     "source": "LANIKA",
     "name": "YUKON",
     "mechtype": [
@@ -486,7 +480,6 @@
       "use": "Mission",
       "integrated": ["mw_yukon_integrated"]
     },
-    "data_type": "frame",
-    "image_url": ""
+    "image_url": "https://img.fruugo.com/product/4/92/980124924_max.jpg"
   }
 ]

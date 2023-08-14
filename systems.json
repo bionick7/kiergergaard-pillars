@@ -6,7 +6,6 @@
     "license": "MIDZOR",
     "license_id": "mf_midzor",
     "license_level": 1,
-    "data_type": "system",
     "description": "<b>TODO</b>",
     "type": "Pioneering Tool",
     "sp": 1,
@@ -33,7 +32,6 @@
     "license": "MIDZOR",
     "license_id": "mf_midzor",
     "license_level": 1,
-    "data_type": "system",
     "description": "<b>TODO</b>",
     "type": "Pioneering Tool",
     "sp": 2,
@@ -59,7 +57,6 @@
     "license": "MIDZOR",
     "license_id": "mf_midzor",
     "license_level": 2,
-    "data_type": "system",
     "description": "<b>TODO</b>",
     "type": "Mine",
     "sp": 1,
@@ -94,7 +91,6 @@
     "license": "MIDZOR",
     "license_id": "mf_midzor",
     "license_level": 3,
-    "data_type": "system",
     "description": "<b>TODO</b>",
     "type": "System",
     "sp": 2,
@@ -115,7 +111,6 @@
     "license": "MIDZOR",
     "license_id": "mf_midzor",
     "license_level": 3,
-    "data_type": "system",
     "description": "Domovoy was developed as a tool for strategic advice being able to scan entire battlefields at moment’s notice and determine optimal positioning for static deployments. In combination with newest electronic warfare equipment the NHP is capable of emulating HOR_OS code at higher capacity",
     "type": "AI",
     "sp": 2,
@@ -136,7 +131,6 @@
     "license": "ATTAKULLA",
     "license_id": "mf_attakulla",
     "license_level": 1,
-    "data_type": "system",
     "description": "<b>TODO</b>",
     "type": "System",
     "sp": 1,
@@ -157,8 +151,7 @@
     "license": "ATTAKULLA",
     "license_id": "mf_attakulla",
     "license_level": 2,
-    "data_type": "system",
-    "effect": "TODO",
+        "effect": "TODO",
     "description": "<b>TODO</b>",
     "type": "System",
     "sp": 3,
@@ -179,7 +172,6 @@
     "license": "ATTAKULLA",
     "license_id": "mf_attakulla",
     "license_level": 3,
-    "data_type": "system",
     "description": "<b>TODO</b>",
     "type": "AI",
     "sp": 3,
@@ -200,7 +192,6 @@
     "license": "KILIMANJARO",
     "license_id": "mf_kilimanjaro",
     "license_level": 1,
-    "data_type": "system",
     "description": "<b>TODO</b>",
     "type": "System",
     "sp": 1,
@@ -221,7 +212,6 @@
     "license": "KILIMANJARO",
     "license_id": "mf_kilimanjaro",
     "license_level": 2,
-    "data_type": "system",
     "description": "<b>TODO</b>",
     "type": "System",
     "sp": 2,
@@ -242,7 +232,6 @@
     "license": "KILIMANJARO",
     "license_id": "mf_kilimanjaro",
     "license_level": 2,
-    "data_type": "system",
     "description": "<b>TODO</b>",
     "type": "Shield",
     "sp": 1,
@@ -263,7 +252,6 @@
     "license": "KILIMANJARO",
     "license_id": "mf_kilimanjaro",
     "license_level": 3,
-    "data_type": "system",
     "description": "<b>TODO</b>",
     "type": "System",
     "sp": 3,
@@ -272,6 +260,211 @@
         "name": "TODO",
         "activation": "Full Tech",
         "detail": "You clear all statuses and effects effecting adjacent allied characters."
+      }
+    ],
+    "tags": [],
+    "synergies": []
+  },
+  {
+    "id": "ms_hack_1",
+    "name": "TODO",
+    "source": "LANIKA",
+    "license": "CHANG JIANG",
+    "license_id": "mf_chang_jiang",
+    "license_level": 1,
+    "description": "<b>TODO</b>",
+    "type": "Tech",
+    "sp": 2,
+    "actions": [
+      {
+        "name": "TODO",
+        "activation": "Invade",
+        "detail": "TODO"
+      }
+    ],
+    "tags": [],
+    "synergies": []
+  },
+  {
+    "id": "ms_fire_duplication_bug",
+    "name": "FIRE DUPLICATION BUG",
+    "source": "LANIKA",
+    "license": "CHANG JIANG",
+    "license_id": "mf_chang_jiang",
+    "license_level": 1,
+    "description": "<b>TODO</b>",
+    "type": "Tech",
+    "sp": 3,
+    "actions": [
+      {
+        "name": "TODO",
+        "activation": "Full Tech",
+        "detail": "Choose an allied character in sensors and line of sight. They are protected by a white hat trojan until the end of their next turn. When an enemy inflicts heat on them while this protection is active, the enemy must succeed on an engineering save or take as much burn from their action as it inflicted heat. Only one ally can benefit from this effect at any given time. If you target another allied character before it would have ended, it resolves automatically on your previous target."
+      }
+    ],
+    "tags": [{"id": "tg_unique"}],
+    "synergies": []
+  },
+  {
+    "id": "ms_hack_2",
+    "name": "TODO",
+    "source": "LANIKA",
+    "license": "CHANG JIANG",
+    "license_id": "mf_chang_jiang",
+    "license_level": 2,
+    "description": "<b>TODO</b>",
+    "type": "Tech",
+    "sp": 2,
+    "actions": [
+      {
+        "name": "TODO",
+        "activation": "Invade",
+        "detail": "TODO"
+      }
+    ],
+    "tags": [],
+    "synergies": []
+  },
+  {
+    "id": "ms_aggressive_flush_system_linkage",
+    "name": "AGGRESSIVE FLUSH SYSTEM LINKAGE",
+    "source": "LANIKA",
+    "license": "CHANG JIANG",
+    "license_id": "mf_chang_jiang",
+    "license_level": 3,
+    "description": "<b>TODO</b>",
+    "type": "Tech",
+    "sp": 2,
+    "actions": [
+      {
+        "name": "TODO",
+        "activation": "Quick Tech",
+        "detail": "Choose one allied and one enemy character within sensors and line of sight. You link up their onimnet receivers. Until the end of your next turn, whenever one of them gets affected by a tech attack, you take one heat and the unaffected character must succeed on a systems save or suffer the same effect as the attacks target."
+      }
+    ],
+    "tags": [{"id": "tg_unique"}],
+    "synergies": []
+  },
+  {
+    "id": "ms_task_manager",
+    "name": "TASK MANAGER SYSTEMS HALT",
+    "source": "LANIKA",
+    "license": "CHANG JIANG",
+    "license_id": "mf_chang_jiang",
+    "license_level": 3,
+    "description": "<b>TODO</b>",
+    "type": "System",
+    "sp": 2,
+    "actions": [
+      {
+        "name": "Systems Freeze Backup Shield",
+        "activation": "Reaction",
+        "trigger": "An allied character within sensors and line of sight gets hit by a tech attack",
+        "frequency": "???",
+        "effect": "The allied character gains immunity to all effects from the tech attack that just hit them. Additionally, they gain 1d3 + GRIT Overshield. However, in the process, their CPU get’s overburdened and they become Slowed and Impaired until the end of their next turn"
+      }
+    ],
+    "tags": [{"id": "tg_unique"}, {"id": "tg_limited", "val": 4}],
+    "synergies": []
+  },
+  {
+    "id": "ms_orlinoco_hack",
+    "name": "TODO",
+    "source": "LANIKA",
+    "license": "ORINOCO",
+    "license_id": "mf_orinoco",
+    "license_level": 1,
+    "description": "<b>TODO</b>",
+    "type": "Tech",
+    "sp": 2,
+    "actions": [
+      {
+        "name": "TODO",
+        "activation": "Invade",
+        "detail": "TODO"
+      }
+    ],
+    "tags": [{"id": "tg_unique"}],
+    "synergies": []
+  },
+  {
+    "id": "ms_firewall_manifestation",
+    "name": "FIREWALL MANIFESTATION",
+    "source": "LANIKA",
+    "license": "ORINOCO",
+    "license_id": "mf_orinoco",
+    "license_level": 1,
+    "description": "<b>TODO</b>",
+    "type": "Shield",
+    "sp": 2,
+    "deployables": [
+      {
+        "type": "Deployable",
+        "name": "Stasis Barrier",
+        "activation": "Quick",
+        "deactivation": "Quick",
+        "detail": "Create a line 3 manifestation 2 spaces high. It blocks line of sight for the purpose of tech attacks. Characters can still see through it and make melee and ranged attacks through it unaltered. The manufestation lasts until pick up again or until the end of the scene.",
+        "tags": [ {"id": "tg_invulnerable"} ]
+      }
+    ],
+    "tags": [{"id": "tg_unique"}, {"id": "tg_shield"}, {"id": "tg_limited", "val": 1}, {"id": "tg_invulnerable"}],
+    "synergies": []
+  },
+  {
+    "id": "ms_oobd_signal",
+    "name": "OOBD-Signal",
+    "source": "LANIKA",
+    "license": "ORINOCO",
+    "license_id": "mf_orinoco",
+    "license_level": 2,
+    "description": "<b>TODO</b>",
+    "type": "Tech",
+    "sp": 3,
+    "actions": [
+      {
+        "name": "TODO",
+        "activation": "Full Tech",
+        "detail": "Make a tech attack against an emy within sensors and line of sight. On hit, the Out Of Battery Detonation-Signal  targets  their  weaponry  causing  catastrophic  misfires.  All  their  weapons become unloaded, they become jammed and take 2ap explosive damage for every installed ranged weapon or system with the grenade or mine tag. If they carry no such weapons or systems, this attack automatically fails against them. A Character can only be target once by this effect per scene."
+      }
+    ],
+    "tags": [{"id": "tg_unique"}, {"id": "tg_heat_self", "val": 2}],
+    "synergies": []
+  },
+  {
+    "id": "ms_escape_tool",
+    "name": "ESCAPE TOOL",
+    "source": "LANIKA",
+    "license": "ORINOCO",
+    "license_id": "mf_orinoco",
+    "license_level": 2,
+    "description": "<b>TODO</b>",
+    "type": "System",
+    "sp": 3,
+    "actions": [
+      {
+        "name": "Flee the cops",
+        "activation": "Quick",
+        "detail": "You make a tactical retreat. First, deploy a burst 2 smoke cover, then teleport up two two spaces. You become invisible afterwards until you move, voluntarily or involuntarily or until the start of your next turn."
+      }
+    ],
+    "tags": [{"id": "tg_unique"}, {"id": "tg_heat_self", "val": 2}, {"id": "tg_limited", "val": 3}],
+    "synergies": []
+  },
+  {
+    "id": "ms_heads_up_marker",
+    "name": "HEADS_UP_MARKER",
+    "source": "LANIKA",
+    "license": "ORINOCO",
+    "license_id": "mf_orinoco",
+    "license_level": 3,
+    "description": "<b>TODO</b>",
+    "type": "Tech",
+    "sp": 2,
+    "actions": [
+      {
+        "name": "TODO",
+        "activation": "Invade",
+        "detail": "The enemy suffers a system failure in its counter electronics glowing up on your Combat UIs. The next attack against it, if it hits, counts as a critical hit."
       }
     ],
     "tags": [],

@@ -137,6 +137,64 @@
         "tags": [{"id": "tg_ordnance"}, {"id": "tg_laser", "val": 15}]
       }
     ]
+  },
+  {
+    "id": "mw_taser_shotgun",
+    "name": "TASER SHOTGUN",
+    "source": "LANIKA",
+    "license": "CHAN JIANG",
+    "license_id": "mf_chang_jiang",
+    "license_level": 2,
+    "sp": 1,
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [{"type": "Energy", "val": "1d3"}],
+    "range": [{"type": "Range", "val": 5}, {"type": "Threat", "val": 3}],
+    "description": "<b>TODO</b>",
+    "on_hit": "Your target must succeed on a system save or become impaired until the end of their next turn.",
+    "on_crit": "Instead of forcing your enemy to do a system save against your TASER shell you can invade them as a free action automatically succeeding on your tech attack roll.",
+    "tags": [{"id": "tg_inaccurate"}]
+  },
+  {
+    "id": "mw_chainsaw",
+    "name": "CHAINSAW",
+    "source": "LANIKA",
+    "license": "ORINOCO",
+    "license_id": "mf_orinoco",
+    "license_level": 3,
+    "mount": "Main",
+    "type": "Melee",
+    "description": "<b>TODO</b>",
+    "counters": [ 
+      {
+        "id": "ctr_chainsaw_turns",
+        "name": "Chainsaw",
+        "default_value": 0,
+        "min": 0,
+        "max": 3
+      }
+    ],
+    "profiles": [
+      {
+        "name": "Inactive",
+        "damage": [{"type": "Kinetic", "val": 0}],
+        "range": [{"type": "Threat", "val": 0}],
+        "actions": [
+          {
+            "name": "Start Motor",
+            "activation": "Protocoll",
+            "detail": "Set the Chainsaw Turns Remaining counter to three. For the next three turns, decrement the counter and take 1 heat, no matter if the weapon was used or not"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "name": "Running",
+        "damage": [{"type": "Kinetic", "val": "1d6"}],
+        "range": [{"type": "Threat", "val": 3}],
+        "on_hit": "For any subsequent against this target, add +1d6 bonus dammage. This affect stacks until a turn occurs where this target is not attacked by the chainsaw",
+        "tags": [{"id": "tg_ap"}]
+      }
+    ]
   }
-
 ]

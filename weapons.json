@@ -21,7 +21,7 @@
     "license": "ATTAKULLA",
     "license_id": "mf_attakulla",
     "license_level": 1,
-    "mount": "Aux",
+    "mount": "Auxiliary",
     "type": "Launcher",
     "damage": [{"type": "Explosive", "val": "1d3+1"}],
     "range": [{"type": "Range", "val": 15}],
@@ -39,7 +39,7 @@
     "license": "ATTAKULLA",
     "license_id": "mf_attakulla",
     "license_level": 3,
-    "mount": "Aux",
+    "mount": "Auxiliary",
     "type": "Launcher",
     "damage": [{"type": "Explosive", "val": 3}],
     "range": [{"type": "Range", "val": 5}],
@@ -65,7 +65,7 @@
     "license": "KILIMANJARO",
     "license_id": "mf_kilimanjaro",
     "license_level": 1,
-    "mount": "Aux",
+    "mount": "Auxiliary",
     "type": "Cannon",
     "damage": [{"type": "Variable", "val": 1}],
     "range": [{"type": "Range", "val": 5}],
@@ -76,13 +76,13 @@
     "synergies": []
   },
   {
-    "id": "mw_hydrolic_rescue_tool",
-    "name": "HYDROLIC RESCUE TOOL",
+    "id": "mw_hydraulic_rescue_tool",
+    "name": "HYDRAULIC RESCUE TOOL",
     "source": "GMS-HIPS",
     "license": "KILIMANJARO",
     "license_id": "mf_kilimanjaro",
     "license_level": 3,
-    "mount": "Aux",
+    "mount": "Auxiliary",
     "type": "Melee",
     "damage": [{"type": "Kinetic", "val": 1}],
     "range": [{"type": "Threat", "val": 1}],
@@ -115,7 +115,7 @@
   },
   {
     "id": "mw_yukon_integrated",
-    "name": "MINIATURISED SOLAR LANCE ",
+    "name": "MINITURISED SOLAR LANCE ",
     "mount": "Main",
     "type": "Cannon",
     "description": "Creating more intense heat then similar frame-mounted laser weaponry, the miniaturised solar lance is capable of melting the area surrounding its beam.",
@@ -165,6 +165,7 @@
     "mount": "Main",
     "type": "Melee",
     "description": "<b>TODO</b>",
+    "effect_print": "In order to use the chainsaw, the motor must first be kick started as a protocol. Once started it lasts 3 turns, generating 1 heat during each turn no matter if it was used or not. This effect only seizes to trigger when the weapon is destroyed while running. As the chainsaw works its way through enemy armour it deals increased damage with every attack. For each successful attack against a target deal 1d6 bonus damage on continuous attacks against that same target.",
     "counters": [ 
       {
         "id": "ctr_chainsaw_turns",
@@ -182,7 +183,7 @@
         "actions": [
           {
             "name": "Start Motor",
-            "activation": "Protocoll",
+            "activation": "Protocol",
             "detail": "Set the Chainsaw Turns Remaining counter to three. For the next three turns, decrement the counter and take 1 heat, no matter if the weapon was used or not"
           }
         ],

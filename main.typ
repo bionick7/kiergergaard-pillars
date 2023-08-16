@@ -6,12 +6,44 @@
 #let systems = json("systems.json").map(d => d + (file_source: "systems"))
 #let mods = json("mods.json").map(d => d + (file_source: "weapon_mods"))
 #let manufacturers = json("manufacturers.json").map(d => d + (file_source: "manufacturers"))
+#let tag_lib = (json("core_tags.json") + json("tags.json")).map(d => d + (file_source: "tags"))
 
 #let equipment = weapons + systems + mods
 
 #let LIGHT_RED = rgb("#f5253b")
 #let DEFAULT_RED = rgb("c22026")
 #let DARK_RED = rgb("#4e0000")
+
+#let GLYPHS = (
+  // Range
+  Range: 0xe937,
+  Burst: 0xe938,
+  Cone: 0xe939,
+  Line: 0xe93a,
+  Blast: 0xe95b,
+  Threat: 0xe957,
+
+  // Dammage
+  Burn: 0xe93c,
+  Energy: 0xe93d,
+  Explosive: 0xe93e,
+  Heat: 0xe93f,
+  Kinetic: 0xe940,
+  Variable: 0xe941,
+
+  // Sizes
+  Size_half: 0xe954,
+  Size1: 0xe951,
+  Size2: 0xe952,
+  Size3: 0xe953,
+  
+  // Sizes
+  Artillery: 0xe94b,
+  Controller: 0xe94c,
+  Striker: 0xe94d,
+  Support: 0xe94f,
+  Defender: 0x950
+)
 
 #let STAT_DISPLAY = (
   size: "Size",
@@ -31,16 +63,12 @@
 )
 
 #let MOUNT_NAMES = (
-  Aux: "AUX MOUNT",
+  Aux: "AUXILIARY",
   Main: "MAIN MOUNT",
   Flex: "FLEX MOUNT",
   Heavy: "HEAVY MOUNT",
   "Aux/Aux": "AUX/AUX",
   "Main/Aux": "MAIN/AUX",
-)
-
-#let TAGS = (
-  
 )
 
 #let COLOR_PALETTE = (
@@ -84,6 +112,12 @@
   inp.replace("<br>", "\n").replace(regex("</?[a-z]+>"), "")
 }
 
+#let lancer_glyph(key, size: 14pt) = {
+  text(font: "compcon", fallback: false, size: size,
+    str.from-unicode(GLYPHS.at(key, default:0x0000))
+  )
+}
+
 #let box_display(name, header1, header2, body, color_tuple) = {
   box(
   stack(dir: ttb,
@@ -99,19 +133,51 @@
   ))
 }
 
-#let format_tags(tags) = {
-  tags.map(x => 
-    if "val" in x {x.id.trim("tg_") + "(" + str(x.val) + ")"}
-    else {x.id.trim("tg_")}
+#let compleate_tags(equipment) = {
+  let ACTIVATION_TAGS = (
+    "Quick": "tg_quick_action",
+    "Full": "tg_full_action",
+    "Quick Tech": "tg_quick_tech",
+    "Full Tech": "tg_full_tech",
+    "Invade": "tg_invade",
+    "Reaction": "tg_reaction",
+    "Free": "tg_free_action",
+    "Protocol": "tg_protocol",
   )
+  let res = equipment.at("tags", default: ())
+  if "deployables" in equipment { res.insert(0, (id: "tg_deployable")) }
+  for action in equipment.at("actions", default:()) {
+      let tag = ACTIVATION_TAGS.at(action.activation)
+    	if not res.any(x => x.id == tag) { res.insert(0, (id: tag)) }
+  }
+  res
+}
+
+#let translate_size_glyph(size_num) = {
+  if size_num == 0.5 { "Size_half" }
+  else if size_num == 2 { "Size2" }
+  else if size_num == 3 { "Size3" }
+  else { "Size1" }
+}
+
+#let format_tags(tags) = {
+  tags.map(tag => {
+    let name = tag_lib.find(x => x.id == tag.id).name
+    if "val" in tag and "{VAL}" in name {
+      name.replace("{VAL}", str(tag.val))
+    }
+    else {
+      name
+    }
+  })
 }
 
 #let format_range(range_data) = {
-  range_data.type + h(5pt) + [#range_data.val] + h(8pt)
+  lancer_glyph(range_data.type) + h(5pt) + [#range_data.val] + h(8pt)
 }
 
 #let format_dmg(dmg_data) = {
-  [#dmg_data.val] + h(5pt) + dmg_data.type + h(8pt)
+  [#dmg_data.val] + h(5pt) + lancer_glyph(dmg_data.type) + h(8pt)
 }
 
 // ==================================  EQUIPMENT  ===================================
@@ -139,7 +205,7 @@
   if weapon_data.at("description", default:"") != "" {
     body = body + line(length: 100%, stroke: (dash: "densely-dashed")) + emph(unescape_html(weapon_data.description))
   }
-  let header1 = (weapon_data.mount, weapon_data.type, ..format_tags(weapon_data.at("tags", default:())))
+  let header1 = (weapon_data.mount, weapon_data.type, ..format_tags(compleate_tags(weapon_data)))
   if "sp" in weapon_data {
     header1 = (str(weapon_data.sp) + " SP", ..header1)
   }
@@ -152,9 +218,10 @@
   if "on_attack" in weapon_data {
     body = [*On Attack:* ] + weapon_data.on_attack + linebreak() + body
   }
+  let profile_data = if "profiles" in weapon_data {weapon_data.profiles.at(0)} else {weapon_data}
   let header2 = (
-    weapon_data.at("range", default: ()).map(format_range).join(), 
-    weapon_data.at("damage", default: ()).map(format_dmg).join()
+    profile_data.at("range", default: ()).map(format_range).join(), 
+    profile_data.at("damage", default: ()).map(format_dmg).join()
   )
   box_display(weapon_data.name, header1, header2, body, COLOR_PALETTE.weapon)
 }
@@ -177,7 +244,7 @@
   if system_data.at("description", default:"") != "" {
     body = body + line(length: 100%, stroke: (dash: "densely-dashed")) + emph(unescape_html( system_data.description))
   }
-  let header = (str(system_data.sp) + " SP", ..format_tags(system_data.tags))
+  let header = (str(system_data.sp) + " SP", ..format_tags(compleate_tags(system_data)))
   box_display(system_data.name, header, (), body, COLOR_PALETTE.tech)
 }
 
@@ -193,7 +260,7 @@
   if system_data.at("description", default:"") != "" {
     body = body + line(length: 100%, stroke: (dash: "densely-dashed")) + emph(unescape_html( system_data.description))
   }
-  let header = (str(system_data.sp) + " SP", ..format_tags(system_data.tags))
+  let header = (str(system_data.sp) + " SP", ..format_tags(compleate_tags(system_data)))
   box_display(system_data.name, header, (), body, colors)
 }
 
@@ -277,6 +344,15 @@
     text(fill: DEFAULT_RED, size: 24pt, frame_data.name) + v(1em),
     text(fill: DEFAULT_RED, frame_data.mechtype.join("/")),
   ))
+  set text(fill: DEFAULT_RED)
+  place(
+    top + left,
+    stack(
+      lancer_glyph(translate_size_glyph(frame_data.stats.size), size: 20pt),
+      ..frame_data.mechtype.map(x => lancer_glyph(x, size: 20pt))
+    )
+  )
+  set text(fill: black)
   par(unescape_html(frame_data.description), justify: true)
   rect(
     stroke: DEFAULT_RED + 2pt,
@@ -328,6 +404,9 @@
 // ==================================  FILE  ===================================
 
 #par(leading: 8pt, outline(depth: 1))
+#grid(columns: 6, ..range(0xe900, 0xe96b).map(x => {
+  [#str(x, base:16)] + text(font: "compcon", fallback: false, str(x, base:16) + str.from-unicode(x) + "\n")
+}))  // Test font
 #for manufacturer in manufacturers {
   pagebreak()
   display_manufacturer(manufacturer)

@@ -186,7 +186,7 @@
     "actions": [
       {
         "name": "TODO",
-        "activation": "Protocoll",
+        "activation": "Protocol",
         "detail": "Once activated your Thor system deploys a swarm of small flying Trondheim drones. Until the start of your next turn, all enemies within range 8 get struck by lighting from the drones taking 3 ap energy damage whenever they take a reaction."
       }
     ],
@@ -264,7 +264,7 @@
     "license_id": "mf_kilimanjaro",
     "license_level": 3,
     "description": "<b>TODO</b>",
-    "effect_print": ": You clear all statuses and effects effecting adjacent allied characters.",
+    "effect_print": "You clear all statuses and effects effecting adjacent allied characters.",
     "type": "System",
     "sp": 3,
     "actions": [
@@ -469,21 +469,26 @@
     "synergies": []
   },
   {
-    "id": "ms_heads_up_marker",
-    "name": "HEADS-UP MARKER",
+    "id": "ms_darts_ui_controls",
+    "name": "DARTS-UI Controls",
     "source": "LANIKA",
     "license": "ORINOCO",
     "license_id": "mf_orinoco",
     "license_level": 3,
     "description": "<b>TODO</b>",
-    "effect_print": "OUTDATED",
+    "effect_print": "",
     "type": "Tech",
     "sp": 2,
     "actions": [
       {
-        "name": "TODO",
+        "name": "DARTS Heads-Up Marker",
         "activation": "Invade",
         "detail": "The enemy suffers a system failure in its counter electronics glowing up on your Combat UIs. The next attack against it, if it hits, counts as a critical hit."
+      },
+      {
+        "name": "Predesignated Target Command",
+        "activation": "Invade",
+        "detail": "After successful hacking your enemy target, you designate an ally within sensors and line of sight. Your enemy target takes 3ap energy damage whenever they attack an a target other than the one designated by you until the end of their next turn.."
       }
     ],
     "tags": [],

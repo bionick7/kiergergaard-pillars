@@ -106,7 +106,7 @@
     "core_system": {
       "name": "Flight Coordination Relay",
       "description": "<b>TODO</b>",
-      "activation": "Protocoll",
+      "activation": "Protocol",
       "active_name": "High Alert Status",
       "active_effect": "<p>For the rest of this scene you can roll 2d6 at the start of each round making successful contact with strike command on 3+ for each roll. In case both d6 succeed, you gain access to <i>Double Air Strike</i></p>",
       "passive_name": "Combat Air Patrol",

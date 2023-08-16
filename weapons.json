@@ -15,8 +15,8 @@
     "synergies": []
   },
   {
-    "id": "mw_lazer_guided_missile",
-    "name": "LAZER GUIDED MISSILE",
+    "id": "mw_laser_guided_missile",
+    "name": "LASER GUIDED MISSILE",
     "source": "GMS-HIPS",
     "license": "ATTAKULLA",
     "license_id": "mf_attakulla",
@@ -261,7 +261,7 @@
     "license_level": 2,
     "mount": "Main",
     "type": "CQB",
-    "damage": [{"type": "Explosive", "val": "1d3+3"}],
+    "damage": [{"type": "Explosive", "val": "1d3+1"}],
     "range": [{"type": "Range", "val": 5}, {"type": "Threat", "val": 3}, {"type": "Blast", "val": 2}],
     "description": "<b>TODO</b>",
     "tags": [{"id": "tg_inaccurate"}, {"id": "tg_reliable", "val": 1}, {"id": "tg_heat_self", "val": 1}]

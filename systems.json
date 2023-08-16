@@ -7,6 +7,7 @@
     "license_id": "mf_midzor",
     "license_level": 1,
     "description": "<b>TODO</b>",
+    "effect_print": "Deploying the Wire Drum, draw a line 3 barrier 1 space high in free spaces with at least one space adjacent to you. The barbed wire makes it dangerous terrain. Each space can be removed individually by any frame as a quick action by rolling a d6. Rolling a one, you fail at removing it and take 1ap kinetic damage. Otherwise, you clear one space from the barbed wire.",
     "type": "Pioneering Tool",
     "sp": 1,
     "effect": "Deploy barbed wire in a line 3 of free spaces with at least one space adjacent to you.",
@@ -33,6 +34,7 @@
     "license_id": "mf_midzor",
     "license_level": 1,
     "description": "<b>TODO</b>",
+    "effect_print": "You deploy a size 1 barricade box in a free adjacent space to you. (10hp 5eva) The barricade generates a line 5 barrier 5 spaces high centred on the box on the ground level. The barrier is magnetic blocking all frames and other large non-biological objects from passing, it doesn’t grant cover and won’t stop attacks however. It only prevents frames from passing through it. ",
     "type": "Pioneering Tool",
     "sp": 2,
     "effect": "Deploy a size 1 barricade box in a free adjacent space to you.",
@@ -58,6 +60,7 @@
     "license_id": "mf_midzor",
     "license_level": 2,
     "description": "<b>TODO</b>",
+    "effect_print": "Grenade; you throw a pigeon shrapnel grenade. These grenades burst mid-air perforating your target area with a rain of tiny explosives dealing 2 explosive damage to all targets in a blast 2 area. Mine; you launch air-deployed pigeon mines in a blast 2 area. All characters and objects within the area take 2 explosive damage when the mines are triggered.",
     "type": "Mine",
     "sp": 1,
     "actions": [
@@ -92,6 +95,7 @@
     "license_id": "mf_midzor",
     "license_level": 3,
     "description": "<b>TODO</b>",
+    "effect_print": "You can remove any deployable with this system blowing it up in an instant, destroying them in the process. You can even remove indestructible deployables in this manner, but they can be redeployed afterwards and don’t count as being destroyed.",
     "type": "System",
     "sp": 2,
     "actions": [
@@ -112,6 +116,7 @@
     "license_id": "mf_midzor",
     "license_level": 3,
     "description": "Domovoy was developed as a tool for strategic advice being able to scan entire battlefields at moment’s notice and determine optimal positioning for static deployments. In combination with newest electronic warfare equipment the NHP is capable of emulating HOR_OS code at higher capacity",
+    "effect_print": "Domovoy is capable of deploying up to 6 virtual copies of your equipped deployable systems. These copies are indistinguishable from tangible objects and act as if they were real. They last for the rest of the scene, or until destroyed by an adjacent character with a successful Systems skill check as a quick action. Activating Domovoy again also removes all previous instances of its use. Deploys within line of sight and sensors ignoring requirements for adjacency.",
     "type": "AI",
     "sp": 2,
     "actions": [
@@ -132,6 +137,7 @@
     "license_id": "mf_attakulla",
     "license_level": 1,
     "description": "<b>TODO</b>",
+    "effect_print": "You link your sensors temporarily with the one’s of an ally within sensors and line of sight. After linking up, you can use their sensors and line of sight as if they were yours for your next action.",
     "type": "System",
     "sp": 1,
     "actions": [
@@ -151,8 +157,9 @@
     "license": "ATTAKULLA",
     "license_id": "mf_attakulla",
     "license_level": 2,
-        "effect": "TODO",
+    "effect": "TODO",
     "description": "<b>TODO</b>",
+    "effect_print": ": You receive a high-resolution orbital photograph of a blast 1 area within range 50. Until the start of your next turn, you and your allies can treat the area as if you had line of sight to it.",
     "type": "System",
     "sp": 3,
     "actions": [
@@ -173,6 +180,7 @@
     "license_id": "mf_attakulla",
     "license_level": 3,
     "description": "<b>TODO</b>",
+    "effect_print": "Once activated your Thor system deploys a swarm of small flying Trondheim drones. Until the start of your next turn, all enemies within range 8 get struck by lighting from the drones taking 3 ap energy damage whenever they take a reaction and must succeed on a systems save or become stunned.",
     "type": "AI",
     "sp": 3,
     "actions": [
@@ -193,6 +201,7 @@
     "license_id": "mf_kilimanjaro",
     "license_level": 1,
     "description": "<b>TODO</b>",
+    "effect_print": "You clear 1d6 heat but take half as much burn.",
     "type": "System",
     "sp": 1,
     "actions": [
@@ -213,6 +222,7 @@
     "license_id": "mf_kilimanjaro",
     "license_level": 2,
     "description": "<b>TODO</b>",
+    "effect_print": "You fill a burst 3 area with Whitewash foam clearing all and every kind of burn in the area but also slowing everyone in it or moving through it and preventing you from drawing line of sight beyond adjacent spaces.",
     "type": "System",
     "sp": 2,
     "actions": [
@@ -233,6 +243,7 @@
     "license_id": "mf_kilimanjaro",
     "license_level": 2,
     "description": "<b>TODO</b>",
+    "effect_print": "You shield an allied character within sensors and line of sight from heat lasting until used. They keep this shield even when they leave your sensors or line of sight. The shield takes on the next 1d3 heat they take from external sources.",
     "type": "Shield",
     "sp": 1,
     "actions": [
@@ -253,6 +264,7 @@
     "license_id": "mf_kilimanjaro",
     "license_level": 3,
     "description": "<b>TODO</b>",
+    "effect_print": ": You clear all statuses and effects effecting adjacent allied characters.",
     "type": "System",
     "sp": 3,
     "actions": [
@@ -295,6 +307,7 @@
     "description": "<b>TODO</b>",
     "type": "Tech",
     "sp": 3,
+    "effect_print": "Choose an allied character in sensors and line of sight. They are protected by a white hat trojan until the end of their next turn. When an enemy inflicts heat on them while this protection is active, the enemy must succeed on an engineering save or take as much burn from their action as it inflicted heat. Only one ally can benefit from this effect at any given time. If you target another allied character before it would have ended, it resolves automatically on your previous target.",
     "actions": [
       {
         "name": "TODO",
@@ -333,6 +346,7 @@
     "license_id": "mf_chang_jiang",
     "license_level": 3,
     "description": "<b>TODO</b>",
+    "effect_print": "Choose one allied and one enemy character within sensors and line of sight. You link up their onimnet receivers. Until the end of your next turn, whenever one of them gets affected by a tech attack, you take one heat and the unaffected character must succeed on a systems save or suffer the same effect as the attacks target.",
     "type": "Tech",
     "sp": 2,
     "actions": [
@@ -355,6 +369,7 @@
     "description": "<b>TODO</b>",
     "type": "System",
     "sp": 2,
+    "effect_print": "Whenever an allied character within sensors and line of sight gets hit by a tech attack you may spend a charge of this system and take the Systems Freeze Backup Shield Reaction. The allied character gains immunity to all effects from the tech attack that just hit them. Additionally, they gain 1d3 + GRIT Overshield. However, in the process, their CUP get’s overburdened and they become Slowed and Impaired until the end of their next turn.",
     "actions": [
       {
         "name": "Systems Freeze Backup Shield",
@@ -394,6 +409,7 @@
     "license": "ORINOCO",
     "license_id": "mf_orinoco",
     "license_level": 1,
+    "effect_print": "This system creates a line 3 manifestation 2 spaces high. It blocks line of sight for the purpose of tech attacks. Characters can still see through it and make melee and ranged attacks through it unaltered. The System lasts until pick up again or until the end of the scene.",
     "description": "<b>TODO</b>",
     "type": "Shield",
     "sp": 2,
@@ -418,6 +434,7 @@
     "license_id": "mf_orinoco",
     "license_level": 2,
     "description": "<b>TODO</b>",
+    "effect_print": "Make a tech attack against an emy within sensors and line of sight. On hit, the Out Off Battery Detonation-Signal targets their weaponry causing catastrophic misfires. All their weapons become unloaded, they become jammed and take 2ap explosive damage for every installed ranged weapon or system with the grenade or mine tag. If they carry no such weapons or systems, this attack automatically fails against them. A Character can only be target once by this effect per scene.",
     "type": "Tech",
     "sp": 3,
     "actions": [
@@ -438,6 +455,7 @@
     "license_id": "mf_orinoco",
     "license_level": 2,
     "description": "<b>TODO</b>",
+    "effect_print": "You make a tactical retreat. First, deploy a burst 2 smoke cover, then teleport up two two spaces. You become invisible afterwards until you move, voluntarily or involuntarily or until the start of your next turn. ",
     "type": "System",
     "sp": 3,
     "actions": [
@@ -458,6 +476,7 @@
     "license_id": "mf_orinoco",
     "license_level": 3,
     "description": "<b>TODO</b>",
+    "effect_print": "OUTDATED",
     "type": "Tech",
     "sp": 2,
     "actions": [

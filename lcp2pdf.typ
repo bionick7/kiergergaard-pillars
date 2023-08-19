@@ -1,12 +1,13 @@
 
 // ==================================  DATA  ===================================
 
-#let frames = json("frames.json").map(d => d + (file_source: "frames"))
-#let weapons = json("weapons.json").map(d => d + (file_source: "weapons"))
-#let systems = json("systems.json").map(d => d + (file_source: "systems"))
-#let mods = json("mods.json").map(d => d + (file_source: "weapon_mods"))
-#let manufacturers = json("manufacturers.json").map(d => d + (file_source: "manufacturers"))
-#let tag_lib = (json("core_tags.json") + json("tags.json")).map(d => d + (file_source: "tags"))
+#let frames = json("content/frames.json").map(d => d + (file_source: "frames"))
+#let weapons = json("content/weapons.json").map(d => d + (file_source: "weapons"))
+#let systems = json("content/systems.json").map(d => d + (file_source: "systems"))
+#let mods = json("content/mods.json").map(d => d + (file_source: "weapon_mods"))
+#let manufacturers = json("content/manufacturers.json").map(d => d + (file_source: "manufacturers"))
+#let tag_lib = (json("data/core_tags.json") + json("content/tags.json")).map(d => d + (file_source: "tags"))
+#let core_bonuses = json("content/core_bonuses.json").map(d => d + (file_source: "core_bonuses"))
 
 #let equipment = weapons + systems + mods
 
@@ -33,9 +34,9 @@
 
   // Sizes
   Size_half: 0xe954,
-  Size1: 0xe951,
-  Size2: 0xe952,
-  Size3: 0xe953,
+  Size1: 0xe950,
+  Size2: 0xe951,
+  Size3: 0xe952,
   
   // Sizes
   Artillery: 0xe94b,
@@ -84,32 +85,77 @@
 
 // ==================================  STYLING  ===================================
 
-#show heading.where(level: 1): it => (
-  align(center, text(
-    size: 24pt,
-    fill: DEFAULT_RED, 
-    strong(it)
-  ))
-)
-#set text(
-  font: "DM Sans",
-  overhang: true
-)
-#set par(
-  leading: 4pt,
-)
-#set page(
-  numbering: "[1]",
-  number-align: right,
-  margin: (left: 3em, right: 3em, bottom: 5em),
-  columns: 1
-)
+#let USE_A3 = false
+
+#let style(doc) = [
+  #show heading.where(level: 1): it => (
+    align(center, text(
+      size: 24pt,
+      fill: DEFAULT_RED, 
+      strong(it)
+    ))
+  )
+  #set text(
+    font: "DM Sans",
+    overhang: true
+  )
+  #set par(
+    leading: 4pt,
+  )
+  #set page(
+    numbering: "[1]",
+    number-align: right,
+    margin: (left: 2em, right: 2em, top: 2em, bottom: 2em),
+    columns: 1
+  )
+  #doc
+]
 
 // ==================================  UTILITY  ===================================
 
 #let unescape_html(inp) = {
   // TODO: properly handle lists etc
   inp.replace("<br>", "\n").replace(regex("</?[a-z]+>"), "")
+}
+
+#let ensure_even_pagebreak() = {
+  pagebreak(weak: false)
+  let s_pagebreaks = state("pagebreaks", ())
+  let s_count1 = state("pageeven_count1", 0)
+  let s_count2 = state("pageeven_count2", 0)
+  let expected_count = frames.len() + manufacturers.len()
+  locate(loc => {
+    if s_count1.final(loc) < expected_count {
+      // First iteration: figure out where to put pagebreaks
+      s_pagebreaks.update(x => {
+        let prev = x.at(-1, default: (0, 0))
+        let expected_page = prev.at(1) + loc.page()
+        let skipped_pages = prev.at(1) + calc.rem(expected_page, 2)
+        (..x, (expected_page, skipped_pages))
+      })
+      s_count1.update(x => x+1)
+    } else {
+      // Consecutove iterations: put pagebreaks
+      // Latch all the states to not update anymore, this will enforce convergance, and we can put pagebreaks in peace
+      s_count1.update(9999)
+      s_count2.update(x => x+1)
+      let pbs = s_pagebreaks.final(loc)
+      s_pagebreaks.update(x => pbs)
+      let count = s_count2.at(loc)
+      if not calc.even(pbs.at(count).at(0)) {
+        pagebreak()
+      }
+    } 
+  })
+}
+
+#let as_a3(body) = {
+  page(
+    paper: "a3",
+    flipped: true,
+    columns: 2, 
+    body
+  )
 }
 
 #let lancer_glyph(key, size: 14pt) = {
@@ -120,17 +166,20 @@
 
 #let box_display(name, header1, header2, body, color_tuple) = {
   box(
-  stack(dir: ttb,
-    rect(
-      text(fill: white, 
-        heading(level: 4, upper(name)) + 
-        if header1.len() > 0 {header1.join(h(10pt))} + 
-        if header2.len() > 0 {linebreak() + header2.join(h(10pt))}
+    stroke: 0pt,
+    inset: 0pt,
+    stack(dir: ttb,
+      rect(
+        text(fill: white, 
+          heading(level: 4, upper(name)) + 
+          if header1.len() > 0 {header1.join(h(10pt))} + 
+          if header2.len() > 0 {linebreak() + header2.join(h(10pt))}
+        ),
+        width: 100%, stroke: 0pt, fill: color_tuple.first()
       ),
-      width: 100%, stroke: 0pt, fill: color_tuple.first()
-    ),
-    rect(body, width: 100%, stroke: 0pt, fill: color_tuple.last())
-  ))
+      rect(body, width: 100%, stroke: 0pt, fill: color_tuple.last())
+    )
+  )
 }
 
 #let compleate_tags(equipment) = {
@@ -187,15 +236,15 @@
   stack(dir: ttb,
     rect(
       width: 100%, stroke: 0pt, fill: COLOR_PALETTE.reaction.first(),
-      text(fill: white, heading(level: 3, reaction_data.name) + [Reaction] + h(10pt) + reaction_data.frequency)
+      text(fill: white, heading(level: 3, reaction_data.at("name", default:"")) + [Reaction] + h(10pt) + reaction_data.at("frequency", default:"Unlimited"))
     ),
     rect(
       width: 100%, stroke: 0pt, fill: white,
-      text(fill: black, [*Trigger:* ] + reaction_data.trigger)
+      text(fill: black, [*Trigger:* ] + reaction_data.at("trigger", default:""))
     ),
     rect(
       width: 100%, stroke: 0pt, fill: COLOR_PALETTE.reaction.last(),
-      text(fill: black, [*Effect:* ] + reaction_data.effect)
+      text(fill: black, [*Effect:* ] + reaction_data.at("detail", default:""))
     )
   ))
 }
@@ -338,24 +387,31 @@
   }
 }
 
-#let display_frame(frame_data) = {
+#let _frame_box(frame_data) = box({
+  // Title
   align(center, stack(dir: ttb, 
     text(font: "Barlow", fill: DEFAULT_RED, weight: "extralight", size: 24pt, frame_data.source) + v(1em),
     text(fill: DEFAULT_RED, size: 24pt, frame_data.name) + v(1em),
     text(fill: DEFAULT_RED, frame_data.mechtype.join("/")),
   ))
+  // Icons
   set text(fill: DEFAULT_RED)
   place(
     top + left,
     stack(
-      lancer_glyph(translate_size_glyph(frame_data.stats.size), size: 20pt),
-      ..frame_data.mechtype.map(x => lancer_glyph(x, size: 20pt))
+      lancer_glyph(translate_size_glyph(frame_data.stats.size), size: 32pt),
+      ..frame_data.mechtype.map(x => lancer_glyph(x, size: 32pt))
     )
   )
   set text(fill: black)
-  par(unescape_html(frame_data.description), justify: true)
-  rect(
-    stroke: DEFAULT_RED + 2pt,
+  // Flavor
+  grid(
+    columns:(3em, auto, 3em),  // Hack to get variable page margins 
+    [], par(unescape_html(frame_data.description), justify: true), []
+  )
+  // Mechanics
+  rect(stroke: DEFAULT_RED + 2pt,
+  rect(stroke: DEFAULT_RED + 2pt,
     columns(2,
       display_stats(frame_data.stats) + 
       display_traits(frame_data.traits) + 
@@ -363,10 +419,30 @@
       colbreak() +
       display_core_system(frame_data.core_system)
     )
-  )
+  ))
+})
+
+#let display_frame(frame_data) = {
+  //let manufacturer_data = manufacturers.find(x => x.id == frame_data.source)
+  //let bg_img = if manufacturer_data != none and "logo_path" in manufacturer_data {"artwork/blackbox.png"} else {none}
+  if USE_A3 {
+    as_a3({
+      _frame_box(frame_data)
+      colbreak()
+      if "img_path" in frame_data {
+        align(center, image(frame_data.img_path, height: 95%))
+      }
+    })
+  } else {
+    _frame_box(frame_data)
+    if "img_path" in frame_data {
+      pagebreak()
+      align(center, image(frame_data.img_path, height: 95%))
+    }
+  }
 }
 
-#let display_license(frame_name, license_id) = {
+#let _license_box(frame_name, license_id) = {
   let license_counter = counter("license")
   counter("license").update(1)
   let license_box(color, content) = {
@@ -377,7 +453,7 @@
     license_counter.step()
   }
   let lls = range(1, 4).map(x => equipment.filter(d => d.at("license_id", default:"") == license_id and d.at("license_level", default:-999) == x))
-  // Print licens structure
+  // Print licence structure
   columns(2, 
   for i in range(3){
     license_box((LIGHT_RED, DEFAULT_RED, DARK_RED).at(i), lls.at(i))
@@ -394,25 +470,52 @@
   })
 }
 
+#let display_license(frame_name, license_id) = {
+  if USE_A3 {
+    as_a3(
+      _license_box(frame_name, license_id)
+    )}
+  else {_license_box(frame_name, license_id)}
+}
+
 #let display_manufacturer(manufacturer) = {
   [= #manufacturer.name]
-  emph(unescape_html(manufacturer.quote))
-  linebreak()
-  unescape_html(manufacturer.description)
+  columns(2, {
+    emph(unescape_html(manufacturer.quote))
+    linebreak()
+    par(unescape_html(manufacturer.description), justify: true)
+
+    [== #manufacturer.name Core Bonuses]
+    for bonus in core_bonuses.filter(x => x.source == manufacturer.id) {
+      box_display(bonus.name, (), (), {
+        par(emph(unescape_html(bonus.description)), justify: true)
+        par(unescape_html(bonus.effect), justify: true)
+      }, (DEFAULT_RED, white))
+    }
+    if "artwork_path" in manufacturer {
+      image(manufacturer.artwork_path, fit: "contain")
+    }
+  })
 }
 
 // ==================================  FILE  ===================================
 
-#par(leading: 8pt, outline(depth: 1))
-#grid(columns: 6, ..range(0xe900, 0xe96b).map(x => {
-  [#str(x, base:16)] + text(font: "compcon", fallback: false, str(x, base:16) + str.from-unicode(x) + "\n")
-}))  // Test font
-#for manufacturer in manufacturers {
-  pagebreak()
-  display_manufacturer(manufacturer)
-  for frame_data in frames.filter(x => x.source == manufacturer.id) {
-    pagebreak()
-    display_frame(frame_data)
-    display_license(frame_data.name, frame_data.license_id)
-  }
+#let display_whole() = {
+  for manufacturer in manufacturers {
+    ensure_even_pagebreak()
+    display_manufacturer(manufacturer)
+    for frame_data in frames.filter(x => x.source == manufacturer.id) {
+      ensure_even_pagebreak()
+      display_frame(frame_data)
+      pagebreak()
+      display_license(frame_data.name, frame_data.license_id)
+    }
+  }  
 }
+
+#par(leading: 8pt, outline(depth: 1))
+//#grid(columns: 6, ..range(0xe900, 0xe96b).map(x => {
+//  [#str(x, base:16)] + text(font: "compcon", fallback: false, str(x, base:16) + str.from-unicode(x) + "\n")
+//}))  // Test font
+#show: style
+#display_whole()

@@ -34,7 +34,7 @@
     "license_id": "mf_midzor",
     "license_level": 1,
     "description": "<b>TODO</b>",
-    "effect_print": "You deploy a size 1 barricade box in a free adjacent space to you. (10hp 5eva) The barricade generates a line 5 barrier 5 spaces high centred on the box on the ground level. The barrier is magnetic blocking all frames and other large non-biological objects from passing, it doesn’t grant cover and won’t stop attacks however. It only prevents frames from passing through it. ",
+    "effect_print": "You deploy a size 1 barricade box in a free adjacent space to you. (10hp 5eva) The barricade generates a line 5 barrier 5 spaces high centred on the box on the ground level. The barrier is magnetic blocking all frames and other large non-biological objects (not squads) from passing, it doesn’t grant cover and won’t stop attacks however. It only prevents frames from passing through it. ",
     "type": "Pioneering Tool",
     "sp": 2,
     "effect": "Deploy a size 1 barricade box in a free adjacent space to you.",
@@ -42,14 +42,14 @@
       {
         "name": "Barricade Box",
         "type": "Static Emplacement",
-        "detail": "The barricade generates a line 5 barrier 5 spaces high centred on the box on the ground level. The barrier is magnetic blocking all frames and other large non-biological objects from passing, it doesn’t grant cover and won’t stop attacks however. It only prevents frames from passing through it.",
+        "detail": "The barricade generates a line 5 barrier 5 spaces high centred on the box on the ground level. The barrier is magnetic blocking all frames and other large non-biological objects (not squads) from passing, it doesn’t grant cover and won’t stop attacks however. It only prevents frames from passing through it.",
         "size": 1,
         "hp": 10,
         "evasion": 5,
         "activation": "Quick"
       }
     ],
-    "tags": [{"id": "tg_quick_action"}, {"id": "tg_unique"}],
+    "tags": [{"id": "tg_unique"}],
     "synergies": []
   },
   {
@@ -423,7 +423,7 @@
         "tags": [ {"id": "tg_invulnerable"} ]
       }
     ],
-    "tags": [{"id": "tg_unique"}, {"id": "tg_shield"}, {"id": "tg_limited", "val": 1}, {"id": "tg_invulnerable"}],
+    "tags": [{"id": "tg_unique"}, {"id": "tg_shield"}, {"id": "tg_invulnerable"}],
     "synergies": []
   },
   {
@@ -492,6 +492,138 @@
       }
     ],
     "tags": [],
+    "synergies": []
+  },
+  {
+    "id": "ms_ambush_pack",
+    "name": "Ambush Pack",
+    "source": "LANIKA",
+    "license": "MISSISSIPPI",
+    "license_id": "mf_mississippi",
+    "license_level": 1,
+    "description": "<b>TODO</b>",
+    "effect_print": "Adjacent allied characters gain +1 accuracy on their first attack each turn when they stand within soft cover and deal +2 bonus damage.",
+    "effect": "Adjacent allied characters gain +1 accuracy on their first attack each turn when they stand within soft cover and deal +2 bonus damage.",
+    "type": "System",
+    "sp": 3,
+    "tags": [{"id": "tg_unique"}],
+    "synergies": []
+  },
+  {
+    "id": "ms_ranger_cloud",
+    "name": "Ranger cloud",
+    "source": "LANIKA",
+    "license": "MISSISSIPPI",
+    "license_id": "mf_mississippi",
+    "license_level": 1,
+    "description": "<b>TODO</b>",
+    "effect_print": "once active as a protocol, this system spreads smoke creating soft cover in every space you cross while moving this turn. The smoke last until the end your next turn.",
+    "actions": [
+      {
+        "name": "Deploy smoke",
+        "activation": "Protocol",
+        "detail": "Spreads smoke creating soft cover in every space you cross while moving this turn. The smoke last until the end your next turn."
+      }
+    ],
+    "type": "System",
+    "sp": 1,
+    "tags": [{"id": "tg_heat_self", "val": 1}, {"id": "tg_unique"}],
+    "synergies": []
+  },
+  {
+    "id": "ms_pillbox_drone",
+    "name": "Pillbox drone",
+    "source": "LANIKA",
+    "license": "MISSISSIPPI",
+    "license_id": "mf_mississippi",
+    "license_level": 2,
+    "description": "<b>TODO</b>",
+    "effect_print": "The drone, once deployed creates a blast 4 area. When an enemy first enters or leaves the area on its turn the drone attacks them with a reaction dealing 3ap explosive.",
+    "type": "Drone",
+    "sp": 2,
+    "deployables": [
+      {
+        "name": "Barbed wire",
+        "type": "Drone",
+        "detail": "The drone, once deployed creates a blast 4 area. When an enemy first enters or leaves the area on its turn the drone attacks them with a reaction dealing 3ap explosive.",
+        "size": 0.5,
+        "hp": 5,
+        "edef": 10,
+        "evasion": 10,
+        "activation": "Quick"
+      }
+    ],
+    "tags": [{"id": "tg_limited", "val": 3}],
+    "synergies": []
+  },
+  {
+    "id": "ms_dampener_shield",
+    "name": "Dampener shield",
+    "source": "LANIKA",
+    "license": "MISSISSIPPI",
+    "license_id": "mf_mississippi",
+    "license_level": 2,
+    "description": "<b>TODO</b>",
+    "effect_print": "Upon activation, this system immobilises you, creating a blast 3 shield around you. Within this shield you supress all area of effect attacks forcing anyone using them to attack a single target only. The shield lasts until retracted as a protocol.",
+    "type": "Drone",
+    "sp": 3,
+    "actions": [
+      {
+        "name": "Deploy shield",
+        "activation": "Full",
+        "detail": "Upon activation, this system immobilises you, creating a blast 3 shield around you. Within this shield you supress all area of effect attacks forcing anyone using them to attack a single target only. The shield lasts until retracted as a protocol."
+      },
+      {
+        "name": "Retract shield",
+        "activation": "Protocol",
+        "detail": "The shield looses it's effect."
+      }
+    ],
+    "tags": [{"id": "tg_shield"}],
+    "synergies": []
+  },
+  {
+    "id": "ms_droptrooper_support",
+    "name": "Droptrooper Support",
+    "source": "LANIKA",
+    "license": "MISSISSIPPI",
+    "license_id": "mf_mississippi",
+    "license_level": 3,
+    "description": "<b>TODO</b>",
+    "effect_print": "Call in an allied subaltern Droptrooper NPC in a free space in line of sight. They take a turn of their own but follow your commands and do as you say. <br> Size ½ 10 HP 13 Eva 8 Edef 4 speed 2 Armour 4 Heat cap <br> Paratrooper LMG Quick action attack 1d3+2 kinetic 2reliable 5 range <br> Framefist Quick action attack ap 1d6 +2 explosive range 5 limited 3",
+    "sp": 3,
+    "type": "Deployable",
+    "deployables": [
+      {
+        "name": "Droptrooper",
+        "type": "Infantry Support",
+        "activation": "Quick",
+        "size": 0.5,
+        "hp": 10,
+        "evasion": 13,
+        "edef": 8,
+        "speed": 4,
+        "armor": 2,
+        "heatcap": 4,
+        "actions": [
+          {
+            "name": "Paratrooper LMG",
+            "activation": "Free",
+            "detail": "2 reliable 5 range",
+            "range": [{"type": "Range", "val": 5}],
+            "damage": [{"type": "Kinetic", "val": "1d3+2"}]
+          },
+          {
+            "name": "Framefist",
+            "activation": "Free",
+            "detail": "ap limited 3",
+            "range": [{"type": "Range", "val": 5}],
+            "damage": [{"type": "Explosive", "val": "1d6+2"}]
+          }
+        ]
+      }
+    ],
+    "tags": [{"id": "tg_unique"}, {"id": "tg_limited", "val": 1}],
     "synergies": []
   }
 ]

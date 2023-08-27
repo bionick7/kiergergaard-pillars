@@ -390,13 +390,13 @@
       "hp": 8,
       "evasion": 7,
       "edef": 8,
-      "heatcap": 4,
-      "sensor_range": 5,
-      "tech_attack": 1,
-      "repcap": 3,
-      "save": 11,
-      "speed": 5,
-      "sp": 6
+      "heatcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "repcap": 4,
+      "save": 10,
+      "speed": 4,
+      "sp": 8
     },  
     "traits": [
       {

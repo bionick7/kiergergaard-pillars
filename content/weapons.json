@@ -53,7 +53,7 @@
         "activation": "Reaction",
         "frequency": "1/round",
         "trigger": "An enemy within range flies",
-        "effect": "You hit all flying characters within range."
+        "detail": "You hit all flying characters within range."
       }
     ],
     "synergies": []
@@ -218,7 +218,7 @@
         "activation": "Reaction",
         "frequency": "2/round",
         "trigger": "An enemy within range moves",
-        "effect": "You hit fire the machine cannon."
+        "detail": "You hit fire the machine cannon."
       }
     ],
     "tags": [{"id": "tg_ap"}]

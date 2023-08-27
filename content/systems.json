@@ -278,20 +278,27 @@
     "synergies": []
   },
   {
-    "id": "ms_hack_1",
-    "name": "TODO",
+
+    "id": "ms_virtual_backdoor",
+    "name": "Virutal Backdoor",
     "source": "LANIKA",
     "license": "CHANG JIANG",
     "license_id": "mf_chang_jiang",
     "license_level": 1,
     "description": "<b>TODO</b>",
     "type": "Tech",
+    "effect_print": "Gain the following options for INVADE",
     "sp": 2,
     "actions": [
       {
-        "name": "TODO",
+        "name": "Amplifier",
         "activation": "Invade",
-        "detail": "TODO"
+        "detail": "Your target takes twice as much heat on the next tech attack they are hit by."
+      },
+      {
+        "name": "Access",
+        "activation": "Invade",
+        "detail": "Until the start of their next turn, your targets E-defence drops by two."
       }
     ],
     "tags": [],
@@ -319,20 +326,26 @@
     "synergies": []
   },
   {
-    "id": "ms_hack_2",
-    "name": "TODO",
+    "id": "ms_digital_rights_management",
+    "name": "Digital Rights Management",
     "source": "LANIKA",
     "license": "CHANG JIANG",
     "license_id": "mf_chang_jiang",
     "license_level": 2,
     "description": "<b>TODO</b>",
     "type": "Tech",
+    "effect_print": "Gain the following options for INVADE",
     "sp": 2,
     "actions": [
       {
-        "name": "TODO",
+        "name": "Brain drain",
         "activation": "Invade",
-        "detail": "TODO"
+        "detail": "Until the end of their next turn, they must roll a d6 each time they perform a tech attack. On 5+ their attack automatically misses. This effect doesn’t stack."
+      },
+      {
+        "name": "Access",
+        "activation": "Invade",
+        "detail": "Until the start of their next turn, your targets E-defence drops by two."
       }
     ],
     "tags": [],
@@ -376,7 +389,7 @@
         "activation": "Reaction",
         "trigger": "An allied character within sensors and line of sight gets hit by a tech attack",
         "frequency": "Unlimited",
-        "effect": "The allied character gains immunity to all effects from the tech attack that just hit them. Additionally, they gain 1d3 + GRIT Overshield. However, in the process, their CPU get’s overburdened and they become Slowed and Impaired until the end of their next turn"
+        "detail": "The allied character gains immunity to all effects from the tech attack that just hit them. Additionally, they gain 1d3 + GRIT Overshield. However, in the process, their CPU get’s overburdened and they become Slowed and Impaired until the end of their next turn"
       }
     ],
     "tags": [{"id": "tg_unique"}, {"id": "tg_limited", "val": 4}],
@@ -384,7 +397,7 @@
   },
   {
     "id": "ms_orlinoco_hack",
-    "name": "TODO",
+    "name": "Meteorological Simulation",
     "source": "LANIKA",
     "license": "ORINOCO",
     "license_id": "mf_orinoco",
@@ -392,11 +405,17 @@
     "description": "<b>TODO</b>",
     "type": "Tech",
     "sp": 2,
+    "effect_print": "Gain the following options for INVADE",
     "actions": [
       {
-        "name": "TODO",
+        "name": "Earthquake",
         "activation": "Invade",
-        "detail": "TODO"
+        "detail": "At the start of each subsequent turn your target must roll a system save until they pass one and thus end this effect. Until then they perceive a simulated earthquake needing to succeed on a hull save or be knocked prone unless they are flying."
+      },
+      {
+        "name": "Blizzard",
+        "activation": "Invade",
+        "detail": ": At the start of each subsequent turn your target must roll a system save until they pass one and thus end this effect. Until then they perceive a simulated blizzard needing to move or boost each turn or become immobilised until they break free with a successful Hull save as a quick action."
       }
     ],
     "tags": [{"id": "tg_unique"}],

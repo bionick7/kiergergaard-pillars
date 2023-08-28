@@ -11,7 +11,16 @@
         "name": "Optimised Small Arms Assortment",
         "source": "GMS-HIPS",
         "effect": "Your auxiliary weapons deal +2 bonus damage.",
-        "description": "Widespread across the stars, there’s nothing quite like finetuned weapons for the job."
+        "description": "Widespread across the stars, there’s nothing quite like finetuned weapons for the job.",
+        "bonuses": [
+            {
+              "id": "damage",
+              "weapon_sized": [
+                "Auxiliary"
+              ],
+              "val": 2
+            }
+        ]
     },
     {
         "id": "cb_emergency_foam",

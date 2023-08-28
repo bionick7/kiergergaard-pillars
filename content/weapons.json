@@ -1,5 +1,18 @@
 [
   {
+    "id": "mw_autocannon",
+    "name": "Autocannon",
+    "source": "GMS",
+    "license": "GMS",
+    "license_level": 0,
+    "mount": "Auxiliary",
+    "type": "Cannon",
+    "damage": [{"type": "Variable", "val": "1d3+1"}],
+    "range": [{"type": "Range", "val": 10}],
+    "effect": "Choose this weapons damage type at the start of the mission.",
+    "tags": [{"id": "tg_reliable", "val": 2}, {"id": "tg_heat_self", "val": 1}]
+  },
+  {
     "id": "mw_lmg",
     "name": "LMG",
     "source": "GMS-HIPS",

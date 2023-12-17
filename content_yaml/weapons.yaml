@@ -1,0 +1,539 @@
+- damage:
+  - type: Variable
+    val: 1d3+1
+  effect: Choose this weapons damage type at the start of the mission.
+  id: mw_autocannon
+  license: GMS
+  license_level: 0
+  mount: Auxiliary
+  name: Autocannon
+  range:
+  - type: Range
+    val: 10
+  source: GMS
+  tags:
+  - id: tg_reliable
+    val: 2
+  - id: tg_heat_self
+    val: 1
+  type: Cannon
+- damage:
+  - type: Kinetic
+    val: 1d3+1
+  description: <b>TODO</b>
+  id: mw_lmg
+  license: MIDZOR
+  license_id: mf_midzor
+  license_level: 2
+  mount: Main
+  name: LMG
+  range:
+  - type: Range
+    val: 8
+  - type: Blast
+    val: 1
+  source: GMS-HIPS
+  synergies: []
+  tags:
+  - id: tg_reliable
+    val: 1
+  - id: tg_ordnance
+  - id: tg_accurate
+  type: Rifle
+- damage:
+  - type: Explosive
+    val: 1d3+1
+  description: <b>TODO</b>
+  effect: This weapon can only be fired when consuming Lock-on
+  id: mw_laser_guided_missile
+  license: ATTAKULLA
+  license_id: mf_attakulla
+  license_level: 1
+  mount: Auxiliary
+  name: LASER GUIDED MISSILE
+  on_hit: Your target must succeed on a system save or stay locked-on after your attack
+  range:
+  - type: Range
+    val: 15
+  source: GMS-HIPS
+  sp: 1
+  synergies: []
+  tags: []
+  type: Launcher
+- actions:
+  - activation: Reaction
+    detail: You hit all flying characters within range.
+    frequency: 1/round
+    name: TODO
+    trigger: An enemy within range flies
+  damage:
+  - type: Explosive
+    val: 3
+  description: <b>TODO</b>
+  effect: This weapon can only be used with the TODO Reaction.
+  id: mw_sam_launcher
+  license: ATTAKULLA
+  license_id: mf_attakulla
+  license_level: 3
+  mount: Auxiliary
+  name: SAM LAUNCHER
+  no_attack: true
+  range:
+  - type: Range
+    val: 5
+  source: GMS-HIPS
+  synergies: []
+  tags: []
+  type: Launcher
+- damage:
+  - type: Variable
+    val: 1
+  description: <b>TODO</b>
+  id: mw_whitewash_monitor
+  license: KILIMANJARO
+  license_id: mf_kilimanjaro
+  license_level: 1
+  mount: Auxiliary
+  name: WHITEWASH MONITOR
+  on_attack: Your target and all adjacent characters clear all burn.
+  on_hit: Your target becomes Slowed and Impaired.
+  range:
+  - type: Range
+    val: 5
+  source: GMS-HIPS
+  synergies: []
+  tags: []
+  type: Cannon
+- damage:
+  - type: Kinetic
+    val: 1
+  description: <b>TODO</b>
+  id: mw_hydraulic_rescue_tool
+  license: KILIMANJARO
+  license_id: mf_kilimanjaro
+  license_level: 3
+  mount: Auxiliary
+  name: HYDRAULIC RESCUE TOOL
+  on_crit: Your enemy becomes shredded until the end of their next turn
+  range:
+  - type: Threat
+    val: 1
+  source: GMS-HIPS
+  synergies:
+  - id: tg_ap
+  tags: []
+  type: Melee
+- description: <b>TODO</b>
+  id: mw_orinoco_integrated
+  mount: Main
+  name: SMUGGLER'S FRIENDS
+  profiles:
+  - damage:
+    - type: Kinetic
+      val: 1d3+1
+    name: TODO
+    range:
+    - type: Range
+      val: 5
+    tags: []
+  - damage:
+    - type: Kinetic
+      val: 1d3+1
+    name: TODO
+    on_hit: The target can only draw line of sight to adjacent spaces until the end
+      of their next turn.
+    range:
+    - type: Range
+      val: 5
+    tags:
+    - id: tg_seeking
+  type: Nexus
+- description: Creating more intense heat then similar frame-mounted laser weaponry,
+    the miniaturised solar lance is capable of melting the area surrounding its beam.
+  id: mw_yukon_integrated
+  mount: Main
+  name: 'MINITURISED SOLAR LANCE '
+  profiles:
+  - damage:
+    - type: Energy
+      val: 6 - [Distance]
+    effect: Hit or not, all non-flying enemies within the weapon's line area become
+      immobilized until the end of their next turn as the ground beneath them melts.
+    name: TODO
+    range:
+    - type: Line
+      val: 5
+    tags:
+    - id: tg_laser
+  - barrage: true
+    damage:
+    - type: Energy
+      val: 16 - [Distance]
+    effect: Hit or not, all non-flying enemies within the weapon's line and burt 3
+      become immobilized until the end of their next turn as the ground beneath them
+      melts. <br> Only enemies in line 15 take dammage
+    name: The Sun Unleashed
+    range:
+    - type: Line
+      val: 15
+    - type: Burst
+      val: 3
+    skirmish: false
+    tags:
+    - id: tg_ordnance
+    - id: tg_laser
+  type: Cannon
+- damage:
+  - type: Energy
+    val: 1d3
+  description: <b>TODO</b>
+  id: mw_taser_shotgun
+  license: CHAN JIANG
+  license_id: mf_chang_jiang
+  license_level: 2
+  mount: Main
+  name: TASER SHOTGUN
+  on_crit: Instead of forcing your enemy to do a system save against your TASER shell
+    you can invade them as a free action automatically succeeding on your tech attack
+    roll.
+  on_hit: Your target must succeed on a system save or become impaired until the end
+    of their next turn.
+  range:
+  - type: Range
+    val: 5
+  - type: Threat
+    val: 3
+  source: LANIKA
+  sp: 1
+  tags:
+  - id: tg_inaccurate
+  type: CQB
+- counters:
+  - default_value: 0
+    id: ctr_chainsaw_turns
+    max: 3
+    min: 0
+    name: Chainsaw
+  description: <b>TODO</b>
+  effect_print: In order to use the chainsaw, the motor must first be kick started
+    as a protocol. Once started it lasts 3 turns, generating 1 heat during each turn
+    no matter if it was used or not. This effect only seizes to trigger when the weapon
+    is destroyed while running. As the chainsaw works its way through enemy armour
+    it deals increased damage with every attack. For each successful attack against
+    a target deal 1d6 bonus damage on continuous attacks against that same target.
+  id: mw_chainsaw
+  license: ORINOCO
+  license_id: mf_orinoco
+  license_level: 3
+  mount: Main
+  name: CHAINSAW
+  profiles:
+  - actions:
+    - activation: Protocol
+      detail: Set the Chainsaw Turns Remaining counter to three. For the next three
+        turns, decrement the counter and take 1 heat, no matter if the weapon was
+        used or not
+      name: Start Motor
+    damage:
+    - type: Kinetic
+      val: 0
+    name: Inactive
+    range:
+    - type: Threat
+      val: 0
+    tags: []
+  - damage:
+    - type: Kinetic
+      val: 1d3+2
+    name: Running
+    on_hit: For any subsequent against this target, add +1d6 bonus dammage. This affect
+      stacks until a turn occurs where this target is not attacked by the chainsaw
+    range:
+    - type: Threat
+      val: 1
+    tags:
+    - id: tg_overkill
+  source: LANIKA
+  type: Melee
+- actions:
+  - activation: Reaction
+    detail: You hit fire the machine cannon.
+    frequency: 2/round
+    name: TODO
+    trigger: An enemy within range moves
+  damage:
+  - type: Kinetic
+    val: 1d6
+  description: <b>TODO</b>
+  effect: This weapon can only be used with the TODO Reaction.
+  id: mw_machine_cannon
+  license: MISSISSIPPI
+  license_id: mf_mississippi
+  license_level: 3
+  mount: Main
+  name: MACHINE CANNON
+  no_attack: true
+  range:
+  - type: Range
+    val: 5
+  source: LANIKA
+  tags:
+  - id: tg_ap
+  type: Cannon
+- damage:
+  - type: Energy
+    val: '3'
+  description: <b>TODO</b>
+  effect: You take an additional heat when attacking beyond range 5.
+  id: mw_shikishima_laser_rifle
+  license: YUKON
+  license_id: mf_yukon
+  license_level: 1
+  mount: Main
+  name: SHIKISHIMA LASER RIFLE
+  range:
+  - type: Range
+    val: 10
+  source: LANIKA
+  tags:
+  - id: tg_laser
+  - id: tg_accurate
+  - id: tg_heat_self
+    val: 1
+  type: Rifle
+- damage:
+  - type: Energy
+    val: 1d3+3
+  description: <b>TODO</b>
+  effect: You do half damage attacking beyond range 10.
+  id: mw_turn_x_beam_cannon
+  license: YUKON
+  license_id: mf_yukon
+  license_level: 3
+  mount: Heavy
+  name: TURN X BEAM CANNON
+  range:
+  - type: Range
+    val: 20
+  source: LANIKA
+  tags:
+  - id: tg_ap
+  - id: tg_reliable
+    val: 3
+  - id: tg_laser
+  type: Rifle
+- damage:
+  - type: Explosive
+    val: 1d3+1
+  description: <b>TODO</b>
+  id: mw_thunderbreath_shotgun
+  license: CHARLEMAGNE
+  license_id: mf_charlemagne
+  license_level: 2
+  mount: Main
+  name: THUNDERBREATH SHOTGUN
+  range:
+  - type: Range
+    val: 5
+  - type: Threat
+    val: 3
+  - type: Blast
+    val: 2
+  source: HA-SKY
+  tags:
+  - id: tg_inaccurate
+  - id: tg_reliable
+    val: 1
+  - id: tg_heat_self
+    val: 1
+  type: CQB
+- damage:
+  - type: Kinetic
+    val: 3d6
+  description: <b>TODO</b>
+  id: mw_sonic_boom_wrecking_flail
+  license: CHARLEMAGNE
+  license_id: mf_charlemagne
+  license_level: 3
+  mount: Superheavy
+  name: SONIC BOOM WRECKING FLAIL
+  on_attack: You become jammed once your attack resolves. Everyone in a blast 2 zone
+    (excluding you) must pass an agility safe or take one 1d6 +2 damage (stacks on
+    your main target) and become jammed.
+  range:
+  - type: Threat
+    val: 2
+  source: HA-SKY
+  tags:
+  - id: tg_inaccurate
+  type: Melee
+- damage:
+  - type: Burn
+    val: 5
+  description: <b>TODO</b>
+  id: mw_flashfire_cannon
+  license: SCHWARZKOPF
+  license_id: mf_schwarzkopf
+  license_level: 2
+  mount: Main
+  name: FLASHFIRE CANNON
+  range:
+  - type: Line
+    val: 5
+  - type: Threat
+    val: 2
+  source: HA-SKY
+  tags:
+  - id: tg_inaccurate
+  - id: tg_loading
+  type: CQB
+- damage:
+  - type: Kinetic
+    val: 1d6+4
+  description: <b>TODO</b>
+  effect: Only consumes a charge on hit.
+  id: mw_panzerbuechse_phosphorus_boxcutter
+  license: SCHWARZKOPF
+  license_id: mf_schwarzkopf
+  license_level: 3
+  mount: Main
+  name: "PANZERB\xDCCHSE PHOSPHORUS BOXCUTTER"
+  range:
+  - type: Threat
+    val: 1
+  source: HA-SKY
+  tags:
+  - id: tg_ap
+  - id: tg_accurate
+  - id: tg_limited
+    val: 5
+  type: Melee
+- damage:
+  - type: Explosive
+    val: 1d6+4
+  description: <b>TODO</b>
+  id: mw_barnbuster_hesh_cannon
+  license: COLUMBUS
+  license_id: mf_columbus
+  license_level: 3
+  mount: Main
+  name: BARNBUSTER HESH CANNON
+  on_crit: You blow a hole in the enemy's armour as plastic explosives punch through.
+    The enemy becomes exposed until the end of your next turn.
+  on_hit: You deal +2 bonus damage per armour of your target.
+  range:
+  - type: Range
+    val: 15
+  source: BLACKBOX
+  tags:
+  - id: tg_ap
+  - id: tg_ordnance
+  type: Melee
+- damage:
+  - type: Kinetic
+    val: 1d6+2
+  description: <b>TODO</b>
+  id: mw_ahab_missile
+  license: COLUMBUS
+  license_id: mf_columbus
+  license_level: 2
+  mount: Main
+  name: AHAB MISSILE
+  on_crit: You blow a hole in the enemy's armour as plastic explosives punch through.
+    The enemy becomes exposed until the end of your next turn.
+  on_hit: You deal +2 bonus damage per armour of your target.
+  range:
+  - type: Range
+    val: 20
+  source: BLACKBOX
+  sp: 1
+  tags:
+  - id: tg_heat_self
+    val: 1
+  - id: tg_accurate
+  type: Launcher
+- damage:
+  - type: Kinetic
+    val: 2
+  description: <b>TODO</b>
+  id: mw_compass_nexus
+  license: JANSZOON
+  license_id: mf_janszoon
+  license_level: 3
+  mount: Main
+  name: COMPASS NEXUS
+  on_crit: You jam your target. This effect can only trigger once per scene on each
+    target.
+  range:
+  - type: Range
+    val: 10
+  source: BLACKBOX
+  tags:
+  - id: tg_smart
+  - id: tg_accurate
+  - id: tg_arcing
+  type: Launcher
+- damage:
+  - type: Explosive
+    val: 2d6
+  description: <b>TODO</b>
+  id: mw_rapid_fire_missile_battery
+  license: AMUNDSEN
+  license_id: mf_amundsen
+  license_level: 1
+  mount: Heavy
+  name: RAPID FIRE MISSILE BATTERY
+  range:
+  - type: Range
+    val: 5
+  - type: Blast
+    val: 1
+  source: BLACKBOX
+  tags:
+  - id: tg_reliable
+    val: 3
+  type: Launcher
+- actions:
+  - activation: Quick
+    detail: This weapon fires so fast it can attack a second time this turn, however
+      the second attack becomes inaccurate and can't deal bonus damage.
+    name: TODO
+  damage:
+  - type: Kinetic
+    val: 2d6+2
+  description: <b>TODO</b>
+  id: mw_speartip_repeating_cannon
+  license: AMUNDSEN
+  license_id: mf_amundsen
+  license_level: 3
+  mount: Heavy
+  name: SPEARTIP REPEATING CANNON
+  range:
+  - type: Range
+    val: 10
+  source: BLACKBOX
+  tags:
+  - id: tg_overkill
+  - id: tg_heat_self
+    val: 2
+  type: Cannon
+- damage:
+  - type: Kinetic
+    val: 1d6+1
+  description: 'A light and portable single barrel cousin to the Leviathan, the Kraken
+    packs an immense punch for its size but is limited by its cumbersome ammunition. '
+  effect: Rolling a 1 on the attack rolls, ignoring any modifiers ("natural 1") inflicts
+    jam to the Amundsen.
+  id: mw_amundsen_integrated
+  mount: Main
+  name: KRAKEN MACHINE GUN
+  range:
+  - type: Range
+    val: 8
+  tags:
+  - id: tg_reliable
+    val: 4
+  - id: tg_limited
+    val: 10
+  - id: tg_accurate
+  type: Cannon

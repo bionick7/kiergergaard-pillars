@@ -1,648 +1,854 @@
 [
   {
+    "deployables": [
+      {
+        "activation": "Quick",
+        "detail": "The barbed wire counts as dangerous terrain. It is one space high. It can be removed individually by any frame as a quick action by rolling a 1+ on a d6. Falling that check deals 1ap kinetic damage. Otherwise, you clear one space from the barbed wire.",
+        "evasion": "-",
+        "hp": "-",
+        "instances": 3,
+        "name": "Barbed wire",
+        "size": 1,
+        "type": "Static Emplacement"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect": "Deploy barbed wire in a line 3 of free spaces with at least one space adjacent to you.",
+    "effect_print": "Deploying the Wire Drum, draw a line 3 barrier 1 space high in free spaces with at least one space adjacent to you. The barbed wire makes it dangerous terrain. Each space can be removed individually by any frame as a quick action by rolling a d6. Rolling a one, you fail at removing it and take 1ap kinetic damage. Otherwise, you clear one space from the barbed wire.",
     "id": "ms_gibraltar_barbed_wire_drums",
+    "license": "MIDZOR",
+    "license_id": "mf_midzor",
+    "license_level": 1,
     "name": "GIBRALTAR BARBED WIRE DRUMS",
     "source": "GMS-HIPS",
+    "sp": 1,
+    "synergies": [],
+    "tags": [],
+    "type": "Pioneering Tool"
+  },
+  {
+    "deployables": [
+      {
+        "activation": "Quick",
+        "detail": "The barricade generates a line 5 barrier 5 spaces high centred on the box on the ground level. The barrier is magnetic blocking all frames and other large non-biological objects (not squads) from passing, it doesn't grant cover and won't stop attacks however. It only prevents frames from passing through it.",
+        "evasion": 5,
+        "hp": 10,
+        "name": "Barricade Box",
+        "size": 1,
+        "type": "Static Emplacement"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect": "Deploy a size 1 barricade box in a free adjacent space to you.",
+    "effect_print": "You deploy a size 1 barricade box in a free adjacent space to you. (10hp 5eva) The barricade generates a line 5 barrier 5 spaces high centred on the box on the ground level. The barrier is magnetic blocking all frames and other large non-biological objects (not squads) from passing, it doesn't grant cover and won't stop attacks however. It only prevents frames from passing through it. ",
+    "id": "ms_anti_frame_barricade",
     "license": "MIDZOR",
     "license_id": "mf_midzor",
     "license_level": 1,
-    "description": "<b>TODO</b>",
-    "effect_print": "Deploying the Wire Drum, draw a line 3 barrier 1 space high in free spaces with at least one space adjacent to you. The barbed wire makes it dangerous terrain. Each space can be removed individually by any frame as a quick action by rolling a d6. Rolling a one, you fail at removing it and take 1ap kinetic damage. Otherwise, you clear one space from the barbed wire.",
-    "type": "Pioneering Tool",
-    "sp": 1,
-    "effect": "Deploy barbed wire in a line 3 of free spaces with at least one space adjacent to you.",
-    "deployables": [
-      {
-        "name": "Barbed wire",
-        "type": "Static Emplacement",
-        "detail": "The barbed wire counts as dangerous terrain. It is one space high. It can be removed individually by any frame as a quick action by rolling a 1+ on a d6. Falling that check deals 1ap kinetic damage. Otherwise, you clear one space from the barbed wire.",
-        "size": 1,
-        "hp": "-",
-        "evasion": "-",
-        "instances": 3,
-        "activation": "Quick"
-      }
-    ],
-    "tags": [],
-    "synergies": []
-  },
-  {
-    "id": "ms_anti_frame_barricade",
     "name": "ANTI FRAME BARRICADE",
     "source": "GMS-HIPS",
-    "license": "MIDZOR",
-    "license_id": "mf_midzor",
-    "license_level": 1,
-    "description": "<b>TODO</b>",
-    "effect_print": "You deploy a size 1 barricade box in a free adjacent space to you. (10hp 5eva) The barricade generates a line 5 barrier 5 spaces high centred on the box on the ground level. The barrier is magnetic blocking all frames and other large non-biological objects (not squads) from passing, it doesn’t grant cover and won’t stop attacks however. It only prevents frames from passing through it. ",
-    "type": "Pioneering Tool",
     "sp": 2,
-    "effect": "Deploy a size 1 barricade box in a free adjacent space to you.",
-    "deployables": [
+    "synergies": [],
+    "tags": [
       {
-        "name": "Barricade Box",
-        "type": "Static Emplacement",
-        "detail": "The barricade generates a line 5 barrier 5 spaces high centred on the box on the ground level. The barrier is magnetic blocking all frames and other large non-biological objects (not squads) from passing, it doesn’t grant cover and won’t stop attacks however. It only prevents frames from passing through it.",
-        "size": 1,
-        "hp": 10,
-        "evasion": 5,
-        "activation": "Quick"
+        "id": "tg_unique"
       }
     ],
-    "tags": [{"id": "tg_unique"}],
-    "synergies": []
+    "type": "Pioneering Tool"
   },
   {
-    "id": "ms_pigeon_mine_launcher",
-    "name": "PIGEON MINE LAUNCHER",
-    "source": "GMS-HIPS",
-    "license": "MIDZOR",
-    "license_id": "mf_midzor",
-    "license_level": 2,
-    "description": "<b>TODO</b>",
-    "effect_print": "Grenade; you throw a pigeon shrapnel grenade. These grenades burst mid-air perforating your target area with a rain of tiny explosives dealing 2 explosive damage to all targets in a blast 2 area. Mine; you launch air-deployed pigeon mines in a blast 2 area. All characters and objects within the area take 2 explosive damage when the mines are triggered.",
-    "type": "Mine",
-    "sp": 1,
     "actions": [
       {
-        "name": "Grenade",
         "activation": "Quick",
-        "range": [{"type": "Range", "val": 8}, {"type": "Blast", "val": 2}],
-        "damage": [{"type": "Explosive", "val": 2}],
-        "detail": "You throw a pigeon shrapnel grenade. These grenades burst mid-air perforating your target area with a rain of tiny explosives dealing 2 explosive damage to all targets in a blast 2 area.",
-        "cost": 1
-      }
-    ],
-    "deployables": [
-      {
-        "name": "Mine",
-        "type": "Mine",
-        "range": [{"type": "Blast", "val": 2}],
-        "damage": [{"type": "Explosive", "val": 2}],
-        "activation": "Quick",
-        "detail": " you launch air-deployed pigeon mines in a blast 2 area. All characters and objects within the area take 2 explosive damage when a hostile character moves adjacent to the mine.",
-        "cost": 1
-      }
-    ],
-    "tags": [{"id": "tg_limited", "val": 3}, {"id": "tg_unique"}, {"id": "tg_grenade"}],
-    "synergies": []
-  },
-  {
-    "id": "ms_milorg_removal_device",
-    "name": "MILORG REMOVAL DEVICE",
-    "source": "GMS-HIPS",
-    "license": "MIDZOR",
-    "license_id": "mf_midzor",
-    "license_level": 3,
-    "description": "<b>TODO</b>",
-    "effect_print": "You can remove any deployable with this system blowing it up in an instant, destroying them in the process. You can even remove indestructible deployables in this manner, but they can be redeployed afterwards and don’t count as being destroyed.",
-    "type": "System",
-    "sp": 2,
-    "actions": [
-      {
-        "name": "Remove Device",
-        "activation": "Quick",
-        "detail": "You can remove any deployable with this system blowing it up in an instant, destroying them in the process. You can even remove indestructible deployables in this manner, but they can be redeployed afterwards and don’t count as being destroyed"
-      }
-    ],
-    "tags": [{"id": "tg_heat_self", "val": 1}, {"id": "tg_unique"}],
-    "synergies": []
-  },
-  {
-    "id": "ms_domovoz_nhp",
-    "name": "DOMOVOY NHP",
-    "source": "GMS-HIPS",
-    "license": "MIDZOR",
-    "license_id": "mf_midzor",
-    "license_level": 3,
-    "description": "Domovoy was developed as a tool for strategic advice being able to scan entire battlefields at moment’s notice and determine optimal positioning for static deployments. In combination with newest electronic warfare equipment the NHP is capable of emulating HOR_OS code at higher capacity",
-    "effect_print": "Domovoy is capable of deploying up to 6 virtual copies of your equipped deployable systems. These copies are indistinguishable from tangible objects and act as if they were real. They last for the rest of the scene, or until destroyed by an adjacent character with a successful Systems skill check as a quick action. Activating Domovoy again also removes all previous instances of its use. Deploys within line of sight and sensors ignoring requirements for adjacency.",
-    "type": "AI",
-    "sp": 2,
-    "actions": [
-      {
-        "name": "TODO",
-        "activation": "Quick",
-        "detail": "Deploy up to 6 virtual copies of your equipped deployable systems. These copies are indistinguishable from tangible objects and act as if they were real. They last for the rest of the scene, or until destroyed by an adjacent character with a successful Systems skill check as a quick action. Activating Domovoy again also removes all previous instances of its use. Deploys within line of sight and sensors ignoring requirements for adjacency."
-      }
-    ],
-    "tags": [{"id": "tg_ai"}, {"id": "tg_limited", "val": 4}, {"id": "tg_unique"}],
-    "synergies": []
-  },
-  {
-    "id": "ms_smart_targeting_relay",
-    "name": "SMART TARGETING RELAY",
-    "source": "GMS-HIPS",
-    "license": "ATTAKULLA",
-    "license_id": "mf_attakulla",
-    "license_level": 1,
-    "description": "<b>TODO</b>",
-    "effect_print": "You link your sensors temporarily with the one’s of an ally within sensors and line of sight. After linking up, you can use their sensors and line of sight as if they were yours for your next action.",
-    "type": "System",
-    "sp": 1,
-    "actions": [
-      {
-        "name": "TODO",
-        "activation": "Quick Tech",
-        "detail": "You link your sensors temporarily with the one’s of an ally within sensors and line of sight. After linking up, you can use their sensors and line of sight as if they were yours for your next action"
-      }
-    ],
-    "tags": [{"id": "tg_heat_self", "val": 2}, {"id": "tg_unique"}],
-    "synergies": []
-  },
-  {
-    "id": "ms_orbital_guidance_scanner",
-    "name": "ORBITAL GUIDANCE SCANNER",
-    "source": "GMS-HIPS",
-    "license": "ATTAKULLA",
-    "license_id": "mf_attakulla",
-    "license_level": 2,
-    "effect": "TODO",
-    "description": "<b>TODO</b>",
-    "effect_print": ": You receive a high-resolution orbital photograph of a blast 1 area within range 50. Until the start of your next turn, you and your allies can treat the area as if you had line of sight to it.",
-    "type": "System",
-    "sp": 3,
-    "actions": [
-      {
-        "name": "TODO",
-        "activation": "Quick",
-        "detail": "You receive a high-resolution orbital photograph of a blast 1 area within range 50. Until the start of your next turn, you and your allies can treat the area as if you had line of sight to it."
-      }
-    ],
-    "tags": [],
-    "synergies": []
-  },
-  {
-    "id": "ms_thor_nhp",
-    "name": "THOR NHP",
-    "source": "GMS-HIPS",
-    "license": "ATTAKULLA",
-    "license_id": "mf_attakulla",
-    "license_level": 3,
-    "description": "<b>TODO</b>",
-    "effect_print": "Once activated your Thor system deploys a swarm of small flying Trondheim drones. Until the start of your next turn, all enemies within range 8 get struck by lighting from the drones taking 3 ap energy damage whenever they take a reaction and must succeed on a systems save or become stunned.",
-    "type": "AI",
-    "sp": 3,
-    "actions": [
-      {
-        "name": "TODO",
-        "activation": "Protocol",
-        "detail": "Once activated your Thor system deploys a swarm of small flying Trondheim drones. Until the start of your next turn, all enemies within range 8 get struck by lighting from the drones taking 3 ap energy damage whenever they take a reaction."
-      }
-    ],
-    "tags": [{"id": "tg_ai"}, {"id": "tg_unique"}, {"id": "tg_heat_self", "val": 4}],
-    "synergies": []
-  },
-  {
-    "id": "ms_ablative_burner_plates",
-    "name": "ABLATIVE BURNER PLATES",
-    "source": "GMS-HIPS",
-    "license": "KILIMANJARO",
-    "license_id": "mf_kilimanjaro",
-    "license_level": 1,
-    "description": "<b>TODO</b>",
-    "effect_print": "You clear 1d6 heat but take half as much burn.",
-    "type": "System",
-    "sp": 1,
-    "actions": [
-      {
-        "name": "TODO",
-        "activation": "Quick",
-        "detail": "You clear 1d6 heat, but take half as much burn"
-      }
-    ],
-    "tags": [{"id": "tg_unique"}, {"id": "tg_limited", "val": 3}],
-    "synergies": []
-  },
-  {
-    "id": "ms_whitewash_stirrup_pump",
-    "name": "WHITEWASH STIRRUP PUMP",
-    "source": "GMS-HIPS",
-    "license": "KILIMANJARO",
-    "license_id": "mf_kilimanjaro",
-    "license_level": 2,
-    "description": "<b>TODO</b>",
-    "effect_print": "You fill a burst 3 area with Whitewash foam clearing all and every kind of burn in the area but also slowing everyone in it or moving through it and preventing you from drawing line of sight beyond adjacent spaces.",
-    "type": "System",
-    "sp": 2,
-    "actions": [
-      {
-        "name": "TODO",
-        "activation": "Full",
-        "detail": " You fill a burst 3 area with Whitewash foam clearing all and every kind of burn in the area but also slowing everyone in it or moving through it and preventing you from drawing line of sight beyond adjacent spaces."
-      }
-    ],
-    "tags": [{"id": "tg_unique"}, {"id": "tg_limited", "val": 4}],
-    "synergies": []
-  },
-  {
-    "id": "ms_radiator_shield",
-    "name": "RADIATOR SHIELD",
-    "source": "GMS-HIPS",
-    "license": "KILIMANJARO",
-    "license_id": "mf_kilimanjaro",
-    "license_level": 2,
-    "description": "<b>TODO</b>",
-    "effect_print": "You shield an allied character within sensors and line of sight from heat lasting until used. They keep this shield even when they leave your sensors or line of sight. The shield takes on the next 1d3 heat they take from external sources.",
-    "type": "Shield",
-    "sp": 1,
-    "actions": [
-      {
-        "name": "TODO",
-        "activation": "Quick",
-        "detail": "You shield an allied character within sensors and line of sight from heat lasting until used. They keep this shield even when they leave your sensors or line of sight. The shield absorbs the next 1d3 heat they take from external sources."
-      }
-    ],
-    "tags": [{"id": "tg_shield"}, {"id": "tg_unique"}, {"id": "tg_heat_self", "val": 1}],
-    "synergies": []
-  },
-  {
-    "id": "ms_rescue_code",
-    "name": "RESCUE CODE",
-    "source": "GMS-HIPS",
-    "license": "KILIMANJARO",
-    "license_id": "mf_kilimanjaro",
-    "license_level": 3,
-    "description": "<b>TODO</b>",
-    "effect_print": "You clear all statuses and effects effecting adjacent allied characters.",
-    "type": "System",
-    "sp": 3,
-    "actions": [
-      {
-        "name": "TODO",
-        "activation": "Full Tech",
-        "detail": "You clear all statuses and effects effecting adjacent allied characters."
-      }
-    ],
-    "tags": [],
-    "synergies": []
-  },
-  {
-
-    "id": "ms_virtual_backdoor",
-    "name": "Virutal Backdoor",
-    "source": "LANIKA",
-    "license": "CHANG JIANG",
-    "license_id": "mf_chang_jiang",
-    "license_level": 1,
-    "description": "<b>TODO</b>",
-    "type": "Tech",
-    "effect_print": "Gain the following options for INVADE",
-    "sp": 2,
-    "actions": [
-      {
-        "name": "Amplifier",
-        "activation": "Invade",
-        "detail": "Your target takes twice as much heat on the next tech attack they are hit by."
-      },
-      {
-        "name": "Access",
-        "activation": "Invade",
-        "detail": "Until the start of their next turn, your targets E-defence drops by two."
-      }
-    ],
-    "tags": [],
-    "synergies": []
-  },
-  {
-    "id": "ms_fire_duplication_bug",
-    "name": "FIRE DUPLICATION BUG",
-    "source": "LANIKA",
-    "license": "CHANG JIANG",
-    "license_id": "mf_chang_jiang",
-    "license_level": 1,
-    "description": "<b>TODO</b>",
-    "type": "Tech",
-    "sp": 3,
-    "effect_print": "Choose an allied character in sensors and line of sight. They are protected by a white hat trojan until the end of their next turn. When an enemy inflicts heat on them while this protection is active, the enemy must succeed on an engineering save or take as much burn from their action as it inflicted heat. Only one ally can benefit from this effect at any given time. If you target another allied character before it would have ended, it resolves automatically on your previous target.",
-    "actions": [
-      {
-        "name": "TODO",
-        "activation": "Full Tech",
-        "detail": "Choose an allied character in sensors and line of sight. They are protected by a white hat trojan until the end of their next turn. When an enemy inflicts heat on them while this protection is active, the enemy must succeed on an engineering save or take as much burn from their action as it inflicted heat. Only one ally can benefit from this effect at any given time. If you target another allied character before it would have ended, it resolves automatically on your previous target."
-      }
-    ],
-    "tags": [{"id": "tg_unique"}],
-    "synergies": []
-  },
-  {
-    "id": "ms_digital_rights_management",
-    "name": "Digital Rights Management",
-    "source": "LANIKA",
-    "license": "CHANG JIANG",
-    "license_id": "mf_chang_jiang",
-    "license_level": 2,
-    "description": "<b>TODO</b>",
-    "type": "Tech",
-    "effect_print": "Gain the following options for INVADE",
-    "sp": 2,
-    "actions": [
-      {
-        "name": "Brain drain",
-        "activation": "Invade",
-        "detail": "Until the end of their next turn, they must roll a d6 each time they perform a tech attack. On 5+ their attack automatically misses. This effect doesn’t stack."
-      },
-      {
-        "name": "Access",
-        "activation": "Invade",
-        "detail": "Until the start of their next turn, your targets E-defence drops by two."
-      }
-    ],
-    "tags": [],
-    "synergies": []
-  },
-  {
-    "id": "ms_aggressive_flush_system_linkage",
-    "name": "AGGRESSIVE FLUSH SYSTEM LINKAGE",
-    "source": "LANIKA",
-    "license": "CHANG JIANG",
-    "license_id": "mf_chang_jiang",
-    "license_level": 3,
-    "description": "<b>TODO</b>",
-    "effect_print": "Choose one allied and one enemy character within sensors and line of sight. You link up their onimnet receivers. Until the end of your next turn, whenever one of them gets affected by a tech attack, you take one heat and the unaffected character must succeed on a systems save or suffer the same effect as the attacks target.",
-    "type": "Tech",
-    "sp": 2,
-    "actions": [
-      {
-        "name": "TODO",
-        "activation": "Quick Tech",
-        "detail": "Choose one allied and one enemy character within sensors and line of sight. You link up their onimnet receivers. Until the end of your next turn, whenever one of them gets affected by a tech attack, you take one heat and the unaffected character must succeed on a systems save or suffer the same effect as the attacks target."
-      }
-    ],
-    "tags": [{"id": "tg_unique"}],
-    "synergies": []
-  },
-  {
-    "id": "ms_task_manager",
-    "name": "TASK MANAGER SYSTEMS HALT",
-    "source": "LANIKA",
-    "license": "CHANG JIANG",
-    "license_id": "mf_chang_jiang",
-    "license_level": 3,
-    "description": "<b>TODO</b>",
-    "type": "System",
-    "sp": 2,
-    "effect_print": "Whenever an allied character within sensors and line of sight gets hit by a tech attack you may spend a charge of this system and take the Systems Freeze Backup Shield Reaction. The allied character gains immunity to all effects from the tech attack that just hit them. Additionally, they gain 1d3 + GRIT Overshield. However, in the process, their CUP get’s overburdened and they become Slowed and Impaired until the end of their next turn.",
-    "actions": [
-      {
-        "name": "Systems Freeze Backup Shield",
-        "activation": "Reaction",
-        "trigger": "An allied character within sensors and line of sight gets hit by a tech attack",
-        "frequency": "Unlimited",
-        "detail": "The allied character gains immunity to all effects from the tech attack that just hit them. Additionally, they gain 1d3 + GRIT Overshield. However, in the process, their CPU get’s overburdened and they become Slowed and Impaired until the end of their next turn"
-      }
-    ],
-    "tags": [{"id": "tg_unique"}, {"id": "tg_limited", "val": 4}],
-    "synergies": []
-  },
-  {
-    "id": "ms_orlinoco_hack",
-    "name": "Meteorological Simulation",
-    "source": "LANIKA",
-    "license": "ORINOCO",
-    "license_id": "mf_orinoco",
-    "license_level": 1,
-    "description": "<b>TODO</b>",
-    "type": "Tech",
-    "sp": 2,
-    "effect_print": "Gain the following options for INVADE",
-    "actions": [
-      {
-        "name": "Earthquake",
-        "activation": "Invade",
-        "detail": "At the start of each subsequent turn your target must roll a system save until they pass one and thus end this effect. Until then they perceive a simulated earthquake needing to succeed on a hull save or be knocked prone unless they are flying."
-      },
-      {
-        "name": "Blizzard",
-        "activation": "Invade",
-        "detail": ": At the start of each subsequent turn your target must roll a system save until they pass one and thus end this effect. Until then they perceive a simulated blizzard needing to move or boost each turn or become immobilised until they break free with a successful Hull save as a quick action."
-      }
-    ],
-    "tags": [{"id": "tg_unique"}],
-    "synergies": []
-  },
-  {
-    "id": "ms_firewall_manifestation",
-    "name": "FIREWALL MANIFESTATION",
-    "source": "LANIKA",
-    "license": "ORINOCO",
-    "license_id": "mf_orinoco",
-    "license_level": 1,
-    "effect_print": "This system creates a line 3 manifestation 2 spaces high. It blocks line of sight for the purpose of tech attacks. Characters can still see through it and make melee and ranged attacks through it unaltered. The System lasts until pick up again or until the end of the scene.",
-    "description": "<b>TODO</b>",
-    "type": "Shield",
-    "sp": 2,
-    "deployables": [
-      {
-        "type": "Deployable",
-        "name": "Stasis Barrier",
-        "activation": "Quick",
-        "deactivation": "Quick",
-        "detail": "Create a line 3 manifestation 2 spaces high. It blocks line of sight for the purpose of tech attacks. Characters can still see through it and make melee and ranged attacks through it unaltered. The manufestation lasts until pick up again or until the end of the scene.",
-        "tags": [ {"id": "tg_invulnerable"} ]
-      }
-    ],
-    "tags": [{"id": "tg_unique"}, {"id": "tg_shield"}, {"id": "tg_invulnerable"}],
-    "synergies": []
-  },
-  {
-    "id": "ms_oobd_signal",
-    "name": "OOBD-Signal",
-    "source": "LANIKA",
-    "license": "ORINOCO",
-    "license_id": "mf_orinoco",
-    "license_level": 2,
-    "description": "<b>TODO</b>",
-    "effect_print": "Make a tech attack against an emy within sensors and line of sight. On hit, the Out Off Battery Detonation-Signal targets their weaponry causing catastrophic misfires. All their weapons become unloaded, they become jammed and take 2ap explosive damage for every installed ranged weapon or system with the grenade or mine tag. If they carry no such weapons or systems, this attack automatically fails against them. A Character can only be target once by this effect per scene.",
-    "type": "Tech",
-    "sp": 3,
-    "actions": [
-      {
-        "name": "TODO",
-        "activation": "Full Tech",
-        "detail": "Make a tech attack against an emy within sensors and line of sight. On hit, the Out Of Battery Detonation-Signal  targets  their  weaponry  causing  catastrophic  misfires.  All  their  weapons become unloaded, they become jammed and take 2ap explosive damage for every installed ranged weapon or system with the grenade or mine tag. If they carry no such weapons or systems, this attack automatically fails against them. A Character can only be target once by this effect per scene."
-      }
-    ],
-    "tags": [{"id": "tg_unique"}, {"id": "tg_heat_self", "val": 2}],
-    "synergies": []
-  },
-  {
-    "id": "ms_escape_tool",
-    "name": "ESCAPE TOOL",
-    "source": "LANIKA",
-    "license": "ORINOCO",
-    "license_id": "mf_orinoco",
-    "license_level": 2,
-    "description": "<b>TODO</b>",
-    "effect_print": "You make a tactical retreat. First, deploy a burst 2 smoke cover, then teleport up two two spaces. You become invisible afterwards until you move, voluntarily or involuntarily or until the start of your next turn. ",
-    "type": "System",
-    "sp": 3,
-    "actions": [
-      {
-        "name": "Flee the cops",
-        "activation": "Quick",
-        "detail": "You make a tactical retreat. First, deploy a burst 2 smoke cover, then teleport up two two spaces. You become invisible afterwards until you move, voluntarily or involuntarily or until the start of your next turn."
-      }
-    ],
-    "tags": [{"id": "tg_unique"}, {"id": "tg_heat_self", "val": 2}, {"id": "tg_limited", "val": 3}],
-    "synergies": []
-  },
-  {
-    "id": "ms_darts_ui_controls",
-    "name": "DARTS-UI Controls",
-    "source": "LANIKA",
-    "license": "ORINOCO",
-    "license_id": "mf_orinoco",
-    "license_level": 3,
-    "description": "<b>TODO</b>",
-    "effect_print": "",
-    "type": "Tech",
-    "sp": 2,
-    "actions": [
-      {
-        "name": "DARTS Heads-Up Marker",
-        "activation": "Invade",
-        "detail": "The enemy suffers a system failure in its counter electronics glowing up on your Combat UIs. The next attack against it, if it hits, counts as a critical hit."
-      },
-      {
-        "name": "Predesignated Target Command",
-        "activation": "Invade",
-        "detail": "After successful hacking your enemy target, you designate an ally within sensors and line of sight. Your enemy target takes 3ap energy damage whenever they attack an a target other than the one designated by you until the end of their next turn.."
-      }
-    ],
-    "tags": [],
-    "synergies": []
-  },
-  {
-    "id": "ms_ambush_pack",
-    "name": "Ambush Pack",
-    "source": "LANIKA",
-    "license": "MISSISSIPPI",
-    "license_id": "mf_mississippi",
-    "license_level": 1,
-    "description": "<b>TODO</b>",
-    "effect_print": "Adjacent allied characters gain +1 accuracy on their first attack each turn when they stand within soft cover and deal +2 bonus damage.",
-    "effect": "Adjacent allied characters gain +1 accuracy on their first attack each turn when they stand within soft cover and deal +2 bonus damage.",
-    "type": "System",
-    "sp": 3,
-    "tags": [{"id": "tg_unique"}],
-    "synergies": []
-  },
-  {
-    "id": "ms_ranger_cloud",
-    "name": "Ranger cloud",
-    "source": "LANIKA",
-    "license": "MISSISSIPPI",
-    "license_id": "mf_mississippi",
-    "license_level": 1,
-    "description": "<b>TODO</b>",
-    "effect_print": "once active as a protocol, this system spreads smoke creating soft cover in every space you cross while moving this turn. The smoke last until the end your next turn.",
-    "actions": [
-      {
-        "name": "Deploy smoke",
-        "activation": "Protocol",
-        "detail": "Spreads smoke creating soft cover in every space you cross while moving this turn. The smoke last until the end your next turn."
-      }
-    ],
-    "type": "System",
-    "sp": 1,
-    "tags": [{"id": "tg_heat_self", "val": 1}, {"id": "tg_unique"}],
-    "synergies": []
-  },
-  {
-    "id": "ms_pillbox_drone",
-    "name": "Pillbox drone",
-    "source": "LANIKA",
-    "license": "MISSISSIPPI",
-    "license_id": "mf_mississippi",
-    "license_level": 2,
-    "description": "<b>TODO</b>",
-    "effect_print": "The drone, once deployed creates a blast 4 area. When an enemy first enters or leaves the area on its turn the drone attacks them with a reaction dealing 3ap explosive.",
-    "type": "Drone",
-    "sp": 2,
-    "deployables": [
-      {
-        "name": "Barbed wire",
-        "type": "Drone",
-        "detail": "The drone, once deployed creates a blast 4 area. When an enemy first enters or leaves the area on its turn the drone attacks them with a reaction dealing 3ap explosive.",
-        "size": 0.5,
-        "hp": 5,
-        "edef": 10,
-        "evasion": 10,
-        "activation": "Quick"
-      }
-    ],
-    "tags": [{"id": "tg_limited", "val": 3}],
-    "synergies": []
-  },
-  {
-    "id": "ms_dampener_shield",
-    "name": "Dampener shield",
-    "source": "LANIKA",
-    "license": "MISSISSIPPI",
-    "license_id": "mf_mississippi",
-    "license_level": 2,
-    "description": "<b>TODO</b>",
-    "effect_print": "Upon activation, this system immobilises you, creating a blast 3 shield around you. Within this shield you supress all area of effect attacks forcing anyone using them to attack a single target only. The shield lasts until retracted as a protocol.",
-    "type": "Drone",
-    "sp": 3,
-    "actions": [
-      {
-        "name": "Deploy shield",
-        "activation": "Full",
-        "detail": "Upon activation, this system immobilises you, creating a blast 3 shield around you. Within this shield you supress all area of effect attacks forcing anyone using them to attack a single target only. The shield lasts until retracted as a protocol."
-      },
-      {
-        "name": "Retract shield",
-        "activation": "Protocol",
-        "detail": "The shield looses it's effect."
-      }
-    ],
-    "tags": [{"id": "tg_shield"}],
-    "synergies": []
-  },
-  {
-    "id": "ms_droptrooper_support",
-    "name": "Droptrooper Support",
-    "source": "LANIKA",
-    "license": "MISSISSIPPI",
-    "license_id": "mf_mississippi",
-    "license_level": 3,
-    "description": "<b>TODO</b>",
-    "effect_print": "Call in an allied subaltern Droptrooper NPC in a free space in line of sight. They take a turn of their own but follow your commands and do as you say. <br> Size ½ 10 HP 13 Eva 8 Edef 4 speed 2 Armour 4 Heat cap <br> Paratrooper LMG Quick action attack 1d3+2 kinetic 2reliable 5 range <br> Framefist Quick action attack ap 1d6 +2 explosive range 5 limited 3",
-    "sp": 3,
-    "type": "Deployable",
-    "deployables": [
-      {
-        "name": "Droptrooper",
-        "type": "Infantry Support",
-        "activation": "Quick",
-        "size": 0.5,
-        "hp": 10,
-        "evasion": 13,
-        "edef": 8,
-        "speed": 4,
-        "armor": 2,
-        "heatcap": 4,
-        "actions": [
+        "cost": 1,
+        "damage": [
           {
-            "name": "Paratrooper LMG",
-            "activation": "Free",
-            "detail": "2 reliable 5 range",
-            "range": [{"type": "Range", "val": 5}],
-            "damage": [{"type": "Kinetic", "val": "1d3+2"}]
+            "type": "Explosive",
+            "val": 2
+          }
+        ],
+        "detail": "You throw a pigeon shrapnel grenade. These grenades burst mid-air perforating your target area with a rain of tiny explosives dealing 2 explosive damage to all targets in a blast 2 area.",
+        "name": "Grenade",
+        "range": [
+          {
+            "type": "Range",
+            "val": 8
           },
           {
-            "name": "Framefist",
-            "activation": "Free",
-            "detail": "ap limited 3",
-            "range": [{"type": "Range", "val": 5}],
-            "damage": [{"type": "Explosive", "val": "1d6+2"}]
+            "type": "Blast",
+            "val": 2
           }
         ]
       }
     ],
-    "tags": [{"id": "tg_unique"}, {"id": "tg_limited", "val": 1}],
-    "synergies": []
+    "deployables": [
+      {
+        "activation": "Quick",
+        "cost": 1,
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": 2
+          }
+        ],
+        "detail": " you launch air-deployed pigeon mines in a blast 2 area. All characters and objects within the area take 2 explosive damage when a hostile character moves adjacent to the mine.",
+        "name": "Mine",
+        "range": [
+          {
+            "type": "Blast",
+            "val": 2
+          }
+        ],
+        "type": "Mine"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "Grenade; you throw a pigeon shrapnel grenade. These grenades burst mid-air perforating your target area with a rain of tiny explosives dealing 2 explosive damage to all targets in a blast 2 area. Mine; you launch air-deployed pigeon mines in a blast 2 area. All characters and objects within the area take 2 explosive damage when the mines are triggered.",
+    "id": "ms_pigeon_mine_launcher",
+    "license": "MIDZOR",
+    "license_id": "mf_midzor",
+    "license_level": 2,
+    "name": "PIGEON MINE LAUNCHER",
+    "source": "GMS-HIPS",
+    "sp": 1,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_grenade"
+      }
+    ],
+    "type": "Mine"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "You can remove any deployable with this system blowing it up in an instant, destroying them in the process. You can even remove indestructible deployables in this manner, but they can be redeployed afterwards and don't count as being destroyed",
+        "name": "Remove Device"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "You can remove any deployable with this system blowing it up in an instant, destroying them in the process. You can even remove indestructible deployables in this manner, but they can be redeployed afterwards and don't count as being destroyed.",
+    "id": "ms_milorg_removal_device",
+    "license": "MIDZOR",
+    "license_id": "mf_midzor",
+    "license_level": 3,
+    "name": "MILORG REMOVAL DEVICE",
+    "source": "GMS-HIPS",
+    "sp": 2,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "System"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "Deploy up to 6 virtual copies of your equipped deployable systems. These copies are indistinguishable from tangible objects and act as if they were real. They last for the rest of the scene, or until destroyed by an adjacent character with a successful Systems skill check as a quick action. Activating Domovoy again also removes all previous instances of its use. Deploys within line of sight and sensors ignoring requirements for adjacency.",
+        "name": "TODO"
+      }
+    ],
+    "description": "Domovoy was developed as a tool for strategic advice being able to scan entire battlefields at moment's notice and determine optimal positioning for static deployments. In combination with newest electronic warfare equipment the NHP is capable of emulating HOR_OS code at higher capacity",
+    "effect_print": "Domovoy is capable of deploying up to 6 virtual copies of your equipped deployable systems. These copies are indistinguishable from tangible objects and act as if they were real. They last for the rest of the scene, or until destroyed by an adjacent character with a successful Systems skill check as a quick action. Activating Domovoy again also removes all previous instances of its use. Deploys within line of sight and sensors ignoring requirements for adjacency.",
+    "id": "ms_domovoz_nhp",
+    "license": "MIDZOR",
+    "license_id": "mf_midzor",
+    "license_level": 3,
+    "name": "DOMOVOY NHP",
+    "source": "GMS-HIPS",
+    "sp": 2,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_limited",
+        "val": 4
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "AI"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "detail": "You link your sensors temporarily with the one's of an ally within sensors and line of sight. After linking up, you can use their sensors and line of sight as if they were yours for your next action",
+        "name": "TODO"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "You link your sensors temporarily with the one's of an ally within sensors and line of sight. After linking up, you can use their sensors and line of sight as if they were yours for your next action.",
+    "id": "ms_smart_targeting_relay",
+    "license": "ATTAKULLA",
+    "license_id": "mf_attakulla",
+    "license_level": 1,
+    "name": "SMART TARGETING RELAY",
+    "source": "GMS-HIPS",
+    "sp": 1,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "System"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "You receive a high-resolution orbital photograph of a blast 1 area within range 50. Until the start of your next turn, you and your allies can treat the area as if you had line of sight to it.",
+        "name": "TODO"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect": "TODO",
+    "effect_print": ": You receive a high-resolution orbital photograph of a blast 1 area within range 50. Until the start of your next turn, you and your allies can treat the area as if you had line of sight to it.",
+    "id": "ms_orbital_guidance_scanner",
+    "license": "ATTAKULLA",
+    "license_id": "mf_attakulla",
+    "license_level": 2,
+    "name": "ORBITAL GUIDANCE SCANNER",
+    "source": "GMS-HIPS",
+    "sp": 3,
+    "synergies": [],
+    "tags": [],
+    "type": "System"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Protocol",
+        "detail": "Once activated your Thor system deploys a swarm of small flying Trondheim drones. Until the start of your next turn, all enemies within range 8 get struck by lighting from the drones taking 3 ap energy damage whenever they take a reaction.",
+        "name": "TODO"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "Once activated your Thor system deploys a swarm of small flying Trondheim drones. Until the start of your next turn, all enemies within range 8 get struck by lighting from the drones taking 3 ap energy damage whenever they take a reaction and must succeed on a systems save or become stunned.",
+    "id": "ms_thor_nhp",
+    "license": "ATTAKULLA",
+    "license_id": "mf_attakulla",
+    "license_level": 3,
+    "name": "THOR NHP",
+    "source": "GMS-HIPS",
+    "sp": 3,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 4
+      }
+    ],
+    "type": "AI"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "You clear 1d6 heat, but take half as much burn",
+        "name": "TODO"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "You clear 1d6 heat but take half as much burn.",
+    "id": "ms_ablative_burner_plates",
+    "license": "KILIMANJARO",
+    "license_id": "mf_kilimanjaro",
+    "license_level": 1,
+    "name": "ABLATIVE BURNER PLATES",
+    "source": "GMS-HIPS",
+    "sp": 1,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "type": "System"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Full",
+        "detail": " You fill a burst 3 area with Whitewash foam clearing all and every kind of burn in the area but also slowing everyone in it or moving through it and preventing you from drawing line of sight beyond adjacent spaces.",
+        "name": "TODO"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "You fill a burst 3 area with Whitewash foam clearing all and every kind of burn in the area but also slowing everyone in it or moving through it and preventing you from drawing line of sight beyond adjacent spaces.",
+    "id": "ms_whitewash_stirrup_pump",
+    "license": "KILIMANJARO",
+    "license_id": "mf_kilimanjaro",
+    "license_level": 2,
+    "name": "WHITEWASH STIRRUP PUMP",
+    "source": "GMS-HIPS",
+    "sp": 2,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 4
+      }
+    ],
+    "type": "System"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "You shield an allied character within sensors and line of sight from heat lasting until used. They keep this shield even when they leave your sensors or line of sight. The shield absorbs the next 1d3 heat they take from external sources.",
+        "name": "TODO"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "You shield an allied character within sensors and line of sight from heat lasting until used. They keep this shield even when they leave your sensors or line of sight. The shield takes on the next 1d3 heat they take from external sources.",
+    "id": "ms_radiator_shield",
+    "license": "KILIMANJARO",
+    "license_id": "mf_kilimanjaro",
+    "license_level": 2,
+    "name": "RADIATOR SHIELD",
+    "source": "GMS-HIPS",
+    "sp": 1,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "type": "Shield"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Full Tech",
+        "detail": "You clear all statuses and effects effecting adjacent allied characters.",
+        "name": "TODO"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "You clear all statuses and effects effecting adjacent allied characters.",
+    "id": "ms_rescue_code",
+    "license": "KILIMANJARO",
+    "license_id": "mf_kilimanjaro",
+    "license_level": 3,
+    "name": "RESCUE CODE",
+    "source": "GMS-HIPS",
+    "sp": 3,
+    "synergies": [],
+    "tags": [],
+    "type": "System"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Invade",
+        "detail": "Your target takes twice as much heat on the next tech attack they are hit by.",
+        "name": "Amplifier"
+      },
+      {
+        "activation": "Invade",
+        "detail": "Until the start of their next turn, your targets E-defence drops by two.",
+        "name": "Access"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "Gain the following options for INVADE",
+    "id": "ms_virtual_backdoor",
+    "license": "CHANG JIANG",
+    "license_id": "mf_chang_jiang",
+    "license_level": 1,
+    "name": "Virutal Backdoor",
+    "source": "LANIKA",
+    "sp": 2,
+    "synergies": [],
+    "tags": [],
+    "type": "Tech"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Full Tech",
+        "detail": "Choose an allied character in sensors and line of sight. They are protected by a white hat trojan until the end of their next turn. When an enemy inflicts heat on them while this protection is active, the enemy must succeed on an engineering save or take as much burn from their action as it inflicted heat. Only one ally can benefit from this effect at any given time. If you target another allied character before it would have ended, it resolves automatically on your previous target.",
+        "name": "TODO"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "Choose an allied character in sensors and line of sight. They are protected by a white hat trojan until the end of their next turn. When an enemy inflicts heat on them while this protection is active, the enemy must succeed on an engineering save or take as much burn from their action as it inflicted heat. Only one ally can benefit from this effect at any given time. If you target another allied character before it would have ended, it resolves automatically on your previous target.",
+    "id": "ms_fire_duplication_bug",
+    "license": "CHANG JIANG",
+    "license_id": "mf_chang_jiang",
+    "license_level": 1,
+    "name": "FIRE DUPLICATION BUG",
+    "source": "LANIKA",
+    "sp": 3,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "Tech"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Invade",
+        "detail": "Until the end of their next turn, they must roll a d6 each time they perform a tech attack. On 5+ their attack automatically misses. This effect doesn't stack.",
+        "name": "Brain drain"
+      },
+      {
+        "activation": "Invade",
+        "detail": "Until the start of their next turn, your targets E-defence drops by two.",
+        "name": "Access"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "Gain the following options for INVADE",
+    "id": "ms_digital_rights_management",
+    "license": "CHANG JIANG",
+    "license_id": "mf_chang_jiang",
+    "license_level": 2,
+    "name": "Digital Rights Management",
+    "source": "LANIKA",
+    "sp": 2,
+    "synergies": [],
+    "tags": [],
+    "type": "Tech"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "detail": "Choose one allied and one enemy character within sensors and line of sight. You link up their onimnet receivers. Until the end of your next turn, whenever one of them gets affected by a tech attack, you take one heat and the unaffected character must succeed on a systems save or suffer the same effect as the attacks target.",
+        "name": "TODO"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "Choose one allied and one enemy character within sensors and line of sight. You link up their onimnet receivers. Until the end of your next turn, whenever one of them gets affected by a tech attack, you take one heat and the unaffected character must succeed on a systems save or suffer the same effect as the attacks target.",
+    "id": "ms_aggressive_flush_system_linkage",
+    "license": "CHANG JIANG",
+    "license_id": "mf_chang_jiang",
+    "license_level": 3,
+    "name": "AGGRESSIVE FLUSH SYSTEM LINKAGE",
+    "source": "LANIKA",
+    "sp": 2,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "Tech"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Reaction",
+        "detail": "The allied character gains immunity to all effects from the tech attack that just hit them. Additionally, they gain 1d3 + GRIT Overshield. However, in the process, their CPU get's overburdened and they become Slowed and Impaired until the end of their next turn",
+        "frequency": "Unlimited",
+        "name": "Systems Freeze Backup Shield",
+        "trigger": "An allied character within sensors and line of sight gets hit by a tech attack"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "Whenever an allied character within sensors and line of sight gets hit by a tech attack you may spend a charge of this system and take the Systems Freeze Backup Shield Reaction. The allied character gains immunity to all effects from the tech attack that just hit them. Additionally, they gain 1d3 + GRIT Overshield. However, in the process, their CUP get's overburdened and they become Slowed and Impaired until the end of their next turn.",
+    "id": "ms_task_manager",
+    "license": "CHANG JIANG",
+    "license_id": "mf_chang_jiang",
+    "license_level": 3,
+    "name": "TASK MANAGER SYSTEMS HALT",
+    "source": "LANIKA",
+    "sp": 2,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 4
+      }
+    ],
+    "type": "System"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Invade",
+        "detail": "At the start of each subsequent turn your target must roll a system save until they pass one and thus end this effect. Until then they perceive a simulated earthquake needing to succeed on a hull save or be knocked prone unless they are flying.",
+        "name": "Earthquake"
+      },
+      {
+        "activation": "Invade",
+        "detail": ": At the start of each subsequent turn your target must roll a system save until they pass one and thus end this effect. Until then they perceive a simulated blizzard needing to move or boost each turn or become immobilised until they break free with a successful Hull save as a quick action.",
+        "name": "Blizzard"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "Gain the following options for INVADE",
+    "id": "ms_orlinoco_hack",
+    "license": "ORINOCO",
+    "license_id": "mf_orinoco",
+    "license_level": 1,
+    "name": "Meteorological Simulation",
+    "source": "LANIKA",
+    "sp": 2,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "Tech"
+  },
+  {
+    "deployables": [
+      {
+        "activation": "Quick",
+        "deactivation": "Quick",
+        "detail": "Create a line 3 manifestation 2 spaces high. It blocks line of sight for the purpose of tech attacks. Characters can still see through it and make melee and ranged attacks through it unaltered. The manufestation lasts until pick up again or until the end of the scene.",
+        "name": "Stasis Barrier",
+        "tags": [
+          {
+            "id": "tg_invulnerable"
+          }
+        ],
+        "type": "Deployable"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "This system creates a line 3 manifestation 2 spaces high. It blocks line of sight for the purpose of tech attacks. Characters can still see through it and make melee and ranged attacks through it unaltered. The System lasts until pick up again or until the end of the scene.",
+    "id": "ms_firewall_manifestation",
+    "license": "ORINOCO",
+    "license_id": "mf_orinoco",
+    "license_level": 1,
+    "name": "FIREWALL MANIFESTATION",
+    "source": "LANIKA",
+    "sp": 2,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_invulnerable"
+      }
+    ],
+    "type": "Shield"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Full Tech",
+        "detail": "Make a tech attack against an emy within sensors and line of sight. On hit, the Out Of Battery Detonation-Signal  targets  their  weaponry  causing  catastrophic  misfires.  All  their  weapons become unloaded, they become jammed and take 2ap explosive damage for every installed ranged weapon or system with the grenade or mine tag. If they carry no such weapons or systems, this attack automatically fails against them. A Character can only be target once by this effect per scene.",
+        "name": "TODO"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "Make a tech attack against an emy within sensors and line of sight. On hit, the Out Off Battery Detonation-Signal targets their weaponry causing catastrophic misfires. All their weapons become unloaded, they become jammed and take 2ap explosive damage for every installed ranged weapon or system with the grenade or mine tag. If they carry no such weapons or systems, this attack automatically fails against them. A Character can only be target once by this effect per scene.",
+    "id": "ms_oobd_signal",
+    "license": "ORINOCO",
+    "license_id": "mf_orinoco",
+    "license_level": 2,
+    "name": "OOBD-Signal",
+    "source": "LANIKA",
+    "sp": 3,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "type": "Tech"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "You make a tactical retreat. First, deploy a burst 2 smoke cover, then teleport up two two spaces. You become invisible afterwards until you move, voluntarily or involuntarily or until the start of your next turn.",
+        "name": "Flee the cops"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "You make a tactical retreat. First, deploy a burst 2 smoke cover, then teleport up two two spaces. You become invisible afterwards until you move, voluntarily or involuntarily or until the start of your next turn. ",
+    "id": "ms_escape_tool",
+    "license": "ORINOCO",
+    "license_id": "mf_orinoco",
+    "license_level": 2,
+    "name": "ESCAPE TOOL",
+    "source": "LANIKA",
+    "sp": 3,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "type": "System"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Invade",
+        "detail": "The enemy suffers a system failure in its counter electronics glowing up on your Combat UIs. The next attack against it, if it hits, counts as a critical hit.",
+        "name": "DARTS Heads-Up Marker"
+      },
+      {
+        "activation": "Invade",
+        "detail": "After successful hacking your enemy target, you designate an ally within sensors and line of sight. Your enemy target takes 3ap energy damage whenever they attack an a target other than the one designated by you until the end of their next turn..",
+        "name": "Predesignated Target Command"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "",
+    "id": "ms_darts_ui_controls",
+    "license": "ORINOCO",
+    "license_id": "mf_orinoco",
+    "license_level": 3,
+    "name": "DARTS-UI Controls",
+    "source": "LANIKA",
+    "sp": 2,
+    "synergies": [],
+    "tags": [],
+    "type": "Tech"
+  },
+  {
+    "description": "<b>TODO</b>",
+    "effect": "Adjacent allied characters gain +1 accuracy on their first attack each turn when they stand within soft cover and deal +2 bonus damage.",
+    "effect_print": "Adjacent allied characters gain +1 accuracy on their first attack each turn when they stand within soft cover and deal +2 bonus damage.",
+    "id": "ms_ambush_pack",
+    "license": "MISSISSIPPI",
+    "license_id": "mf_mississippi",
+    "license_level": 1,
+    "name": "Ambush Pack",
+    "source": "LANIKA",
+    "sp": 3,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "System"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Protocol",
+        "detail": "Spreads smoke creating soft cover in every space you cross while moving this turn. The smoke last until the end your next turn.",
+        "name": "Deploy smoke"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "once active as a protocol, this system spreads smoke creating soft cover in every space you cross while moving this turn. The smoke last until the end your next turn.",
+    "id": "ms_ranger_cloud",
+    "license": "MISSISSIPPI",
+    "license_id": "mf_mississippi",
+    "license_level": 1,
+    "name": "Ranger cloud",
+    "source": "LANIKA",
+    "sp": 1,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "System"
+  },
+  {
+    "deployables": [
+      {
+        "activation": "Quick",
+        "detail": "The drone, once deployed creates a blast 4 area. When an enemy first enters or leaves the area on its turn the drone attacks them with a reaction dealing 3ap explosive.",
+        "edef": 10,
+        "evasion": 10,
+        "hp": 5,
+        "name": "Barbed wire",
+        "size": 0.5,
+        "type": "Drone"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "The drone, once deployed creates a blast 4 area. When an enemy first enters or leaves the area on its turn the drone attacks them with a reaction dealing 3ap explosive.",
+    "id": "ms_pillbox_drone",
+    "license": "MISSISSIPPI",
+    "license_id": "mf_mississippi",
+    "license_level": 2,
+    "name": "Pillbox drone",
+    "source": "LANIKA",
+    "sp": 2,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "type": "Drone"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Full",
+        "detail": "Upon activation, this system immobilises you, creating a blast 3 shield around you. Within this shield you supress all area of effect attacks forcing anyone using them to attack a single target only. The shield lasts until retracted as a protocol.",
+        "name": "Deploy shield"
+      },
+      {
+        "activation": "Protocol",
+        "detail": "The shield looses it's effect.",
+        "name": "Retract shield"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "Upon activation, this system immobilises you, creating a blast 3 shield around you. Within this shield you supress all area of effect attacks forcing anyone using them to attack a single target only. The shield lasts until retracted as a protocol.",
+    "id": "ms_dampener_shield",
+    "license": "MISSISSIPPI",
+    "license_id": "mf_mississippi",
+    "license_level": 2,
+    "name": "Dampener shield",
+    "source": "LANIKA",
+    "sp": 3,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "type": "Drone"
+  },
+  {
+    "deployables": [
+      {
+        "actions": [
+          {
+            "activation": "Free",
+            "damage": [
+              {
+                "type": "Kinetic",
+                "val": "1d3+2"
+              }
+            ],
+            "detail": "2 reliable 5 range",
+            "name": "Paratrooper LMG",
+            "range": [
+              {
+                "type": "Range",
+                "val": 5
+              }
+            ]
+          },
+          {
+            "activation": "Free",
+            "damage": [
+              {
+                "type": "Explosive",
+                "val": "1d6+2"
+              }
+            ],
+            "detail": "ap limited 3",
+            "name": "Framefist",
+            "range": [
+              {
+                "type": "Range",
+                "val": 5
+              }
+            ]
+          }
+        ],
+        "activation": "Quick",
+        "armor": 2,
+        "edef": 8,
+        "evasion": 13,
+        "heatcap": 4,
+        "hp": 10,
+        "name": "Droptrooper",
+        "size": 0.5,
+        "speed": 4,
+        "type": "Infantry Support"
+      }
+    ],
+    "description": "<b>TODO</b>",
+    "effect_print": "Call in an allied subaltern Droptrooper NPC in a free space in line of sight. They take a turn of their own but follow your commands and do as you say. <br> Size \u00bd 10 HP 13 Eva 8 Edef 4 speed 2 Armour 4 Heat cap <br> Paratrooper LMG Quick action attack 1d3+2 kinetic 2reliable 5 range <br> Framefist Quick action attack ap 1d6 +2 explosive range 5 limited 3",
+    "id": "ms_droptrooper_support",
+    "license": "MISSISSIPPI",
+    "license_id": "mf_mississippi",
+    "license_level": 3,
+    "name": "Droptrooper Support",
+    "source": "LANIKA",
+    "sp": 3,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "type": "Deployable"
   }
 ]

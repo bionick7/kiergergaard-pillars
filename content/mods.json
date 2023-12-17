@@ -1,16 +1,31 @@
 [
   {
+    "allowed_types": [
+      "Melee",
+      "CQB",
+      "Rifle",
+      "Launcher",
+      "Cannon",
+      "Nexus"
+    ],
+    "description": "<b>TODO</b>",
+    "effect": " Attacking an invisible character, you may spend a charge of this system to ignore their invisibility and attack them normally",
     "id": "wm_nighthawk_scope",
-    "name": "NIGHTHAWK SCOPE",
+    "license": "ATTAKULLA",
     "license_id": "mf_attakulla",
-    "sp": 2,
-    "allowed_types": ["Melee", "CQB", "Rifle", "Launcher", "Cannon", "Nexus"],
+    "license_level": 2,
+    "name": "NIGHTHAWK SCOPE",
     "restricted_sizes": [],
     "source": "GMS-HIPS",
-    "license": "ATTAKULLA",
-    "license_level": 2,
-    "effect": " Attacking an invisible character, you may spend a charge of this system to ignore their invisibility and attack them normally",
-    "description": "<b>TODO</b>",
-    "tags": [{"id": "tg_unique"}, {"id": "tg_limited", "val": 4}]
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": 4
+      }
+    ]
   }
 ]

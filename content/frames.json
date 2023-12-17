@@ -1,754 +1,806 @@
 [
   {
+    "core_system": {
+      "activation": "Protocol",
+      "active_effect": "<p>The Midzor deploys it's integrated temporary bridge aiding allies in crossing even the harshest of terrain. You extend yourself over a line 5 (centre to centre) with width 3. Doing so:<ul><li>You become immobilised and can't be moved by any means</li><li>You ignore all kinds of difficult or dangerous terrain beneath you as well as obstacles of up to size 1</li><li>Allies can move across the surface covered by ignoring the terrain beneath</li><li>On the turn you activated this core, you can use limited systems with the deployable tag without using any charge.</li></ul>This ability is Efficient and will refund 1 Core Point at the end of any scene in which this ability was used.</p>",
+      "active_name": "Bridge deployment",
+      "description": "<b>TODO</b>",
+      "name": "Advanced Frontline Pioneering",
+      "use": "Scene"
+    },
+    "description": "<p>The Midzor presents the most extensive pioneering frame on the market offering great tools for hazard removal as well as area denial be it through mines or barbed wire. The frame also offering unique capability of deploying itself as a bridge to get allies safely over various obstacles making it peerless in frontline service. Since its first operation at Helibep it serves with various pioneering corps being one of few chassis from the HIPS line available on the open market.</p>",
     "id": "mf_midzor",
+    "image_url": "https://cdn.discordapp.com/attachments/365511976446722048/1138180322492694608/dream_TradingCard_-_2023-08-07T162021.190.jpg",
     "license_id": "mf_midzor",
     "license_level": 2,
-    "y_pos": 20,
-    "source": "GMS-HIPS",
-    "name": "MIDZOR",
     "mechtype": [
       "Controller",
       "Support"
     ],
-    "description": "<p>The Midzor presents the most extensive pioneering frame on the market offering great tools for hazard removal as well as area denial be it through mines or barbed wire. The frame also offering unique capability of deploying itself as a bridge to get allies safely over various obstacles making it peerless in frontline service. Since its first operation at Helibep it serves with various pioneering corps being one of few chassis from the HIPS line available on the open market.</p>",
     "mounts": [
       "Aux/Aux",
       "Main/Aux"
     ],
+    "name": "MIDZOR",
+    "source": "GMS-HIPS",
     "stats": {
-      "size": 3,
-      "stress": 4,
-      "structure": 4,
       "armor": 2,
-      "hp": 7,
-      "evasion": 6,
       "edef": 8,
+      "evasion": 6,
       "heatcap": 7,
-      "sensor_range": 10,
-      "tech_attack": 0,
+      "hp": 7,
       "repcap": 5,
       "save": 11,
+      "sensor_range": 10,
+      "size": 3,
+      "sp": 8,
       "speed": 3,
-      "sp": 8
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": 0
     },
     "traits": [
       {
-        "name": "MRAP",
-        "description": "The Midzor is immune to all damage from dangerous terrain."
+        "description": "The Midzor is immune to all damage from dangerous terrain.",
+        "name": "MRAP"
       },
       {
-        "name": "Colossus",
-        "description": "Adjacent allied characters can use the Midzor as hard cover."
+        "description": "Adjacent allied characters can use the Midzor as hard cover.",
+        "name": "Colossus"
       },
       {
-        "name": "Heavy Frame",
-        "description": "The Midzor can’t be pushed, pulled, knocked prone or knocked back by smaller characters."
+        "description": "The Midzor can't be pushed, pulled, knocked prone or knocked back by smaller characters.",
+        "name": "Heavy Frame"
       }
     ],
-    "core_system": {
-      "name": "Advanced Frontline Pioneering",
-      "description": "<b>TODO</b>",
-      "activation": "Protocol",
-      "active_name": "Bridge deployment",
-      "active_effect": "<p>The Midzor deploys it’s integrated temporary bridge aiding allies in crossing even the harshest of terrain. You extend yourself over a line 5 (centre to centre) with width 3. Doing so:<ul><li>You become immobilised and can’t be moved by any means</li><li>You ignore all kinds of difficult or dangerous terrain beneath you as well as obstacles of up to size 1</li><li>Allies can move across the surface covered by ignoring the terrain beneath</li><li>On the turn you activated this core, you can use limited systems with the deployable tag without using any charge.</li></ul>This ability is Efficient and will refund 1 Core Point at the end of any scene in which this ability was used.</p>",
-      "use": "Scene"
-    },
-    "image_url": "https://cdn.discordapp.com/attachments/365511976446722048/1138180322492694608/dream_TradingCard_-_2023-08-07T162021.190.jpg"
+    "y_pos": 20
   },
   {
+    "core_system": {
+      "activation": "Protocol",
+      "active_actions": [
+        {
+          "activation": "Quick",
+          "detail": "<p>Roll an additional d6 to determine the wing sent to your aid. All of these can be done within range 15 ignoring requirements for line of sight.<li>Recon overhead flight : Lock-On to one enemy.</li><li>Smokebomb advance : Draw a line 5 area in which all characters benefit from soft cover until the end of your next turn, at which point the smoke disperses.</li><li>Hypersonic missile strike : deal 4 explosive damage to one enemy.</li><li>Pigeon mines : <b>TODO</b></li><li>BH-Carpet bombing : Draw a line 8 area. All targets within take 2 explosive damage</li><li>Kaneda-X orbital strike : Deal 1d6 +2 AP energy damage to one enemy</li></p>",
+          "name": "Call Air Strike"
+        },
+        {
+          "activation": "Full",
+          "detail": "<p>Calling 2 air strikes in a row c.f. <i>Call Air Strike</i></p>",
+          "name": "Double Air Strike"
+        }
+      ],
+      "active_effect": "<p>For the rest of this scene you can roll 2d6 at the start of each round making successful contact with strike command on 3+ for each roll. In case both d6 succeed, you gain access to <i>Double Air Strike</i></p>",
+      "active_name": "High Alert Status",
+      "description": "<b>TODO</b>",
+      "name": "Flight Coordination Relay",
+      "passive_actions": [
+        {
+          "activation": "Quick",
+          "detail": "<p>Roll an additional d6 to determine the wing sent to your aid. All of these can be done within range 15 ignoring requirements for line of sight.<li>Recon overhead flight : Lock-On to one enemy.</li><li>Smokebomb advance : Draw a line 5 area in which all characters benefit from soft cover until the end of your next turn, at which point the smoke disperses.</li><li>Hypersonic missile strike : deal 4 explosive damage to one enemy.</li><li>Pigeon mines : <b>TODO</b></li><li>BH-Carpet bombing : Draw a line 8 area. All targets within take 2 explosive damage</li><li>Kaneda-X orbital strike : Deal 1d6 +2 AP energy damage to one enemy</li></p>",
+          "name": "Call Air Strike"
+        }
+      ],
+      "passive_effect": "<p>At the start of each of your turns, you may roll at d6. On 4+ you successfully make contact with strike command and may use <i>Call Air Strike</i></p>",
+      "passive_name": "Combat Air Patrol",
+      "use": "Mission"
+    },
+    "description": "<p>Developed in a joint effort with the Union Navy, Attakulla presents one of the premiere platforms of joint arms operation offering superb tools to coordinate air strikes and orbital support. Initially received with complaints by front line troops the introduction of dedicated drone wings to every frame soon proved the capability of the chassis making it and it's NHP assistance the preferred choice for many DOJ/HR NCOs.</p>",
     "id": "mf_attakulla",
+    "image_url": "https://cdn.discordapp.com/attachments/365511976446722048/1138182600654077992/dream_TradingCard_-_2023-08-07T204900.969.jpg",
     "license_id": "mf_attakulla",
     "license_level": 2,
-    "y_pos": 30,
-    "source": "GMS-HIPS",
-    "name": "ATTAKULLA",
     "mechtype": [
       "Controller",
       "Striker"
     ],
-    "description": "<p>Developed in a joint effort with the Union Navy, Attakulla presents one of the premiere platforms of joint arms operation offering superb tools to coordinate air strikes and orbital support. Initially received with complaints by front line troops the introduction of dedicated drone wings to every frame soon proved the capability of the chassis making it and it’s NHP assistance the preferred choice for many DOJ/HR NCOs.</p>",
     "mounts": [
       "Aux/Aux",
       "Aux/Aux"
     ],
+    "name": "ATTAKULLA",
+    "source": "GMS-HIPS",
     "stats": {
-      "size": 0.5,
-      "stress": 4,
-      "structure": 4,
       "armor": 0,
-      "hp": 6,
-      "evasion": 9,
       "edef": 8,
+      "evasion": 9,
       "heatcap": 5,
-      "sensor_range": 15,
-      "tech_attack": 1,
+      "hp": 6,
       "repcap": 3,
       "save": 11,
+      "sensor_range": 15,
+      "size": 0.5,
+      "sp": 7,
       "speed": 4,
-      "sp": 7
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": 1
     },
     "traits": [
       {
-        "name": "No-flight-zone",
-        "description": "1/round the Attakulla can force any adjacent character of its choice to land immediately (this counts as falling without any damage) and prevent them from flying until they break adjacency."
+        "description": "1/round the Attakulla can force any adjacent character of its choice to land immediately (this counts as falling without any damage) and prevent them from flying until they break adjacency.",
+        "name": "No-flight-zone"
       },
       {
-        "name": "Fragile",
         "description": "The Attakula receives +1 difficulty to Hull checks and saves.",
+        "name": "Fragile",
         "synergies": [
           {
-            "locations": ["hull", "skill_check"],
-            "detail": "The Attakula receives +1 difficulty on Hull checks and saves."
+            "detail": "The Attakula receives +1 difficulty on Hull checks and saves.",
+            "locations": [
+              "hull",
+              "skill_check"
+            ]
           }
         ]
       }
     ],
-    "core_system": {
-      "name": "Flight Coordination Relay",
-      "description": "<b>TODO</b>",
-      "activation": "Protocol",
-      "active_name": "High Alert Status",
-      "active_effect": "<p>For the rest of this scene you can roll 2d6 at the start of each round making successful contact with strike command on 3+ for each roll. In case both d6 succeed, you gain access to <i>Double Air Strike</i></p>",
-      "passive_name": "Combat Air Patrol",
-      "passive_effect": "<p>At the start of each of your turns, you may roll at d6. On 4+ you successfully make contact with strike command and may use <i>Call Air Strike</i></p>",
-      "use": "Mission",
-      "passive_actions": [
-        {
-          "name": "Call Air Strike",
-          "activation": "Quick",
-          "detail": "<p>Roll an additional d6 to determine the wing sent to your aid. All of these can be done within range 15 ignoring requirements for line of sight.<li>Recon overhead flight : Lock-On to one enemy.</li><li>Smokebomb advance : Draw a line 5 area in which all characters benefit from soft cover until the end of your next turn, at which point the smoke disperses.</li><li>Hypersonic missile strike : deal 4 explosive damage to one enemy.</li><li>Pigeon mines : <b>TODO</b></li><li>BH-Carpet bombing : Draw a line 8 area. All targets within take 2 explosive damage</li><li>Kaneda-X orbital strike : Deal 1d6 +2 AP energy damage to one enemy</li></p>"
-        }
-      ],
-      "active_actions": [
-        {
-          "name": "Call Air Strike",
-          "activation": "Quick",
-          "detail": "<p>Roll an additional d6 to determine the wing sent to your aid. All of these can be done within range 15 ignoring requirements for line of sight.<li>Recon overhead flight : Lock-On to one enemy.</li><li>Smokebomb advance : Draw a line 5 area in which all characters benefit from soft cover until the end of your next turn, at which point the smoke disperses.</li><li>Hypersonic missile strike : deal 4 explosive damage to one enemy.</li><li>Pigeon mines : <b>TODO</b></li><li>BH-Carpet bombing : Draw a line 8 area. All targets within take 2 explosive damage</li><li>Kaneda-X orbital strike : Deal 1d6 +2 AP energy damage to one enemy</li></p>"
-        },
-        {
-          "name": "Double Air Strike",
-          "activation": "Full",
-          "detail": "<p>Calling 2 air strikes in a row c.f. <i>Call Air Strike</i></p>"
-        }
-      ]
-    },
-        "image_url": "https://cdn.discordapp.com/attachments/365511976446722048/1138182600654077992/dream_TradingCard_-_2023-08-07T204900.969.jpg"
+    "y_pos": 30
   },
   {
+    "core_system": {
+      "activation": "Full",
+      "active_actions": [
+        {
+          "activation": "Quick",
+          "detail": "<p>This system can only be used when your core is active and only holds three charges. This amount can't be raised by any means. Expending a charge, you may cool down completely. You don't stabilize doing so and don't get any additional advantages.",
+          "name": "Fire Nitrogen Emergency Pack"
+        }
+      ],
+      "active_effect": "<p>For the rest of this scene the Bolzman heat pump takes on all the heat instead of half once activated. You also gain the <i>Nitrogen Emergency Packs</i> quick action. <br></p>",
+      "active_name": "High Enthalpy Reduction",
+      "description": "<b>TODO</b>",
+      "name": "Thermal Control Package",
+      "passive_effect": "<p>As a quick action, you may latch onto any character adjacent character. Until either of you breaks adjacency you may take half the heat they take no matter the source. </p>",
+      "passive_name": "Boltzmann Heat Pump",
+      "tags": [
+        {
+          "id": "tg_limited",
+          "val": 3
+        }
+      ],
+      "use": "Mission"
+    },
+    "description": "<p>Developed from reverse engineered Harrison reactors the Kilimanjaro fire suppression and heat management chassis presents a breakthrough in reactor safety. Ongoing Union trials even conduct trials on the system as a countermeasure to total biome kills combining the strongest heat pump ever used on chassis with superb ABC-protection. No matter if it serves on carriers at the reactor unit, pushes fast deployment units to their limit or suppresses wildfires, the Kilimanjaro is a favourite to everyone looking to fight heat.</p>",
     "id": "mf_kilimanjaro",
+    "image_url": "https://cdn.discordapp.com/attachments/365511976446722048/1138180239151869952/dream_TradingCard_-_2023-08-07T163227.644.jpg",
     "license_id": "mf_kilimanjaro",
     "license_level": 2,
-    "y_pos": 20,
-    "source": "GMS-HIPS",
-    "name": "KILIMANJARO",
     "mechtype": [
       "Support"
     ],
-    "description": "<p>Developed from reverse engineered Harrison reactors the Kilimanjaro fire suppression and heat management chassis presents a breakthrough in reactor safety. Ongoing Union trials even conduct trials on the system as a countermeasure to total biome kills combining the strongest heat pump ever used on chassis with superb ABC-protection. No matter if it serves on carriers at the reactor unit, pushes fast deployment units to their limit or suppresses wildfires, the Kilimanjaro is a favourite to everyone looking to fight heat.</p>",
     "mounts": [
       "Aux/Aux"
     ],
+    "name": "KILIMANJARO",
+    "source": "GMS-HIPS",
     "stats": {
-      "size": 1,
-      "stress": 4,
-      "structure": 4,
       "armor": 2,
-      "hp": 6,
-      "evasion": 7,
       "edef": 10,
+      "evasion": 7,
       "heatcap": 10,
-      "sensor_range": 10,
-      "tech_attack": 1,
+      "hp": 6,
       "repcap": 4,
       "save": 12,
+      "sensor_range": 10,
+      "size": 1,
+      "sp": 7,
       "speed": 4,
-      "sp": 7
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": 1
     },
     "traits": [
       {
-        "name": "Superior Reactor",
         "description": "The Kilimanjaro gains +1 accuracy on Engineering checks and saves.",
+        "name": "Superior Reactor",
         "synergies": [
           {
-            "locations": ["engineering", "skill_check"],
-            "detail": "The Kilimanjaro gains +1 accuracy on Engineering checks and saves."
+            "detail": "The Kilimanjaro gains +1 accuracy on Engineering checks and saves.",
+            "locations": [
+              "engineering",
+              "skill_check"
+            ]
           }
         ]
       },
       {
-        "name": "Reactive Heat Shielding",
         "description": "When receiving any amount of burn damage, the Kilimanjaro first gains overshield equal to 4 + GRIT before taking damage. Additionally, it has immunity to all heat from external sources as long as it benefits from this overshield. This does not apply to heat from your Thermal Control Package.",
+        "name": "Reactive Heat Shielding",
         "synergies": [
           {
-            "locations": ["overshield"],
-            "detail": "When receiving any amount of burn damage, the Kilimanjaro first gains overshield equal to 4 + GRIT before taking damage."
+            "detail": "When receiving any amount of burn damage, the Kilimanjaro first gains overshield equal to 4 + GRIT before taking damage.",
+            "locations": [
+              "overshield"
+            ]
           },
           {
-            "locations": ["heat"],
-            "detail": "The Kilimanjaro has immunity to all heat from external sources as long as it benefits from overshield gained from Reactive Heat Shield. This does not apply to heat from your Thermal Control Package."
+            "detail": "The Kilimanjaro has immunity to all heat from external sources as long as it benefits from overshield gained from Reactive Heat Shield. This does not apply to heat from your Thermal Control Package.",
+            "locations": [
+              "heat"
+            ]
           }
         ]
       },
       {
-        "name": "Emergency heat spew",
         "description": "When taking stress, the Kilimanjaro cools off by ejecting flaming reactor fuel in a cone 3 spew. All characters within the affected area take 1d6 explosive damage.",
+        "name": "Emergency heat spew",
         "synergies": [
           {
-            "locations": ["stress"],
-            "detail": "When taking stress, the Kilimanjaro cools off by ejecting flaming reactor fuel in a cone 3 spew. All characters within the affected area take 1d6 explosive damage."
+            "detail": "When taking stress, the Kilimanjaro cools off by ejecting flaming reactor fuel in a cone 3 spew. All characters within the affected area take 1d6 explosive damage.",
+            "locations": [
+              "stress"
+            ]
           }
         ]
       }
     ],
-    "core_system": {
-      "name": "Thermal Control Package",
-      "description": "<b>TODO</b>",
-      "activation": "Full",
-      "active_name": "High Enthalpy Reduction",
-      "active_effect": "<p>For the rest of this scene the Bolzman heat pump takes on all the heat instead of half once activated. You also gain the <i>Nitrogen Emergency Packs</i> quick action. <br></p>",
-      "passive_name": "Boltzmann Heat Pump",
-      "passive_effect": "<p>As a quick action, you may latch onto any character adjacent character. Until either of you breaks adjacency you may take half the heat they take no matter the source. </p>",
-      "use": "Mission",
-      "active_actions": [
-        {
-          "name": "Fire Nitrogen Emergency Pack",
-          "activation": "Quick",
-          "detail": "<p>This system can only be used when your core is active and only holds three charges. This amount can’t be raised by any means. Expending a charge, you may cool down completely. You don’t stabilize doing so and don’t get any additional advantages."
-        }
-      ],
-      "tags": [{"id": "tg_limited", "val": 3}]
-    },
-        "image_url": "https://cdn.discordapp.com/attachments/365511976446722048/1138180239151869952/dream_TradingCard_-_2023-08-07T163227.644.jpg"
+    "y_pos": 20
   },
   {
+    "core_system": {
+      "activation": "Full",
+      "active_actions": [
+        {
+          "activation": "Reaction",
+          "effect": "<p> You first roll 1d6, on 4+ their attack automatically fails. Instead, you may use their attack against them, using your stats. You count as the conducter of the attack.</p>",
+          "frequency": "1/Round",
+          "name": "TODO",
+          "trigger": "An enemy attacks you or an ally within sensors and line of sight with a tech attack"
+        }
+      ],
+      "active_effect": "<p>For the rest of this scene, you gain the <b>TODO</b> reaction.</p>",
+      "active_name": "Fortress Of The Mind",
+      "description": "<b>TODO</b>",
+      "name": "Viral Lock-Down Protocol",
+      "use": "Mission"
+    },
+    "description": "<p>The nightmare of every hacker, the Chang Jiang comes equipped with some of the most complex coding ever seen around the Dawnline shore outside of the realm of NHPs. Exploiting the system access granted through buffering the frame can transform the software of any other frame into a labyrinth of code without escape. The frame is therefore feared by almost everyone conduction operations in cyberwarfare.</p>",
     "id": "mf_chang_jiang",
+    "image_url": "https://ih1.redbubble.net/image.980358996.2852/flat,750x,075,f-pad,750x1000,f8f8f8.jpg",
     "license_id": "mf_chang_jiang",
     "license_level": 2,
-    "y_pos": 30,
-    "source": "LANIKA",
-    "name": "CHANG JIANG",
     "mechtype": [
       "Support"
     ],
-    "description": "<p>The nightmare of every hacker, the Chang Jiang comes equipped with some of the most complex coding ever seen around the Dawnline shore outside of the realm of NHPs. Exploiting the system access granted through buffering the frame can transform the software of any other frame into a labyrinth of code without escape. The frame is therefore feared by almost everyone conduction operations in cyberwarfare.</p>",
     "mounts": [
-      "Flex", "Main"
+      "Flex",
+      "Main"
     ],
+    "name": "CHANG JIANG",
+    "source": "LANIKA",
     "stats": {
-      "size": 1,
-      "stress": 4,
-      "structure": 4,
       "armor": 0,
-      "hp": 7,
-      "evasion": 7,
       "edef": 12,
+      "evasion": 7,
       "heatcap": 5,
-      "sensor_range": 15,
-      "tech_attack": 1,
+      "hp": 7,
       "repcap": 3,
       "save": 11,
+      "sensor_range": 15,
+      "size": 1,
+      "sp": 6,
       "speed": 3,
-      "sp": 6
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": 1
     },
     "traits": [
       {
-        "name": "Castle Support Code",
         "description": "Bolstering causes your target to inflict +4 difficulty on all tech attacks made against them while they benefit from the bolstering.",
+        "name": "Castle Support Code",
         "synergies": [
           {
-            "locations": ["tech"],
-            "detail": "Bolstering causes your target to inflict +4 difficulty on all tech attacks made against them while they benefit from the bolstering."
+            "detail": "Bolstering causes your target to inflict +4 difficulty on all tech attacks made against them while they benefit from the bolstering.",
+            "locations": [
+              "tech"
+            ]
           }
         ]
       },
       {
-        "name": "High Performance CPU",
         "description": "The Chang Jiang gains +1 accuracy on Systems checks and saves.",
+        "name": "High Performance CPU",
         "synergies": [
           {
-            "locations": ["systems", "skill_check"],
-            "detail": "The Chang Jiang gains +1 accuracy on Systems checks and saves."
+            "detail": "The Chang Jiang gains +1 accuracy on Systems checks and saves.",
+            "locations": [
+              "systems",
+              "skill_check"
+            ]
           }
         ]
       }
     ],
-    "core_system": {
-      "name": "Viral Lock-Down Protocol",
-      "description": "<b>TODO</b>",
-      "activation": "Full",
-      "active_name": "Fortress Of The Mind",
-      "active_effect": "<p>For the rest of this scene, you gain the <b>TODO</b> reaction.</p>",
-      "use": "Mission",
-      "active_actions": [
-        {
-          "name": "TODO",
-          "frequency": "1/Round",
-          "activation": "Reaction",
-          "trigger": "An enemy attacks you or an ally within sensors and line of sight with a tech attack",
-          "effect": "<p> You first roll 1d6, on 4+ their attack automatically fails. Instead, you may use their attack against them, using your stats. You count as the conducter of the attack.</p>"
-        }
-      ]
-    },
-    "image_url": "https://ih1.redbubble.net/image.980358996.2852/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+    "y_pos": 30
   },
   {
+    "core_system": {
+      "activation": "Protocol",
+      "active_effect": "<p>Once activated, you power up your integrated nexus lasting until the end of this scene. Your Smuggler's Friends Nexus becomes seeking. In addition, hit targets can only draw line of sight to adjacent spaces until the end of their next turn.</p>",
+      "active_name": "Scoundrel's Luck",
+      "description": "<b>TODO</b>",
+      "integrated": [
+        "mw_orinoco_integrated"
+      ],
+      "name": "Covert Attack Strategy Set",
+      "use": "Mission"
+    },
+    "description": "<p>Seemingly purpose build for commando operations the Orinoco is built for covert cyberwarfare like no other frame invading without any need for visual confirmation of the enemy sending untraceable code to enemies' systems and lighting their computers aflame.</p>",
     "id": "mf_orinoco",
+    "image_url": "https://nekotwo.com/cdn/shop/products/000_d4b74050-b04b-4cb6-8720-eaee43220bea.jpg?v=1668416751",
     "license_id": "mf_orinoco",
     "license_level": 2,
-    "y_pos": 13,
-    "source": "LANIKA",
-    "name": "ORINOCO",
     "mechtype": [
       "Controller",
       "Striker"
     ],
-    "description": "<p>Seemingly purpose build for commando operations the Orinoco is built for covert cyberwarfare like no other frame invading without any need for visual confirmation of the enemy sending untraceable code to enemies’ systems and lighting their computers aflame.</p>",
     "mounts": [
-      "Main", "Heavy"
+      "Main",
+      "Heavy"
     ],
+    "name": "ORINOCO",
+    "source": "LANIKA",
     "stats": {
-      "size": 1,
-      "stress": 4,
-      "structure": 4,
       "armor": 0,
-      "hp": 6,
-      "evasion": 8,
       "edef": 10,
+      "evasion": 8,
       "heatcap": 4,
-      "sensor_range": 5,
-      "tech_attack": 1,
+      "hp": 6,
       "repcap": 3,
       "save": 11,
+      "sensor_range": 5,
+      "size": 1,
+      "sp": 6,
       "speed": 5,
-      "sp": 6
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": 1
     },
     "traits": [
       {
-        "name": "Inflitration Scanners",
         "description": "The Orinoco ignores line of sight requirements for tech attacks within its sensor range.",
+        "name": "Inflitration Scanners",
         "synergies": [
           {
-            "locations": ["tech"],
-            "detail": "The Orinoco ignores line of sight requirements for tech attacks within its sensor range."
+            "detail": "The Orinoco ignores line of sight requirements for tech attacks within its sensor range.",
+            "locations": [
+              "tech"
+            ]
           }
         ]
       },
       {
-        "name": "Crash Code Anti-Virus",
-        "description": "Gain the Slash/Crash reaction (1/round when you are hit by a melee attack you may take any Invade option against the attacker as part of this reaction.)",
         "actions": [
           {
-            "name": "Slash/Crash",
-            "frequency": "1/round",
             "activation": "Reaction",
-            "trigger": "You are hit by a melee attack",
-            "effect": "You make an invade against the attacker"
+            "effect": "You make an invade against the attacker",
+            "frequency": "1/round",
+            "name": "Slash/Crash",
+            "trigger": "You are hit by a melee attack"
           }
-        ]
+        ],
+        "description": "Gain the Slash/Crash reaction (1/round when you are hit by a melee attack you may take any Invade option against the attacker as part of this reaction.)",
+        "name": "Crash Code Anti-Virus"
       },
       {
-        "name": "Exposed reactor",
         "description": "The Orinoco gains +1 difficulty to Engineering checks and saves.",
+        "name": "Exposed reactor",
         "synergies": [
           {
-            "locations": ["engineering", "skill_check"],
-            "detail": "The Orinoco gains +1 difficulty to Engineering checks and saves."
+            "detail": "The Orinoco gains +1 difficulty to Engineering checks and saves.",
+            "locations": [
+              "engineering",
+              "skill_check"
+            ]
           }
         ]
       }
     ],
-    "core_system": {
-      "name": "Covert Attack Strategy Set",
-      "description": "<b>TODO</b>",
-      "activation": "Protocol",
-      "active_name": "Scoundrel’s Luck",
-      "active_effect": "<p>Once activated, you power up your integrated nexus lasting until the end of this scene. Your Smuggler’s Friends Nexus becomes seeking. In addition, hit targets can only draw line of sight to adjacent spaces until the end of their next turn.</p>",
-      "use": "Mission",
-      "integrated": ["mw_orinoco_integrated"]
-    },
-    "image_url": "https://nekotwo.com/cdn/shop/products/000_d4b74050-b04b-4cb6-8720-eaee43220bea.jpg?v=1668416751"
+    "y_pos": 13
   },
   {
+    "core_system": {
+      "activation": "???",
+      "active_effect": "<p>You deploy a Squad NPC as an allied character. They gain their own turn but follow your command. They are recalled at the end of the scene regaining all lost health.<br> This ability is Efficient and will refund 1 Core Point at the end of any scene in which this ability was used unless the Squad was whipped out.</p>",
+      "active_name": "Combined Arms Team",
+      "description": "<b>TODO</b>",
+      "name": "Tagma Combat Squad",
+      "passive_effect": "Pilots, Squads or other call-ins can spend a quick action to spend a charge from your system gaining one of the following weaponsets doing so.\n1: Grozny Recoilless Rifle: main launcher range 5 Damage 4 AP Explosive. Gains +1 Accuracy when fired from soft cover.<br>2: Kursk Bolt Action: main rifle range 12 Damage 3 AP Kinetic loading. On hit: your target becomes slowed.<br>3: Vicksburg Mortar: Main Cannon range 5 Damage 1d6 Explosive Arcing Ordnance Loading. May be reloaded as a Quick Action",
+      "passive_name": "Urban Combat Equipment Set",
+      "tags": [
+        {
+          "id": "tg_limited",
+          "val": 3
+        }
+      ],
+      "use": "Scene"
+    },
+    "description": "<p>Introducing a revolutionary new kind of chassis, the Mississippi is an armoured legged infantry transport and support platform introducing a new facet to combined arms warfare offering greater protection and operational flexibility to combatants on foot and daring black thumb pilots.</p>",
     "id": "mf_mississippi",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Army2016demo-007.jpg/1200px-Army2016demo-007.jpg",
     "license_id": "mf_mississippi",
     "license_level": 2,
-    "y_pos": 35,
-    "source": "LANIKA",
-    "name": "MISSISSIPPI",
     "mechtype": [
       "Defender"
     ],
-    "description": "<p>Introducing a revolutionary new kind of chassis, the Mississippi is an armoured legged infantry transport and support platform introducing a new facet to combined arms warfare offering greater protection and operational flexibility to combatants on foot and daring black thumb pilots.</p>",
     "mounts": [
-      "Flex", "Flex"
+      "Flex",
+      "Flex"
     ],
+    "name": "MISSISSIPPI",
+    "source": "LANIKA",
     "stats": {
-      "size": 2,
-      "stress": 4,
-      "structure": 4,
       "armor": 2,
-      "hp": 8,
-      "evasion": 7,
       "edef": 8,
+      "evasion": 7,
       "heatcap": 5,
-      "sensor_range": 10,
-      "tech_attack": 0,
+      "hp": 8,
       "repcap": 4,
       "save": 10,
+      "sensor_range": 10,
+      "size": 2,
+      "sp": 8,
       "speed": 4,
-      "sp": 8
-    },  
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": 0
+    },
     "traits": [
       {
-        "name": "Guardian",
-        "description": "Adjacent allied characters can use the Mississippi as hard cover."
+        "description": "Adjacent allied characters can use the Mississippi as hard cover.",
+        "name": "Guardian"
       },
       {
-        "name": "Hoplite Shield",
         "description": "Adjacent biological allied character gain 4 + GRIT overshield at the start of each of your turns.",
-        "synergies":  [
+        "name": "Hoplite Shield",
+        "synergies": [
           {
-            "locations": ["dismount"],
-            "detail": "Adjacent biological allied character gain 4 + GRIT overshield at the start of each of your turns."
+            "detail": "Adjacent biological allied character gain 4 + GRIT overshield at the start of each of your turns.",
+            "locations": [
+              "dismount"
+            ]
           }
         ]
       },
       {
-        "name": "Armoured Crew Compartment",
-        "description": "The Mississippi offers interior space to host one entire squad of infantry or alternatively up to 6 pilots. While inside they cannot suffer from external effects or be targeted."
+        "description": "The Mississippi offers interior space to host one entire squad of infantry or alternatively up to 6 pilots. While inside they cannot suffer from external effects or be targeted.",
+        "name": "Armoured Crew Compartment"
       }
     ],
-    "core_system": {
-      "name": "Tagma Combat Squad",
-      "description": "<b>TODO</b>",
-      "activation": "???",
-      "passive_name": "Urban Combat Equipment Set",
-      "passive_effect": "TODO WEAPONS SETS TO EQUIP PIOLTS AND SQUADS WITH",
-      "active_name": "Combined Arms Team",
-      "active_effect": "<p>At the start of the scene you may choose one of a selection of squads and place. <br> WIP</p>",
-      "use": "Mission"
-    },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Army2016demo-007.jpg/1200px-Army2016demo-007.jpg"
+    "y_pos": 35
   },
   {
+    "core_system": {
+      "activation": "Full",
+      "active_effect": "<p>You disengage all safety measures on your Solar Lance. Doing so takes a full action and afterwards you can only fire your Lance as if it were a superheavy weapon. Without limiters, the weapon gains ordonance status but its range is raised to line 15 and the damage increases to 16-range. It also melts all ground in a burst 3 area additionally to your full line 15. It can only be fired once in this mode and reverts  back to normal operation automatically afterwards.</p>",
+      "active_name": "The Sun Unleashed",
+      "description": "<b>TODO</b>",
+      "integrated": [
+        "mw_yukon_integrated"
+      ],
+      "name": "This gun of mine glows with an awesome power! >:)",
+      "use": "Mission"
+    },
+    "description": "<b>TODO.</b>",
     "id": "mf_yukon",
+    "image_url": "https://img.fruugo.com/product/4/92/980124924_max.jpg",
     "license_id": "mf_yukon",
     "license_level": 2,
-    "y_pos": 50,
-    "source": "LANIKA",
-    "name": "YUKON",
     "mechtype": [
       "Striker"
     ],
-    "description": "<b>TODO.</b>",
     "mounts": [
-      "Main", "Heavy"
+      "Main",
+      "Heavy"
     ],
+    "name": "YUKON",
+    "source": "LANIKA",
     "stats": {
-      "size": 2,
-      "stress": 4,
-      "structure": 4,
       "armor": 0,
-      "hp": 8,
-      "evasion": 7,
       "edef": 8,
+      "evasion": 7,
       "heatcap": 6,
-      "sensor_range": 8,
-      "tech_attack": 0,
+      "hp": 8,
       "repcap": 4,
       "save": 11,
+      "sensor_range": 8,
+      "size": 2,
+      "sp": 7,
       "speed": 4,
-      "sp": 7
-    },  
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": 0
+    },
     "traits": [
       {
-        "name": "LASER!!!",
-        "description": "<span style=\"color:red;\">Laser.</span>"
+        "description": "<span style=\"color:red;\">Laser.</span>",
+        "name": "LASER!!!"
       },
       {
-        "name": "Facemelter",
-        "description": "Whenever you deal heat to an exposed character, you deal the same amount of burn instead."
+        "description": "Whenever you deal heat to an exposed character, you deal the same amount of burn instead.",
+        "name": "Facemelter"
       }
     ],
-    
-    "core_system": {
-      "name": "This gun of mine glows with an awesome power! >:)",
-      "description": "<b>TODO</b>",
-      "activation": "Full",
-      "active_name": "The Sun Unleashed",
-      "active_effect": "<p>You disengage all safety measures on your Solar Lance. Doing so takes a full action and afterwards you can only fire your Lance as if it were a superheavy weapon. Without limiters, the weapon gains ordonance status but its range is raised to line 15 and the damage increases to 16-range. It also melts all ground in a burst 3 area additionally to your full line 15. It can only be fired once in this mode and reverts  back to normal operation automatically afterwards.</p>",
-      "use": "Mission",
-      "integrated": ["mw_yukon_integrated"]
-    },
-    "image_url": "https://img.fruugo.com/product/4/92/980124924_max.jpg"
+    "y_pos": 50
   },
   {
+    "core_system": {
+      "activation": "Protocol",
+      "active_effect": "This core system can only be activated when in the Danger Zone and last as long as the frame remains in it. While active the frame's reactor burns bright enough to melt steel. At expense of your own safety being shredded while the core is active, thus negating the benefits of your reactive emergency armour, you gain the ability to reconstruct on the battlefield scavenging from the enemies ripped armour pieces, regaining 1d6 hp whenever you perform a critical hit. ",
+      "active_name": "Raging Fire ",
+      "description": "TODO",
+      "name": "Blast Furnace Reactor"
+    },
+    "description": "Bulky but deadly the Charlemagne hulks across the fields of AHB5 and slams rebels into submission after its birth out of destroyed Barbaro ssa frames and Think Tank prototypes on the field of war. This frontline giant has been dubbed a monstrosity of engineering by some in armoury offices but became beloved across it's teams who fast took a liking to the experimental armour that weakened the structure but offered great reactive protection in emergencies allowing for the use of devasting yet unstable Harrison prototypes.",
     "id": "mf_charlemagne",
     "license_id": "mf_charlemagne",
     "license_level": 2,
-    "y_pos": 50,
-    "source": "HA-SKY",
-    "name": "CHARLEMAGNE",
     "mechtype": [
       "Striker"
     ],
-    "description": "Bulky but deadly the Charlemagne hulks across the fields of AHB5 and slams rebels into submission after its birth out of destroyed Barbaro ssa frames and Think Tank prototypes on the field of war. This frontline giant has been dubbed a monstrosity of engineering by some in armoury offices but became beloved across it’s teams who fast took a liking to the experimental armour that weakened the structure but offered great reactive protection in emergencies allowing for the use of devasting yet unstable Harrison prototypes.",
     "mounts": [
-      "Main", "Main/Aux", "Heavy"
+      "Main",
+      "Main/Aux",
+      "Heavy"
     ],
+    "name": "CHARLEMAGNE",
+    "source": "HA-SKY",
     "stats": {
-      "size": 3,
-      "stress": 4,
-      "structure": 4,
       "armor": 0,
-      "hp": 10,
-      "evasion": 6,
       "edef": 7,
+      "evasion": 6,
       "heatcap": 7,
-      "sensor_range": 5,
-      "tech_attack": -1,
+      "hp": 10,
       "repcap": 4,
       "save": 10,
+      "sensor_range": 5,
+      "size": 3,
+      "sp": 7,
       "speed": 2,
-      "sp": 7
-    },  
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": -1
+    },
     "traits": [
       {
-        "name": "Colossus",
-        "description": "Adjacent allied characters can use the Charlemagne as Hard cover."
+        "description": "Adjacent allied characters can use the Charlemagne as Hard cover.",
+        "name": "Colossus"
       },
       {
-        "name": "Self-carrying structure",
         "description": "When the Charlemagne loses a Structure, it crumbles under parts of its own weight and takes a further 1d6 AP kinetic damage.",
+        "name": "Self-carrying structure",
         "synergies": [
           {
-            "location": ["structure"],
-            "detail": "When the Charlemagne loses a Structure, it crumbles under parts of its own weight and takes a further 1d6 AP kinetic damage."
+            "detail": "When the Charlemagne loses a Structure, it crumbles under parts of its own weight and takes a further 1d6 AP kinetic damage.",
+            "location": [
+              "structure"
+            ]
           }
         ]
       },
       {
-        "name": "Reactive emergency Armour.",
-        "description": "While suffering from any status or condition (Including self-inflicted) the Charlemagne has resistance to all damage."
+        "description": "While suffering from any status or condition (Including self-inflicted) the Charlemagne has resistance to all damage.",
+        "name": "Reactive emergency Armour."
       },
       {
-        "name": "Heavy frame.",
-        "description": "The Charlemagne can’t be pushed, pulled, knocked prone or knocked back by smaller characters."
+        "description": "The Charlemagne can't be pushed, pulled, knocked prone or knocked back by smaller characters.",
+        "name": "Heavy frame."
       }
     ],
-    "core_system": {
-      "name": "Blast Furnace Reactor",
-      "active_name": "Raging Fire ",
-      "active_effect": "This core system can only be activated when in the Danger Zone and last as long as the frame remains in it. While active the frame’s reactor burns bright enough to melt steel. At expense of your own safety being shredded while the core is active, thus negating the benefits of your reactive emergency armour, you gain the ability to reconstruct on the battlefield scavenging from the enemies ripped armour pieces, regaining 1d6 hp whenever you perform a critical hit. ",
-      "description": "TODO",
-      "activation": "Protocol"
-    }
+    "y_pos": 50
   },
   {
+    "core_system": {
+      "activation": "Quick",
+      "active_effect": "Once activated, this core lasts until you clear all heat. While active it greatly enhances the capability of the Hustler's Jetpack. It now allows you to boost as a free action 1/round and leaves a trial of fire as you go. White-hot flames continue to burn along your path affecting every space you've flown over, lasting until the end of your next turn. When characters start their turn in one of these spaces or enter one for the first time in a round, they take 1d6 energy damage. You gain one heat every turn you spend with your afterburners active. This heat counts for the purposes of keeping your jetpack active.",
+      "active_name": "Full Afterburner ",
+      "name": "Dragon's first flight field modification",
+      "passive_effect": "Each round you may choose to count any and all of your movement as flying after taking any amount of heat. You start to fall whenever you clear all heat.",
+      "passive_name": "Hustler's Jetpack"
+    },
+    "description": "Once based on the Genghis MK II the Schwarzkopf was such a popular frontline modification that it was minted as a fully unique license built around its flight systems. Stemming from front line tinkering the frame is prone to breakdown and highly dangerous to operator as well as foe.",
     "id": "mf_schwarzkopf",
     "license_id": "mf_schwarzkopf",
     "license_level": 2,
-    "y_pos": 50,
-    "source": "HA-SKY",
-    "name": "SCHWARZKOPF",
     "mechtype": [
       "Striker"
     ],
-    "description": "Once based on the Genghis MK II the Schwarzkopf was such a popular frontline modification that it was minted as a fully unique license built around its flight systems. Stemming from front line tinkering the frame is prone to breakdown and highly dangerous to operator as well as foe.",
     "mounts": [
-      "Main/Aux", "Main/Aux"
+      "Main/Aux",
+      "Main/Aux"
     ],
+    "name": "SCHWARZKOPF",
+    "source": "HA-SKY",
     "stats": {
-      "size": 1,
-      "stress": 4,
-      "structure": 4,
       "armor": 1,
-      "hp": 9,
-      "evasion": 8,
       "edef": 6,
+      "evasion": 8,
       "heatcap": 8,
-      "sensor_range": 5,
-      "tech_attack": -2,
+      "hp": 9,
       "repcap": 3,
       "save": 10,
+      "sensor_range": 5,
+      "size": 1,
+      "sp": 6,
       "speed": 4,
-      "sp": 6
-    },  
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": -2
+    },
     "traits": [
       {
-        "name": "Screeching Jets",
-        "description": "1/round While flying the Schwarzkopf may jam all adjacent characters, enemy and allied. Gaining 3 heat doing so."
+        "description": "1/round While flying the Schwarzkopf may jam all adjacent characters, enemy and allied. Gaining 3 heat doing so.",
+        "name": "Screeching Jets"
       },
       {
-        "name": "Rapid strike",
-        "description": "The Schwarzkopf gains +1 Accuracy on all attacks made during its turn whenever it takes the first turn on any given round."
+        "description": "The Schwarzkopf gains +1 Accuracy on all attacks made during its turn whenever it takes the first turn on any given round.",
+        "name": "Rapid strike"
       }
     ],
-    "core_system": {
-      "name": "Dragon’s first flight field modification",
-      "passive_name": "Hustler’s Jetpack",
-      "passive_effect": "Each round you may choose to count any and all of your movement as flying after taking any amount of heat. You start to fall whenever you clear all heat.",
-      "active_name": "Full Afterburner ",
-      "active_effect": "Once activated, this core lasts until you clear all heat. While active it greatly enhances the capability of the Hustler’s Jetpack. It now allows you to boost as a free action 1/round and leaves a trial of fire as you go. White-hot flames continue to burn along your path affecting every space you’ve flown over, lasting until the end of your next turn. When characters start their turn in one of these spaces or enter one for the first time in a round, they take 1d6 energy damage. You gain one heat every turn you spend with your afterburners active. This heat counts for the purposes of keeping your jetpack active.",
-      "activation": "Quick"
-    }
+    "y_pos": 50
   },
   {
+    "core_system": {
+      "actions": [
+        {
+          "activation": "Reaction",
+          "effect": "You flare up their position in response, no matter if the hit or not ignoring sensors and line of sight. Flare up, the enemy becomes locked on. You and all allied characters may ignore invisibility and cover when consuming this Lock-on.",
+          "frequency": "Unlimited",
+          "name": "Strike Orientation Signalling",
+          "trigger": "An enemy targets you or any adjacent allied character with a non-tech attack"
+        }
+      ],
+      "activation": "Reaction",
+      "active_effect": "Whenever your Strike Orientation Signalling triggers, you may choose to active your core in conjunction with it. Once activated, the core grants an immediate retaliatory strike against the attacking enemy. This attack takes the form of a full barrage if possible but as it's a reaction, Superheavies can't be fired in this way. The attack happens immediately after the enemy's attack has resolved, whether it hit or not and can be performed by you or any adjacent allied character. Whoever takes the attack takes 4 heat doing so. ",
+      "active_name": "Coordinated Counterbattery",
+      "name": "Moonlight Flare Strike",
+      "passive_effect": "you gain access to the Strike Orientation Signalling reaction",
+      "passive_name": "Strike Orientation Signalling"
+    },
+    "description": "The wars at the Dawnline push many manufacturers to new territory, IPS-N among them. Heavy artillery presence in the sector lead to new problems that soon turned into solutions at Northstar and so a sophisticated counterbattery system was developed. Build to target and destroy enemy artillery positions and ammo depots the Columbus might underwhelm initially in its firepower favouring precision it is unmatched in its domain.",
     "id": "mf_columbus",
     "license_id": "mf_columbus",
     "license_level": 2,
-    "y_pos": 50,
-    "source": "BLACKBOX",
-    "name": "COLUMBUS",
     "mechtype": [
       "Support"
     ],
-    "description": "The wars at the Dawnline push many manufacturers to new territory, IPS-N among them. Heavy artillery presence in the sector lead to new problems that soon turned into solutions at Northstar and so a sophisticated counterbattery system was developed. Build to target and destroy enemy artillery positions and ammo depots the Columbus might underwhelm initially in its firepower favouring precision it is unmatched in its domain.",
     "mounts": [
-      "Flex", "Main", "Heavy"
+      "Flex",
+      "Main",
+      "Heavy"
     ],
+    "name": "COLUMBUS",
+    "source": "BLACKBOX",
     "stats": {
-      "size": 2,
-      "stress": 4,
-      "structure": 4,
       "armor": 1,
-      "hp": 10,
-      "evasion": 6,
       "edef": 7,
+      "evasion": 6,
       "heatcap": 5,
-      "sensor_range": 5,
-      "tech_attack": -1,
+      "hp": 10,
       "repcap": 5,
       "save": 10,
+      "sensor_range": 5,
+      "size": 2,
+      "sp": 7,
       "speed": 4,
-      "sp": 7
-    },  
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": -1
+    },
     "traits": [
       {
-        "name": "Guardian",
-        "description": "Adjacent allied character can use the Columbus as Hard cover."
+        "description": "Adjacent allied character can use the Columbus as Hard cover.",
+        "name": "Guardian"
       },
       {
-        "name": "Blast plating",
-        "description": "The Columbus has Resistance to damage, burn and heat from blast, burst, line and cone attacks."
+        "description": "The Columbus has Resistance to damage, burn and heat from blast, burst, line and cone attacks.",
+        "name": "Blast plating"
       }
     ],
-    "core_system": {
-      "name": "Moonlight Flare Strike",
-      "passive_name": "Strike Orientation Signalling",
-      "passive_effect": "you gain access to the Strike Orientation Signalling reaction",
-      "active_name": "Coordinated Counterbattery",
-      "active_effect": "Whenever your Strike Orientation Signalling triggers, you may choose to active your core in conjunction with it. Once activated, the core grants an immediate retaliatory strike against the attacking enemy. This attack takes the form of a full barrage if possible but as it’s a reaction, Superheavies can’t be fired in this way. The attack happens immediately after the enemy’s attack has resolved, whether it hit or not and can be performed by you or any adjacent allied character. Whoever takes the attack takes 4 heat doing so. ",
-      "actions": [
-        {
-          "name": "Strike Orientation Signalling",
-          "activation": "Reaction",
-          "trigger": "An enemy targets you or any adjacent allied character with a non-tech attack",
-          "effect": "You flare up their position in response, no matter if the hit or not ignoring sensors and line of sight. Flare up, the enemy becomes locked on. You and all allied characters may ignore invisibility and cover when consuming this Lock-on.",
-          "frequency": "Unlimited"
-        }
-      ],
-      "activation": "Reaction"
-    }
+    "y_pos": 50
   },
   {
+    "core_system": {
+      "activation": "Full",
+      "active_effect": "You tap into enemy coms.  Until the end of your next turn, you and your allies may use the enemy's line of sight and sensors against them using them as if they were your own for the effect of attacks. Once this resolves, all enemies become jammed until the end of their subsequent turn. ",
+      "active_name": "The enemy is listening",
+      "name": "Molehill Frequency"
+    },
+    "description": "Cyberwarfare has all but overshadowed simpler electronics warfare these days. IPS-N lacking some experience in the modern cyberwar decided to once again pursue electronics warfare targeting enemy sensors and coms channels through rugged hardware counteracting common electronic countermeasures.",
     "id": "mf_janszoon",
     "license_id": "mf_janszoon",
     "license_level": 2,
-    "y_pos": 50,
-    "source": "BLACKBOX",
-    "name": "JANSZOON",
     "mechtype": [
       "Controller"
     ],
-    "description": "Cyberwarfare has all but overshadowed simpler electronics warfare these days. IPS-N lacking some experience in the modern cyberwar decided to once again pursue electronics warfare targeting enemy sensors and coms channels through rugged hardware counteracting common electronic countermeasures.",
     "mounts": [
-      "Flex", "Main"
+      "Flex",
+      "Main"
     ],
+    "name": "JANSZOON",
+    "source": "BLACKBOX",
     "stats": {
-      "size": 1,
-      "stress": 4,
-      "structure": 4,
       "armor": 0,
-      "hp": 8,
-      "evasion": 6,
       "edef": 10,
+      "evasion": 6,
       "heatcap": 4,
-      "sensor_range": 10,
-      "tech_attack": 0,
+      "hp": 8,
       "repcap": 4,
       "save": 10,
+      "sensor_range": 10,
+      "size": 1,
+      "sp": 7,
       "speed": 5,
-      "sp": 7
-    },  
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": 0
+    },
     "traits": [
       {
-        "name": "Protected Coms transmitter",
-        "description": "The Janszoon has immunity against Jammed."
+        "description": "The Janszoon has immunity against Jammed.",
+        "name": "Protected Coms transmitter"
       },
       {
-        "name": "Rugged Systems",
-        "description": "1/mission you can shrug of a System trauma ignoring its effects."
+        "description": "1/mission you can shrug of a System trauma ignoring its effects.",
+        "name": "Rugged Systems"
       }
     ],
-    "core_system": {
-      "name": "Molehill Frequency",
-      "active_name": "The enemy is listening",
-      "active_effect": "You tap into enemy coms.  Until the end of your next turn, you and your allies may use the enemy’s line of sight and sensors against them using them as if they were your own for the effect of attacks. Once this resolves, all enemies become jammed until the end of their subsequent turn. ",
-      "activation": "Full"
-    }
+    "y_pos": 50
   },
   {
+    "core_system": {
+      "activation": "Protocol",
+      "active_effect": "The Kraken, while not quite as fast firing then a Leviathan can far outpace most targeting system. The Amundsen was thus fitted with a purpose build targeting system to unleash its full potential in a controlled chaos. When activating the core, it can strike against an unlimited number of targets until the bullet's run out. Doing so as part of a simple skirmish or barrage, you choose two targets and automatically engage all targets within range in-between the arc formed by both. (counterclockwise). Both targets are of course included. You shoot indiscriminately doing so, engaging all targets, enemy and allied within this arc. You need to expend a charge of your Kraken MG for each and every one of these attacks and can only attack each target once during the ensuing hailstorm.",
+      "active_name": "Rapid Fire Engagement ",
+      "integrated": [
+        "mw_amundsen_integrated"
+      ],
+      "name": "The Sea Monster Strikes",
+      "use": "Scene"
+    },
+    "description": "Developed from the Drake, the Amundsen aims to offer the same potency in firepower its sister platform brought to the table but with a drastically increased capacity for mobile warfare. Greatly suffering in its protection, the advanced cooling integrated into the barrel of the frames primary mounting guarantees combat performance on par with the larger predecessor. After it's introduction in the Zaobalde Lunar War Amundsen has become IPSN most relied upon chassis for mobile firepower in fast advances despite failing in naval service. ",
     "id": "mf_amundsen",
     "license_id": "mf_amundsen",
     "license_level": 2,
-    "y_pos": 50,
-    "source": "BLACKBOX",
-    "name": "AMUNDSEN",
     "mechtype": [
       "Striker"
     ],
-    "description": "Developed from the Drake, the Amundsen aims to offer the same potency in firepower its sister platform brought to the table but with a drastically increased capacity for mobile warfare. Greatly suffering in its protection, the advanced cooling integrated into the barrel of the frames primary mounting guarantees combat performance on par with the larger predecessor. After it’s introduction in the Zaobalde Lunar War Amundsen has become IPSN most relied upon chassis for mobile firepower in fast advances despite failing in naval service. ",
     "mounts": [
       "Heavy"
     ],
+    "name": "AMUNDSEN",
+    "source": "BLACKBOX",
     "stats": {
-      "size": 1,
-      "stress": 4,
-      "structure": 4,
       "armor": 0,
-      "hp":8,
-      "evasion": 9,
       "edef": 6,
+      "evasion": 9,
       "heatcap": 6,
-      "sensor_range": 10,
-      "tech_attack": -1,
+      "hp": 8,
       "repcap": 5,
       "save": 10,
+      "sensor_range": 10,
+      "size": 1,
+      "sp": 7,
       "speed": 4,
-      "sp": 7
-    },  
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": -1
+    },
     "traits": [
       {
-        "name": "Barrel cooling",
-        "description": "At the end of each turn in which you did not move you may clear up to two heat. You must have gained the heat through your weapons to do so however."
+        "description": "At the end of each turn in which you did not move you may clear up to two heat. You must have gained the heat through your weapons to do so however.",
+        "name": "Barrel cooling"
       },
       {
-        "name": "Unrelenting Advance",
-        "description": "1/Scene you may boost as a free action when you make a ranged attack."
+        "description": "1/Scene you may boost as a free action when you make a ranged attack.",
+        "name": "Unrelenting Advance"
       },
       {
-        "name": "Breach Armor Set",
-        "description": "he Amundsen has Resistance to Explosive Damage."
+        "description": "he Amundsen has Resistance to Explosive Damage.",
+        "name": "Breach Armor Set"
       }
     ],
-    "core_system": {
-      "name": "The Sea Monster Strikes",
-      "active_name": "Rapid Fire Engagement ",
-      "active_effect": "The Kraken, while not quite as fast firing then a Leviathan can far outpace most targeting system. The Amundsen was thus fitted with a purpose build targeting system to unleash its full potential in a controlled chaos. When activating the core, it can strike against an unlimited number of targets until the bullet’s run out. Doing so as part of a simple skirmish or barrage, you choose two targets and automatically engage all targets within range in-between the arc formed by both. (counterclockwise). Both targets are of course included. You shoot indiscriminately doing so, engaging all targets, enemy and allied within this arc. You need to expend a charge of your Kraken MG for each and every one of these attacks and can only attack each target once during the ensuing hailstorm.",
-      "activation": "Protocol",
-      "use": "Scene",
-      "integrated": ["mw_amundsen_integrated"]
-    }
+    "y_pos": 50
   }
 ]

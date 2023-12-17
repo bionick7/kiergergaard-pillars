@@ -1,0 +1,4 @@
+- description: On a hit, this weapon inflicts as much heat as it deals conventional
+    dammage.
+  id: tg_laser
+  name: Laser

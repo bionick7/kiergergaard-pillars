@@ -72,7 +72,7 @@
         "description": "Any self-serious Lancer keeps his machine ready to fight with his soul no longer weighed down by gravity."
     },
     {
-        "id": "cb_space_fitting",
+        "id": "cb_mobile_infantry_coordination",
         "name": "Mobile Infantry Coordination",
         "source": "LANIKA",
         "effect": "When you hit with an attack, the next attack performed by a biological ally against the same target gains +1 accuracy, and its damage can’t be reduced in any way.",

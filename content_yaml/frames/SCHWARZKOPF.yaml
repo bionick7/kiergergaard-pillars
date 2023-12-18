@@ -1,0 +1,56 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+core_system:
+  activation: Quick
+  active_effect: Once activated, this core lasts until you clear all heat. While active
+    it greatly enhances the capability of the Hustler's Jetpack. It now allows you
+    to boost as a free action 1/round and leaves a trial of fire as you go. White-hot
+    flames continue to burn along your path affecting every space you've flown over,
+    lasting until the end of your next turn. When characters start their turn in one
+    of these spaces or enter one for the first time in a round, they take 1d6 energy
+    damage. You gain one heat every turn you spend with your afterburners active.
+    This heat counts for the purposes of keeping your jetpack active.
+  active_name: 'Full Afterburner '
+  name: Dragon's first flight field modification
+  passive_effect: Each round you may choose to count any and all of your movement
+    as flying after taking any amount of heat. You start to fall whenever you clear
+    all heat.
+  passive_name: Hustler's Jetpack
+description: Once based on the Genghis MK II the Schwarzkopf was such a popular frontline
+  modification that it was minted as a fully unique license built around its flight
+  systems. Stemming from front line tinkering the frame is prone to breakdown and
+  highly dangerous to operator as well as foe.
+id: mf_schwarzkopf
+license_id: mf_schwarzkopf
+license_level: 2
+mechtype:
+- Striker
+mounts:
+- Main/Aux
+- Main/Aux
+source: HA-SKY
+stats:
+  armor: 1
+  edef: 6
+  evasion: 8
+  heatcap: 8
+  hp: 9
+  repcap: 3
+  save: 10
+  sensor_range: 5
+  size: 1
+  sp: 6
+  speed: 4
+  stress: 4
+  structure: 4
+  tech_attack: -2
+traits:
+- description: 1/round While flying the Schwarzkopf may jam all adjacent characters,
+    enemy and allied. Gaining 3 heat doing so.
+  name: Screeching Jets
+- description: The Schwarzkopf gains +1 Accuracy on all attacks made during its turn
+    whenever it takes the first turn on any given round.
+  name: Rapid strike
+y_pos: 50

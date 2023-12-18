@@ -1,0 +1,26 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+damage:
+- type: Kinetic
+  val: 1d3+1
+description: <b>TODO</b>
+id: mw_lmg
+license: MIDZOR
+license_id: mf_midzor
+license_level: 2
+mount: Main
+range:
+- type: Range
+  val: 8
+- type: Blast
+  val: 1
+source: GMS-HIPS
+synergies: []
+tags:
+- id: tg_reliable
+  val: 1
+- id: tg_ordnance
+- id: tg_accurate
+type: Rifle

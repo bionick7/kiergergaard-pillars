@@ -1,0 +1,30 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+dark: '#002060'
+description: <p>IPS-N Blackbox is probably the best-known deniable asset across the
+  units of the big four. This might call into question their value as a deniable asset.
+  They garnered quite a reputation as a reliable combat union but their also reportedly
+  prideful to a fault. Many covert operations have been publicly acknowledged by NCOs
+  too full of their success on the battlefield to have it remain secret. While debatably
+  being a massive failure at one part of their mission, the undeniably excel in combat
+  however. </p><p>In many fights along company friendly insurrections, some admitted,
+  others still classified, the highly trained spec ops team fulfilled mission objectives
+  with well-studied coordination. With time, their largest failure, secrecy even started
+  to become another of their strong suits. Seeing immense potential in the coverage
+  these not-so-secret deployments gathered and trusting the skill of their pilots,
+  Blackbox soon found a new identity running highly televised field tests for new
+  IPS-N machines. </p><p>It's unclear if Blackbox has fully transitioned into their
+  role as lab mice or if they remain as a deniable asset. Their deployment in the
+  Rosengaard Pillar is definitely part of the former and has garnered a legendary
+  status ever since the <<Refrigerator Incident>>. Allegedly they are starting to
+  grow impatient, waiting for an opportunity to measure themselves against the Skyhoppers
+  and one thing is already clear. Their machines and commercialised licenses they
+  spawned are already ready and waiting. </p><p>When you gain a license from IPS-N
+  Blackbox it also counts as an IPS-N license for the purpose of acquiring one of
+  their core bonuses. Blackbox bonuses, are unique to them however. </p>
+id: BLACKBOX
+light: '#002060'
+logo_url: https://cdn.discordapp.com/attachments/1140314412155150377/1140632911373144155/blackbox.png
+quote: <b>TODO</b>

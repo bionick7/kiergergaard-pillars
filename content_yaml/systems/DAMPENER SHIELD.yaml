@@ -1,0 +1,29 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Full
+  detail: Upon activation, this system immobilises you, creating a blast 3 shield
+    around you. Within this shield you supress all area of effect attacks forcing
+    anyone using them to attack a single target only. The shield lasts until retracted
+    as a protocol.
+  name: Deploy shield
+- activation: Protocol
+  detail: The shield looses it's effect.
+  name: Retract shield
+description: <b>TODO</b>
+effect_print: Upon activation, this system immobilises you, creating a blast 3 shield
+  around you. Within this shield you supress all area of effect attacks forcing anyone
+  using them to attack a single target only. The shield lasts until retracted as a
+  protocol.
+id: ms_dampener_shield
+license: MISSISSIPPI
+license_id: mf_mississippi
+license_level: 2
+source: LANIKA
+sp: 3
+synergies: []
+tags:
+- id: tg_shield
+type: Drone

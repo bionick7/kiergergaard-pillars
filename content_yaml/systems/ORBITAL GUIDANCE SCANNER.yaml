@@ -1,0 +1,24 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Quick
+  detail: You receive a high-resolution orbital photograph of a blast 1 area within
+    range 50. Until the start of your next turn, you and your allies can treat the
+    area as if you had line of sight to it.
+  name: TODO
+description: <b>TODO</b>
+effect: TODO
+effect_print: ': You receive a high-resolution orbital photograph of a blast 1 area
+  within range 50. Until the start of your next turn, you and your allies can treat
+  the area as if you had line of sight to it.'
+id: ms_orbital_guidance_scanner
+license: ATTAKULLA
+license_id: mf_attakulla
+license_level: 2
+source: GMS-HIPS
+sp: 3
+synergies: []
+tags: []
+type: System

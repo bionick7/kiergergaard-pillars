@@ -1,0 +1,38 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: Creating more intense heat then similar frame-mounted laser weaponry,
+  the miniaturised solar lance is capable of melting the area surrounding its beam.
+id: mw_yukon_integrated
+mount: Main
+profiles:
+- damage:
+  - type: Energy
+    val: 6 - [Distance]
+  effect: Hit or not, all non-flying enemies within the weapon's line area become
+    immobilized until the end of their next turn as the ground beneath them melts.
+  name: TODO
+  range:
+  - type: Line
+    val: 5
+  tags:
+  - id: tg_laser
+- barrage: true
+  damage:
+  - type: Energy
+    val: 16 - [Distance]
+  effect: Hit or not, all non-flying enemies within the weapon's line and burt 3 become
+    immobilized until the end of their next turn as the ground beneath them melts.
+    <br> Only enemies in line 15 take dammage
+  name: The Sun Unleashed
+  range:
+  - type: Line
+    val: 15
+  - type: Burst
+    val: 3
+  skirmish: false
+  tags:
+  - id: tg_ordnance
+  - id: tg_laser
+type: Cannon

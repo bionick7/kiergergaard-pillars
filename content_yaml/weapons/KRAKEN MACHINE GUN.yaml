@@ -1,0 +1,23 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+damage:
+- type: Kinetic
+  val: 1d6+1
+description: 'A light and portable single barrel cousin to the Leviathan, the Kraken
+  packs an immense punch for its size but is limited by its cumbersome ammunition. '
+effect: Rolling a 1 on the attack rolls, ignoring any modifiers ("natural 1") inflicts
+  jam to the Amundsen.
+id: mw_amundsen_integrated
+mount: Main
+range:
+- type: Range
+  val: 8
+tags:
+- id: tg_reliable
+  val: 4
+- id: tg_limited
+  val: 10
+- id: tg_accurate
+type: Cannon

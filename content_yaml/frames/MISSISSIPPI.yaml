@@ -1,0 +1,72 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+core_system:
+  activation: ???
+  active_effect: <p>You deploy a Squad NPC as an allied character. They gain their
+    own turn but follow your command. They are recalled at the end of the scene regaining
+    all lost health.<br> This ability is Efficient and will refund 1 Core Point at
+    the end of any scene in which this ability was used unless the Squad was whipped
+    out.</p>
+  active_name: Combined Arms Team
+  description: <b>TODO</b>
+  name: Tagma Combat Squad
+  passive_effect: 'Pilots, Squads or other call-ins can spend a quick action to spend
+    a charge from your system gaining one of the following weaponsets doing so.
+
+    1: Grozny Recoilless Rifle: main launcher range 5 Damage 4 AP Explosive. Gains
+    +1 Accuracy when fired from soft cover.<br>2: Kursk Bolt Action: main rifle range
+    12 Damage 3 AP Kinetic loading. On hit: your target becomes slowed.<br>3: Vicksburg
+    Mortar: Main Cannon range 5 Damage 1d6 Explosive Arcing Ordnance Loading. May
+    be reloaded as a Quick Action'
+  passive_name: Urban Combat Equipment Set
+  tags:
+  - id: tg_limited
+    val: 3
+  use: Scene
+description: <p>Introducing a revolutionary new kind of chassis, the Mississippi is
+  an armoured legged infantry transport and support platform introducing a new facet
+  to combined arms warfare offering greater protection and operational flexibility
+  to combatants on foot and daring black thumb pilots.</p>
+id: mf_mississippi
+image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Army2016demo-007.jpg/1200px-Army2016demo-007.jpg
+license_id: mf_mississippi
+license_level: 2
+mechtype:
+- Defender
+mounts:
+- Flex
+- Flex
+source: LANIKA
+stats:
+  armor: 2
+  edef: 8
+  evasion: 7
+  heatcap: 5
+  hp: 8
+  repcap: 4
+  save: 10
+  sensor_range: 10
+  size: 2
+  sp: 8
+  speed: 4
+  stress: 4
+  structure: 4
+  tech_attack: 0
+traits:
+- description: Adjacent allied characters can use the Mississippi as hard cover.
+  name: Guardian
+- description: Adjacent biological allied character gain 4 + GRIT overshield at the
+    start of each of your turns.
+  name: Hoplite Shield
+  synergies:
+  - detail: Adjacent biological allied character gain 4 + GRIT overshield at the start
+      of each of your turns.
+    locations:
+    - dismount
+- description: The Mississippi offers interior space to host one entire squad of infantry
+    or alternatively up to 6 pilots. While inside they cannot suffer from external
+    effects or be targeted.
+  name: Armoured Crew Compartment
+y_pos: 35

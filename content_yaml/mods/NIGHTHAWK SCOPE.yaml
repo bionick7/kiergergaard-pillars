@@ -1,0 +1,25 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+allowed_types:
+- Melee
+- CQB
+- Rifle
+- Launcher
+- Cannon
+- Nexus
+description: <b>TODO</b>
+effect: ' Attacking an invisible character, you may spend a charge of this system
+  to ignore their invisibility and attack them normally'
+id: wm_nighthawk_scope
+license: ATTAKULLA
+license_id: mf_attakulla
+license_level: 2
+restricted_sizes: []
+source: GMS-HIPS
+sp: 2
+tags:
+- id: tg_unique
+- id: tg_limited
+  val: 4

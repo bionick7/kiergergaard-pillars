@@ -1,0 +1,23 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Invade
+  detail: Until the end of their next turn, they must roll a d6 each time they perform
+    a tech attack. On 5+ their attack automatically misses. This effect doesn't stack.
+  name: Brain drain
+- activation: Invade
+  detail: Until the start of their next turn, your targets E-defence drops by two.
+  name: Access
+description: <b>TODO</b>
+effect_print: Gain the following options for INVADE
+id: ms_digital_rights_management
+license: CHANG JIANG
+license_id: mf_chang_jiang
+license_level: 2
+source: LANIKA
+sp: 2
+synergies: []
+tags: []
+type: Tech

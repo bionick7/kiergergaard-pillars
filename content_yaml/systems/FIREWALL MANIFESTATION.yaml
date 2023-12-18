@@ -1,0 +1,32 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+deployables:
+- activation: Quick
+  deactivation: Quick
+  detail: Create a line 3 manifestation 2 spaces high. It blocks line of sight for
+    the purpose of tech attacks. Characters can still see through it and make melee
+    and ranged attacks through it unaltered. The manufestation lasts until pick up
+    again or until the end of the scene.
+  name: Stasis Barrier
+  tags:
+  - id: tg_invulnerable
+  type: Deployable
+description: <b>TODO</b>
+effect_print: This system creates a line 3 manifestation 2 spaces high. It blocks
+  line of sight for the purpose of tech attacks. Characters can still see through
+  it and make melee and ranged attacks through it unaltered. The System lasts until
+  pick up again or until the end of the scene.
+id: ms_firewall_manifestation
+license: ORINOCO
+license_id: mf_orinoco
+license_level: 1
+source: LANIKA
+sp: 2
+synergies: []
+tags:
+- id: tg_unique
+- id: tg_shield
+- id: tg_invulnerable
+type: Shield

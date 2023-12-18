@@ -1,0 +1,26 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Quick Tech
+  detail: You link your sensors temporarily with the one's of an ally within sensors
+    and line of sight. After linking up, you can use their sensors and line of sight
+    as if they were yours for your next action
+  name: TODO
+description: <b>TODO</b>
+effect_print: You link your sensors temporarily with the one's of an ally within sensors
+  and line of sight. After linking up, you can use their sensors and line of sight
+  as if they were yours for your next action.
+id: ms_smart_targeting_relay
+license: ATTAKULLA
+license_id: mf_attakulla
+license_level: 1
+source: GMS-HIPS
+sp: 1
+synergies: []
+tags:
+- id: tg_heat_self
+  val: 2
+- id: tg_unique
+type: System

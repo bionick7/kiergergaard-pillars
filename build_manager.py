@@ -4,6 +4,7 @@ import zipfile
 import getopt
 
 ALL_FILES = (
+    "core_bonus",
     "frames",
     "manufacturers",
     "mods",
@@ -18,6 +19,8 @@ ALL_FILES = (
 def corrected(v):
     if isinstance(v, str):
         v = v.replace("\u2019", "'")
+        v = v.replace("\u201C", "<<")
+        v = v.replace("\u201D", ">>")
     if isinstance(v, dict):
         for k, v2 in v.items():
             v[k] = corrected(v2)
@@ -75,8 +78,8 @@ def yaml2json(file: str, apply_reverse_corrections: bool=False):
         json.dump(data, f, indent="  ")
 
 
-def json2yaml(file: str):
-    file_path_json = os.path.join("content", file + ".json")
+def json2yaml(domain: str):
+    file_path_json = os.path.join("content", domain + ".json")
     if not os.path.exists(file_path_json):
         print(f"File does not exist '{file_path_json}'")
         return
@@ -85,9 +88,25 @@ def json2yaml(file: str):
 
     data = corrected(data)
 
-    file_path_yaml = os.path.join("content_yaml", file + ".yaml")
-    with open(file_path_yaml, "w") as f:
-        yaml.dump(data, f)
+    if isinstance(data, list) and len(data) > 0 and "name" in data[0]:
+        dir_path = os.path.join("content_yaml", domain)
+        if not os.path.exists(dir_path):
+            os.mkdir(dir_path)
+
+        for item in data:
+            identifier = item["name"].upper()
+            del item["name"]
+            file_path_yaml = os.path.join(dir_path, identifier + ".yaml")
+            item["PROGRESS_gameplay"] = True
+            item["PROGRESS_flavour"] = False
+            item["PROGRESS_artw"] = False
+            item["PROGRESS_playtest"] = False
+            with open(file_path_yaml, "w") as f:
+                yaml.dump(item, f)
+    else:
+        file_path_yaml = os.path.join("content_yaml", domain + ".yaml")
+        with open(file_path_yaml, "w") as f:
+            yaml.dump(data, f)
 
 
 def json2yamlall():
@@ -110,6 +129,7 @@ def zip_all():
 def build_lcp():
     yaml2jsonall()
     zip_all()
+    os.system("typst compile --font-path ./fonts lcp2pdf.typ Manual.pdf")
 
 
 def main(argv):
@@ -121,7 +141,7 @@ def main(argv):
     for opt, arg in opts:
         if opt == '-t':
             test_all()
-        elif opt == '-l':
+        elif opt == '-b':
             build_lcp()
         elif opt == '-j':
             yaml2jsonall()

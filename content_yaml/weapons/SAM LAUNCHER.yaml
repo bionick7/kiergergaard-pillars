@@ -1,0 +1,28 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Reaction
+  detail: You hit all flying characters within range.
+  frequency: 1/round
+  name: TODO
+  trigger: An enemy within range flies
+damage:
+- type: Explosive
+  val: 3
+description: <b>TODO</b>
+effect: This weapon can only be used with the TODO Reaction.
+id: mw_sam_launcher
+license: ATTAKULLA
+license_id: mf_attakulla
+license_level: 3
+mount: Auxiliary
+no_attack: true
+range:
+- type: Range
+  val: 5
+source: GMS-HIPS
+synergies: []
+tags: []
+type: Launcher

@@ -1,0 +1,26 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+damage:
+- type: Kinetic
+  val: 1d6+2
+description: <b>TODO</b>
+id: mw_ahab_missile
+license: COLUMBUS
+license_id: mf_columbus
+license_level: 2
+mount: Main
+on_crit: You blow a hole in the enemy's armour as plastic explosives punch through.
+  The enemy becomes exposed until the end of your next turn.
+on_hit: You deal +2 bonus damage per armour of your target.
+range:
+- type: Range
+  val: 20
+source: BLACKBOX
+sp: 1
+tags:
+- id: tg_heat_self
+  val: 1
+- id: tg_accurate
+type: Launcher

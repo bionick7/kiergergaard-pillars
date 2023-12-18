@@ -1,0 +1,24 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+damage:
+- type: Kinetic
+  val: 2
+description: <b>TODO</b>
+id: mw_compass_nexus
+license: JANSZOON
+license_id: mf_janszoon
+license_level: 3
+mount: Main
+on_crit: You jam your target. This effect can only trigger once per scene on each
+  target.
+range:
+- type: Range
+  val: 10
+source: BLACKBOX
+tags:
+- id: tg_smart
+- id: tg_accurate
+- id: tg_arcing
+type: Launcher

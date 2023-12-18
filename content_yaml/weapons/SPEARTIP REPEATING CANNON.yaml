@@ -1,0 +1,27 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Quick
+  detail: This weapon fires so fast it can attack a second time this turn, however
+    the second attack becomes inaccurate and can't deal bonus damage.
+  name: TODO
+damage:
+- type: Kinetic
+  val: 2d6+2
+description: <b>TODO</b>
+id: mw_speartip_repeating_cannon
+license: AMUNDSEN
+license_id: mf_amundsen
+license_level: 3
+mount: Heavy
+range:
+- type: Range
+  val: 10
+source: BLACKBOX
+tags:
+- id: tg_overkill
+- id: tg_heat_self
+  val: 2
+type: Cannon

@@ -1,0 +1,72 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+core_system:
+  activation: Protocol
+  active_effect: <p>Once activated, you power up your integrated nexus lasting until
+    the end of this scene. Your Smuggler's Friends Nexus becomes seeking. In addition,
+    hit targets can only draw line of sight to adjacent spaces until the end of their
+    next turn.</p>
+  active_name: Scoundrel's Luck
+  description: <b>TODO</b>
+  integrated:
+  - mw_orinoco_integrated
+  name: Covert Attack Strategy Set
+  use: Mission
+description: <p>Seemingly purpose build for commando operations the Orinoco is built
+  for covert cyberwarfare like no other frame invading without any need for visual
+  confirmation of the enemy sending untraceable code to enemies' systems and lighting
+  their computers aflame.</p>
+id: mf_orinoco
+image_url: https://nekotwo.com/cdn/shop/products/000_d4b74050-b04b-4cb6-8720-eaee43220bea.jpg?v=1668416751
+license_id: mf_orinoco
+license_level: 2
+mechtype:
+- Controller
+- Striker
+mounts:
+- Main
+- Heavy
+source: LANIKA
+stats:
+  armor: 0
+  edef: 10
+  evasion: 8
+  heatcap: 4
+  hp: 6
+  repcap: 3
+  save: 11
+  sensor_range: 5
+  size: 1
+  sp: 6
+  speed: 5
+  stress: 4
+  structure: 4
+  tech_attack: 1
+traits:
+- description: The Orinoco ignores line of sight requirements for tech attacks within
+    its sensor range.
+  name: Inflitration Scanners
+  synergies:
+  - detail: The Orinoco ignores line of sight requirements for tech attacks within
+      its sensor range.
+    locations:
+    - tech
+- actions:
+  - activation: Reaction
+    effect: You make an invade against the attacker
+    frequency: 1/round
+    name: Slash/Crash
+    trigger: You are hit by a melee attack
+  description: Gain the Slash/Crash reaction (1/round when you are hit by a melee
+    attack you may take any Invade option against the attacker as part of this reaction.)
+  name: Crash Code Anti-Virus
+- description: The Orinoco gains +1 difficulty to Engineering checks and saves.
+  name: Exposed reactor
+  synergies:
+  - detail: The Orinoco gains +1 difficulty to Engineering checks and saves.
+    locations:
+    - engineering
+    - skill_check
+y_pos: 13

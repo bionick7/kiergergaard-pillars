@@ -1,0 +1,32 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+deployables:
+- activation: Quick
+  detail: The barricade generates a line 5 barrier 5 spaces high centred on the box
+    on the ground level. The barrier is magnetic blocking all frames and other large
+    non-biological objects (not squads) from passing, it doesn't grant cover and won't
+    stop attacks however. It only prevents frames from passing through it.
+  evasion: 5
+  hp: 10
+  name: Barricade Box
+  size: 1
+  type: Static Emplacement
+description: <b>TODO</b>
+effect: Deploy a size 1 barricade box in a free adjacent space to you.
+effect_print: 'You deploy a size 1 barricade box in a free adjacent space to you.
+  (10hp 5eva) The barricade generates a line 5 barrier 5 spaces high centred on the
+  box on the ground level. The barrier is magnetic blocking all frames and other large
+  non-biological objects (not squads) from passing, it doesn''t grant cover and won''t
+  stop attacks however. It only prevents frames from passing through it. '
+id: ms_anti_frame_barricade
+license: MIDZOR
+license_id: mf_midzor
+license_level: 1
+source: GMS-HIPS
+sp: 2
+synergies: []
+tags:
+- id: tg_unique
+type: Pioneering Tool

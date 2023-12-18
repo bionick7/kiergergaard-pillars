@@ -1,0 +1,24 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+damage:
+- type: Kinetic
+  val: 1d6+4
+description: <b>TODO</b>
+effect: Only consumes a charge on hit.
+id: mw_panzerbuechse_phosphorus_boxcutter
+license: SCHWARZKOPF
+license_id: mf_schwarzkopf
+license_level: 3
+mount: Main
+range:
+- type: Threat
+  val: 1
+source: HA-SKY
+tags:
+- id: tg_ap
+- id: tg_accurate
+- id: tg_limited
+  val: 5
+type: Melee

@@ -1,0 +1,28 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: <b>TODO</b>
+id: mw_orinoco_integrated
+mount: Main
+profiles:
+- damage:
+  - type: Kinetic
+    val: 1d3+1
+  name: TODO
+  range:
+  - type: Range
+    val: 5
+  tags: []
+- damage:
+  - type: Kinetic
+    val: 1d3+1
+  name: TODO
+  on_hit: The target can only draw line of sight to adjacent spaces until the end
+    of their next turn.
+  range:
+  - type: Range
+    val: 5
+  tags:
+  - id: tg_seeking
+type: Nexus

@@ -1,0 +1,28 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Quick
+  detail: You shield an allied character within sensors and line of sight from heat
+    lasting until used. They keep this shield even when they leave your sensors or
+    line of sight. The shield absorbs the next 1d3 heat they take from external sources.
+  name: TODO
+description: <b>TODO</b>
+effect_print: You shield an allied character within sensors and line of sight from
+  heat lasting until used. They keep this shield even when they leave your sensors
+  or line of sight. The shield takes on the next 1d3 heat they take from external
+  sources.
+id: ms_radiator_shield
+license: KILIMANJARO
+license_id: mf_kilimanjaro
+license_level: 2
+source: GMS-HIPS
+sp: 1
+synergies: []
+tags:
+- id: tg_shield
+- id: tg_unique
+- id: tg_heat_self
+  val: 1
+type: Shield

@@ -1,0 +1,29 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+dark: '#7EA068'
+description: <p>Formed during the Union intervention on Casve after the infamous flight
+  of the dragonfly destroyers, General Massif Systems-Humanitarian Intervention and
+  Pioneering Supplier is an autonomously operating department of its parent company.
+  Attached directly to the Union department of justice and human rights, most of its
+  frames will only be found with the military and represent the results of Unions
+  most advanced R&D in de-escalation. Some systems have even reportedly been developed
+  in joined programs with Harrison's Think Tank. </p><p>In the war-torn parts of the
+  Rosengaard Pillar, GMS-HIPS is the most active part of Union's reconstruction efforts.
+  Their pioneers have long settled down in more quiet offices as well though. Not
+  only to develop new methods of reversing harm of previous decades but also new tools
+  for upcoming crisis. With increasing normality, the local factories also started
+  to work in the civilian fields though after some time had passed. They are mostly
+  constrained to constructing heavy agricultural machinery but after heated debate,
+  they also started offering some of their wartime designs to Lancers across the stars.
+  </p><p>Today the pallet includes some of the best chassis on offer for any kind
+  of humanitarian intervention. Some Lancers may gripe about the comparative lack
+  of firepower, but no other manufacturer will ever measure up to GMS-HIPS' dedication
+  to bring even the most cumbersome machinery to where it's needed. Unlike the products
+  of the parent company, the tools from Casve necessitate proper licensing and are
+  only handed out to trusted Lancers who work for the five pillars. </p>
+id: GMS-HIPS
+light: '#A8D08D'
+logo_url: https://cdn.discordapp.com/attachments/1112721125840015362/1138170067796902059/GMS_HIPS.png
+quote: Your peacekeeper at the front.

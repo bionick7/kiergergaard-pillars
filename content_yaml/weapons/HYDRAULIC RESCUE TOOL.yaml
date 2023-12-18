@@ -1,0 +1,22 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+damage:
+- type: Kinetic
+  val: 1
+description: <b>TODO</b>
+id: mw_hydraulic_rescue_tool
+license: KILIMANJARO
+license_id: mf_kilimanjaro
+license_level: 3
+mount: Auxiliary
+on_crit: Your enemy becomes shredded until the end of their next turn
+range:
+- type: Threat
+  val: 1
+source: GMS-HIPS
+synergies:
+- id: tg_ap
+tags: []
+type: Melee

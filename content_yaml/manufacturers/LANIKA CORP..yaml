@@ -1,0 +1,28 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+dark: '#cd5438'
+description: <p>Lanika is a start-up only of noteworthy activity within the confines
+  of the Rosengard Pillar. The young company definitely managed to make an impression
+  here however. Springing up just at the right time, Lanika made a fortune during
+  the efforts to stabilise the region, being the first local manufacturer of proper
+  mechanised chassis to be officiated by Union, it almost became a local monopoly
+  for paramilitary and police forces.</p><p>It's rapid rise to fame comes with many
+  questions. There's a lot of rumours about the origins of the bright orange and often
+  luxurious frames. Some speculate SSC involvement and black-market shenanigans while
+  others accredit the company to the organised underworld wholesale. Whether allegations
+  of money laundering hold true or not matters but little to most of the clientele
+  who keep relying on the manufacturing of the eccentric physicist and company founder
+  Emil Lanhold and his vision of conflict as humanities driver of progress.</p><p>This
+  contentious worldview might be questioned by many, but the products it spawn aren't.
+  Lanika, apart from the conspiracy theories, is best known for being a frontrunner.
+  The innovative systems it brings to bear even overshadowing claims of tech being
+  stolen from the Voladore with no other supplier able to match their novelty with
+  the same quality and safety standards, solidifying it as the regions fastest growing
+  paramilitary contractor.</p>
+id: LANIKA
+light: '#fe7b52'
+logo_url: https://cdn.discordapp.com/attachments/1140314412155150377/1140639277978492929/LANIKA.png
+quote: 'Unofficial: Your partner in crime.<br>Official: Innovating in war to benefit
+  everyone in peace'

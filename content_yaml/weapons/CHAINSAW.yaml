@@ -1,0 +1,50 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+counters:
+- default_value: 0
+  id: ctr_chainsaw_turns
+  max: 3
+  min: 0
+  name: Chainsaw
+description: <b>TODO</b>
+effect_print: In order to use the chainsaw, the motor must first be kick started as
+  a protocol. Once started it lasts 3 turns, generating 1 heat during each turn no
+  matter if it was used or not. This effect only seizes to trigger when the weapon
+  is destroyed while running. As the chainsaw works its way through enemy armour it
+  deals increased damage with every attack. For each successful attack against a target
+  deal 1d6 bonus damage on continuous attacks against that same target.
+id: mw_chainsaw
+license: ORINOCO
+license_id: mf_orinoco
+license_level: 3
+mount: Main
+profiles:
+- actions:
+  - activation: Protocol
+    detail: Set the Chainsaw Turns Remaining counter to three. For the next three
+      turns, decrement the counter and take 1 heat, no matter if the weapon was used
+      or not
+    name: Start Motor
+  damage:
+  - type: Kinetic
+    val: 0
+  name: Inactive
+  range:
+  - type: Threat
+    val: 0
+  tags: []
+- damage:
+  - type: Kinetic
+    val: 1d3+2
+  name: Running
+  on_hit: For any subsequent against this target, add +1d6 bonus dammage. This affect
+    stacks until a turn occurs where this target is not attacked by the chainsaw
+  range:
+  - type: Threat
+    val: 1
+  tags:
+  - id: tg_overkill
+source: LANIKA
+type: Melee

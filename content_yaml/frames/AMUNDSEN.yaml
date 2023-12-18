@@ -1,0 +1,60 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+core_system:
+  activation: Protocol
+  active_effect: The Kraken, while not quite as fast firing then a Leviathan can far
+    outpace most targeting system. The Amundsen was thus fitted with a purpose build
+    targeting system to unleash its full potential in a controlled chaos. When activating
+    the core, it can strike against an unlimited number of targets until the bullet's
+    run out. Doing so as part of a simple skirmish or barrage, you choose two targets
+    and automatically engage all targets within range in-between the arc formed by
+    both. (counterclockwise). Both targets are of course included. You shoot indiscriminately
+    doing so, engaging all targets, enemy and allied within this arc. You need to
+    expend a charge of your Kraken MG for each and every one of these attacks and
+    can only attack each target once during the ensuing hailstorm.
+  active_name: 'Rapid Fire Engagement '
+  integrated:
+  - mw_amundsen_integrated
+  name: The Sea Monster Strikes
+  use: Scene
+description: 'Developed from the Drake, the Amundsen aims to offer the same potency
+  in firepower its sister platform brought to the table but with a drastically increased
+  capacity for mobile warfare. Greatly suffering in its protection, the advanced cooling
+  integrated into the barrel of the frames primary mounting guarantees combat performance
+  on par with the larger predecessor. After it''s introduction in the Zaobalde Lunar
+  War Amundsen has become IPSN most relied upon chassis for mobile firepower in fast
+  advances despite failing in naval service. '
+id: mf_amundsen
+license_id: mf_amundsen
+license_level: 2
+mechtype:
+- Striker
+mounts:
+- Heavy
+source: BLACKBOX
+stats:
+  armor: 0
+  edef: 6
+  evasion: 9
+  heatcap: 6
+  hp: 8
+  repcap: 5
+  save: 10
+  sensor_range: 10
+  size: 1
+  sp: 7
+  speed: 4
+  stress: 4
+  structure: 4
+  tech_attack: -1
+traits:
+- description: At the end of each turn in which you did not move you may clear up
+    to two heat. You must have gained the heat through your weapons to do so however.
+  name: Barrel cooling
+- description: 1/Scene you may boost as a free action when you make a ranged attack.
+  name: Unrelenting Advance
+- description: he Amundsen has Resistance to Explosive Damage.
+  name: Breach Armor Set
+y_pos: 50

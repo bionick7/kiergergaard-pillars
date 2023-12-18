@@ -1,0 +1,33 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+deployables:
+- activation: Quick
+  detail: The barbed wire counts as dangerous terrain. It is one space high. It can
+    be removed individually by any frame as a quick action by rolling a 1+ on a d6.
+    Falling that check deals 1ap kinetic damage. Otherwise, you clear one space from
+    the barbed wire.
+  evasion: '-'
+  hp: '-'
+  instances: 3
+  name: Barbed wire
+  size: 1
+  type: Static Emplacement
+description: <b>TODO</b>
+effect: Deploy barbed wire in a line 3 of free spaces with at least one space adjacent
+  to you.
+effect_print: Deploying the Wire Drum, draw a line 3 barrier 1 space high in free
+  spaces with at least one space adjacent to you. The barbed wire makes it dangerous
+  terrain. Each space can be removed individually by any frame as a quick action by
+  rolling a d6. Rolling a one, you fail at removing it and take 1ap kinetic damage.
+  Otherwise, you clear one space from the barbed wire.
+id: ms_gibraltar_barbed_wire_drums
+license: MIDZOR
+license_id: mf_midzor
+license_level: 1
+source: GMS-HIPS
+sp: 1
+synergies: []
+tags: []
+type: Pioneering Tool

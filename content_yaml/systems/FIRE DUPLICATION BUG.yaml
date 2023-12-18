@@ -1,0 +1,30 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Full Tech
+  detail: Choose an allied character in sensors and line of sight. They are protected
+    by a white hat trojan until the end of their next turn. When an enemy inflicts
+    heat on them while this protection is active, the enemy must succeed on an engineering
+    save or take as much burn from their action as it inflicted heat. Only one ally
+    can benefit from this effect at any given time. If you target another allied character
+    before it would have ended, it resolves automatically on your previous target.
+  name: TODO
+description: <b>TODO</b>
+effect_print: Choose an allied character in sensors and line of sight. They are protected
+  by a white hat trojan until the end of their next turn. When an enemy inflicts heat
+  on them while this protection is active, the enemy must succeed on an engineering
+  save or take as much burn from their action as it inflicted heat. Only one ally
+  can benefit from this effect at any given time. If you target another allied character
+  before it would have ended, it resolves automatically on your previous target.
+id: ms_fire_duplication_bug
+license: CHANG JIANG
+license_id: mf_chang_jiang
+license_level: 1
+source: LANIKA
+sp: 3
+synergies: []
+tags:
+- id: tg_unique
+type: Tech

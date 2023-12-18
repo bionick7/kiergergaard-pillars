@@ -1,0 +1,28 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Quick Tech
+  detail: Choose one allied and one enemy character within sensors and line of sight.
+    You link up their onimnet receivers. Until the end of your next turn, whenever
+    one of them gets affected by a tech attack, you take one heat and the unaffected
+    character must succeed on a systems save or suffer the same effect as the attacks
+    target.
+  name: TODO
+description: <b>TODO</b>
+effect_print: Choose one allied and one enemy character within sensors and line of
+  sight. You link up their onimnet receivers. Until the end of your next turn, whenever
+  one of them gets affected by a tech attack, you take one heat and the unaffected
+  character must succeed on a systems save or suffer the same effect as the attacks
+  target.
+id: ms_aggressive_flush_system_linkage
+license: CHANG JIANG
+license_id: mf_chang_jiang
+license_level: 3
+source: LANIKA
+sp: 2
+synergies: []
+tags:
+- id: tg_unique
+type: Tech

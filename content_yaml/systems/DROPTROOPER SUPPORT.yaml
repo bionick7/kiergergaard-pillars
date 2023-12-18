@@ -1,0 +1,52 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+deployables:
+- actions:
+  - activation: Free
+    damage:
+    - type: Kinetic
+      val: 1d3+2
+    detail: 2 reliable 5 range
+    name: Paratrooper LMG
+    range:
+    - type: Range
+      val: 5
+  - activation: Free
+    damage:
+    - type: Explosive
+      val: 1d6+2
+    detail: ap limited 3
+    name: Framefist
+    range:
+    - type: Range
+      val: 5
+  activation: Quick
+  armor: 2
+  edef: 8
+  evasion: 13
+  heatcap: 4
+  hp: 10
+  name: Droptrooper
+  size: 0.5
+  speed: 4
+  type: Infantry Support
+description: <b>TODO</b>
+effect_print: "Call in an allied subaltern Droptrooper NPC in a free space in line\
+  \ of sight. They take a turn of their own but follow your commands and do as you\
+  \ say. <br> Size \xBD 10 HP 13 Eva 8 Edef 4 speed 2 Armour 4 Heat cap <br> Paratrooper\
+  \ LMG Quick action attack 1d3+2 kinetic 2reliable 5 range <br> Framefist Quick action\
+  \ attack ap 1d6 +2 explosive range 5 limited 3"
+id: ms_droptrooper_support
+license: MISSISSIPPI
+license_id: mf_mississippi
+license_level: 3
+source: LANIKA
+sp: 3
+synergies: []
+tags:
+- id: tg_unique
+- id: tg_limited
+  val: 1
+type: Deployable

@@ -1,0 +1,29 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Invade
+  detail: At the start of each subsequent turn your target must roll a system save
+    until they pass one and thus end this effect. Until then they perceive a simulated
+    earthquake needing to succeed on a hull save or be knocked prone unless they are
+    flying.
+  name: Earthquake
+- activation: Invade
+  detail: ': At the start of each subsequent turn your target must roll a system save
+    until they pass one and thus end this effect. Until then they perceive a simulated
+    blizzard needing to move or boost each turn or become immobilised until they break
+    free with a successful Hull save as a quick action.'
+  name: Blizzard
+description: <b>TODO</b>
+effect_print: Gain the following options for INVADE
+id: ms_orlinoco_hack
+license: ORINOCO
+license_id: mf_orinoco
+license_level: 1
+source: LANIKA
+sp: 2
+synergies: []
+tags:
+- id: tg_unique
+type: Tech

@@ -1,0 +1,28 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Quick
+  detail: You make a tactical retreat. First, deploy a burst 2 smoke cover, then teleport
+    up two two spaces. You become invisible afterwards until you move, voluntarily
+    or involuntarily or until the start of your next turn.
+  name: Flee the cops
+description: <b>TODO</b>
+effect_print: 'You make a tactical retreat. First, deploy a burst 2 smoke cover, then
+  teleport up two two spaces. You become invisible afterwards until you move, voluntarily
+  or involuntarily or until the start of your next turn. '
+id: ms_escape_tool
+license: ORINOCO
+license_id: mf_orinoco
+license_level: 2
+source: LANIKA
+sp: 3
+synergies: []
+tags:
+- id: tg_unique
+- id: tg_heat_self
+  val: 2
+- id: tg_limited
+  val: 3
+type: System

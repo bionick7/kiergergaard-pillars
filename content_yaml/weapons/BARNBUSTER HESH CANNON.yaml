@@ -1,0 +1,24 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+damage:
+- type: Explosive
+  val: 1d6+4
+description: <b>TODO</b>
+id: mw_barnbuster_hesh_cannon
+license: COLUMBUS
+license_id: mf_columbus
+license_level: 3
+mount: Main
+on_crit: You blow a hole in the enemy's armour as plastic explosives punch through.
+  The enemy becomes exposed until the end of your next turn.
+on_hit: You deal +2 bonus damage per armour of your target.
+range:
+- type: Range
+  val: 15
+source: BLACKBOX
+tags:
+- id: tg_ap
+- id: tg_ordnance
+type: Melee

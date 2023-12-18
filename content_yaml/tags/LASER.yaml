@@ -1,0 +1,7 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: On a hit, this weapon inflicts as much heat as it deals conventional
+  dammage.
+id: tg_laser

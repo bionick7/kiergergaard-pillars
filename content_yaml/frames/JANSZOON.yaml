@@ -1,0 +1,46 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+core_system:
+  activation: Full
+  active_effect: 'You tap into enemy coms.  Until the end of your next turn, you and
+    your allies may use the enemy''s line of sight and sensors against them using
+    them as if they were your own for the effect of attacks. Once this resolves, all
+    enemies become jammed until the end of their subsequent turn. '
+  active_name: The enemy is listening
+  name: Molehill Frequency
+description: Cyberwarfare has all but overshadowed simpler electronics warfare these
+  days. IPS-N lacking some experience in the modern cyberwar decided to once again
+  pursue electronics warfare targeting enemy sensors and coms channels through rugged
+  hardware counteracting common electronic countermeasures.
+id: mf_janszoon
+license_id: mf_janszoon
+license_level: 2
+mechtype:
+- Controller
+mounts:
+- Flex
+- Main
+source: BLACKBOX
+stats:
+  armor: 0
+  edef: 10
+  evasion: 6
+  heatcap: 4
+  hp: 8
+  repcap: 4
+  save: 10
+  sensor_range: 10
+  size: 1
+  sp: 7
+  speed: 5
+  stress: 4
+  structure: 4
+  tech_attack: 0
+traits:
+- description: The Janszoon has immunity against Jammed.
+  name: Protected Coms transmitter
+- description: 1/mission you can shrug of a System trauma ignoring its effects.
+  name: Rugged Systems
+y_pos: 50

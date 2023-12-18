@@ -1,0 +1,23 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Invade
+  detail: Your target takes twice as much heat on the next tech attack they are hit
+    by.
+  name: Amplifier
+- activation: Invade
+  detail: Until the start of their next turn, your targets E-defence drops by two.
+  name: Access
+description: <b>TODO</b>
+effect_print: Gain the following options for INVADE
+id: ms_virtual_backdoor
+license: CHANG JIANG
+license_id: mf_chang_jiang
+license_level: 1
+source: LANIKA
+sp: 2
+synergies: []
+tags: []
+type: Tech

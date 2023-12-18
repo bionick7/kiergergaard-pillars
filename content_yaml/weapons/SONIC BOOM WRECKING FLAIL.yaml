@@ -1,0 +1,23 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+damage:
+- type: Kinetic
+  val: 3d6
+description: <b>TODO</b>
+id: mw_sonic_boom_wrecking_flail
+license: CHARLEMAGNE
+license_id: mf_charlemagne
+license_level: 3
+mount: Superheavy
+on_attack: You become jammed once your attack resolves. Everyone in a blast 2 zone
+  (excluding you) must pass an agility safe or take one 1d6 +2 damage (stacks on your
+  main target) and become jammed.
+range:
+- type: Threat
+  val: 2
+source: HA-SKY
+tags:
+- id: tg_inaccurate
+type: Melee

@@ -1,0 +1,33 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Reaction
+  detail: The allied character gains immunity to all effects from the tech attack
+    that just hit them. Additionally, they gain 1d3 + GRIT Overshield. However, in
+    the process, their CPU get's overburdened and they become Slowed and Impaired
+    until the end of their next turn
+  frequency: Unlimited
+  name: Systems Freeze Backup Shield
+  trigger: An allied character within sensors and line of sight gets hit by a tech
+    attack
+description: <b>TODO</b>
+effect_print: Whenever an allied character within sensors and line of sight gets hit
+  by a tech attack you may spend a charge of this system and take the Systems Freeze
+  Backup Shield Reaction. The allied character gains immunity to all effects from
+  the tech attack that just hit them. Additionally, they gain 1d3 + GRIT Overshield.
+  However, in the process, their CUP get's overburdened and they become Slowed and
+  Impaired until the end of their next turn.
+id: ms_task_manager
+license: CHANG JIANG
+license_id: mf_chang_jiang
+license_level: 3
+source: LANIKA
+sp: 2
+synergies: []
+tags:
+- id: tg_unique
+- id: tg_limited
+  val: 4
+type: System

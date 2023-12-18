@@ -1,0 +1,67 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+core_system:
+  activation: Full
+  active_actions:
+  - activation: Reaction
+    effect: <p> You first roll 1d6, on 4+ their attack automatically fails. Instead,
+      you may use their attack against them, using your stats. You count as the conducter
+      of the attack.</p>
+    frequency: 1/Round
+    name: TODO
+    trigger: An enemy attacks you or an ally within sensors and line of sight with
+      a tech attack
+  active_effect: <p>For the rest of this scene, you gain the <b>TODO</b> reaction.</p>
+  active_name: Fortress Of The Mind
+  description: <b>TODO</b>
+  name: Viral Lock-Down Protocol
+  use: Mission
+description: <p>The nightmare of every hacker, the Chang Jiang comes equipped with
+  some of the most complex coding ever seen around the Dawnline shore outside of the
+  realm of NHPs. Exploiting the system access granted through buffering the frame
+  can transform the software of any other frame into a labyrinth of code without escape.
+  The frame is therefore feared by almost everyone conduction operations in cyberwarfare.</p>
+id: mf_chang_jiang
+image_url: https://ih1.redbubble.net/image.980358996.2852/flat,750x,075,f-pad,750x1000,f8f8f8.jpg
+license_id: mf_chang_jiang
+license_level: 2
+mechtype:
+- Support
+mounts:
+- Flex
+- Main
+source: LANIKA
+stats:
+  armor: 0
+  edef: 12
+  evasion: 7
+  heatcap: 5
+  hp: 7
+  repcap: 3
+  save: 11
+  sensor_range: 15
+  size: 1
+  sp: 6
+  speed: 3
+  stress: 4
+  structure: 4
+  tech_attack: 1
+traits:
+- description: Bolstering causes your target to inflict +4 difficulty on all tech
+    attacks made against them while they benefit from the bolstering.
+  name: Castle Support Code
+  synergies:
+  - detail: Bolstering causes your target to inflict +4 difficulty on all tech attacks
+      made against them while they benefit from the bolstering.
+    locations:
+    - tech
+- description: The Chang Jiang gains +1 accuracy on Systems checks and saves.
+  name: High Performance CPU
+  synergies:
+  - detail: The Chang Jiang gains +1 accuracy on Systems checks and saves.
+    locations:
+    - systems
+    - skill_check
+y_pos: 30

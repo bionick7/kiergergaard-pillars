@@ -1,0 +1,52 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Quick
+  cost: 1
+  damage:
+  - type: Explosive
+    val: 2
+  detail: You throw a pigeon shrapnel grenade. These grenades burst mid-air perforating
+    your target area with a rain of tiny explosives dealing 2 explosive damage to
+    all targets in a blast 2 area.
+  name: Grenade
+  range:
+  - type: Range
+    val: 8
+  - type: Blast
+    val: 2
+deployables:
+- activation: Quick
+  cost: 1
+  damage:
+  - type: Explosive
+    val: 2
+  detail: ' you launch air-deployed pigeon mines in a blast 2 area. All characters
+    and objects within the area take 2 explosive damage when a hostile character moves
+    adjacent to the mine.'
+  name: Mine
+  range:
+  - type: Blast
+    val: 2
+  type: Mine
+description: <b>TODO</b>
+effect_print: Grenade; you throw a pigeon shrapnel grenade. These grenades burst mid-air
+  perforating your target area with a rain of tiny explosives dealing 2 explosive
+  damage to all targets in a blast 2 area. Mine; you launch air-deployed pigeon mines
+  in a blast 2 area. All characters and objects within the area take 2 explosive damage
+  when the mines are triggered.
+id: ms_pigeon_mine_launcher
+license: MIDZOR
+license_id: mf_midzor
+license_level: 2
+source: GMS-HIPS
+sp: 1
+synergies: []
+tags:
+- id: tg_limited
+  val: 3
+- id: tg_unique
+- id: tg_grenade
+type: Mine

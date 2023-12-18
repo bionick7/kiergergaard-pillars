@@ -1,0 +1,19 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: <b>TODO</b>
+effect: Adjacent allied characters gain +1 accuracy on their first attack each turn
+  when they stand within soft cover and deal +2 bonus damage.
+effect_print: Adjacent allied characters gain +1 accuracy on their first attack each
+  turn when they stand within soft cover and deal +2 bonus damage.
+id: ms_ambush_pack
+license: MISSISSIPPI
+license_id: mf_mississippi
+license_level: 1
+source: LANIKA
+sp: 3
+synergies: []
+tags:
+- id: tg_unique
+type: System

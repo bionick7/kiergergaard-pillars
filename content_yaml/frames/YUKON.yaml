@@ -1,0 +1,51 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+core_system:
+  activation: Full
+  active_effect: <p>You disengage all safety measures on your Solar Lance. Doing so
+    takes a full action and afterwards you can only fire your Lance as if it were
+    a superheavy weapon. Without limiters, the weapon gains ordonance status but its
+    range is raised to line 15 and the damage increases to 16-range. It also melts
+    all ground in a burst 3 area additionally to your full line 15. It can only be
+    fired once in this mode and reverts  back to normal operation automatically afterwards.</p>
+  active_name: The Sun Unleashed
+  description: <b>TODO</b>
+  integrated:
+  - mw_yukon_integrated
+  name: This gun of mine glows with an awesome power! >:)
+  use: Mission
+description: <b>TODO.</b>
+id: mf_yukon
+image_url: https://img.fruugo.com/product/4/92/980124924_max.jpg
+license_id: mf_yukon
+license_level: 2
+mechtype:
+- Striker
+mounts:
+- Main
+- Heavy
+source: LANIKA
+stats:
+  armor: 0
+  edef: 8
+  evasion: 7
+  heatcap: 6
+  hp: 8
+  repcap: 4
+  save: 11
+  sensor_range: 8
+  size: 2
+  sp: 7
+  speed: 4
+  stress: 4
+  structure: 4
+  tech_attack: 0
+traits:
+- description: <span style="color:red;">Laser.</span>
+  name: LASER!!!
+- description: Whenever you deal heat to an exposed character, you deal the same amount
+    of burn instead.
+  name: Facemelter
+y_pos: 50

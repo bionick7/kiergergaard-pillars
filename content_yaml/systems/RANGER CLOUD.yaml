@@ -1,0 +1,25 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Protocol
+  detail: Spreads smoke creating soft cover in every space you cross while moving
+    this turn. The smoke last until the end your next turn.
+  name: Deploy smoke
+description: <b>TODO</b>
+effect_print: once active as a protocol, this system spreads smoke creating soft cover
+  in every space you cross while moving this turn. The smoke last until the end your
+  next turn.
+id: ms_ranger_cloud
+license: MISSISSIPPI
+license_id: mf_mississippi
+license_level: 1
+source: LANIKA
+sp: 1
+synergies: []
+tags:
+- id: tg_heat_self
+  val: 1
+- id: tg_unique
+type: System

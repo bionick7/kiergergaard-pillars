@@ -1,0 +1,64 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+core_system:
+  actions:
+  - activation: Reaction
+    effect: You flare up their position in response, no matter if the hit or not ignoring
+      sensors and line of sight. Flare up, the enemy becomes locked on. You and all
+      allied characters may ignore invisibility and cover when consuming this Lock-on.
+    frequency: Unlimited
+    name: Strike Orientation Signalling
+    trigger: An enemy targets you or any adjacent allied character with a non-tech
+      attack
+  activation: Reaction
+  active_effect: 'Whenever your Strike Orientation Signalling triggers, you may choose
+    to active your core in conjunction with it. Once activated, the core grants an
+    immediate retaliatory strike against the attacking enemy. This attack takes the
+    form of a full barrage if possible but as it''s a reaction, Superheavies can''t
+    be fired in this way. The attack happens immediately after the enemy''s attack
+    has resolved, whether it hit or not and can be performed by you or any adjacent
+    allied character. Whoever takes the attack takes 4 heat doing so. '
+  active_name: Coordinated Counterbattery
+  name: Moonlight Flare Strike
+  passive_effect: you gain access to the Strike Orientation Signalling reaction
+  passive_name: Strike Orientation Signalling
+description: The wars at the Dawnline push many manufacturers to new territory, IPS-N
+  among them. Heavy artillery presence in the sector lead to new problems that soon
+  turned into solutions at Northstar and so a sophisticated counterbattery system
+  was developed. Build to target and destroy enemy artillery positions and ammo depots
+  the Columbus might underwhelm initially in its firepower favouring precision it
+  is unmatched in its domain.
+id: mf_columbus
+license_id: mf_columbus
+license_level: 2
+mechtype:
+- Support
+mounts:
+- Flex
+- Main
+- Heavy
+source: BLACKBOX
+stats:
+  armor: 1
+  edef: 7
+  evasion: 6
+  heatcap: 5
+  hp: 10
+  repcap: 5
+  save: 10
+  sensor_range: 5
+  size: 2
+  sp: 7
+  speed: 4
+  stress: 4
+  structure: 4
+  tech_attack: -1
+traits:
+- description: Adjacent allied character can use the Columbus as Hard cover.
+  name: Guardian
+- description: The Columbus has Resistance to damage, burn and heat from blast, burst,
+    line and cone attacks.
+  name: Blast plating
+y_pos: 50

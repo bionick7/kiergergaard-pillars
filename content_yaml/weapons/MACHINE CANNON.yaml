@@ -1,0 +1,28 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Reaction
+  detail: You hit fire the machine cannon.
+  frequency: 2/round
+  name: TODO
+  trigger: An enemy within range moves
+damage:
+- type: Kinetic
+  val: 1d6
+description: <b>TODO</b>
+effect: This weapon can only be used with the TODO Reaction.
+id: mw_machine_cannon
+license: MISSISSIPPI
+license_id: mf_mississippi
+license_level: 3
+mount: Main
+no_attack: true
+range:
+- type: Range
+  val: 5
+source: LANIKA
+tags:
+- id: tg_ap
+type: Cannon

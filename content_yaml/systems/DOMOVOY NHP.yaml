@@ -1,0 +1,36 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Quick
+  detail: Deploy up to 6 virtual copies of your equipped deployable systems. These
+    copies are indistinguishable from tangible objects and act as if they were real.
+    They last for the rest of the scene, or until destroyed by an adjacent character
+    with a successful Systems skill check as a quick action. Activating Domovoy again
+    also removes all previous instances of its use. Deploys within line of sight and
+    sensors ignoring requirements for adjacency.
+  name: TODO
+description: Domovoy was developed as a tool for strategic advice being able to scan
+  entire battlefields at moment's notice and determine optimal positioning for static
+  deployments. In combination with newest electronic warfare equipment the NHP is
+  capable of emulating HOR_OS code at higher capacity
+effect_print: Domovoy is capable of deploying up to 6 virtual copies of your equipped
+  deployable systems. These copies are indistinguishable from tangible objects and
+  act as if they were real. They last for the rest of the scene, or until destroyed
+  by an adjacent character with a successful Systems skill check as a quick action.
+  Activating Domovoy again also removes all previous instances of its use. Deploys
+  within line of sight and sensors ignoring requirements for adjacency.
+id: ms_domovoz_nhp
+license: MIDZOR
+license_id: mf_midzor
+license_level: 3
+source: GMS-HIPS
+sp: 2
+synergies: []
+tags:
+- id: tg_ai
+- id: tg_limited
+  val: 4
+- id: tg_unique
+type: AI

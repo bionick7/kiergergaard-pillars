@@ -1,0 +1,28 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+damage:
+- type: Energy
+  val: 1d3
+description: <b>TODO</b>
+id: mw_taser_shotgun
+license: CHAN JIANG
+license_id: mf_chang_jiang
+license_level: 2
+mount: Main
+on_crit: Instead of forcing your enemy to do a system save against your TASER shell
+  you can invade them as a free action automatically succeeding on your tech attack
+  roll.
+on_hit: Your target must succeed on a system save or become impaired until the end
+  of their next turn.
+range:
+- type: Range
+  val: 5
+- type: Threat
+  val: 3
+source: LANIKA
+sp: 1
+tags:
+- id: tg_inaccurate
+type: CQB

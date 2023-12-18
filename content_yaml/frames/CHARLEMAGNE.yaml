@@ -1,0 +1,65 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+core_system:
+  activation: Protocol
+  active_effect: 'This core system can only be activated when in the Danger Zone and
+    last as long as the frame remains in it. While active the frame''s reactor burns
+    bright enough to melt steel. At expense of your own safety being shredded while
+    the core is active, thus negating the benefits of your reactive emergency armour,
+    you gain the ability to reconstruct on the battlefield scavenging from the enemies
+    ripped armour pieces, regaining 1d6 hp whenever you perform a critical hit. '
+  active_name: 'Raging Fire '
+  description: TODO
+  name: Blast Furnace Reactor
+description: Bulky but deadly the Charlemagne hulks across the fields of AHB5 and
+  slams rebels into submission after its birth out of destroyed Barbaro ssa frames
+  and Think Tank prototypes on the field of war. This frontline giant has been dubbed
+  a monstrosity of engineering by some in armoury offices but became beloved across
+  it's teams who fast took a liking to the experimental armour that weakened the structure
+  but offered great reactive protection in emergencies allowing for the use of devasting
+  yet unstable Harrison prototypes.
+id: mf_charlemagne
+license_id: mf_charlemagne
+license_level: 2
+mechtype:
+- Striker
+mounts:
+- Main
+- Main/Aux
+- Heavy
+source: HA-SKY
+stats:
+  armor: 0
+  edef: 7
+  evasion: 6
+  heatcap: 7
+  hp: 10
+  repcap: 4
+  save: 10
+  sensor_range: 5
+  size: 3
+  sp: 7
+  speed: 2
+  stress: 4
+  structure: 4
+  tech_attack: -1
+traits:
+- description: Adjacent allied characters can use the Charlemagne as Hard cover.
+  name: Colossus
+- description: When the Charlemagne loses a Structure, it crumbles under parts of
+    its own weight and takes a further 1d6 AP kinetic damage.
+  name: Self-carrying structure
+  synergies:
+  - detail: When the Charlemagne loses a Structure, it crumbles under parts of its
+      own weight and takes a further 1d6 AP kinetic damage.
+    location:
+    - structure
+- description: While suffering from any status or condition (Including self-inflicted)
+    the Charlemagne has resistance to all damage.
+  name: Reactive emergency Armour.
+- description: The Charlemagne can't be pushed, pulled, knocked prone or knocked back
+    by smaller characters.
+  name: Heavy frame.
+y_pos: 50

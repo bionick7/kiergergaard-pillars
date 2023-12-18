@@ -1,0 +1,27 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Invade
+  detail: The enemy suffers a system failure in its counter electronics glowing up
+    on your Combat UIs. The next attack against it, if it hits, counts as a critical
+    hit.
+  name: DARTS Heads-Up Marker
+- activation: Invade
+  detail: After successful hacking your enemy target, you designate an ally within
+    sensors and line of sight. Your enemy target takes 3ap energy damage whenever
+    they attack an a target other than the one designated by you until the end of
+    their next turn..
+  name: Predesignated Target Command
+description: <b>TODO</b>
+effect_print: ''
+id: ms_darts_ui_controls
+license: ORINOCO
+license_id: mf_orinoco
+license_level: 3
+source: LANIKA
+sp: 2
+synergies: []
+tags: []
+type: Tech

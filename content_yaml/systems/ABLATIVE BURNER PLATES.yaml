@@ -1,0 +1,22 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Quick
+  detail: You clear 1d6 heat, but take half as much burn
+  name: TODO
+description: <b>TODO</b>
+effect_print: You clear 1d6 heat but take half as much burn.
+id: ms_ablative_burner_plates
+license: KILIMANJARO
+license_id: mf_kilimanjaro
+license_level: 1
+source: GMS-HIPS
+sp: 1
+synergies: []
+tags:
+- id: tg_unique
+- id: tg_limited
+  val: 3
+type: System

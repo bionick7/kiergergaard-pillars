@@ -1,0 +1,22 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+damage:
+- type: Variable
+  val: 1d3+1
+effect: Choose this weapons damage type at the start of the mission.
+id: mw_autocannon
+license: GMS
+license_level: 0
+mount: Auxiliary
+range:
+- type: Range
+  val: 10
+source: GMS
+tags:
+- id: tg_reliable
+  val: 2
+- id: tg_heat_self
+  val: 1
+type: Cannon

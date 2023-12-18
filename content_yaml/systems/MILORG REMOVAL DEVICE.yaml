@@ -1,0 +1,27 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Quick
+  detail: You can remove any deployable with this system blowing it up in an instant,
+    destroying them in the process. You can even remove indestructible deployables
+    in this manner, but they can be redeployed afterwards and don't count as being
+    destroyed
+  name: Remove Device
+description: <b>TODO</b>
+effect_print: You can remove any deployable with this system blowing it up in an instant,
+  destroying them in the process. You can even remove indestructible deployables in
+  this manner, but they can be redeployed afterwards and don't count as being destroyed.
+id: ms_milorg_removal_device
+license: MIDZOR
+license_id: mf_midzor
+license_level: 3
+source: GMS-HIPS
+sp: 2
+synergies: []
+tags:
+- id: tg_heat_self
+  val: 1
+- id: tg_unique
+type: System

@@ -1,0 +1,24 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+damage:
+- type: Energy
+  val: 1d3+3
+description: <b>TODO</b>
+effect: You do half damage attacking beyond range 10.
+id: mw_turn_x_beam_cannon
+license: YUKON
+license_id: mf_yukon
+license_level: 3
+mount: Heavy
+range:
+- type: Range
+  val: 20
+source: LANIKA
+tags:
+- id: tg_ap
+- id: tg_reliable
+  val: 3
+- id: tg_laser
+type: Rifle

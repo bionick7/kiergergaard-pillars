@@ -1,0 +1,92 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+core_system:
+  activation: Full
+  active_actions:
+  - activation: Quick
+    detail: <p>This system can only be used when your core is active and only holds
+      three charges. This amount can't be raised by any means. Expending a charge,
+      you may cool down completely. You don't stabilize doing so and don't get any
+      additional advantages.
+    name: Fire Nitrogen Emergency Pack
+  active_effect: <p>For the rest of this scene the Bolzman heat pump takes on all
+    the heat instead of half once activated. You also gain the <i>Nitrogen Emergency
+    Packs</i> quick action. <br></p>
+  active_name: High Enthalpy Reduction
+  description: <b>TODO</b>
+  name: Thermal Control Package
+  passive_effect: <p>As a quick action, you may latch onto any character adjacent
+    character. Until either of you breaks adjacency you may take half the heat they
+    take no matter the source. </p>
+  passive_name: Boltzmann Heat Pump
+  tags:
+  - id: tg_limited
+    val: 3
+  use: Mission
+description: <p>Developed from reverse engineered Harrison reactors the Kilimanjaro
+  fire suppression and heat management chassis presents a breakthrough in reactor
+  safety. Ongoing Union trials even conduct trials on the system as a countermeasure
+  to total biome kills combining the strongest heat pump ever used on chassis with
+  superb ABC-protection. No matter if it serves on carriers at the reactor unit, pushes
+  fast deployment units to their limit or suppresses wildfires, the Kilimanjaro is
+  a favourite to everyone looking to fight heat.</p>
+id: mf_kilimanjaro
+image_url: https://cdn.discordapp.com/attachments/365511976446722048/1138180239151869952/dream_TradingCard_-_2023-08-07T163227.644.jpg
+license_id: mf_kilimanjaro
+license_level: 2
+mechtype:
+- Support
+mounts:
+- Aux/Aux
+source: GMS-HIPS
+stats:
+  armor: 2
+  edef: 10
+  evasion: 7
+  heatcap: 10
+  hp: 6
+  repcap: 4
+  save: 12
+  sensor_range: 10
+  size: 1
+  sp: 7
+  speed: 4
+  stress: 4
+  structure: 4
+  tech_attack: 1
+traits:
+- description: The Kilimanjaro gains +1 accuracy on Engineering checks and saves.
+  name: Superior Reactor
+  synergies:
+  - detail: The Kilimanjaro gains +1 accuracy on Engineering checks and saves.
+    locations:
+    - engineering
+    - skill_check
+- description: When receiving any amount of burn damage, the Kilimanjaro first gains
+    overshield equal to 4 + GRIT before taking damage. Additionally, it has immunity
+    to all heat from external sources as long as it benefits from this overshield.
+    This does not apply to heat from your Thermal Control Package.
+  name: Reactive Heat Shielding
+  synergies:
+  - detail: When receiving any amount of burn damage, the Kilimanjaro first gains
+      overshield equal to 4 + GRIT before taking damage.
+    locations:
+    - overshield
+  - detail: The Kilimanjaro has immunity to all heat from external sources as long
+      as it benefits from overshield gained from Reactive Heat Shield. This does not
+      apply to heat from your Thermal Control Package.
+    locations:
+    - heat
+- description: When taking stress, the Kilimanjaro cools off by ejecting flaming reactor
+    fuel in a cone 3 spew. All characters within the affected area take 1d6 explosive
+    damage.
+  name: Emergency heat spew
+  synergies:
+  - detail: When taking stress, the Kilimanjaro cools off by ejecting flaming reactor
+      fuel in a cone 3 spew. All characters within the affected area take 1d6 explosive
+      damage.
+    locations:
+    - stress
+y_pos: 20

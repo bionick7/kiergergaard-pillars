@@ -1,0 +1,60 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+core_system:
+  activation: Protocol
+  active_effect: <p>The Midzor deploys it's integrated temporary bridge aiding allies
+    in crossing even the harshest of terrain. You extend yourself over a line 5 (centre
+    to centre) with width 3. Doing so:<ul><li>You become immobilised and can't be
+    moved by any means</li><li>You ignore all kinds of difficult or dangerous terrain
+    beneath you as well as obstacles of up to size 1</li><li>Allies can move across
+    the surface covered by ignoring the terrain beneath</li><li>On the turn you activated
+    this core, you can use limited systems with the deployable tag without using any
+    charge.</li></ul>This ability is Efficient and will refund 1 Core Point at the
+    end of any scene in which this ability was used.</p>
+  active_name: Bridge deployment
+  description: <b>TODO</b>
+  name: Advanced Frontline Pioneering
+  use: Scene
+description: <p>The Midzor presents the most extensive pioneering frame on the market
+  offering great tools for hazard removal as well as area denial be it through mines
+  or barbed wire. The frame also offering unique capability of deploying itself as
+  a bridge to get allies safely over various obstacles making it peerless in frontline
+  service. Since its first operation at Helibep it serves with various pioneering
+  corps being one of few chassis from the HIPS line available on the open market.</p>
+id: mf_midzor
+image_url: https://cdn.discordapp.com/attachments/365511976446722048/1138180322492694608/dream_TradingCard_-_2023-08-07T162021.190.jpg
+license_id: mf_midzor
+license_level: 2
+mechtype:
+- Controller
+- Support
+mounts:
+- Aux/Aux
+- Main/Aux
+source: GMS-HIPS
+stats:
+  armor: 2
+  edef: 8
+  evasion: 6
+  heatcap: 7
+  hp: 7
+  repcap: 5
+  save: 11
+  sensor_range: 10
+  size: 3
+  sp: 8
+  speed: 3
+  stress: 4
+  structure: 4
+  tech_attack: 0
+traits:
+- description: The Midzor is immune to all damage from dangerous terrain.
+  name: MRAP
+- description: Adjacent allied characters can use the Midzor as hard cover.
+  name: Colossus
+- description: The Midzor can't be pushed, pulled, knocked prone or knocked back by
+    smaller characters.
+  name: Heavy Frame
+y_pos: 20

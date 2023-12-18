@@ -1,0 +1,86 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+core_system:
+  activation: Protocol
+  active_actions:
+  - activation: Quick
+    detail: '<p>Roll an additional d6 to determine the wing sent to your aid. All
+      of these can be done within range 15 ignoring requirements for line of sight.<li>Recon
+      overhead flight : Lock-On to one enemy.</li><li>Smokebomb advance : Draw a line
+      5 area in which all characters benefit from soft cover until the end of your
+      next turn, at which point the smoke disperses.</li><li>Hypersonic missile strike
+      : deal 4 explosive damage to one enemy.</li><li>Pigeon mines : <b>TODO</b></li><li>BH-Carpet
+      bombing : Draw a line 8 area. All targets within take 2 explosive damage</li><li>Kaneda-X
+      orbital strike : Deal 1d6 +2 AP energy damage to one enemy</li></p>'
+    name: Call Air Strike
+  - activation: Full
+    detail: <p>Calling 2 air strikes in a row c.f. <i>Call Air Strike</i></p>
+    name: Double Air Strike
+  active_effect: <p>For the rest of this scene you can roll 2d6 at the start of each
+    round making successful contact with strike command on 3+ for each roll. In case
+    both d6 succeed, you gain access to <i>Double Air Strike</i></p>
+  active_name: High Alert Status
+  description: <b>TODO</b>
+  name: Flight Coordination Relay
+  passive_actions:
+  - activation: Quick
+    detail: '<p>Roll an additional d6 to determine the wing sent to your aid. All
+      of these can be done within range 15 ignoring requirements for line of sight.<li>Recon
+      overhead flight : Lock-On to one enemy.</li><li>Smokebomb advance : Draw a line
+      5 area in which all characters benefit from soft cover until the end of your
+      next turn, at which point the smoke disperses.</li><li>Hypersonic missile strike
+      : deal 4 explosive damage to one enemy.</li><li>Pigeon mines : <b>TODO</b></li><li>BH-Carpet
+      bombing : Draw a line 8 area. All targets within take 2 explosive damage</li><li>Kaneda-X
+      orbital strike : Deal 1d6 +2 AP energy damage to one enemy</li></p>'
+    name: Call Air Strike
+  passive_effect: <p>At the start of each of your turns, you may roll at d6. On 4+
+    you successfully make contact with strike command and may use <i>Call Air Strike</i></p>
+  passive_name: Combat Air Patrol
+  use: Mission
+description: <p>Developed in a joint effort with the Union Navy, Attakulla presents
+  one of the premiere platforms of joint arms operation offering superb tools to coordinate
+  air strikes and orbital support. Initially received with complaints by front line
+  troops the introduction of dedicated drone wings to every frame soon proved the
+  capability of the chassis making it and it's NHP assistance the preferred choice
+  for many DOJ/HR NCOs.</p>
+id: mf_attakulla
+image_url: https://cdn.discordapp.com/attachments/365511976446722048/1138182600654077992/dream_TradingCard_-_2023-08-07T204900.969.jpg
+license_id: mf_attakulla
+license_level: 2
+mechtype:
+- Controller
+- Striker
+mounts:
+- Aux/Aux
+- Aux/Aux
+source: GMS-HIPS
+stats:
+  armor: 0
+  edef: 8
+  evasion: 9
+  heatcap: 5
+  hp: 6
+  repcap: 3
+  save: 11
+  sensor_range: 15
+  size: 0.5
+  sp: 7
+  speed: 4
+  stress: 4
+  structure: 4
+  tech_attack: 1
+traits:
+- description: 1/round the Attakulla can force any adjacent character of its choice
+    to land immediately (this counts as falling without any damage) and prevent them
+    from flying until they break adjacency.
+  name: No-flight-zone
+- description: The Attakula receives +1 difficulty to Hull checks and saves.
+  name: Fragile
+  synergies:
+  - detail: The Attakula receives +1 difficulty on Hull checks and saves.
+    locations:
+    - hull
+    - skill_check
+y_pos: 30

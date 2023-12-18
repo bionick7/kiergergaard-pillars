@@ -1,0 +1,26 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Full
+  detail: ' You fill a burst 3 area with Whitewash foam clearing all and every kind
+    of burn in the area but also slowing everyone in it or moving through it and preventing
+    you from drawing line of sight beyond adjacent spaces.'
+  name: TODO
+description: <b>TODO</b>
+effect_print: You fill a burst 3 area with Whitewash foam clearing all and every kind
+  of burn in the area but also slowing everyone in it or moving through it and preventing
+  you from drawing line of sight beyond adjacent spaces.
+id: ms_whitewash_stirrup_pump
+license: KILIMANJARO
+license_id: mf_kilimanjaro
+license_level: 2
+source: GMS-HIPS
+sp: 2
+synergies: []
+tags:
+- id: tg_unique
+- id: tg_limited
+  val: 4
+type: System

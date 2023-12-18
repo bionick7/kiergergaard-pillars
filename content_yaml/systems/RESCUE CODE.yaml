@@ -1,0 +1,19 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Full Tech
+  detail: You clear all statuses and effects effecting adjacent allied characters.
+  name: TODO
+description: <b>TODO</b>
+effect_print: You clear all statuses and effects effecting adjacent allied characters.
+id: ms_rescue_code
+license: KILIMANJARO
+license_id: mf_kilimanjaro
+license_level: 3
+source: GMS-HIPS
+sp: 3
+synergies: []
+tags: []
+type: System

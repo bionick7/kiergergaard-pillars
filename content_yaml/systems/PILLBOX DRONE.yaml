@@ -1,0 +1,30 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+deployables:
+- activation: Quick
+  detail: The drone, once deployed creates a blast 4 area. When an enemy first enters
+    or leaves the area on its turn the drone attacks them with a reaction dealing
+    3ap explosive.
+  edef: 10
+  evasion: 10
+  hp: 5
+  name: Barbed wire
+  size: 0.5
+  type: Drone
+description: <b>TODO</b>
+effect_print: The drone, once deployed creates a blast 4 area. When an enemy first
+  enters or leaves the area on its turn the drone attacks them with a reaction dealing
+  3ap explosive.
+id: ms_pillbox_drone
+license: MISSISSIPPI
+license_id: mf_mississippi
+license_level: 2
+source: LANIKA
+sp: 2
+synergies: []
+tags:
+- id: tg_limited
+  val: 3
+type: Drone

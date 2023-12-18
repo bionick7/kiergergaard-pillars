@@ -1,0 +1,32 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+actions:
+- activation: Full Tech
+  detail: Make a tech attack against an emy within sensors and line of sight. On hit,
+    the Out Of Battery Detonation-Signal  targets  their  weaponry  causing  catastrophic  misfires.  All  their  weapons
+    become unloaded, they become jammed and take 2ap explosive damage for every installed
+    ranged weapon or system with the grenade or mine tag. If they carry no such weapons
+    or systems, this attack automatically fails against them. A Character can only
+    be target once by this effect per scene.
+  name: TODO
+description: <b>TODO</b>
+effect_print: Make a tech attack against an emy within sensors and line of sight.
+  On hit, the Out Off Battery Detonation-Signal targets their weaponry causing catastrophic
+  misfires. All their weapons become unloaded, they become jammed and take 2ap explosive
+  damage for every installed ranged weapon or system with the grenade or mine tag.
+  If they carry no such weapons or systems, this attack automatically fails against
+  them. A Character can only be target once by this effect per scene.
+id: ms_oobd_signal
+license: ORINOCO
+license_id: mf_orinoco
+license_level: 2
+source: LANIKA
+sp: 3
+synergies: []
+tags:
+- id: tg_unique
+- id: tg_heat_self
+  val: 2
+type: Tech

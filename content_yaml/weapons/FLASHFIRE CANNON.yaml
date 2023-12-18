@@ -1,0 +1,23 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+damage:
+- type: Burn
+  val: 5
+description: <b>TODO</b>
+id: mw_flashfire_cannon
+license: SCHWARZKOPF
+license_id: mf_schwarzkopf
+license_level: 2
+mount: Main
+range:
+- type: Line
+  val: 5
+- type: Threat
+  val: 2
+source: HA-SKY
+tags:
+- id: tg_inaccurate
+- id: tg_loading
+type: CQB

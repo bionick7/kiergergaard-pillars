@@ -1,0 +1,8 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: You and your machine are one unit, a weapon, an unstoppable force.
+effect: While in flight, you gain immunity to Slowed and Immobilised.
+id: cb_high_velocity_combatant
+source: HA-SKY

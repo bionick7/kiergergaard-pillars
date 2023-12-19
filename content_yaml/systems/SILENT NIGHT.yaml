@@ -16,14 +16,14 @@ effect_print: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tu
 
 # Can have multiple actions, deldete if not needed
 actions:
-- activation: ???
+- activation: _???
   detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
     porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
     ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
     a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
     pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
   # Action name
-  name: ???
+  name: _???
 
 
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
@@ -34,28 +34,28 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tur
 
 # Can have multiple deployables, deldete if not needed
 deployables:
-- activation: ???
+- activation: _???
   detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
     porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
     ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
     a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
     pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
 
-  evasion: ???
-  hp: ???
-  name: ???
-  size: ???
+  evasion: _???
+  hp: _???
+  name: _???
+  size: _???
   type: Mine  # Can be anything, but typically mine, drone, ...
   # and so forth ...
 effect_print: once active as a protocol, this system spreads smoke creating soft cover
   in every space you cross while moving this turn. The smoke last until the end your
   next turn.
 
-license: ???  # Name of license in frame
-license_id: ??? # Name of license id (kinda redundant, but I don't make the rules)
-license_level: ???
-source: ???  # Manufacturer
-sp: ???  # System points
+license: _???  # Name of license in frame
+license_id: _??? # Name of license id (kinda redundant, but I don't make the rules)
+license_level: _???
+source: _???  # Manufacturer
+sp: _???  # System points
 synergies: []
 
 # Example of tag syntax shown below
@@ -64,4 +64,4 @@ tags:
   val: 1
 - id: tg_unique
 type: System
-id: ms_ranger_cloud
+id: ms_silent_night

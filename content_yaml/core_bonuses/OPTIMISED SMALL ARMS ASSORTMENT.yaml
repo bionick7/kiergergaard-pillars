@@ -1,0 +1,14 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+bonuses:
+- id: damage
+  val: 2
+  weapon_sized:
+  - Auxiliary
+description: Widespread across the stars, there's nothing quite like finetuned weapons
+  for the job.
+effect: Your auxiliary weapons deal +2 bonus damage.
+id: cb_optimised_small_arms_assortment
+source: GMS-HIPS

@@ -1,0 +1,9 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: Beyond safety limiters, the best of the best work their magic.
+effect: Whenever you enter the danger zone, you gain Bolster until the start of your
+  next turn.
+id: cb_high_performence_standards
+source: HA-SKY

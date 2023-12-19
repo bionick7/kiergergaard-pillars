@@ -1,0 +1,8 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: Only amateurs trust ballistics tables, professionals trust their experience.
+effect: After finishing a barrage, you gain +1 accuracy on your next attack.
+id: cb_high_velocity_combatant
+source: BLACKBOX

@@ -1,3 +1,5 @@
+# General
+
 - core system descriptions
 - manufacturer slogans
 - manufacturer pictures
@@ -6,3 +8,5 @@
 - system flavors
 - weapon flavors
 - weapon profile names
+
+# Specific

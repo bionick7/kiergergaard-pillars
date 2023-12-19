@@ -1,0 +1,12 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: Combined arms tactics shape the battlefield since before Union. While
+  mostly rendered obsolete thanks to the advent of the mobile chassis, the infantry
+  man still plays a vital part in some operations.
+effect: When you hit with an attack, the next attack performed by a biological ally
+  against the same target gains +1 accuracy, and its damage can't be reduced in any
+  way.
+id: cb_mobile_infantry_coordination
+source: LANIKA

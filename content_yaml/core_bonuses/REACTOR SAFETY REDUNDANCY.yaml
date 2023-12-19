@@ -1,0 +1,10 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: The second most frequent cause of a Lancer's death is his own reactor.
+effect: When you take stress damage, roll 1d6. On a 6, an emergency valve vents off
+  the heat that would have caused you to take stress damage instead. This system can
+  only successfully trigger once per full repair.
+id: cb_reactor_safety_redundnacy
+source: GMS-HIPS

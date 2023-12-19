@@ -216,10 +216,39 @@ weapons = [
     "THUNDERBREATH SHOTGUN",
     "TURN X BEAM CANNON",
     "WHITEWASH MONITOR",
+
+    "TEARGAS LOBBER",
+    "RAINBOW LAUNCHER",
+    "PRECISION CROSSBOW",
+    "SHARD CLOUD",
+    "MANDARIN DARTS",
+    "DJIBOUTI PATTERN COMPETITION REV.",
+    "STALEMATE HAMMER",
+    "GILE MLRS",
+    "PUSH-PIN NEXUS",
+    "CUCKOOSHRIKE NEEDLER",
+    "HOPLOPHOBIA BATTLE RIFLE",
+    "DARDANELLES RECOILLESS RIFLE",
+    "LUCERNE SCREWDRIVER",
+    "CHARGER FIRE LANCE",
+    "GENDERAME 80MIL SPECIAL",
+    "FLARE SABRE",
+    "BOOM BARRIER NEXUS",
+    "COUNSELLOR NEXUS",
+    "SONIC BOOM WRECKING FLAIL",
+    "THUNDERBREATH SHOTGUN",
+    "FLASHFIRE CANNON",
+    "PANZERBUECKSE BOXCUTTER",
+    "TANDEM CHARGE RIFLE",
+    "BARNBUSTER HESH CANNON",
+    "AHAB-MISSILE",
+    "COMPASS NEXUS",
+    "RAPID FIRE MISSILE BATTERY",
+    "WHALER REPEATING CANNON",
 ]
 
 PREFIXES = {
-    "core_bonus" : "cb",
+    "core_bonuses" : "cb",
     "frames" : "mf",
     "mods" : "wm",
     "systems" : "ms",
@@ -231,23 +260,27 @@ def build_for_domain(domain_name, file_list):
         template = f.read()
     for fname in file_list:
         text = template
-        text += "\nid: " + PREFIXES[domain_name] + "_" + re.sub(r"['\- ]", "_", fname.lower())
+        if text[-1] != "\n": text += "\n"
+        id_name = PREFIXES[domain_name] + "_" + re.sub(r"['\- ]", "_", fname.lower())
+        text += f"id: {id_name}\n"
+        if domain_name == "frames":
+            text += f"license_id: {id_name}\n"
 
         path = os.path.join("content_yaml", domain_name, fname + ".yaml")
         if os.path.exists(path):
             with open(path, "r+") as f:
-                if f.readline() == "# IS AUTOGEN":
+                if f.readline() == "# IS AUTOGEN\n":
                     f.seek(0)
-                    f.write(template)
+                    f.write(text)
                     f.truncate()
         else:
             with open(path, "w") as f:
-                f.write(template)
+                f.write(text)
 
 
 if __name__ == "__main__":
-    #build_for_domain("core_bonus", core_bonus)
+    build_for_domain("core_bonuses", core_bonus)
     build_for_domain("frames", frames)
-    #build_for_domain("mods", mods)
+    build_for_domain("mods", mods)
     build_for_domain("systems", systems)
-    #build_for_domain("weapons", weapons)
+    build_for_domain("weapons", weapons)

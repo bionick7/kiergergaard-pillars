@@ -1,0 +1,9 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: Constructing to protect. Some Lancers understand that there's more value
+  in building new things then destroying the old.
+effect: When you activate a system with the Deployable tag you gain 5 Overshield.
+id: cb_intervention_dispatch
+source: GMS-HIPS

@@ -1,0 +1,10 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: If you could make God bleed, people will cease to believe in Him. There
+  will be blood in the water, and the sharks will come.
+effect: When you deal an enemy structure damage, they become exposed until the end
+  of your next turn.
+id: cb_armoured_mutiny
+source: BLACKBOX

@@ -1,0 +1,9 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: Computers need to be as capable of their operators. Without the adequate
+  gear a skilled fighter won't be able to perform his best.
+effect: 1/scene you can clear one condition as a free action.
+id: cb_high_frequency_cycling
+source: HA-SKY

@@ -1,0 +1,10 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: This definitely isn't commercially available tech but who cares about
+  such stuff when it works.
+effect: Whenever you take structure damage you can teleport to a free space adjacent
+  to one of your allies.
+id: cb_black_market_teleporter
+source: LANIKA

@@ -1,0 +1,8 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: TODO
+effect: Whenever an enemy hits you with a tech attack, you gain Bolster afterwards.
+id: cb_leucocyde_code
+source: LANIKA

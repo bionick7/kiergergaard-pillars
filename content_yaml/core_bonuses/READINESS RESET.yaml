@@ -1,0 +1,9 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: Parts compatibility is an opportunity for new synergies in the interplay
+  of systems.
+effect: When you activate your core system you clear off all heat.
+id: cb_readiness_reset
+source: GMS-HIPS

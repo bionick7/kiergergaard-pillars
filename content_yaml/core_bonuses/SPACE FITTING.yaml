@@ -1,0 +1,10 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: Any self-serious Lancer keeps his machine ready to fight with his soul
+  no longer weighed down by gravity.
+effect: Your frame becomes fully equipped with all necessary systems to operate in
+  space without any issues. You can move unimpaired in zero-g environments.
+id: cb_space_fitting
+source: LANIKA

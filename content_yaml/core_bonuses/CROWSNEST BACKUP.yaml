@@ -1,0 +1,10 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: There's still a place for outdated equipment. It's rugged and reliable
+  with centuries of experience.
+effect: If your line of sight would be restricted to adjacent spaces, you can still
+  draw line of sight 3 spaces wide instead.
+id: cb_crowsnest_backup
+source: BLACKBOX

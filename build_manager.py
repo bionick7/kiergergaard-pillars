@@ -4,7 +4,7 @@ import zipfile
 import getopt
 
 ALL_FILES = (
-    "core_bonus",
+    "core_bonuses",
     "frames",
     "manufacturers",
     "mods",
@@ -61,9 +61,10 @@ def test_all():
                 print(i, "\n")
 
 
-
 def yaml2json(file: str, apply_reverse_corrections: bool=False):
     file_path_yaml = os.path.join("content_yaml", file + ".yaml")
+
+    #TODO: ignore '# IS AUTOGEN' and actually read all in
     if not os.path.exists(file_path_yaml):
         print(f"File does not exist '{file_path_yaml}'")
         return
@@ -129,7 +130,7 @@ def zip_all():
 def build_lcp():
     yaml2jsonall()
     zip_all()
-    os.system("typst compile --font-path ./fonts lcp2pdf.typ Manual.pdf")
+    #os.system("typst compile --font-path ./fonts lcp2pdf.typ Manual.pdf")
 
 
 def main(argv):
@@ -138,6 +139,10 @@ def main(argv):
     except:
       print('build_manager.py -t -b -y -j -Y <file> -J <file>')
       sys.exit(2)
+
+    if len(opts) == 0:
+        build_lcp()
+
     for opt, arg in opts:
         if opt == '-t':
             test_all()
@@ -151,6 +156,7 @@ def main(argv):
             yaml2json(arg)
         elif opt == '-Y':
             json2yaml(arg)
+
 
 
 if __name__ == "__main__":

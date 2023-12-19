@@ -1,0 +1,10 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: Linking Networks even in the age of the omninet is an opportunity to
+  put our minds together.
+effect: 1/round, as a reaction at the start of any allied character's turn, you may
+  make a Bolster tech action on any character within line of sight and Sensors.
+id: cb_innovation_calculator
+source: LANIKA

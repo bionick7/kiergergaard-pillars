@@ -1,0 +1,9 @@
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: The future of travel, instantaneous and only with a 5% chance of causing
+  lasting damage to human health.
+effect: Whenever you teleport, you gain 3 Overshield afterwards.
+id: cb_black_market_teleporter
+source: LANIKA

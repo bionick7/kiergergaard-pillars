@@ -5,17 +5,7 @@
     "id": "GMS-HIPS",
     "light": "#A8D08D",
     "logo_url": "https://cdn.discordapp.com/attachments/1112721125840015362/1138170067796902059/GMS_HIPS.png",
-    "name": "GMS HUMANITARIAN & PIONEERING",
     "quote": "Your peacekeeper at the front."
-  },
-  {
-    "dark": "#cd5438",
-    "description": "<p>Lanika is a start-up only of noteworthy activity within the confines of the Rosengard Pillar. The young company definitely managed to make an impression here however. Springing up just at the right time, Lanika made a fortune during the efforts to stabilise the region, being the first local manufacturer of proper mechanised chassis to be officiated by Union, it almost became a local monopoly for paramilitary and police forces.</p><p>It's rapid rise to fame comes with many questions. There's a lot of rumours about the origins of the bright orange and often luxurious frames. Some speculate SSC involvement and black-market shenanigans while others accredit the company to the organised underworld wholesale. Whether allegations of money laundering hold true or not matters but little to most of the clientele who keep relying on the manufacturing of the eccentric physicist and company founder Emil Lanhold and his vision of conflict as humanities driver of progress.</p><p>This contentious worldview might be questioned by many, but the products it spawn aren't. Lanika, apart from the conspiracy theories, is best known for being a frontrunner. The innovative systems it brings to bear even overshadowing claims of tech being stolen from the Voladore with no other supplier able to match their novelty with the same quality and safety standards, solidifying it as the regions fastest growing paramilitary contractor.</p>",
-    "id": "LANIKA",
-    "light": "#fe7b52",
-    "logo_url": "https://cdn.discordapp.com/attachments/1140314412155150377/1140639277978492929/LANIKA.png",
-    "name": "LANIKA CORP.",
-    "quote": "Unofficial: Your partner in crime.<br>Official: Innovating in war to benefit everyone in peace"
   },
   {
     "dark": "#ab094e",
@@ -23,16 +13,22 @@
     "id": "HA-SKY",
     "light": "#ab094e",
     "logo_url": "https://cdn.discordapp.com/attachments/1140314412155150377/1140632911373144155/blackbox.png",
-    "name": "HARRISON SKYHOPPERS",
     "quote": "Superior by profession"
   },
   {
     "dark": "#002060",
-    "description": "<p>IPS-N Blackbox is probably the best-known deniable asset across the units of the big four. This might call into question their value as a deniable asset. They garnered quite a reputation as a reliable combat union but their also reportedly prideful to a fault. Many covert operations have been publicly acknowledged by NCOs too full of their success on the battlefield to have it remain secret. While debatably being a massive failure at one part of their mission, the undeniably excel in combat however. </p><p>In many fights along company friendly insurrections, some admitted, others still classified, the highly trained spec ops team fulfilled mission objectives with well-studied coordination. With time, their largest failure, secrecy even started to become another of their strong suits. Seeing immense potential in the coverage these not-so-secret deployments gathered and trusting the skill of their pilots, Blackbox soon found a new identity running highly televised field tests for new IPS-N machines. </p><p>It's unclear if Blackbox has fully transitioned into their role as lab mice or if they remain as a deniable asset. Their deployment in the Rosengaard Pillar is definitely part of the former and has garnered a legendary status ever since the \u201cRefrigerator Incident\u201d. Allegedly they are starting to grow impatient, waiting for an opportunity to measure themselves against the Skyhoppers and one thing is already clear. Their machines and commercialised licenses they spawned are already ready and waiting. </p><p>When you gain a license from IPS-N Blackbox it also counts as an IPS-N license for the purpose of acquiring one of their core bonuses. Blackbox bonuses, are unique to them however. </p>",
+    "description": "<p>IPS-N Blackbox is probably the best-known deniable asset across the units of the big four. This might call into question their value as a deniable asset. They garnered quite a reputation as a reliable combat union but their also reportedly prideful to a fault. Many covert operations have been publicly acknowledged by NCOs too full of their success on the battlefield to have it remain secret. While debatably being a massive failure at one part of their mission, the undeniably excel in combat however. </p><p>In many fights along company friendly insurrections, some admitted, others still classified, the highly trained spec ops team fulfilled mission objectives with well-studied coordination. With time, their largest failure, secrecy even started to become another of their strong suits. Seeing immense potential in the coverage these not-so-secret deployments gathered and trusting the skill of their pilots, Blackbox soon found a new identity running highly televised field tests for new IPS-N machines. </p><p>It's unclear if Blackbox has fully transitioned into their role as lab mice or if they remain as a deniable asset. Their deployment in the Rosengaard Pillar is definitely part of the former and has garnered a legendary status ever since the <<Refrigerator Incident>>. Allegedly they are starting to grow impatient, waiting for an opportunity to measure themselves against the Skyhoppers and one thing is already clear. Their machines and commercialised licenses they spawned are already ready and waiting. </p><p>When you gain a license from IPS-N Blackbox it also counts as an IPS-N license for the purpose of acquiring one of their core bonuses. Blackbox bonuses, are unique to them however. </p>",
     "id": "BLACKBOX",
     "light": "#002060",
     "logo_url": "https://cdn.discordapp.com/attachments/1140314412155150377/1140632911373144155/blackbox.png",
-    "name": "IPS-N BLACKBOX",
     "quote": "<b>TODO</b>"
+  },
+  {
+    "dark": "#cd5438",
+    "description": "<p>Lanika is a start-up only of noteworthy activity within the confines of the Rosengard Pillar. The young company definitely managed to make an impression here however. Springing up just at the right time, Lanika made a fortune during the efforts to stabilise the region, being the first local manufacturer of proper mechanised chassis to be officiated by Union, it almost became a local monopoly for paramilitary and police forces.</p><p>It's rapid rise to fame comes with many questions. There's a lot of rumours about the origins of the bright orange and often luxurious frames. Some speculate SSC involvement and black-market shenanigans while others accredit the company to the organised underworld wholesale. Whether allegations of money laundering hold true or not matters but little to most of the clientele who keep relying on the manufacturing of the eccentric physicist and company founder Emil Lanhold and his vision of conflict as humanities driver of progress.</p><p>This contentious worldview might be questioned by many, but the products it spawn aren't. Lanika, apart from the conspiracy theories, is best known for being a frontrunner. The innovative systems it brings to bear even overshadowing claims of tech being stolen from the Voladore with no other supplier able to match their novelty with the same quality and safety standards, solidifying it as the regions fastest growing paramilitary contractor.</p>",
+    "id": "LANIKA",
+    "light": "#fe7b52",
+    "logo_url": "https://cdn.discordapp.com/attachments/1140314412155150377/1140639277978492929/LANIKA.png",
+    "quote": "Unofficial: Your partner in crime.<br>Official: Innovating in war to benefit everyone in peace"
   }
 ]

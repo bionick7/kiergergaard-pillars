@@ -247,6 +247,75 @@ weapons = [
     "WHALER REPEATING CANNON",
 ]
 
+core_bonus_kian = [
+    "Shinobi Stealth Module",
+    "High-mobility Adaptation",
+    "Heat Bleed Elimination",
+    "Kata of the Short Blade",
+    "Kata of the Sword",
+    "Kata of Collective Dismemberment",
+]
+
+frames_kian = [
+    "Harvester",
+    "Chimaera",
+    "Dismal Sylph",
+    "Nue",
+    "Gashadokuro",
+    "Kitsune",
+]
+
+mods_kian = [
+    "Magnetic Coating",
+    "Universal System Crasher Mod",
+    "Visual-Quantum Mod",
+    "Aimbot",
+    "High Mobility Retrofit",
+]
+
+systems_kian = [
+    "BASTET-Class NHP",
+    "SCHROEDINGER-Class NHP",
+    "SHIVA-Class NHP",
+    "INARI-Class NHP",
+# Exoic
+    "Flenser Macahuitl",
+    "OTXO Injector",
+    "Slayer's Cloak",
+    "Luminary Drone",
+# Certian
+    "Mertensian Litho-Code",
+    "Motor-Sensor Dismemberment",
+    "Ghastly Phantasmagoria",
+    "Kaginawa Rappel",
+    "Flight-Flight Module",
+    "Panacea Package",
+    "Liminal Mimesis",
+    "Argus Module",
+    "Eyes of the Sogenbi",
+    "Visual System Override",
+    "Temporal Suspension",
+    "SUZU Emitter",
+    "Armor of the Kasha",
+    "YO Coolant Injector",
+    "Circuit Killer",
+    "Shikigami Firewall",
+    "Kitsune no Yomeiri",
+]
+
+weapons_kian = [
+    "Ferrofluid Dagger",
+    "Butterfly Knife",
+    "Particle Karambit",
+    "Quick-Mod Knife",
+    "Flare Saber",
+    "Peryton Nexus",
+    "Grasping Nexus",
+    "Govardhana Projector",
+    "Graverobber Odachi",
+    "HC-Projektor",
+]
+
 PREFIXES = {
     "core_bonuses" : "cb",
     "frames" : "mf",
@@ -255,7 +324,7 @@ PREFIXES = {
     "weapons" : "mw",
 }
 
-def build_for_domain(domain_name, file_list):
+def build_for_domain(folder, domain_name, file_list):
     with open(os.path.join("templates", domain_name + ".yaml"), "r") as f:
         template = f.read()
     for fname in file_list:
@@ -266,7 +335,7 @@ def build_for_domain(domain_name, file_list):
         if domain_name == "frames":
             text += f"license_id: {id_name}\n"
 
-        path = os.path.join("content_yaml", domain_name, fname + ".yaml")
+        path = os.path.join(folder, domain_name, fname.upper() + ".yaml")
         if os.path.exists(path):
             with open(path, "r+") as f:
                 if f.readline() == "# IS AUTOGEN\n":
@@ -278,9 +347,21 @@ def build_for_domain(domain_name, file_list):
                 f.write(text)
 
 
+def build_kierkegaard():
+    build_for_domain("editable_content", "core_bonuses", core_bonus)
+    build_for_domain("editable_content", "frames", frames)
+    build_for_domain("editable_content", "mods", mods)
+    build_for_domain("editable_content", "systems", systems)
+    build_for_domain("editable_content", "weapons", weapons)
+
+
+def build_kian_kierkegaard():
+    build_for_domain("editable_content_Buona_Sera_ONRYO", "core_bonuses", core_bonus_kian)
+    build_for_domain("editable_content_Buona_Sera_ONRYO", "frames", frames_kian)
+    build_for_domain("editable_content_Buona_Sera_ONRYO", "mods", mods_kian)
+    build_for_domain("editable_content_Buona_Sera_ONRYO", "systems", systems_kian)
+    build_for_domain("editable_content_Buona_Sera_ONRYO", "weapons", weapons_kian)
+
 if __name__ == "__main__":
-    build_for_domain("core_bonuses", core_bonus)
-    build_for_domain("frames", frames)
-    build_for_domain("mods", mods)
-    build_for_domain("systems", systems)
-    build_for_domain("weapons", weapons)
+    #build_kierkegaard()
+    build_kian_kierkegaard()

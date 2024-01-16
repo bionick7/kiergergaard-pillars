@@ -1,0 +1,63 @@
+# IS AUTOGEN
+# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
+
+# Meta information: Fill in to track progress
+PROGRESS_artw: false
+PROGRESS_flavour: false
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
+  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
+  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
+  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
+  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
+effect_print: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
+  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
+  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
+  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
+  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
+
+mount: _???
+
+name: _???
+damage:
+  - type: Kinetic
+    val: _?d? + ?
+
+detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
+  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
+  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
+  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
+  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
+on_hit: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
+  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
+  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
+  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
+  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
+on_crit: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
+  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
+  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
+  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
+  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
+range:
+- type: Threat
+  val: 1
+tags:
+- id: tg_overkill
+
+type: _???  # Melee, Ranged, ...
+
+license: _???  # Name of license in frame
+license_id: _??? # Name of license id (kinda redundant, but I don't make the rules)
+license_level: _???
+source: _???  # Manufacturer
+sp: _???  # System points
+synergies: []
+
+# Example of tag syntax shown below
+tags:
+- id: tg_heat_self
+  val: 1
+- id: tg_unique
+type: System
+id: mw_govardhana_projector

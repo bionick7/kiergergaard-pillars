@@ -3,79 +3,92 @@
     "description": "If you could make God bleed, people will cease to believe in Him. There will be blood in the water, and the sharks will come.",
     "effect": "When you deal an enemy structure damage, they become exposed until the end of your next turn.",
     "id": "cb_armoured_mutiny",
-    "source": "BLACKBOX"
+    "source": "BLACKBOX",
+    "name": "ARMOURED MUTINY"
   },
   {
     "description": "This definitely isn't commercially available tech but who cares about such stuff when it works.",
     "effect": "Whenever you take structure damage you can teleport to a free space adjacent to one of your allies.",
     "id": "cb_black_market_teleporter",
-    "source": "LANIKA"
+    "source": "LANIKA",
+    "name": "BLACK MARKET TELEPORTER"
   },
   {
     "description": "The future of travel, instantaneous and only with a 5% chance of causing lasting damage to human health.",
     "effect": "Whenever you teleport, you gain 3 Overshield afterwards.",
     "id": "cb_black_market_teleporter",
-    "source": "LANIKA"
+    "source": "LANIKA",
+    "name": "BLINK PATCH"
   },
   {
     "description": "There's still a place for outdated equipment. It's rugged and reliable with centuries of experience.",
     "effect": "If your line of sight would be restricted to adjacent spaces, you can still draw line of sight 3 spaces wide instead.",
     "id": "cb_crowsnest_backup",
-    "source": "BLACKBOX"
+    "source": "BLACKBOX",
+    "name": "CROWSNEST BACKUP"
   },
   {
     "description": "Detonating frames are reportedly the cause for over half the collateral damage in contemporary urban warfare causing untold suffering completely preventable through better safety practice.",
     "effect": "While not quite as universal as the widespread Everest parts, all of GMS and her subcontractors construct with longevity and replaceability in mind.",
     "id": "cb_emergency_foam",
-    "source": "GMS-HIPS"
+    "source": "GMS-HIPS",
+    "name": "EMERGENCY FOAM"
   },
   {
     "description": "Only amateurs trust ballistics tables, professionals trust their experience.",
     "effect": "After finishing a barrage, you gain +1 accuracy on your next attack.",
     "id": "cb_high_velocity_combatant",
-    "source": "BLACKBOX"
+    "source": "BLACKBOX",
+    "name": "FULL BROADSIDE"
   },
   {
     "description": "Computers need to be as capable of their operators. Without the adequate gear a skilled fighter won't be able to perform his best.",
     "effect": "1/scene you can clear one condition as a free action.",
     "id": "cb_high_frequency_cycling",
-    "source": "HA-SKY"
+    "source": "HA-SKY",
+    "name": "HIGH FREQUENCY CYCLING"
   },
   {
     "description": "Beyond safety limiters, the best of the best work their magic.",
     "effect": "Whenever you enter the danger zone, you gain Bolster until the start of your next turn.",
     "id": "cb_high_performence_standards",
-    "source": "HA-SKY"
+    "source": "HA-SKY",
+    "name": "HIGH PERFORMANCE STANDARDS"
   },
   {
     "description": "You and your machine are one unit, a weapon, an unstoppable force.",
     "effect": "While in flight, you gain immunity to Slowed and Immobilised.",
     "id": "cb_high_velocity_combatant",
-    "source": "HA-SKY"
+    "source": "HA-SKY",
+    "name": "HIGH VELOCITY COMBATANT"
   },
   {
     "description": "Linking Networks even in the age of the omninet is an opportunity to put our minds together.",
     "effect": "1/round, as a reaction at the start of any allied character's turn, you may make a Bolster tech action on any character within line of sight and Sensors.",
     "id": "cb_innovation_calculator",
-    "source": "LANIKA"
+    "source": "LANIKA",
+    "name": "INNOVATION CALCULATOR"
   },
   {
     "description": "Constructing to protect. Some Lancers understand that there's more value in building new things then destroying the old.",
     "effect": "When you activate a system with the Deployable tag you gain 5 Overshield.",
     "id": "cb_intervention_dispatch",
-    "source": "GMS-HIPS"
+    "source": "GMS-HIPS",
+    "name": "INTERVENTION DISPATCH"
   },
   {
     "description": "TODO",
     "effect": "Whenever an enemy hits you with a tech attack, you gain Bolster afterwards.",
     "id": "cb_leucocyde_code",
-    "source": "LANIKA"
+    "source": "LANIKA",
+    "name": "LEUCOCYTE CODE"
   },
   {
     "description": "Combined arms tactics shape the battlefield since before Union. While mostly rendered obsolete thanks to the advent of the mobile chassis, the infantry man still plays a vital part in some operations.",
     "effect": "When you hit with an attack, the next attack performed by a biological ally against the same target gains +1 accuracy, and its damage can't be reduced in any way.",
     "id": "cb_mobile_infantry_coordination",
-    "source": "LANIKA"
+    "source": "LANIKA",
+    "name": "MOBILE INFANTRY COORDINATION"
   },
   {
     "bonuses": [
@@ -90,30 +103,35 @@
     "description": "Widespread across the stars, there's nothing quite like finetuned weapons for the job.",
     "effect": "Your auxiliary weapons deal +2 bonus damage.",
     "id": "cb_optimised_small_arms_assortment",
-    "source": "GMS-HIPS"
+    "source": "GMS-HIPS",
+    "name": "OPTIMISED SMALL ARMS ASSORTMENT"
   },
   {
     "description": "While not quite as universal as the widespread Everest parts, all of GMS and her subcontractors construct with longevity and replaceability in mind.",
     "effect": "1/mission your frame can repair 1 structure damage for 1 Repair, instead of 2 Repairs.",
     "id": "cb_partial_compatibility",
-    "source": "GMS-HIPS"
+    "source": "GMS-HIPS",
+    "name": "PARTIAL COMPATIBILITY"
   },
   {
     "description": "The second most frequent cause of a Lancer's death is his own reactor.",
     "effect": "When you take stress damage, roll 1d6. On a 6, an emergency valve vents off the heat that would have caused you to take stress damage instead. This system can only successfully trigger once per full repair.",
     "id": "cb_reactor_safety_redundnacy",
-    "source": "GMS-HIPS"
+    "source": "GMS-HIPS",
+    "name": "REACTOR SAFETY REDUNDANCY"
   },
   {
     "description": "Parts compatibility is an opportunity for new synergies in the interplay of systems.",
     "effect": "When you activate your core system you clear off all heat.",
     "id": "cb_readiness_reset",
-    "source": "GMS-HIPS"
+    "source": "GMS-HIPS",
+    "name": "READINESS RESET"
   },
   {
     "description": "Any self-serious Lancer keeps his machine ready to fight with his soul no longer weighed down by gravity.",
     "effect": "Your frame becomes fully equipped with all necessary systems to operate in space without any issues. You can move unimpaired in zero-g environments.",
     "id": "cb_space_fitting",
-    "source": "LANIKA"
+    "source": "LANIKA",
+    "name": "SPACE FITTING"
   }
 ]

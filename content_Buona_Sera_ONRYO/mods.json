@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "allowed_types": [
+      "Melee"
+    ],
+    "description": "Simple yet effective, a coating of molecular and magnetically charged material is added to the Blade or ammunition, allowing subsequent shots to seemingly be \u201cdrawn\u201d onto the target.",
+    "effect": "If the target is hit, the next Attack Roll against it gains +1 Accuracy.",
+    "license": "Harvester",
+    "license_id": "mf_harvester",
+    "license_level": 1,
+    "source": "Harvester",
+    "sp": 1,
+    "id": "wm_magnetic_coating",
+    "name": "MAGNETIC COATING"
+  },
+  {
+    "allowed_types": [
+      "Melee"
+    ],
+    "description": "The Universal System Crash-Mod\u2122 is a SSC licensed modification which adds small canisters of nanobots to your frame whilst lining any bladed, edged, blunt, tipped or piercing weapons of yours with distribution channels. When activated, the contained modified strain of Greywash oxidizes the enemies chassis exterior within seconds, the resulting electric discharge is meant to disrupt the foe. Unfortunately, the nanobots have yet to gain an increased life-span, be reduced to even smaller sample-sizes for improved distribution via force multipliers or easier storage. - Draft from Visual, approved.",
+    "effect": "On a hit with the weapon this Mod is applied to, you may expend a charge as a Bonus Action to activate the system. A  jolt of electricity surges into the enemy and deals 1d6 Energy damage. Then your target must pass a System Save or become Jammed. If the target suffered a Critical hit it automatically fails this save.",
+    "license": "Harvester",
+    "license_id": "mf_harvester",
+    "license_level": 2,
+    "restricted_sizes": null,
+    "source": "Harvester",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "id": "wm_universal_system_crasher_mod",
+    "name": "UNIVERSAL SYSTEM CRASHER MOD"
+  }
+]

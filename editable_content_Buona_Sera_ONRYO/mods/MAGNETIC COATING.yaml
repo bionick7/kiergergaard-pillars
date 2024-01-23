@@ -1,6 +1,3 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
-
 # Meta information: Fill in to track progress
 PROGRESS_artw: false
 PROGRESS_flavour: false
@@ -9,36 +6,15 @@ PROGRESS_playtest: false
 
 allowed_types:
 - Melee
-- CQB
-- Rifle
-- Launcher
-- Cannon
-- Nexus
-# remove as needed
 
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-license: _???
-license_id: _???
-license_level: _???
-restricted_sizes: 
-- Main
-- Aux
-# etc.
-source: _???
-sp: _???
+description: Simple yet effective, a coating of molecular and magnetically charged material is added to the Blade or ammunition, allowing subsequent shots to seemingly be “drawn” onto the target.
 
-# Example tag
-tags:
-- id: tg_unique
-- id: tg_limited
-  val: 4
+effect: If the target is hit, the next Attack Roll against it gains +1 Accuracy.
+
+license: Harvester
+license_id: mf_harvester
+license_level: 1
+source: Harvester
+sp: 1
+
 id: wm_magnetic_coating

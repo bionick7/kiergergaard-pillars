@@ -1,63 +1,37 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
 
 # Meta information: Fill in to track progress
 PROGRESS_artw: false
-PROGRESS_flavour: false
+PROGRESS_flavour: true
 PROGRESS_gameplay: true
 PROGRESS_playtest: false
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-effect_print: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
 
-mount: _???
+description: <p>Borrowing the technology found within missiles of the BELLA CIAO line, it was fitted into the hilt of a simple double-edged Terashima knife. However, the prototype was too rigid. Feedback and tandem work with the Enclaves produced a flexible hilt hiding small jets, which allowed a singular precise, mid-air propulsion towards another target.<p>
 
-name: _???
+mount: Aux
+
+name: Butterfly_Knife
 damage:
   - type: Kinetic
-    val: _?d? + ?
+    val: 1d3
 
-detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-on_hit: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-on_crit: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
+on_hit: <p>You may immediately make a free additional attack against a second target within range, measuring from the first target hit. This weapon may never benefit from bonus damage, however any additional effects (such as talents or mods) are still applied.<p>
+
 range:
 - type: Threat
   val: 1
 tags:
-- id: tg_overkill
+- id: tg_inaccurate
+- { id: tg_thrown, val: 5 }
 
-type: _???  # Melee, Ranged, ...
+type: Melee
 
-license: _???  # Name of license in frame
-license_id: _??? # Name of license id (kinda redundant, but I don't make the rules)
-license_level: _???
-source: _???  # Manufacturer
-sp: _???  # System points
+license: Harvester
+license_id: mf_harvester
+license_level: 2
+source: Buona_Sera
+sp: 0
 synergies: []
 
 # Example of tag syntax shown below
-tags:
-- id: tg_heat_self
-  val: 1
-- id: tg_unique
-type: System
+type: weapon
 id: mw_butterfly_knife

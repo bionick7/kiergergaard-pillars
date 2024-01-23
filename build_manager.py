@@ -72,6 +72,7 @@ ACCEPTABLE_TAGS = (
 
     "tg_laser",
 )
+
 ALL_FILES = (
     "core_bonuses",
     "frames",
@@ -84,6 +85,13 @@ ALL_FILES = (
     "weapons",
     "lcp_manifest"
 )
+
+IGNORE_CONTENT = (
+    #"systems",
+    #"weapons",
+)
+
+assert "lcp_manifest" not in IGNORE_CONTENT
 
 def corrected(v):
     if isinstance(v, str):
@@ -179,7 +187,6 @@ class Module:
         
         final_data = []
         for fp in file_list:
-            #TODO: ignore '# IS AUTOGEN' and actually read all in
             with open(fp, "r") as f:
                 if f.readline().startswith("# IS AUTOGEN"):
                     continue
@@ -191,9 +198,15 @@ class Module:
 
             check_tags(data)
             data = keys_ignored(data)
+            if not single_file:
+                assert isinstance(data, dict)
+                data["name"], *_ = os.path.basename(fp).split('.')
             final_data.append(data)
 
-        if single_file:
+        if domain in IGNORE_CONTENT:
+            final_data = []
+
+        elif single_file:
             final_data = final_data[0]
 
         file_path_json = os.path.join(self.json_folder, domain + ".json")
@@ -263,7 +276,7 @@ def main(argv):
         return
 
     try:
-        opts, args = getopt.getopt(argv[1:], "tbzyjY:J:", ["test", "build", "2yaml", "2json", "single2yaml=", "single2json="])
+        opts, args = getopt.getopt(argv[1:], "tbzyjY:J:", ["test", "build", "zip", "2yaml", "2json", "single2yaml=", "single2json="])
     except:
       print('build_manager.py -t -b -z -y -j -Y <file> -J <file>')
       sys.exit(2)

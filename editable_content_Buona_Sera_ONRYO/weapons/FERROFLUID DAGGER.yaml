@@ -1,63 +1,31 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
-
 # Meta information: Fill in to track progress
 PROGRESS_artw: false
-PROGRESS_flavour: false
+PROGRESS_flavour: true
 PROGRESS_gameplay: true
 PROGRESS_playtest: false
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-effect_print: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
 
-mount: _???
+description: <p>“Not again! When will they realize that nothing does .. well nothing for us. Great that you reduced nothing to an even compactor form! We still can’t sell it. Oh so now it can be chucked and maybe, just maybe do even less than its predecessor? We need something with substance.” Commentary from Visual <p>
 
-name: _???
+mount: Aux
+
+name: Ferrofluid_Dagger
 damage:
   - type: Kinetic
-    val: _?d? + ?
+    val: 1d3
 
-detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-on_hit: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-on_crit: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
+on_crit: The target must succeed on a Hull Save or become Immobilized
+
 range:
 - type: Threat
   val: 1
-tags:
-- id: tg_overkill
 
-type: _???  # Melee, Ranged, ...
+type: Melee
 
-license: _???  # Name of license in frame
-license_id: _??? # Name of license id (kinda redundant, but I don't make the rules)
-license_level: _???
-source: _???  # Manufacturer
-sp: _???  # System points
+license: Harvester
+license_id: mf_harvester
+license_level: 1
+source: Buona_Sera
+sp: 0
 synergies: []
 
-# Example of tag syntax shown below
-tags:
-- id: tg_heat_self
-  val: 1
-- id: tg_unique
-type: System
 id: mw_ferrofluid_dagger

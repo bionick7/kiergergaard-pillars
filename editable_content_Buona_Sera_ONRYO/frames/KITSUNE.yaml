@@ -1,9 +1,7 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing, so it doesn't get easily overridden
 
 # Meta information
 PROGRESS_artw: false
-PROGRESS_flavour: false
+PROGRESS_flavour: true
 PROGRESS_gameplay: false
 PROGRESS_playtest: false
 
@@ -14,82 +12,48 @@ core_system:
     ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
     a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
     pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus. 
-  activation: _???  # Quick, Full, Protocoll, ...
-  active_effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  active_name: _???
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
-  passive_effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  passive_name: Urban Combat Equipment Set
-  integrated:
-  - mw_integrated_weapon  # The core integrated weapon has it's own entry
-  tags:  # referring to the core system
-  - id: tg_limited
-    val: 3
-  use: Mission  # Scene for efficient cores
-description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.</p>
-    # BTW, some HTML tags work in longer text, like <p>Paragraph</p> or </br> for breakline
+  activation: Quick
+  active_effect: You immediately clear all your Heat and gain Half of it as charges for your Kitsunebi Nexus.
+  active_name: Hoshi_no_Tama
+  description: HORUS ONRYŌ needed a way to quickly cool off some of their more advanced computing rigs when close to the melting point, with most conventional options being either too demanding in energy or space. Both could be circumvented, but data mining in the AGNI-codebase gave way to a new idea.
+  name: Foxfire-Cooler
+  #integrated:
+  #- mw_kitsunebi_nexus  # The core integrated weapon has it's own entry
+  tags: [] # referring to the core system
+  use: Scene # 
+description: HORUS ONRYŌ needed a way to quickly cool off some of their more advanced computing rigs when close to the melting point, with most conventional options being either too demanding in energy or space. Both could be circumvented, but data mining in the AGNI-codebase gave way to a new idea.    # BTW, some HTML tags work in longer text, like <p>Paragraph</p> or </br> for breakline
 image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Army2016demo-007.jpg/1200px-Army2016demo-007.jpg
 license_level: 2
 mechtype:
-- Defender
+- Controller
 - Striker
-source: _???  # manufactureer
-# Self explenatory, I think
+source: ONRYŌ
+
 mounts:
 - Flex
-- Main/Aux
 # etc.
 stats:
-  armor: 2
-  edef: 8
-  evasion: 7
-  heatcap: 5
-  hp: 8
+  armor: 0
+  edef: 10
+  evasion: 9
+  heatcap: 8
+  hp: 6
   repcap: 4
   save: 10
   sensor_range: 10
-  size: 2
-  sp: 8
+  size: 0.5
+  sp: 7
   speed: 4
   stress: 4
   structure: 4
-  tech_attack: 0
+  tech_attack: +1
 traits:
-- description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
-- description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
-- description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
+- description: 1/round, When you would Inflict Heat with one of your Tech Systems or Invades, you may instead Inflict half as much Burn, this is true for Heat afflicted by the same systems at a later point in time. You then take an equal amount of Heat.
+  name: Hot_FOX_OS
+- description: When in the Danger Zone, your targets have +1 Difficulty on Saves from your Tech effects and you gain a +1 bonus on Invades, furthermore you now ignore Resistance to Heat.
+  name: Thermophile_Circuitry
+- description: The Kitsune receives +1 difficulty on Hull and Engineering checks and saves.
+  name: Frail
 y_pos: 35  # Refers to how the artwork is alighned vertically
 id: mf_kitsune
 license_id: mf_kitsune

@@ -3,26 +3,12 @@ PROGRESS_flavour: false
 PROGRESS_gameplay: true
 PROGRESS_playtest: false
 dark: '#cd5438'
-description: <p>Lanika is a start-up only of noteworthy activity within the confines
-  of the Rosengard Pillar. The young company definitely managed to make an impression
-  here however. Springing up just at the right time, Lanika made a fortune during
-  the efforts to stabilise the region, being the first local manufacturer of proper
-  mechanised chassis to be officiated by Union, it almost became a local monopoly
-  for paramilitary and police forces.</p><p>It's rapid rise to fame comes with many
-  questions. There's a lot of rumours about the origins of the bright orange and often
-  luxurious frames. Some speculate SSC involvement and black-market shenanigans while
-  others accredit the company to the organised underworld wholesale. Whether allegations
-  of money laundering hold true or not matters but little to most of the clientele
-  who keep relying on the manufacturing of the eccentric physicist and company founder
-  Emil Lanhold and his vision of conflict as humanities driver of progress.</p><p>This
-  contentious worldview might be questioned by many, but the products it spawn aren't.
-  Lanika, apart from the conspiracy theories, is best known for being a frontrunner.
-  The innovative systems it brings to bear even overshadowing claims of tech being
-  stolen from the Voladore with no other supplier able to match their novelty with
-  the same quality and safety standards, solidifying it as the regions fastest growing
-  paramilitary contractor.</p>
-id: LANIKA
+description: <p>As the collective is vast, there was no question that they would appear in the Pillars, the real question was when. The truth is, they always had small cells embedded within a larger criminal structure within the Pillars.
+  Part of a secretive division within said organization, operatives observed and waited for the right moment to strike. During this time, they exhibited no major abnormalities, contenting with simple lines of conventional code and physical force in order to achieve their goal. Fielding older, standardized forms of frames, they melded into the shadow of their larger and louder host, Lanika.
+  When the latter gave up on staying within the shadows and went public with less shady dealings, the sleeper cells activated and let loose a combination of Electronic and Memetic warheads. They let loose an unknowing amalgam of paracausal code and NHP driven Black ICE, wiping any opposition from the Net. What followed was a brutal take-over of the capital city of Serador on planet XXX in a bloody urban war.
+  What remained in the aftermath is an independent city-state under the control of HORUS ONRYŌ. Both on the Omni-net and offline, ONRYŌ monitors and secures, utilizing terror tactics and minimal presence to keep enemies at bay. Now the city of New Serador is a haven for all illegal activity outlawed in Union Space, all under the invisible eye of ONRYŌ.
+  Frames produced by HORUS ONRYŌ serve to inspire fear in their enemies and are adapted to the tight space of Urban Warfare. To that end they field an array of domineering, terrifying weapons and systems which break their enemies bodies and minds alike.</p>
+id: ONRYŌ
 light: '#fe7b52'
 logo_url: https://cdn.discordapp.com/attachments/1140314412155150377/1140639277978492929/LANIKA.png
-quote: 'Unofficial: Your partner in crime.<br>Official: Innovating in war to benefit
-  everyone in peace'
+quote: Fan the fires of War, tread into the Inferno.

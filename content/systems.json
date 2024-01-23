@@ -25,7 +25,8 @@
         "val": 3
       }
     ],
-    "type": "System"
+    "type": "System",
+    "name": "ABLATIVE BURNER PLATES"
   },
   {
     "actions": [
@@ -49,7 +50,8 @@
         "id": "tg_unique"
       }
     ],
-    "type": "Tech"
+    "type": "Tech",
+    "name": "AGGRESSIVE FLUSH SYSTEM LINKAGE"
   },
   {
     "description": "<b>TODO</b>",
@@ -67,7 +69,8 @@
         "id": "tg_unique"
       }
     ],
-    "type": "System"
+    "type": "System",
+    "name": "AMBUSH PACK"
   },
   {
     "deployables": [
@@ -96,7 +99,8 @@
         "id": "tg_unique"
       }
     ],
-    "type": "Pioneering Tool"
+    "type": "Pioneering Tool",
+    "name": "ANTI FRAME BARRICADE"
   },
   {
     "actions": [
@@ -125,7 +129,8 @@
         "id": "tg_shield"
       }
     ],
-    "type": "Drone"
+    "type": "Drone",
+    "name": "DAMPENER SHIELD"
   },
   {
     "actions": [
@@ -150,7 +155,8 @@
     "sp": 2,
     "synergies": [],
     "tags": [],
-    "type": "Tech"
+    "type": "Tech",
+    "name": "DARTS-UI CONTROLS"
   },
   {
     "actions": [
@@ -175,7 +181,8 @@
     "sp": 2,
     "synergies": [],
     "tags": [],
-    "type": "Tech"
+    "type": "Tech",
+    "name": "DIGITAL RIGHTS MANAGEMENT"
   },
   {
     "actions": [
@@ -203,7 +210,8 @@
         "val": 2
       }
     ],
-    "type": "Tech"
+    "type": "Tech",
+    "name": "OOBD-SIGNAL"
   },
   {
     "actions": [
@@ -224,7 +232,8 @@
     "sp": 3,
     "synergies": [],
     "tags": [],
-    "type": "System"
+    "type": "System",
+    "name": "ORBITAL GUIDANCE SCANNER"
   },
   {
     "actions": [
@@ -293,7 +302,8 @@
         "id": "tg_grenade"
       }
     ],
-    "type": "Mine"
+    "type": "Mine",
+    "name": "PIGEON MINE LAUNCHER"
   },
   {
     "deployables": [
@@ -323,7 +333,8 @@
         "val": 3
       }
     ],
-    "type": "Drone"
+    "type": "Drone",
+    "name": "PILLBOX DRONE"
   },
   {
     "actions": [
@@ -354,7 +365,8 @@
         "val": 1
       }
     ],
-    "type": "Shield"
+    "type": "Shield",
+    "name": "RADIATOR SHIELD"
   },
   {
     "actions": [
@@ -382,7 +394,8 @@
         "id": "tg_unique"
       }
     ],
-    "type": "System"
+    "type": "System",
+    "name": "RANGER CLOUD"
   },
   {
     "actions": [
@@ -402,7 +415,8 @@
     "sp": 3,
     "synergies": [],
     "tags": [],
-    "type": "System"
+    "type": "System",
+    "name": "RESCUE CODE"
   },
   {
     "deployables": [
@@ -473,7 +487,8 @@
         "val": 1
       }
     ],
-    "type": "Deployable"
+    "type": "Deployable",
+    "name": "DROPTROOPER SUPPORT"
   },
   {
     "actions": [
@@ -505,7 +520,8 @@
         "val": 3
       }
     ],
-    "type": "System"
+    "type": "System",
+    "name": "ESCAPE TOOL"
   },
   {
     "actions": [
@@ -529,7 +545,8 @@
         "id": "tg_unique"
       }
     ],
-    "type": "Tech"
+    "type": "Tech",
+    "name": "FIRE DUPLICATION BUG"
   },
   {
     "deployables": [
@@ -566,7 +583,8 @@
         "id": "tg_invulnerable"
       }
     ],
-    "type": "Shield"
+    "type": "Shield",
+    "name": "FIREWALL MANIFESTATION"
   },
   {
     "deployables": [
@@ -592,7 +610,8 @@
     "sp": 1,
     "synergies": [],
     "tags": [],
-    "type": "Pioneering Tool"
+    "type": "Pioneering Tool",
+    "name": "GIBRALTAR BARBED WIRE DRUMS"
   },
   {
     "actions": [
@@ -621,7 +640,8 @@
         "id": "tg_unique"
       }
     ],
-    "type": "Tech"
+    "type": "Tech",
+    "name": "METEOROLOGICAL SIMULATION"
   },
   {
     "actions": [
@@ -649,7 +669,8 @@
         "id": "tg_unique"
       }
     ],
-    "type": "System"
+    "type": "System",
+    "name": "SMART TARGETING RELAY"
   },
   {
     "actions": [
@@ -679,7 +700,8 @@
         "val": 4
       }
     ],
-    "type": "System"
+    "type": "System",
+    "name": "TASK MANAGER SYSTEMS HALT"
   },
   {
     "actions": [
@@ -710,7 +732,8 @@
         "val": 4
       }
     ],
-    "type": "AI"
+    "type": "AI",
+    "name": "THOR NHP"
   },
   {
     "actions": [
@@ -735,7 +758,8 @@
     "sp": 2,
     "synergies": [],
     "tags": [],
-    "type": "Tech"
+    "type": "Tech",
+    "name": "VIRUTAL BACKDOOR"
   },
   {
     "actions": [
@@ -763,7 +787,8 @@
         "val": 4
       }
     ],
-    "type": "System"
+    "type": "System",
+    "name": "WHITEWASH STIRRUP PUMP"
   },
   {
     "actions": [
@@ -794,7 +819,8 @@
         "id": "tg_unique"
       }
     ],
-    "type": "AI"
+    "type": "AI",
+    "name": "DOMOVOY NHP"
   },
   {
     "actions": [
@@ -822,6 +848,7 @@
         "id": "tg_unique"
       }
     ],
-    "type": "System"
+    "type": "System",
+    "name": "MILORG REMOVAL DEVICE"
   }
 ]

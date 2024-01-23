@@ -1,21 +1,13 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
 
 # Meta information
 PROGRESS_artw: false
-PROGRESS_flavour: false
-PROGRESS_gameplay: false
+PROGRESS_flavour: true
+PROGRESS_gameplay: true
 PROGRESS_playtest: false
 
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-source: _???
+description: <p>Rather inelegant by SSC standards, directed Micro-Phosphorus charges allow frames to “disappear” from digital sensors whilst saying remarkably visible to the naked eye.<p>
+effect: <p>1/round, as a Reaction when an enemy targets your E-Defense, you may force them to target your Evasion instead. If you are hidden or Invisible, you lose that status until the start of the next turn. This system has 6 charges which can be replenished by spending a Repair Cap.<p>
+source: ONRYŌ
 id: cb_heat_bleed_elimination
+id: mf_kitsune
+license_id: mf_kitsune

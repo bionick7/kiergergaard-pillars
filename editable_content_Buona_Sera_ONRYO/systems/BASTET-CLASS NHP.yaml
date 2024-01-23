@@ -1,67 +1,27 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
-
 # Meta information: Fill in to track progress
 PROGRESS_artw: false
-PROGRESS_flavour: false
-PROGRESS_gameplay: false
+PROGRESS_flavour: true
+PROGRESS_gameplay: true
 PROGRESS_playtest: false
 
-# Text will appear in the pdf
-effect_print: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
+effect: Your Mech Gains the AI property and Predators Instincts.
 
-# Can have multiple actions, deldete if not needed
 actions:
-- activation: _???
-  detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  # Action name
-  name: _???
+- activation: quick_action
+  detail: <p>As the code and commands ejected by the NHP kick in, your mech’s physical form warps and twists until it suddenly disappears without a trace.
+    Until you attack or end this effect as a protocol, You become Intangible, Invisible, gain Soft Cover and are Hidden. If you attack while under the effects of this System, you may target tangible targets as well as your mech re-materializes right before the attack. These effects last until the end of your next turn or until you make an attack.
+    None of these effects may be removed by somebody else, Ally or Enemy.<p>
+  nam: Predators Instincts
 
+description: >
+  <p>This NHP was extracted from a strain of the volatile coding found inside the Kaibyo Metavault, which was only briefly open and afterwards closed itself for no apparent reason.</p>
+  <p>The NHP is remarkable in that it draws just enough power from the reactor, never too much, never too little, as anything else would make its task impossible: The act of completely hiding any trace of its Mech's existence. How is not yet entirely understood, but researchers think that BASTET is “lying” to reality itself. <b> BASTET exhibits irregular behavior, in the sense that one does not know what will tick them off. They are highly alert and react with extreme prejudice against anything unknown or unaccounted, immediately drawing upon their innate instincts for hiding, stalking and killing. When interacting with Lancer pilots they tend to be both prideful and haughty, yet may develop a deep and respectful partnership over the duration of their continued service. BASTET must be cycled when: 1. They are able to affect reality not limited to the confines of their designated area of influence (i.e. the licensed Lancers frame), 2. The XXXXX begins rotting. Draft from Visual, scrapped.<p>
 
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-
-# Can have multiple deployables, deldete if not needed
-deployables:
-- activation: _???
-  detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-
-  evasion: _???
-  hp: _???
-  name: _???
-  size: _???
-  type: Mine  # Can be anything, but typically mine, drone, ...
-  # and so forth ...
-effect_print: once active as a protocol, this system spreads smoke creating soft cover
-  in every space you cross while moving this turn. The smoke last until the end your
-  next turn.
-
-license: _???  # Name of license in frame
-license_id: _??? # Name of license id (kinda redundant, but I don't make the rules)
-license_level: _???
-source: _???  # Manufacturer
-sp: _???  # System points
+licens: Harvester
+license_id: mf_harvester
+license_leve: 3
+source: Buona_Sera
+sp: 3
 synergies: []
 
-# Example of tag syntax shown below
-tags:
-- id: tg_heat_self
-  val: 1
-- id: tg_unique
-type: System
 id: ms_bastet_class_nhp

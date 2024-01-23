@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "description": "<p>Rather inelegant by SSC standards, directed Micro-Phosphorus charges allow frames to \u201cdisappear\u201d from digital sensors whilst saying remarkably visible to the naked eye.<p>",
+    "effect": "<p>1/round, as a Reaction when an enemy targets your E-Defense, you may force them to target your Evasion instead. If you are hidden or Invisible, you lose that status until the start of the next turn. This system has 6 charges which can be replenished by spending a Repair Cap.<p>",
+    "source": "ONRY\u014c",
+    "id": "mf_kitsune",
+    "license_id": "mf_kitsune",
+    "name": "HEAT BLEED ELIMINATION"
+  },
+  {
+    "description": "<p>By exploiting redundant stabilizer systems, streamlining both Armor and installing displacement systems, unparalleled mobility can be achieved.<p>",
+    "effect": "<p>Whenever you move by any method that is not Base Movement or a Boost, you may move +1 Space. This also applies to involuntary movement and any effects that would move you are increased by +1, such as Knockback or Raming.<p>",
+    "source": "ONRY\u014c",
+    "id": "mf_kitsune",
+    "license_id": "mf_kitsune",
+    "name": "HIGH-MOBILITY ADAPTATION"
+  },
+  {
+    "description": "<p>Now, pupil, strike again. Strike with your Mind and let the sword follow. You will see the enemy die before the blade slashes his throat. Let loose your desire for death and know that those which surround you are dead.<p>",
+    "effect": "<p>1/scene, when you perform a Tech Attack, you may target all enemies within a Blast equal to half your Grit, rounded up.<p>",
+    "source": "ONRY\u014c",
+    "id": "mf_kitsune",
+    "license_id": "mf_kitsune",
+    "name": "KATA OF COLLECTIVE DISMEMBERMENT"
+  },
+  {
+    "description": "<p>If you have no sword, you must pummel your enemy to death. Why use steel when you can use your flesh to bring death? And why use flesh if you can rend his mind before he lifts his fist?<p>",
+    "effect": "<p>When an Enemy would trigger Overwatch, you may instead perform an Invade, these are considered to have a Threat of 3. Afterwards, you gain Heat equal to the Threat Value used.<p>",
+    "source": "ONRY\u014c",
+    "id": "mf_kitsune",
+    "license_id": "mf_kitsune",
+    "name": "KATA OF THE SHORT BLADE"
+  },
+  {
+    "description": "<p>If you combine your Mind with your sword, you will kill. When you think like a sword your thoughts will cut your foes and split your own head. That is why you do not think when you kill.<p>",
+    "effect": "<p>When you hit with a Melee attack your next Tech Attack against the target gains +1 Accuracy and inflicts +2 Heat.<p>",
+    "source": "ONRY\u014c",
+    "id": "mf_kitsune",
+    "license_id": "mf_kitsune",
+    "name": "KATA OF THE SWORD"
+  },
+  {
+    "description": "<p>To strike first is to dictate the flow of combat. And we can guarantee the enemy won\u2019t see you coming.<p>",
+    "effect": "<p>You start any Scene Hidden, furthermore you are considered Invisible for the purposes of hiding.<p>",
+    "source": "ONRY\u014c",
+    "id": "mf_kitsune",
+    "license_id": "mf_kitsune",
+    "name": "SHINOBI STEALTH MODULE"
+  }
+]

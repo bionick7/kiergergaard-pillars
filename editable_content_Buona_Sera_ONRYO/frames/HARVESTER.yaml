@@ -1,6 +1,3 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing, so it doesn't get easily overridden
-
 # Meta information
 PROGRESS_artw: false
 PROGRESS_flavour: false
@@ -14,82 +11,49 @@ core_system:
     ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
     a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
     pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus. 
-  activation: _???  # Quick, Full, Protocoll, ...
-  active_effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  active_name: _???
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
-  passive_effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  passive_name: Urban Combat Equipment Set
-  integrated:
-  - mw_integrated_weapon  # The core integrated weapon has it's own entry
-  tags:  # referring to the core system
-  - id: tg_limited
-    val: 3
-  use: Mission  # Scene for efficient cores
-description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.</p>
-    # BTW, some HTML tags work in longer text, like <p>Paragraph</p> or </br> for breakline
+  activation: Quick_Action
+  active_effect: <p>You activate the ferrite handle and recall a weapon towards you. Choose one Auxiliary Thrown weapon left on the ground within Sensors. Make a Line attack originating from the marker against all enemies between you and it, gaining Inaccurate for each target past the first. This will penetrate any Object, but the damage the object, and any target past it, receives is halved.<p>
+  active_name: Blade_Call
+  description: <p>“Now as we have seen within that blasted vault, laws of physics can be altered with the right materials, enough power or if you’re an abomination that chooses to ignore such restraints that we pitiful mortals have to contend with. As I was saying, I am no God outside the machine, but what if we directed the force used in our Ferro-fluid research towards solid Metal?” - Frederick Neuman, Researcher from the Exotic Materials Division.<p>
+  name: Black_Polarity_Reverser
+  passive_effect: <p>Any Auxiliary Thrown weapon that is used as part of an attack may be left on the ground in a space adjacent to the target. Place a marker to remind you of its location. This may override any ability that would automatically return it to you.
+    As long as it is lying on the ground, the weapon is disabled for the purposes of attacking but may still be destroyed or disabled.
+    You may pick it back up as a free Action or using the Blade Call Quick Action
+    <b>At the end of the scene any Weapons left on the ground are returned to you.<p>
+  passive_name: Static Ferrite Handle
+  use: Mission  # 1
+description: <p>For the rest of this scene, the Blade Call Quick Action now recalls all your Auxiliary Thrown weapons.</p>
+
 image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Army2016demo-007.jpg/1200px-Army2016demo-007.jpg
+
 license_level: 2
 mechtype:
-- Defender
 - Striker
-source: _???  # manufactureer
-# Self explenatory, I think
+source: Buona_Sera
 mounts:
-- Flex
+- Aux/Aux
+- Aux/Aux
 - Main/Aux
-# etc.
 stats:
-  armor: 2
-  edef: 8
-  evasion: 7
-  heatcap: 5
+  armor: 0
+  edef: 7
+  evasion: 11
+  heatcap: 4
   hp: 8
   repcap: 4
   save: 10
   sensor_range: 10
-  size: 2
-  sp: 8
-  speed: 4
+  size: 1
+  sp: 6
+  speed: 5
   stress: 4
   structure: 4
   tech_attack: 0
 traits:
-- description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
-- description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
-- description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
+- description: <p>The Thrown Range of Auxiliary Melee weapons is increased by 5. Additionally, If it is thrown as part of an attack, the Weapon gains AP.<p>
+  name: ACCELERATOR RAIL
+- description: <p>1/turn, any Attack against a target deals an additional +1d6 damage, if it has already been damaged by another one of your attack’s during this Turn.<p>
+  name: LACERATION
 y_pos: 35  # Refers to how the artwork is alighned vertically
 id: mf_harvester
 license_id: mf_harvester

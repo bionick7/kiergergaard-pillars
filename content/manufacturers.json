@@ -5,7 +5,8 @@
     "id": "GMS-HIPS",
     "light": "#A8D08D",
     "logo_url": "https://cdn.discordapp.com/attachments/1112721125840015362/1138170067796902059/GMS_HIPS.png",
-    "quote": "Your peacekeeper at the front."
+    "quote": "Your peacekeeper at the front.",
+    "name": "GMS HUMANITARIAN & PIONEERING"
   },
   {
     "dark": "#ab094e",
@@ -13,7 +14,8 @@
     "id": "HA-SKY",
     "light": "#ab094e",
     "logo_url": "https://cdn.discordapp.com/attachments/1140314412155150377/1140632911373144155/blackbox.png",
-    "quote": "Superior by profession"
+    "quote": "Superior by profession",
+    "name": "HARRISON SKYHOPPERS"
   },
   {
     "dark": "#002060",
@@ -21,7 +23,8 @@
     "id": "BLACKBOX",
     "light": "#002060",
     "logo_url": "https://cdn.discordapp.com/attachments/1140314412155150377/1140632911373144155/blackbox.png",
-    "quote": "<b>TODO</b>"
+    "quote": "<b>TODO</b>",
+    "name": "IPS-N BLACKBOX"
   },
   {
     "dark": "#cd5438",
@@ -29,6 +32,7 @@
     "id": "LANIKA",
     "light": "#fe7b52",
     "logo_url": "https://cdn.discordapp.com/attachments/1140314412155150377/1140639277978492929/LANIKA.png",
-    "quote": "Unofficial: Your partner in crime.<br>Official: Innovating in war to benefit everyone in peace"
+    "quote": "Unofficial: Your partner in crime.<br>Official: Innovating in war to benefit everyone in peace",
+    "name": "LANIKA CORP"
   }
 ]

@@ -1,44 +1,26 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
-
 # Meta information: Fill in to track progress
 PROGRESS_artw: false
-PROGRESS_flavour: false
+PROGRESS_flavour: true
 PROGRESS_gameplay: true
 PROGRESS_playtest: false
 
 allowed_types:
 - Melee
-- CQB
-- Rifle
-- Launcher
-- Cannon
-- Nexus
-# remove as needed
 
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-license: _???
-license_id: _???
-license_level: _???
-restricted_sizes: 
-- Main
-- Aux
+description: The Universal System Crash-Mod™ is a SSC licensed modification which adds small canisters of nanobots to your frame whilst lining any bladed, edged, blunt, tipped or piercing weapons of yours with distribution channels. When activated, the contained modified strain of Greywash oxidizes the enemies chassis exterior within seconds, the resulting electric discharge is meant to disrupt the foe. Unfortunately, the nanobots have yet to gain an increased life-span, be reduced to even smaller sample-sizes for improved distribution via force multipliers or easier storage. - Draft from Visual, approved.
+
+effect: On a hit with the weapon this Mod is applied to, you may expend a charge as a Bonus Action to activate the system. A  jolt of electricity surges into the enemy and deals 1d6 Energy damage. Then your target must pass a System Save or become Jammed. If the target suffered a Critical hit it automatically fails this save.
+
+license: Harvester
+license_id: mf_harvester
+license_level: 2
+restricted_sizes:
 # etc.
-source: _???
-sp: _???
+source: Harvester
+sp: 3
 
 # Example tag
 tags:
-- id: tg_unique
 - id: tg_limited
-  val: 4
+  val: 2
 id: wm_universal_system_crasher_mod

@@ -1,21 +1,12 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
-
 # Meta information
 PROGRESS_artw: false
-PROGRESS_flavour: false
-PROGRESS_gameplay: false
+PROGRESS_flavour: true
+PROGRESS_gameplay: true
 PROGRESS_playtest: false
 
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-source: _???
+description: <p>To strike first is to dictate the flow of combat. And we can guarantee the enemy won’t see you coming.<p>
+effect: <p>You start any Scene Hidden, furthermore you are considered Invisible for the purposes of hiding.<p>
+source: ONRYŌ
 id: cb_shinobi_stealth_module
+id: mf_kitsune
+license_id: mf_kitsune

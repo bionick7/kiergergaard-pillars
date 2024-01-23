@@ -1,21 +1,13 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
-
 # Meta information
 PROGRESS_artw: false
-PROGRESS_flavour: false
-PROGRESS_gameplay: false
+PROGRESS_flavour: true
+PROGRESS_gameplay: true
 PROGRESS_playtest: false
 
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-source: _???
+description: <p>If you have no sword, you must pummel your enemy to death. Why use steel when you can use your flesh to bring death? And why use flesh if you can rend his mind before he lifts his fist?<p>
+effect: <p>When an Enemy would trigger Overwatch, you may instead perform an Invade, these are considered to have a Threat of 3. Afterwards, you gain Heat equal to the Threat Value used.<p>
+
+source: ONRYŌ
 id: cb_kata_of_the_short_blade
+id: mf_kitsune
+license_id: mf_kitsune

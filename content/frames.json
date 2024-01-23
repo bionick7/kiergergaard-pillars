@@ -51,7 +51,8 @@
         "name": "Breach Armor Set"
       }
     ],
-    "y_pos": 50
+    "y_pos": 50,
+    "name": "AMUNDSEN"
   },
   {
     "core_system": {
@@ -132,7 +133,8 @@
         ]
       }
     ],
-    "y_pos": 30
+    "y_pos": 30,
+    "name": "ATTAKULLA"
   },
   {
     "core_system": {
@@ -208,7 +210,8 @@
         ]
       }
     ],
-    "y_pos": 30
+    "y_pos": 30,
+    "name": "CHANG JIANG"
   },
   {
     "core_system": {
@@ -273,7 +276,8 @@
         "name": "Heavy frame."
       }
     ],
-    "y_pos": 50
+    "y_pos": 50,
+    "name": "CHARLEMAGNE"
   },
   {
     "core_system": {
@@ -332,7 +336,8 @@
         "name": "Blast plating"
       }
     ],
-    "y_pos": 50
+    "y_pos": 50,
+    "name": "COLUMBUS"
   },
   {
     "core_system": {
@@ -379,7 +384,8 @@
         "name": "Rugged Systems"
       }
     ],
-    "y_pos": 50
+    "y_pos": 50,
+    "name": "JANSZOON"
   },
   {
     "core_system": {
@@ -478,7 +484,8 @@
         ]
       }
     ],
-    "y_pos": 20
+    "y_pos": 20,
+    "name": "KILIMANJARO"
   },
   {
     "core_system": {
@@ -533,7 +540,8 @@
         "name": "Heavy Frame"
       }
     ],
-    "y_pos": 20
+    "y_pos": 20,
+    "name": "MIDZOR"
   },
   {
     "core_system": {
@@ -603,7 +611,8 @@
         "name": "Armoured Crew Compartment"
       }
     ],
-    "y_pos": 35
+    "y_pos": 35,
+    "name": "MISSISSIPPI"
   },
   {
     "core_system": {
@@ -687,7 +696,8 @@
         ]
       }
     ],
-    "y_pos": 13
+    "y_pos": 13,
+    "name": "ORINOCO"
   },
   {
     "core_system": {
@@ -736,7 +746,8 @@
         "name": "Rapid strike"
       }
     ],
-    "y_pos": 50
+    "y_pos": 50,
+    "name": "SCHWARZKOPF"
   },
   {
     "core_system": {
@@ -789,6 +800,7 @@
         "name": "Facemelter"
       }
     ],
-    "y_pos": 50
+    "y_pos": 50,
+    "name": "YUKON"
   }
 ]

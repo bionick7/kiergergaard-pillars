@@ -1,0 +1,34 @@
+# Meta information: Fill in to track progress
+PROGRESS_artw: false
+PROGRESS_flavour: true
+PROGRESS_gameplay: true
+PROGRESS_playtest: false
+description: <p> What is known to Union as the Heisoku-Class Projector is theorized to fire a “smart” laser, varying the output based on the target, searing enemies and merely heating up allies.<p>
+
+mount: Main
+
+damage:
+- type: Energy
+  val: 2
+detail: <p>This weapon does not damage Allies, instead obscuring their Heat signature, they gain 1 Heat but enemies gain +1 difficulty when targeting them with Tech attacks or Smart weapons.<p>
+
+range:
+- type: Line
+  val: 10
+
+tags:
+- id: tg_unique
+- id: tg_heat_self
+  val: 1
+#- id: tg_laser
+
+type: Rifle
+
+license: Kitsune
+license_id: mf_kitsune
+license_level: 1
+source: ONRYŌ  # Manufacturer
+sp: 0
+synergies: []
+
+id: mw_hc_projektor

@@ -1,1 +1,114 @@
-[]
+[
+  {
+    "core_system": {
+      "print_effect": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum, a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.",
+      "activation": "Quick_Action",
+      "active_effect": "<p>You activate the ferrite handle and recall a weapon towards you. Choose one Auxiliary Thrown weapon left on the ground within Sensors. Make a Line attack originating from the marker against all enemies between you and it, gaining Inaccurate for each target past the first. This will penetrate any Object, but the damage the object, and any target past it, receives is halved.<p>",
+      "active_name": "Blade_Call",
+      "description": "<p>\u201cNow as we have seen within that blasted vault, laws of physics can be altered with the right materials, enough power or if you\u2019re an abomination that chooses to ignore such restraints that we pitiful mortals have to contend with. As I was saying, I am no God outside the machine, but what if we directed the force used in our Ferro-fluid research towards solid Metal?\u201d - Frederick Neuman, Researcher from the Exotic Materials Division.<p>",
+      "name": "Black_Polarity_Reverser",
+      "passive_effect": "<p>Any Auxiliary Thrown weapon that is used as part of an attack may be left on the ground in a space adjacent to the target. Place a marker to remind you of its location. This may override any ability that would automatically return it to you. As long as it is lying on the ground, the weapon is disabled for the purposes of attacking but may still be destroyed or disabled. You may pick it back up as a free Action or using the Blade Call Quick Action <b>At the end of the scene any Weapons left on the ground are returned to you.<p>",
+      "passive_name": "Static Ferrite Handle",
+      "use": "Mission"
+    },
+    "description": "<p>For the rest of this scene, the Blade Call Quick Action now recalls all your Auxiliary Thrown weapons.</p>",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Army2016demo-007.jpg/1200px-Army2016demo-007.jpg",
+    "license_level": 2,
+    "mechtype": [
+      "Striker"
+    ],
+    "source": "Buona_Sera",
+    "mounts": [
+      "Aux/Aux",
+      "Aux/Aux",
+      "Main/Aux"
+    ],
+    "stats": {
+      "armor": 0,
+      "edef": 7,
+      "evasion": 11,
+      "heatcap": 4,
+      "hp": 8,
+      "repcap": 4,
+      "save": 10,
+      "sensor_range": 10,
+      "size": 1,
+      "sp": 6,
+      "speed": 5,
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": 0
+    },
+    "traits": [
+      {
+        "description": "<p>The Thrown Range of Auxiliary Melee weapons is increased by 5. Additionally, If it is thrown as part of an attack, the Weapon gains AP.<p>",
+        "name": "ACCELERATOR RAIL"
+      },
+      {
+        "description": "<p>1/turn, any Attack against a target deals an additional +1d6 damage, if it has already been damaged by another one of your attack\u2019s during this Turn.<p>",
+        "name": "LACERATION"
+      }
+    ],
+    "y_pos": 35,
+    "id": "mf_harvester",
+    "license_id": "mf_harvester",
+    "name": "HARVESTER"
+  },
+  {
+    "core_system": {
+      "print_effect": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum, a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.",
+      "activation": "Quick",
+      "active_effect": "You immediately clear all your Heat and gain Half of it as charges for your Kitsunebi Nexus.",
+      "active_name": "Hoshi_no_Tama",
+      "description": "HORUS ONRY\u014c needed a way to quickly cool off some of their more advanced computing rigs when close to the melting point, with most conventional options being either too demanding in energy or space. Both could be circumvented, but data mining in the AGNI-codebase gave way to a new idea.",
+      "name": "Foxfire-Cooler",
+      "tags": [],
+      "use": "Scene"
+    },
+    "description": "HORUS ONRY\u014c needed a way to quickly cool off some of their more advanced computing rigs when close to the melting point, with most conventional options being either too demanding in energy or space. Both could be circumvented, but data mining in the AGNI-codebase gave way to a new idea.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Army2016demo-007.jpg/1200px-Army2016demo-007.jpg",
+    "license_level": 2,
+    "mechtype": [
+      "Controller",
+      "Striker"
+    ],
+    "source": "ONRY\u014c",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "armor": 0,
+      "edef": 10,
+      "evasion": 9,
+      "heatcap": 8,
+      "hp": 6,
+      "repcap": 4,
+      "save": 10,
+      "sensor_range": 10,
+      "size": 0.5,
+      "sp": 7,
+      "speed": 4,
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": 1
+    },
+    "traits": [
+      {
+        "description": "1/round, When you would Inflict Heat with one of your Tech Systems or Invades, you may instead Inflict half as much Burn, this is true for Heat afflicted by the same systems at a later point in time. You then take an equal amount of Heat.",
+        "name": "Hot_FOX_OS"
+      },
+      {
+        "description": "When in the Danger Zone, your targets have +1 Difficulty on Saves from your Tech effects and you gain a +1 bonus on Invades, furthermore you now ignore Resistance to Heat.",
+        "name": "Thermophile_Circuitry"
+      },
+      {
+        "description": "The Kitsune receives +1 difficulty on Hull and Engineering checks and saves.",
+        "name": "Frail"
+      }
+    ],
+    "y_pos": 35,
+    "id": "mf_kitsune",
+    "license_id": "mf_kitsune",
+    "name": "KITSUNE"
+  }
+]

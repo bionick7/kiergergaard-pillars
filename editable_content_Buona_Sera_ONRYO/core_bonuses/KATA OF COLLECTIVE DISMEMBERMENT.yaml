@@ -1,21 +1,13 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
-
 # Meta information
 PROGRESS_artw: false
-PROGRESS_flavour: false
-PROGRESS_gameplay: false
+PROGRESS_flavour: true
+PROGRESS_gameplay: true
 PROGRESS_playtest: false
 
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-source: _???
+description: <p>Now, pupil, strike again. Strike with your Mind and let the sword follow. You will see the enemy die before the blade slashes his throat. Let loose your desire for death and know that those which surround you are dead.<p>
+effect: <p>1/scene, when you perform a Tech Attack, you may target all enemies within a Blast equal to half your Grit, rounded up.<p>
+
+source: ONRYŌ
 id: cb_kata_of_collective_dismemberment
+id: mf_kitsune
+license_id: mf_kitsune

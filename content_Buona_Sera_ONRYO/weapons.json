@@ -1,1 +1,95 @@
-[]
+[
+  {
+    "description": "<p>Borrowing the technology found within missiles of the BELLA CIAO line, it was fitted into the hilt of a simple double-edged Terashima knife. However, the prototype was too rigid. Feedback and tandem work with the Enclaves produced a flexible hilt hiding small jets, which allowed a singular precise, mid-air propulsion towards another target.<p>",
+    "mount": "Aux",
+    "name": "BUTTERFLY KNIFE",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "on_hit": "<p>You may immediately make a free additional attack against a second target within range, measuring from the first target hit. This weapon may never benefit from bonus damage, however any additional effects (such as talents or mods) are still applied.<p>",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_inaccurate"
+      },
+      {
+        "id": "tg_thrown",
+        "val": 5
+      }
+    ],
+    "type": "weapon",
+    "license": "Harvester",
+    "license_id": "mf_harvester",
+    "license_level": 2,
+    "source": "Buona_Sera",
+    "sp": 0,
+    "synergies": [],
+    "id": "mw_butterfly_knife"
+  },
+  {
+    "description": "<p>\u201cNot again! When will they realize that nothing does .. well nothing for us. Great that you reduced nothing to an even compactor form! We still can\u2019t sell it. Oh so now it can be chucked and maybe, just maybe do even less than its predecessor? We need something with substance.\u201d Commentary from Visual <p>",
+    "mount": "Aux",
+    "name": "FERROFLUID DAGGER",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "on_crit": "The target must succeed on a Hull Save or become Immobilized",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "type": "Melee",
+    "license": "Harvester",
+    "license_id": "mf_harvester",
+    "license_level": 1,
+    "source": "Buona_Sera",
+    "sp": 0,
+    "synergies": [],
+    "id": "mw_ferrofluid_dagger"
+  },
+  {
+    "description": "<p>Small and elegant, these needle-thin knives are made of the same molecular wire used in other SSC products. Here however this has been done to reduce the weight of the blade and handle drastically, allowing a large number of mods to be installed at once. The Comp/Com unit housed in the carrying scabbard is tasked with overseeing the activation codes for various modifications that can be made, taking on any computing or manual activation as needed.<p>",
+    "mount": "Aux",
+    "name": "QUICK-MOD KNIFE",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 1
+      }
+    ],
+    "detail": "<p>This Weapon can take multiple weapon mods, and all Mods attached to this weapon may be used at once, additionally their activations (if required) are now a free action.<p>",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_thrown",
+        "val": 5
+      }
+    ],
+    "typ": "Melee",
+    "license": "Harvester",
+    "license_id": "mf_harvester",
+    "license_level": 3,
+    "source": "Buona_Sera",
+    "sp": 0,
+    "synergies": [],
+    "id": "mw_quick_mod_knife"
+  }
+]

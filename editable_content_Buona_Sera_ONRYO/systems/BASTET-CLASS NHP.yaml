@@ -15,11 +15,14 @@ actions:
 
 description: >
   <p>This NHP was extracted from a strain of the volatile coding found inside the Kaibyo Metavault, which was only briefly open and afterwards closed itself for no apparent reason.</p>
-  <p>The NHP is remarkable in that it draws just enough power from the reactor, never too much, never too little, as anything else would make its task impossible: The act of completely hiding any trace of its Mech's existence. How is not yet entirely understood, but researchers think that BASTET is “lying” to reality itself. <b> BASTET exhibits irregular behavior, in the sense that one does not know what will tick them off. They are highly alert and react with extreme prejudice against anything unknown or unaccounted, immediately drawing upon their innate instincts for hiding, stalking and killing. When interacting with Lancer pilots they tend to be both prideful and haughty, yet may develop a deep and respectful partnership over the duration of their continued service. BASTET must be cycled when: 1. They are able to affect reality not limited to the confines of their designated area of influence (i.e. the licensed Lancers frame), 2. The XXXXX begins rotting. Draft from Visual, scrapped.<p>
+  <p>The NHP is remarkable in that it draws just enough power from the reactor, never too much, never too little, as anything else would make its task impossible: The act of completely hiding any trace of its Mech's existence. How is not yet entirely understood, but researchers think that BASTET is “lying” to reality itself.
+  </br> BASTET exhibits irregular behavior, in the sense that one does not know what will tick them off. They are highly alert and react with extreme prejudice against anything unknown or unaccounted, immediately drawing upon their innate instincts for hiding, stalking and killing. When interacting with Lancer pilots they tend to be both prideful and haughty, yet may develop a deep and respectful partnership over the duration of their continued service. BASTET must be cycled when: 
+  <ol><li> They are able to affect reality not limited to the confines of their designated area of influence (i.e. the licensed Lancers frame)</li>
+  <li> The XXXXX begins rotting. Draft from Visual, scrapped.</li></ol></p>
 
-licens: Harvester
+license: Harvester
 license_id: mf_harvester
-license_leve: 3
+license_level: 3
 source: Buona_Sera
 sp: 3
 synergies: []

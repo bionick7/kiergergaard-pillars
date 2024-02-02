@@ -21,7 +21,7 @@ tags:
 - id: tg_unique
 - id: tg_heat_self
   val: 1
-#- id: tg_laser
+- id: tg_laser
 
 type: Rifle
 

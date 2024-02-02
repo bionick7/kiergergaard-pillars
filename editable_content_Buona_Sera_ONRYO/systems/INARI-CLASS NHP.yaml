@@ -4,15 +4,13 @@ PROGRESS_flavour: true
 PROGRESS_gameplay: false
 PROGRESS_playtest: false
 
-
 effect: Gain the AI property and the Tenko Libation Full Action.
 
-
 actions:
-- activatio: Full_Action
+- activation: Full
   detail: <p>You may immediately Invade all enemies suffering from Burn, ignoring Line of Sight and Sensor requirements. Afterwards, they suffer Burn damage equal to their current Burn and then clear it immediately.<p>
   # Action name
-  nam: Tenko_Libation
+  name: Tenko Libation
 
 
 description: >
@@ -20,7 +18,7 @@ description: >
   What followed, after a few days an attack from the Omninet on the facility was conducted by an unknown paracausal entity. The surviving personnel suffered 3rd degree burns, furthermore any contained NHP’s were missing. The next opportunity succeeded in tracing and analyzing the data: It was raw information of the NHPs cognition, sent to a greater source. Even after two decades of study, the leak cannot be fully plugged.
   INARI clones exhibit high degrees of curiosity and activity, showing interest in things some might consider mundane and excellent spatial and thermal recognition abilities. These are harnessed to quickly and precisely run targeting and identification protocols, all the while feeding and consuming information from the target. INARI reacts to pilots often with naivety and affection, but they are not to be trusted, for are always harboring other thoughts.<p>
 
-licens: Kitsune
+license: Kitsune
 license_id: mf_kitsune
 license_level: 3
 source: ONRYŌ

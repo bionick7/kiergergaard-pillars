@@ -26,6 +26,8 @@ effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis l
   ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
   a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
   pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
+# Print effect for the printed version
+effect_print: Optional, fuller description
 license: _???
 license_id: _???
 license_level: _???

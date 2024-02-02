@@ -1,8 +1,7 @@
-
 # Meta information
 PROGRESS_artw: false
 PROGRESS_flavour: true
-PROGRESS_gameplay: false
+PROGRESS_gameplay: trueish
 PROGRESS_playtest: false
 
 core_system:
@@ -14,15 +13,26 @@ core_system:
     pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus. 
   activation: Quick
   active_effect: You immediately clear all your Heat and gain Half of it as charges for your Kitsunebi Nexus.
-  active_name: Hoshi_no_Tama
-  description: HORUS ONRYŌ needed a way to quickly cool off some of their more advanced computing rigs when close to the melting point, with most conventional options being either too demanding in energy or space. Both could be circumvented, but data mining in the AGNI-codebase gave way to a new idea.
+  active_name: Hoshi no Tama
+  description: HORUS ONRYŌ needed a way to quickly cool off some of their more advanced computing rigs when close 
+    to the melting point, with most conventional options being either too demanding in energy or space. 
+    Both could be circumvented, but data mining in the AGNI-codebase gave way to a new idea.
   name: Foxfire-Cooler
-  #integrated:
-  #- mw_kitsunebi_nexus  # The core integrated weapon has it's own entry
-  tags: [] # referring to the core system
-  use: Scene # 
-description: HORUS ONRYŌ needed a way to quickly cool off some of their more advanced computing rigs when close to the melting point, with most conventional options being either too demanding in energy or space. Both could be circumvented, but data mining in the AGNI-codebase gave way to a new idea.    # BTW, some HTML tags work in longer text, like <p>Paragraph</p> or </br> for breakline
-image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Army2016demo-007.jpg/1200px-Army2016demo-007.jpg
+ 
+  integrated:
+  - mw_kitsunebi_nexus
+
+  use: 1/Scene
+description: <p> Few reports exist of the PG Kitsune, their arrival to the combat zone of Serador was during the
+  late stages of engagement. Their appearance is deceiving, their true nature only revealed as combat continues,
+  that of an unassuming hardsuit is quickly shed, heat flaring up as their powerful computing system kicks into overdrive.
+  </br> A new approach to combined electronic and martial warfare, Kitsune force their enemies into submission by crippling 
+  their systems and attacking them from within. Wreathing themselves in living flames, the spinal heat dispersion systems
+   can support up to 9 “tails of fire”, a trait shared across all PG members and the pin-point which allowed their
+  recording into the Universal Threat Assessment Manual. <p>
+
+image_url: https://upload.wikimedia.org/wikipedia/commons/0/05/NineTailsFox.JPG
+
 license_level: 2
 mechtype:
 - Controller
@@ -49,9 +59,9 @@ stats:
   tech_attack: +1
 traits:
 - description: 1/round, When you would Inflict Heat with one of your Tech Systems or Invades, you may instead Inflict half as much Burn, this is true for Heat afflicted by the same systems at a later point in time. You then take an equal amount of Heat.
-  name: Hot_FOX_OS
+  name: Hot FOX OS
 - description: When in the Danger Zone, your targets have +1 Difficulty on Saves from your Tech effects and you gain a +1 bonus on Invades, furthermore you now ignore Resistance to Heat.
-  name: Thermophile_Circuitry
+  name: Thermophile Circuitry
 - description: The Kitsune receives +1 difficulty on Hull and Engineering checks and saves.
   name: Frail
 y_pos: 35  # Refers to how the artwork is alighned vertically

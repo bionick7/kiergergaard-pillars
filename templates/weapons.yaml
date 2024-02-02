@@ -11,24 +11,20 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tur
   ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
   a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
   pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-effect_print: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
+effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
   porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
   ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
   a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
   pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
+# Print effect for the printed version
+effect_print: Optional, fuller description
 
 mount: _???
 
-name: _???
 damage:
   - type: Kinetic
     val: _?d? + ?
 
-detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
 on_hit: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
   porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
   ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
@@ -39,9 +35,11 @@ on_crit: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis 
   ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
   a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
   pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
+
 range:
 - type: Threat
   val: 1
+
 tags:
 - id: tg_overkill
 

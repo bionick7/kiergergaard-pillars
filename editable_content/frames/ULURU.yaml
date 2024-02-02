@@ -9,7 +9,7 @@ PROGRESS_playtest: false
 
 core_system:
   # Print effect for the printed version
-  print_effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
+  effect_print: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
     porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
     ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
     a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 

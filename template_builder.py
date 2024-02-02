@@ -244,7 +244,7 @@ weapons = [
     "AHAB-MISSILE",
     "COMPASS NEXUS",
     "RAPID FIRE MISSILE BATTERY",
-    "WHALER REPEATING CANNON",
+    "WHALER REPEATING CANNON"
 ]
 
 core_bonus_kian = [
@@ -283,7 +283,7 @@ systems_kian = [
     "OTXO Injector",
     "Slayer's Cloak",
     "Luminary Drone",
-# Certian
+    
     "Mertensian Litho-Code",
     "Motor-Sensor Dismemberment",
     "Ghastly Phantasmagoria",
@@ -300,7 +300,6 @@ systems_kian = [
     "YO Coolant Injector",
     "Circuit Killer",
     "Shikigami Firewall",
-    "Kitsune no Yomeiri",
 ]
 
 weapons_kian = [
@@ -313,7 +312,8 @@ weapons_kian = [
     "Grasping Nexus",
     "Govardhana Projector",
     "Graverobber Odachi",
-    "HC-Projektor",
+    "Kitsunebi Nexus",
+    #"HC-Projektor",
 ]
 
 PREFIXES = {

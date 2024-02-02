@@ -2,17 +2,24 @@
   {
     "core_system": {
       "print_effect": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum, a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.",
-      "activation": "Quick_Action",
-      "active_effect": "<p>You activate the ferrite handle and recall a weapon towards you. Choose one Auxiliary Thrown weapon left on the ground within Sensors. Make a Line attack originating from the marker against all enemies between you and it, gaining Inaccurate for each target past the first. This will penetrate any Object, but the damage the object, and any target past it, receives is halved.<p>",
-      "active_name": "Blade_Call",
+      "activation": "Protocol",
+      "active_effect": "<p>For the rest of this scene, the Blade Call Quick Action now recalls all your Auxiliary Thrown weapons. <p>",
+      "active_name": "Directional Limiter Override",
       "description": "<p>\u201cNow as we have seen within that blasted vault, laws of physics can be altered with the right materials, enough power or if you\u2019re an abomination that chooses to ignore such restraints that we pitiful mortals have to contend with. As I was saying, I am no God outside the machine, but what if we directed the force used in our Ferro-fluid research towards solid Metal?\u201d - Frederick Neuman, Researcher from the Exotic Materials Division.<p>",
-      "name": "Black_Polarity_Reverser",
-      "passive_effect": "<p>Any Auxiliary Thrown weapon that is used as part of an attack may be left on the ground in a space adjacent to the target. Place a marker to remind you of its location. This may override any ability that would automatically return it to you. As long as it is lying on the ground, the weapon is disabled for the purposes of attacking but may still be destroyed or disabled. You may pick it back up as a free Action or using the Blade Call Quick Action <b>At the end of the scene any Weapons left on the ground are returned to you.<p>",
-      "passive_name": "Static Ferrite Handle",
-      "use": "Mission"
+      "name": "Black Polarity Reverser"
     },
-    "description": "<p>For the rest of this scene, the Blade Call Quick Action now recalls all your Auxiliary Thrown weapons.</p>",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Army2016demo-007.jpg/1200px-Army2016demo-007.jpg",
+    "passive_effect": "<p>Any Auxiliary Thrown weapon that is used as part of an attack may be left on the ground in a space adjacent to the target. Place a marker to remind you of its location. This may override any ability that would automatically return it to you. As long as it is lying on the ground, the weapon is disabled for the purposes of attacking but may still be destroyed or disabled. You may pick it back up as a free Action or using the Blade Call Quick Action. <b> At the end of the scene any Weapons left on the ground are returned to you.<p>",
+    "passive_name": "Static Ferrite Handle",
+    "active_actions": [
+      {
+        "activation": "Quick",
+        "detail": "<p>You activate the ferrite handle and recall a weapon towards you. Choose one Auxiliary Thrown weapon left on the ground within Sensors. Make a Line attack originating from the marker against all enemies between you and it, gaining Inaccurate for each target past the first. This will penetrate any Object, but the damage the object, and any target past it, receives is halved.<p>",
+        "name": "Blade Call",
+        "use": "Mission"
+      }
+    ],
+    "description": "<p>A modification of the Metalmark that employs Magnetic Rail technology found in the armaments of the Death\u2019s Head and Systems of the Black Witch, the Harvester is an agile frame utilizing Electromagnetic currents in a destructive manner. Less concerned about shielding allies than its forerunner, the focus is to defeat singular targets with pin-point accuracy in a flurry of attacks. <b> As trials of utilizing Rail technology with different ammunition it was soon apparent that there was little merit in using anything different than a simple metal rod. However by reducing the velocity and increasing the output of the magnetic components, which were fine-tuned during the Witch-series a more \u201crefined\u201d propelling armament was created. This was faced with a new problem that potential ammunition (which now needed to be more massive) would overload the modified Metalmark Skeleton and thus the executive decision was taken to allow use of the \u201cAmmunition\u201d as melee weapons. Furthermore the Black Polarity Reverser was engineered in order to maximize the destructive output of a singular \u201cshell\u201d, by striking with it twice.<p>",
+    "image_url": "https://www.deere.com/assets/images/region-4/products/harvesting/s-series-combines/s-series-hero-r4f120821-v2-1024x375.jpg",
     "license_level": 2,
     "mechtype": [
       "Striker"
@@ -41,7 +48,7 @@
     },
     "traits": [
       {
-        "description": "<p>The Thrown Range of Auxiliary Melee weapons is increased by 5. Additionally, If it is thrown as part of an attack, the Weapon gains AP.<p>",
+        "description": "<p>The Thrown Range of Auxiliary Melee weapons is increased by 5. Additionally, if it is thrown as part of an attack, the Weapon gains AP.<p>",
         "name": "ACCELERATOR RAIL"
       },
       {
@@ -59,14 +66,16 @@
       "print_effect": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum, a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.",
       "activation": "Quick",
       "active_effect": "You immediately clear all your Heat and gain Half of it as charges for your Kitsunebi Nexus.",
-      "active_name": "Hoshi_no_Tama",
+      "active_name": "Hoshi no Tama",
       "description": "HORUS ONRY\u014c needed a way to quickly cool off some of their more advanced computing rigs when close to the melting point, with most conventional options being either too demanding in energy or space. Both could be circumvented, but data mining in the AGNI-codebase gave way to a new idea.",
       "name": "Foxfire-Cooler",
-      "tags": [],
-      "use": "Scene"
+      "integrated": [
+        "mw_kitsunebi_nexus"
+      ],
+      "use": "1/Scene"
     },
-    "description": "HORUS ONRY\u014c needed a way to quickly cool off some of their more advanced computing rigs when close to the melting point, with most conventional options being either too demanding in energy or space. Both could be circumvented, but data mining in the AGNI-codebase gave way to a new idea.",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Army2016demo-007.jpg/1200px-Army2016demo-007.jpg",
+    "description": "<p> Few reports exist of the PG Kitsune, their arrival to the combat zone of Serador was during the late stages of engagement. Their appearance is deceiving, their true nature only revealed as combat continues, that of an unassuming hardsuit is quickly shed, heat flaring up as their powerful computing system kicks into overdrive. </br> A new approach to combined electronic and martial warfare, Kitsune force their enemies into submission by crippling their systems and attacking them from within. Wreathing themselves in living flames, the spinal heat dispersion systems can support up to 9 \u201ctails of fire\u201d, a trait shared across all PG members and the pin-point which allowed their recording into the Universal Threat Assessment Manual. <p>",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/NineTailsFox.JPG",
     "license_level": 2,
     "mechtype": [
       "Controller",
@@ -95,11 +104,11 @@
     "traits": [
       {
         "description": "1/round, When you would Inflict Heat with one of your Tech Systems or Invades, you may instead Inflict half as much Burn, this is true for Heat afflicted by the same systems at a later point in time. You then take an equal amount of Heat.",
-        "name": "Hot_FOX_OS"
+        "name": "Hot FOX OS"
       },
       {
         "description": "When in the Danger Zone, your targets have +1 Difficulty on Saves from your Tech effects and you gain a +1 bonus on Invades, furthermore you now ignore Resistance to Heat.",
-        "name": "Thermophile_Circuitry"
+        "name": "Thermophile Circuitry"
       },
       {
         "description": "The Kitsune receives +1 difficulty on Hull and Engineering checks and saves.",

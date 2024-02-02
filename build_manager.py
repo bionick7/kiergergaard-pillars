@@ -151,12 +151,12 @@ def test_all():
             if not os.path.exists(file_path_yaml):
                 print(f"File does not exist '{file_path_yaml}'")
                 return
-            with open(file_path_yaml, "r") as f:
+            with open(file_path_yaml, "r", encoding='utf-8') as f:
                 data = yaml.full_load(f)
 
             data = uncorrected(data)
             file_path_json = os.path.join("content", file + ".json")
-            with open(file_path_json, "r") as f:
+            with open(file_path_json, "r", encoding='utf-8') as f:
                 data2 = json.load(f)
                 for i in dictdiffer.diff(data, data2):
                     print(i, "\n")
@@ -187,11 +187,15 @@ class Module:
         
         final_data = []
         for fp in file_list:
-            with open(fp, "r") as f:
-                if f.readline().startswith("# IS AUTOGEN"):
-                    continue
-                f.seek(0)
-                data = yaml.full_load(f)
+            with open(fp, "r", encoding='utf-8') as f:
+                try:
+                    if f.readline().startswith("# IS AUTOGEN"):
+                        continue
+                    f.seek(0)
+                    data = yaml.full_load(f)
+                except Exception as e:
+                    print(f"Error '{e}' while reading '{fp}'")
+                    data = {}
 
             if apply_reverse_corrections:
                 data = uncorrected(data)
@@ -210,7 +214,7 @@ class Module:
             final_data = final_data[0]
 
         file_path_json = os.path.join(self.json_folder, domain + ".json")
-        with open(file_path_json, "w") as f:
+        with open(file_path_json, "w", encoding='utf-8') as f:
             json.dump(final_data, f, indent="  ")
 
 
@@ -219,7 +223,7 @@ class Module:
         if not os.path.exists(file_path_json):
             print(f"File does not exist '{file_path_json}'")
             return
-        with open(file_path_json, "r") as f:
+        with open(file_path_json, "r", encoding='utf-8') as f:
             data = json.load(f)
 
         data = corrected(data)
@@ -237,11 +241,11 @@ class Module:
                 item["PROGRESS_flavour"] = False
                 item["PROGRESS_artw"] = False
                 item["PROGRESS_playtest"] = False
-                with open(file_path_yaml, "w") as f:
+                with open(file_path_yaml, "w", encoding='utf-8') as f:
                     yaml.dump(item, f)
         else:
             file_path_yaml = os.path.join(self.yaml_folder, domain + ".yaml")
-            with open(file_path_yaml, "w") as f:
+            with open(file_path_yaml, "w", encoding='utf-8') as f:
                 yaml.dump(data, f)
 
 
@@ -273,12 +277,13 @@ def main(argv):
     elif argv[0] == "2":
         mod = Module("rosergaard-Buona-Sera-ONRYO", "content_Buona_Sera_ONRYO", "editable_content_Buona_Sera_ONRYO")
     else:
+        print("first argument must index the build")
         return
 
     try:
         opts, args = getopt.getopt(argv[1:], "tbzyjY:J:", ["test", "build", "zip", "2yaml", "2json", "single2yaml=", "single2json="])
     except:
-      print('build_manager.py -t -b -z -y -j -Y <file> -J <file>')
+      print('build_manager.py <index> -t -b -z -y -j -Y <file> -J <file>')
       sys.exit(2)
 
     if len(opts) == 0:
@@ -299,7 +304,6 @@ def main(argv):
             mod.yaml2json(arg)
         elif opt == '-Y':
             mod.json2yaml(arg)
-
 
 
 if __name__ == "__main__":    

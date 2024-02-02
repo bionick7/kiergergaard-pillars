@@ -3,9 +3,9 @@
     "effect": "Your Mech Gains the AI property and Predators Instincts.",
     "actions": [
       {
-        "activation": "quick_action",
+        "activation": "Quick",
         "detail": "<p>As the code and commands ejected by the NHP kick in, your mech\u2019s physical form warps and twists until it suddenly disappears without a trace. Until you attack or end this effect as a protocol, You become Intangible, Invisible, gain Soft Cover and are Hidden. If you attack while under the effects of this System, you may target tangible targets as well as your mech re-materializes right before the attack. These effects last until the end of your next turn or until you make an attack. None of these effects may be removed by somebody else, Ally or Enemy.<p>",
-        "nam": "Predators Instincts"
+        "name": "Predators Instincts"
       }
     ],
     "description": "<p>This NHP was extracted from a strain of the volatile coding found inside the Kaibyo Metavault, which was only briefly open and afterwards closed itself for no apparent reason.</p> <p>The NHP is remarkable in that it draws just enough power from the reactor, never too much, never too little, as anything else would make its task impossible: The act of completely hiding any trace of its Mech's existence. How is not yet entirely understood, but researchers think that BASTET is \u201clying\u201d to reality itself. <b> BASTET exhibits irregular behavior, in the sense that one does not know what will tick them off. They are highly alert and react with extreme prejudice against anything unknown or unaccounted, immediately drawing upon their innate instincts for hiding, stalking and killing. When interacting with Lancer pilots they tend to be both prideful and haughty, yet may develop a deep and respectful partnership over the duration of their continued service. BASTET must be cycled when: 1. They are able to affect reality not limited to the confines of their designated area of influence (i.e. the licensed Lancers frame), 2. The XXXXX begins rotting. Draft from Visual, scrapped.<p>\n",
@@ -88,9 +88,10 @@
   },
   {
     "effect": "<p>Whenever you gain Heat by any means, reduce it by 1. When you take Structure damage, this System is immediately destroyed and you take 1d6 AP Energy damage and become Immobilized until the end of your next turn. <p>",
+    "effect_print": "<p>Whenever you gain Heat by any means, reduce it by 1. When you take Structure damage, this System is immediately destroyed and you take 1d6 AP Energy damage and become Immobilized until the end of your next turn. <p>",
     "description": "<p>The Yuki-Onna liquid coolant system, based on stolen GMS and HA technology, is a fickle system of thin, glass fluid tubes under the dermis of the frame. These respond rather poorly to physical trauma and will shatter, but until then excels at distributing and eliminating Heat.<p>",
-    "licens": "Harvester",
-    "license_id": "mf_harvester",
+    "licens": "Kitsune",
+    "license_id": "mf_kitsune",
     "license_level": 1,
     "source": "ONRY\u014c",
     "sp": 2,

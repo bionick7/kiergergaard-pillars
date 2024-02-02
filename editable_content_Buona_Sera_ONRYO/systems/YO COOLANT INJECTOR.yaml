@@ -6,12 +6,13 @@ PROGRESS_gameplay: true
 PROGRESS_playtest: false
 
 effect: <p>Whenever you gain Heat by any means, reduce it by 1. When you take Structure damage, this System is immediately destroyed and you take 1d6 AP Energy damage and become Immobilized until the end of your next turn. <p>
+effect_print: <p>Whenever you gain Heat by any means, reduce it by 1. When you take Structure damage, this System is immediately destroyed and you take 1d6 AP Energy damage and become Immobilized until the end of your next turn. <p>
 
 description: <p>The Yuki-Onna liquid coolant system, based on stolen GMS and HA technology, is a fickle system of thin, glass fluid tubes under the dermis of the frame. These respond rather poorly to physical trauma and will shatter, but until then excels at distributing and eliminating Heat.<p>
 
 
-licens: Harvester
-license_id: mf_harvester
+licens: Kitsune
+license_id: mf_kitsune
 license_level: 1
 source: ONRYŌ
 sp: 2

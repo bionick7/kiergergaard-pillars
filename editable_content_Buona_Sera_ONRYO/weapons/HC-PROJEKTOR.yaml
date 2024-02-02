@@ -10,7 +10,8 @@ mount: Main
 damage:
 - type: Energy
   val: 2
-detail: <p>This weapon does not damage Allies, instead obscuring their Heat signature, they gain 1 Heat but enemies gain +1 difficulty when targeting them with Tech attacks or Smart weapons.<p>
+
+effect: <p>This weapon does not damage Allies, instead obscuring their Heat signature, they gain 1 Heat but enemies gain +1 difficulty when targeting them with Tech attacks or Smart weapons.<p>
 
 range:
 - type: Line

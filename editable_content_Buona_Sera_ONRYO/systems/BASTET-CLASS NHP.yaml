@@ -7,11 +7,11 @@ PROGRESS_playtest: false
 effect: Your Mech Gains the AI property and Predators Instincts.
 
 actions:
-- activation: quick_action
+- activation: Quick
   detail: <p>As the code and commands ejected by the NHP kick in, your mech’s physical form warps and twists until it suddenly disappears without a trace.
     Until you attack or end this effect as a protocol, You become Intangible, Invisible, gain Soft Cover and are Hidden. If you attack while under the effects of this System, you may target tangible targets as well as your mech re-materializes right before the attack. These effects last until the end of your next turn or until you make an attack.
     None of these effects may be removed by somebody else, Ally or Enemy.<p>
-  nam: Predators Instincts
+  name: Predators Instincts
 
 description: >
   <p>This NHP was extracted from a strain of the volatile coding found inside the Kaibyo Metavault, which was only briefly open and afterwards closed itself for no apparent reason.</p>

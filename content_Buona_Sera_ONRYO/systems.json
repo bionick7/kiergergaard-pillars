@@ -58,6 +58,12 @@
     "source": "ONRY\u014c",
     "sp": 3,
     "synergies": [],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
     "id": "ms_inari_class_nhp",
     "name": "INARI-CLASS NHP"
   },

@@ -25,7 +25,7 @@ range:
 - type: Range
   val: 10
 tags:
-- id: tg_Smart
+- id: tg_smart
 
 type: Nexus
 

@@ -12,7 +12,6 @@ actions:
   # Action name
   name: Tenko Libation
 
-
 description: >
   <p>What was thought of by Union Scientists to be a single NHP revealed itself to be something far more concerning. After initial discovery a data leak was found in the codebase of secured and salvaged INARI instances, probes and experiments to capture whatever was leaking failed. 
   What followed, after a few days an attack from the Omninet on the facility was conducted by an unknown paracausal entity. The surviving personnel suffered 3rd degree burns, furthermore any contained NHP’s were missing. The next opportunity succeeded in tracing and analyzing the data: It was raw information of the NHPs cognition, sent to a greater source. Even after two decades of study, the leak cannot be fully plugged.
@@ -24,5 +23,9 @@ license_level: 3
 source: ONRYŌ
 sp: 3
 synergies: []
+
+tags:
+- id: tg_limited
+  val: 2
 
 id: ms_inari_class_nhp

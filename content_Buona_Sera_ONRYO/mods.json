@@ -3,7 +3,7 @@
     "allowed_types": [
       "Melee"
     ],
-    "description": "Simple yet effective, a coating of molecular and magnetically charged material is added to the Blade or ammunition, allowing subsequent shots to seemingly be \u201cdrawn\u201d onto the target.",
+    "description": "Simple yet effective, a coating of molecular and magnetically charged material is added to the Blade or ammunition, allowing subsequent shots to seemingly be \"drawn\" onto the target.",
     "effect": "If the target is hit, the next Attack Roll against it gains +1 Accuracy.",
     "license": "Harvester",
     "license_id": "mf_harvester",

@@ -4,11 +4,11 @@
     "actions": [
       {
         "activation": "Quick",
-        "detail": "<p>As the code and commands ejected by the NHP kick in, your mech\u2019s physical form warps and twists until it suddenly disappears without a trace. Until you attack or end this effect as a protocol, You become Intangible, Invisible, gain Soft Cover and are Hidden. If you attack while under the effects of this System, you may target tangible targets as well as your mech re-materializes right before the attack. These effects last until the end of your next turn or until you make an attack. None of these effects may be removed by somebody else, Ally or Enemy.<p>",
+        "detail": "<p>As the code and commands ejected by the NHP kick in, your mech's physical form warps and twists until it suddenly disappears without a trace. Until you attack or end this effect as a protocol, You become Intangible, Invisible, gain Soft Cover and are Hidden. If you attack while under the effects of this System, you may target tangible targets as well as your mech re-materializes right before the attack. These effects last until the end of your next turn or until you make an attack. None of these effects may be removed by somebody else, Ally or Enemy.<p>",
         "name": "Predators Instincts"
       }
     ],
-    "description": "<p>This NHP was extracted from a strain of the volatile coding found inside the Kaibyo Metavault, which was only briefly open and afterwards closed itself for no apparent reason.</p> <p>The NHP is remarkable in that it draws just enough power from the reactor, never too much, never too little, as anything else would make its task impossible: The act of completely hiding any trace of its Mech's existence. How is not yet entirely understood, but researchers think that BASTET is \u201clying\u201d to reality itself. </br> BASTET exhibits irregular behavior, in the sense that one does not know what will tick them off. They are highly alert and react with extreme prejudice against anything unknown or unaccounted, immediately drawing upon their innate instincts for hiding, stalking and killing. When interacting with Lancer pilots they tend to be both prideful and haughty, yet may develop a deep and respectful partnership over the duration of their continued service. BASTET must be cycled when:  <ol><li> They are able to affect reality not limited to the confines of their designated area of influence (i.e. the licensed Lancers frame)</li> <li> The XXXXX begins rotting. Draft from Visual, scrapped.</li></ol></p>\n",
+    "description": "<p>This NHP was extracted from a strain of the volatile coding found inside the Kaibyo Metavault, which was only briefly open and afterwards closed itself for no apparent reason.</p> <p>The NHP is remarkable in that it draws just enough power from the reactor, never too much, never too little, as anything else would make its task impossible: The act of completely hiding any trace of its Mech's existence. How is not yet entirely understood, but researchers think that BASTET is \"lying\" to reality itself. </br> BASTET exhibits irregular behavior, in the sense that one does not know what will tick them off. They are highly alert and react with extreme prejudice against anything unknown or unaccounted, immediately drawing upon their innate instincts for hiding, stalking and killing. When interacting with Lancer pilots they tend to be both prideful and haughty, yet may develop a deep and respectful partnership over the duration of their continued service. BASTET must be cycled when:  <ol><li> They are able to affect reality not limited to the confines of their designated area of influence (i.e. the licensed Lancers frame)</li> <li> The XXXXX begins rotting. Draft from Visual, scrapped.</li></ol></p>\n",
     "license": "Harvester",
     "license_id": "mf_harvester",
     "license_level": 3,
@@ -23,7 +23,7 @@
     "actions": [
       {
         "activatio": "Invades",
-        "detail": "<p>You disable the self-regulatory measures of the target\u2019s reactor. The next time they would inflict Heat upon themselves, they receive double the amount.<p>",
+        "detail": "<p>You disable the self-regulatory measures of the target's reactor. The next time they would inflict Heat upon themselves, they receive double the amount.<p>",
         "nam": "Inflame"
       },
       {
@@ -32,7 +32,7 @@
         "nam": "Extinguish"
       }
     ],
-    "descriptio": "<p>\u201cFeel the fire, young one. Feel the warmth caressing your skin, see the plumes dancing through the shadows. Now cast it at thine enemy. Sear their skin, Burn their bones and let nothing remain.\u201d<p>",
+    "descriptio": "<p>\"Feel the fire, young one. Feel the warmth caressing your skin, see the plumes dancing through the shadows. Now cast it at thine enemy. Sear their skin, Burn their bones and let nothing remain.\"<p>",
     "licens": "Kitsune",
     "license_id": "mf_kitsune",
     "license_level": 2,
@@ -51,7 +51,7 @@
         "name": "Tenko Libation"
       }
     ],
-    "description": "<p>What was thought of by Union Scientists to be a single NHP revealed itself to be something far more concerning. After initial discovery a data leak was found in the codebase of secured and salvaged INARI instances, probes and experiments to capture whatever was leaking failed.  What followed, after a few days an attack from the Omninet on the facility was conducted by an unknown paracausal entity. The surviving personnel suffered 3rd degree burns, furthermore any contained NHP\u2019s were missing. The next opportunity succeeded in tracing and analyzing the data: It was raw information of the NHPs cognition, sent to a greater source. Even after two decades of study, the leak cannot be fully plugged. INARI clones exhibit high degrees of curiosity and activity, showing interest in things some might consider mundane and excellent spatial and thermal recognition abilities. These are harnessed to quickly and precisely run targeting and identification protocols, all the while feeding and consuming information from the target. INARI reacts to pilots often with naivety and affection, but they are not to be trusted, for are always harboring other thoughts.<p>\n",
+    "description": "<p>What was thought of by Union Scientists to be a single NHP revealed itself to be something far more concerning. After initial discovery a data leak was found in the codebase of secured and salvaged INARI instances, probes and experiments to capture whatever was leaking failed.  What followed, after a few days an attack from the Omninet on the facility was conducted by an unknown paracausal entity. The surviving personnel suffered 3rd degree burns, furthermore any contained NHP's were missing. The next opportunity succeeded in tracing and analyzing the data: It was raw information of the NHPs cognition, sent to a greater source. Even after two decades of study, the leak cannot be fully plugged. INARI clones exhibit high degrees of curiosity and activity, showing interest in things some might consider mundane and excellent spatial and thermal recognition abilities. These are harnessed to quickly and precisely run targeting and identification protocols, all the while feeding and consuming information from the target. INARI reacts to pilots often with naivety and affection, but they are not to be trusted, for are always harboring other thoughts.<p>\n",
     "license": "Kitsune",
     "license_id": "mf_kitsune",
     "license_level": 3,
@@ -68,7 +68,7 @@
     "name": "INARI-CLASS NHP"
   },
   {
-    "effect": "<p>You target an enemy frame within Sensors and they must succeed on a Systems Save or take 1 Heat for every character within Blast 3 (you included). Afterwards, any enemies caught within this Area also must succeed on a Systems Save or themselves be targeted by the system, drawing Blast 3\u2019s of their own which also propagate the Virus. Each enemy only suffers Heat and the system once but can be counted multiple times if within different Areas.<p>",
+    "effect": "<p>You target an enemy frame within Sensors and they must succeed on a Systems Save or take 1 Heat for every character within Blast 3 (you included). Afterwards, any enemies caught within this Area also must succeed on a Systems Save or themselves be targeted by the system, drawing Blast 3's of their own which also propagate the Virus. Each enemy only suffers Heat and the system once but can be counted multiple times if within different Areas.<p>",
     "description": "<p>Building upon the previous code, these newer strains feature modified and improved infectivity and effect. Where before there were whispers of a burning sentience, the voices began to speak themselves. Now it lashes out and propagates in controlled bursts, inflaming surrounding frames, and spreads like a wildfire. Reports say pilots experience increased temperature although no equipment picks up any abnormal increases.<p>",
     "licens": "Kitsune",
     "license_id": "mf_kitsune",

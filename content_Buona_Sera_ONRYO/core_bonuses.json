@@ -1,6 +1,6 @@
 [
   {
-    "description": "<p>Rather inelegant by SSC standards, directed Micro-Phosphorus charges allow frames to \u201cdisappear\u201d from digital sensors whilst saying remarkably visible to the naked eye.<p>",
+    "description": "<p>Rather inelegant by SSC standards, directed Micro-Phosphorus charges allow frames to \"disappear\" from digital sensors whilst saying remarkably visible to the naked eye.<p>",
     "effect": "<p>1/round, as a Reaction when an enemy targets your E-Defense, you may force them to target your Evasion instead. If you are hidden or Invisible, you lose that status until the start of the next turn. This system has 6 charges which can be replenished by spending a Repair Cap.<p>",
     "source": "ONRY\u014c",
     "id": "mf_kitsune",
@@ -40,7 +40,7 @@
     "name": "KATA OF THE SWORD"
   },
   {
-    "description": "<p>To strike first is to dictate the flow of combat. And we can guarantee the enemy won\u2019t see you coming.<p>",
+    "description": "<p>To strike first is to dictate the flow of combat. And we can guarantee the enemy won't see you coming.<p>",
     "effect": "<p>You start any Scene Hidden, furthermore you are considered Invisible for the purposes of hiding.<p>",
     "source": "ONRY\u014c",
     "id": "mf_kitsune",

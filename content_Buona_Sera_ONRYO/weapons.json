@@ -35,7 +35,7 @@
     "id": "mw_butterfly_knife"
   },
   {
-    "description": "<p>\u201cNot again! When will they realize that nothing does .. well nothing for us. Great that you reduced nothing to an even compactor form! We still can\u2019t sell it. Oh so now it can be chucked and maybe, just maybe do even less than its predecessor? We need something with substance.\u201d Commentary from Visual <p>",
+    "description": "<p>\"Not again! When will they realize that nothing does .. well nothing for us. Great that you reduced nothing to an even compactor form! We still can't sell it. Oh so now it can be chucked and maybe, just maybe do even less than its predecessor? We need something with substance.\" Commentary from Visual <p>",
     "mount": "Aux",
     "name": "FERROFLUID DAGGER",
     "damage": [
@@ -100,7 +100,7 @@
   },
   {
     "print_effect": "<p>When you perform a Tech Action, Invade or gain Heat, this weapon gains a charge. This weapon deals Burn damage equal to the number of charges, which are consumed on attack. The maximum number for these charges is 9.<p>",
-    "description": "<p>Greywash, modified and cultivated to adapt a thermophile form, lives within the frame, \u201ceating\u201d any Heat. Those who have eaten their full are vented through 9 vents at the end of its spine. At the user's command, they swarm and attack enemies. <p>",
+    "description": "<p>Greywash, modified and cultivated to adapt a thermophile form, lives within the frame, \"eating\" any Heat. Those who have eaten their full are vented through 9 vents at the end of its spine. At the user's command, they swarm and attack enemies. <p>",
     "effect": "<p>When you perform a Tech Action, Invade or gain Heat, this weapon gains a charge. This weapon deals Burn damage equal to the number of charges, which are consumed on attack. The maximum number for these charges is 9.<p>",
     "mount": "Main",
     "damage": [

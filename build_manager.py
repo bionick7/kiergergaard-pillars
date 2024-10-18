@@ -96,8 +96,8 @@ assert "lcp_manifest" not in IGNORE_CONTENT
 def corrected(v):
     if isinstance(v, str):
         v = v.replace("\u2019", "'")
-        v = v.replace("\u201C", "<<")
-        v = v.replace("\u201D", ">>")
+        v = v.replace("\u201C", "\"")
+        v = v.replace("\u201D", "\"")
     if isinstance(v, dict):
         for k, v2 in v.items():
             v[k] = corrected(v2)
@@ -206,6 +206,8 @@ class Module:
                 assert isinstance(data, dict)
                 data["name"], *_ = os.path.basename(fp).split('.')
             final_data.append(data)
+
+        final_data = corrected(final_data)
 
         if domain in IGNORE_CONTENT:
             final_data = []

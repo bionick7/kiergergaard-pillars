@@ -6,7 +6,7 @@ PROGRESS_playtest: false
 
 description: <p>To strike first is to dictate the flow of combat. And we can guarantee the enemy won’t see you coming.<p>
 effect: <p>You start any Scene Hidden, furthermore you are considered Invisible for the purposes of hiding.<p>
-source: ONRYŌ
+
 id: cb_shinobi_stealth_module
-id: mf_kitsune
-license_id: mf_kitsune
+source: Buona-Sera
+

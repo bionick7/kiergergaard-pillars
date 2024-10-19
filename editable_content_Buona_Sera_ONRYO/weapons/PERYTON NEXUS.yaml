@@ -1,63 +1,32 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
-
 # Meta information: Fill in to track progress
 PROGRESS_artw: false
-PROGRESS_flavour: false
+PROGRESS_flavour: true
 PROGRESS_gameplay: true
 PROGRESS_playtest: false
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
+description: I see you.
 effect_print: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
   porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
   ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
   a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
   pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-
-mount: _???
-
-name: _???
+mount: Superheavy
+name: Peryton Nexus
 damage:
-  - type: Kinetic
-    val: _?d? + ?
-
-detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-on_hit: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-on_crit: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
+  - type: Energy
+    val: 2d6 + 6
+effect: When attacking a target that you have a direct Line of Sight on, gain AP and + 1 Accuracy.
 range:
-- type: Threat
-  val: 1
+- type: Range
+  val: 30
 tags:
-- id: tg_overkill
-
-type: _???  # Melee, Ranged, ...
-
-license: _???  # Name of license in frame
-license_id: _??? # Name of license id (kinda redundant, but I don't make the rules)
-license_level: _???
-source: _???  # Manufacturer
-sp: _???  # System points
+- id: tg_seeking
+- id: tg_ordnance
+type: Nexus
+license: nue
+license_id: mf_nue
+license_level: 3
+source: ONRYŌ
+sp: 0
 synergies: []
-
-# Example of tag syntax shown below
-tags:
-- id: tg_heat_self
-  val: 1
-- id: tg_unique
-type: System
+type: Weapon
 id: mw_peryton_nexus

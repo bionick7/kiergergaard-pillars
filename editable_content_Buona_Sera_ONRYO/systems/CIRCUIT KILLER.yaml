@@ -3,26 +3,21 @@ PROGRESS_artw: false
 PROGRESS_flavour: true
 PROGRESS_gameplay: true
 PROGRESS_playtest: false
-
 effect: "Gain the following Invades:"
-
 actions:
-- activatio: Invades
+- activation: Invade
   detail: <p>You disable the self-regulatory measures of the target’s reactor. The next time they would inflict Heat upon themselves, they receive double the amount.<p>
-  nam: Inflame
-
-- activatio: Invade
+  name: Inflame
+- activation: Invade
   detail: <p>You kick safety precautions into overdrive, to the breaking point. You clear your targets burn and then inflict the double amount of Heat.<p>
-  nam: Extinguish
-
-
-descriptio: <p>“Feel the fire, young one. Feel the warmth caressing your skin, see the plumes dancing through the shadows. Now cast it at thine enemy. Sear their skin, Burn their bones and let nothing remain.”<p>
-
+  name: Extinguish
+description: <p>“Feel the fire, young one. Feel the warmth caressing your skin, see the plumes dancing through the shadows. Now cast it at thine enemy. Sear their skin, Burn their bones and let nothing remain.”<p>
+-id: tg_unique
+-id: tg_invade
 licens: Kitsune
 license_id: mf_kitsune
 license_level: 2
 source: ONRYŌ
 sp: 2
 synergies: []
-
 id: ms_circuit_killer

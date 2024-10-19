@@ -1,95 +1,55 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing, so it doesn't get easily overridden
-
 # Meta information
 PROGRESS_artw: false
-PROGRESS_flavour: false
-PROGRESS_gameplay: false
+PROGRESS_flavour: true
+PROGRESS_gameplay: true
 PROGRESS_playtest: false
-
 core_system:
-  # Print effect for the printed version
-  print_effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus. 
-  activation: _???  # Quick, Full, Protocoll, ...
-  active_effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  active_name: _???
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
-  passive_effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  passive_name: Urban Combat Equipment Set
-  integrated:
-  - mw_integrated_weapon  # The core integrated weapon has it's own entry
-  tags:  # referring to the core system
-  - id: tg_limited
-    val: 3
-  use: Mission  # Scene for efficient cores
-description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.</p>
-    # BTW, some HTML tags work in longer text, like <p>Paragraph</p> or </br> for breakline
+  activation: Protocoll
+  active_effect: <p>For the Rest of this scene, your movement ignores Engagement and doesn’t trigger Reactions. Furthermore, you can now bank 3 numbers and you can choose which to discard.<p>
+  active_name: Accelerate
+  description: <p>Combined with a Cassandra-Class full-body integrity scanner, the Dismal Sylph stores information gathered in real-time from movement within the combat theater, constructing probability models updated in real time.<p>
+  name: Spliced Haruspex Sensor Constellation
+  passive_effect: <p>When you move into an adjacent space with an Ally or Enemy for the first time on your turn, you roll a d6 and note the result. As a 1/turn Reaction, you may add or subtract the number to the roll of a character within Sensors. These count as Accuracies or Difficulties and may be canceled out by their respective rules, but stack on top of them. That way you can cancel out an enemy Accuracy or improve the Accuracy of an Ally.
+    </br>You can hold up to two Numbers at once and lose one, your choice, at the beginning of your turn.
+    </br>Your mech gains the AI tag if it doesn’t already have it, however this does not count towards the maximum number of AI’s.<p>
+  passive_name: Mantic Admonition
+  use: Mission
+description: <p>The SSC Dismal Sylph is considered a daughter platform to the Swallowtail and Duskwing, it was developed with the aim to bring powerful supportive capabilities to a more “civil” audience. Officially the frame is still in development, which is of course a lie, live-target testing has begun. The Dismal sylph is focused on providing battlefield support to its Allies while debilitating enemies. It equips an array of systems to further strengthen this identity. All redundancies, much of the weapon systems and most safety measures have been removed in order to make way for the defining characteristic, the Cassandra Scanner, which not only takes up most of the outer layers of the frame, but also demands extreme power output from the micro-reactors.
+  </br>In order to ease the use of the Cassandra Scanner and to increase survivability for the pilot and the frame, experimental movement systems allow for rapid deployment and protection from incoming fire. Zipping between frontline, unfettered by enemy fire, the Dismal Sylph can be found wherever it is needed, alleviating ailments, striking at the weak links in enemy formations, improving or influencing fire arcs.</p>
+  # BTW, some HTML tags work in longer text, like <p>Paragraph</p> or </br> for breakline
+id: mf_dismal_sylph
 image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Army2016demo-007.jpg/1200px-Army2016demo-007.jpg
+license_id: mf_dismal_sylph
 license_level: 2
 mechtype:
-- Defender
+- Support
 - Striker
-source: _???  # manufactureer
-# Self explenatory, I think
+source: Buona-Sera
 mounts:
-- Flex
 - Main/Aux
-# etc.
 stats:
-  armor: 2
-  edef: 8
-  evasion: 7
-  heatcap: 5
-  hp: 8
-  repcap: 4
-  save: 10
+  armor: 0
+  edef: 6
+  evasion: 12
+  heatcap: 4
+  hp: 6
+  repcap: 2
+  save: 11
   sensor_range: 10
-  size: 2
-  sp: 8
-  speed: 4
+  size: 1/2
+  sp: 6
+  speed: 6
   stress: 4
   structure: 4
-  tech_attack: 0
+  tech_attack: +1
 traits:
-- description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
-- description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
-- description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
+- description: The Dismal Sylph can hover when it moves
+  name: Jester Jet Set
+- description: You ignore all the effects of missed Attacks or successful Saves.
+    </br> If you are Immobilized, this Trait has no effects.
+  name: Knave Threat Analyser
+- description: You cannot Overwatch or Brace and can only perform a maximum of 3 reactions per round
+  name: Focused Attention
+- description: The Dismal Sylph gains +1 Difficulty on Hull Saves.
+  name: Fragile
 y_pos: 35  # Refers to how the artwork is alighned vertically
-id: mf_dismal_sylph
-license_id: mf_dismal_sylph

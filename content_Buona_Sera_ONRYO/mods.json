@@ -1,6 +1,63 @@
 [
   {
     "allowed_types": [
+      "CQB",
+      "Rifle",
+      "Launcher",
+      "Cannon",
+      "Nexus"
+    ],
+    "description": "<p>By siphoning just enough information out of a Lock-On to not deplete it, this powerful computational Unit first utilizes it in optimizing targeting vectors and feeding back any new information gathered by the attack, leaving a information deficit of less than 0,001 %. </p>",
+    "effect": "When attacking an enemy which is Locked On with the equipped weapon, you gain +1 to the Attack Roll.",
+    "license": "Nue",
+    "license_id": "mf_nue",
+    "license_level": 1,
+    "source": "ONRY\u014c",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_mod"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "id": "wm_aimbot",
+    "name": "AIMBOT"
+  },
+  {
+    "allowed_types": [
+      "CQB",
+      "Rifle",
+      "Launcher",
+      "Cannon",
+      "Nexus"
+    ],
+    "description": "Eliminating and adding certain key redundancies, the weight and handleability of any weapon can be improved, at the cost of effectiveness.",
+    "effect": "You may fire Ordnance Weapons after moving, but if you do so, you gain Inaccurate and don't deal bonus damage.",
+    "license": "nue",
+    "license_id": "mf_nue",
+    "license_level": 2,
+    "restricted_sizes": [
+      "Main",
+      "Heavy",
+      "Superheavy"
+    ],
+    "source": "ONRY\u014c",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_mod"
+      }
+    ],
+    "id": "wm_high_mobility_retrofit",
+    "name": "HIGH MOBILITY RETROFIT"
+  },
+  {
+    "allowed_types": [
       "Melee"
     ],
     "description": "Simple yet effective, a coating of molecular and magnetically charged material is added to the Blade or ammunition, allowing subsequent shots to seemingly be \"drawn\" onto the target.",

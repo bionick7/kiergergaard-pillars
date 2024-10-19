@@ -3,17 +3,13 @@ PROGRESS_artw: false
 PROGRESS_flavour: true
 PROGRESS_gameplay: false
 PROGRESS_playtest: false
-
-# Text will appear in the pdf
 effect: <p>You target an enemy frame within Sensors and they must succeed on a Systems Save or take 1 Heat for every character within Blast 3 (you included). Afterwards, any enemies caught within this Area also must succeed on a Systems Save or themselves be targeted by the system, drawing Blast 3’s of their own which also propagate the Virus. Each enemy only suffers Heat and the system once but can be counted multiple times if within different Areas.<p>
-
 description: <p>Building upon the previous code, these newer strains feature modified and improved infectivity and effect. Where before there were whispers of a burning sentience, the voices began to speak themselves. Now it lashes out and propagates in controlled bursts, inflaming surrounding frames, and spreads like a wildfire. Reports say pilots experience increased temperature although no equipment picks up any abnormal increases.<p>
-
+-id: tg_unique
 licens: Kitsune
 license_id: mf_kitsune
 license_level: 3
 source: ONRYŌ
 sp: 3
 synergies: []
-
 id: ms_kitsune_no_yomeiri

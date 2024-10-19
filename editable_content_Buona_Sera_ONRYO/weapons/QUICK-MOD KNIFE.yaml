@@ -3,32 +3,24 @@ PROGRESS_artw: false
 PROGRESS_flavour: true
 PROGRESS_gameplay: true
 PROGRESS_playtest: false
-
 description: <p>Small and elegant, these needle-thin knives are made of the same molecular wire used in other SSC products. Here however this has been done to reduce the weight of the blade and handle drastically, allowing a large number of mods to be installed at once. The Comp/Com unit housed in the carrying scabbard is tasked with overseeing the activation codes for various modifications that can be made, taking on any computing or manual activation as needed.<p>
-
 mount: Aux
-
 name: Quick-Mod_Knife
 damage:
 - type: Kinetic
   val: 1
-
-detail: <p>This Weapon can take multiple weapon mods, and all Mods attached to this weapon may be used at once, additionally their activations (if required) are now a free action.<p>
-
+effect: <p>This Weapon can take multiple weapon mods, and all Mods attached to this weapon may be used at once, additionally their activations (if required) are now a free action.<p>
 range:
 - type: Threat
   val: 1
 tags:
 - id: tg_thrown
   val: 5
-
-typ: Melee
-
+type: Melee
 license: Harvester
 license_id:  mf_harvester
 license_level: 3
-source: Buona_Sera
+source: Buona-Sera
 sp: 0
 synergies: []
-
 id: mw_quick_mod_knife

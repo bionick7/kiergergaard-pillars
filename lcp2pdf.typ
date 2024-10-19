@@ -1,15 +1,17 @@
 
 // ==================================  DATA  ===================================
 
-#let frames = json("content/frames.json").map(d => d + (file_source: "frames"))
-#let weapons = json("content/weapons.json").map(d => d + (file_source: "weapons"))
-#let systems = json("content/systems.json").map(d => d + (file_source: "systems"))
-#let mods = json("content/mods.json").map(d => d + (file_source: "weapon_mods"))
-#let manufacturers = json("content/manufacturers.json").map(d => d + (file_source: "manufacturers"))
-#let tag_lib = (json("data/core_tags.json") + json("content/tags.json")).map(d => d + (file_source: "tags"))
-#let core_bonuses = json("content/core_bonuses.json").map(d => d + (file_source: "core_bonuses"))
-#let pilot_gear = json("content/pilot_gear.json").map(d => d + (file_source: "pilot_gear"))
-#let talents = json("content/talents.json").map(d => d + (file_source: "talents"))
+#let content_dir = "content_Buona_Sera_ONRYO"
+
+#let frames = json(content_dir + "/frames.json").map(d => d + (file_source: "frames"))
+#let weapons = json(content_dir + "/weapons.json").map(d => d + (file_source: "weapons"))
+#let systems = json(content_dir + "/systems.json").map(d => d + (file_source: "systems"))
+#let mods = json(content_dir + "/mods.json").map(d => d + (file_source: "weapon_mods"))
+#let manufacturers = json(content_dir + "/manufacturers.json").map(d => d + (file_source: "manufacturers"))
+#let tag_lib = (json("_manual_add_data/core_tags.json") + json("content/tags.json")).map(d => d + (file_source: "tags"))
+#let core_bonuses = json(content_dir + "/core_bonuses.json").map(d => d + (file_source: "core_bonuses"))
+#let pilot_gear = json(content_dir + "/pilot_gear.json").map(d => d + (file_source: "pilot_gear"))
+#let talents = json(content_dir + "/talents.json").map(d => d + (file_source: "talents"))
 
 #let equipment = weapons + systems + mods
 

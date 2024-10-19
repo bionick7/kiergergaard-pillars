@@ -1,63 +1,28 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
-
 # Meta information: Fill in to track progress
 PROGRESS_artw: false
-PROGRESS_flavour: false
+PROGRESS_flavour: true
 PROGRESS_gameplay: true
 PROGRESS_playtest: false
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-effect_print: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-
-mount: _???
-
-name: _???
+description: <p>After the impact of a first guidance Bore-head, the emission of multiple smaller, self-propelled follow then signal. The assault, staggered by mere milliseconds, is but a front, for the secondary salvo release pockets of Greywash.</p>
+mount: Main
+name: Govardhana Projector
 damage:
-  - type: Kinetic
-    val: _?d? + ?
-
-detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-on_hit: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-on_crit: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
+- type: Energy
+  val: 1d3
+- type: Burn
+  val: 1
+effect: This Weapon counts as both a Launcher and Nexus.
 range:
-- type: Threat
-  val: 1
+- type: Range
+  val: 10
 tags:
-- id: tg_overkill
-
-type: _???  # Melee, Ranged, ...
-
-license: _???  # Name of license in frame
-license_id: _??? # Name of license id (kinda redundant, but I don't make the rules)
-license_level: _???
-source: _???  # Manufacturer
-sp: _???  # System points
-synergies: []
-
-# Example of tag syntax shown below
-tags:
-- id: tg_heat_self
-  val: 1
 - id: tg_unique
-type: System
+type: Launcher Nexus
+license: nue
+license_id: mf_nue
+license_level: 1
+source: ONRYŌ
+sp: 0
+synergies: []
+type: Weapon
 id: mw_govardhana_projector

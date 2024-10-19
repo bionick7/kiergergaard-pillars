@@ -10,8 +10,8 @@ mount: Aux
 
 name: Ferrofluid_Dagger
 damage:
-  - type: Kinetic
-    val: 1d3
+- type: Kinetic
+  val: 1d3
 
 on_crit: The target must succeed on a Hull Save or become Immobilized
 

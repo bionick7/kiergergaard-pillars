@@ -4,18 +4,19 @@ PROGRESS_flavour: true
 PROGRESS_gameplay: true
 PROGRESS_playtest: false
 
-
 effect_print: <p>Target and Allied Frame within Sensors, shielding them from harm. They Gain 2+Grit Overshield, but any damage dealt to this Oveshield before reductions of any kind also deals equivalent Heat to you, no matter the Range.<p>
 effect: <p>Target and Allied Frame within Sensors, shielding them from harm. They Gain 2+Grit Overshield, but any damage dealt to this Oveshield before reductions of any kind also deals equivalent Heat to you, no matter the Range.<p>
-
 description: <p> A swarm of micro-drones envelopes the target, reducing incoming fire to near 0. The production and Feed-back strain the shielding agent and thus limitations are set in place in order to prevent self-immolation.<p>
-
+tags:
+- id: tg_shield
+- id: tg_overshield
+- id: tg_limited
+  val: 3
+- id: tg_quick_action
 licens: Kitsune
 license_id: mf_kitsune
 license_level: 2
 source: ONRYŌ
 sp: 2
 synergies: []
-
-
 id: ms_shikigami_firewall

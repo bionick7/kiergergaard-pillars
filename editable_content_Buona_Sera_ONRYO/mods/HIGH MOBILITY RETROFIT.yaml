@@ -1,44 +1,26 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
-
 # Meta information: Fill in to track progress
 PROGRESS_artw: false
-PROGRESS_flavour: false
+PROGRESS_flavour: true
 PROGRESS_gameplay: true
 PROGRESS_playtest: false
-
 allowed_types:
-- Melee
 - CQB
 - Rifle
 - Launcher
 - Cannon
 - Nexus
-# remove as needed
-
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-license: _???
-license_id: _???
-license_level: _???
+description: Eliminating and adding certain key redundancies, the weight and handleability of any weapon can be improved, at the cost of effectiveness.
+effect: You may fire Ordnance Weapons after moving, but if you do so, you gain Inaccurate and don’t deal bonus damage.
+license: nue
+license_id: mf_nue
+license_level: 2
 restricted_sizes: 
 - Main
-- Aux
-# etc.
-source: _???
-sp: _???
-
-# Example tag
+- Heavy
+- Superheavy
+source: ONRYŌ
+sp: 2
 tags:
 - id: tg_unique
-- id: tg_limited
-  val: 4
+- id: tg_mod
 id: wm_high_mobility_retrofit

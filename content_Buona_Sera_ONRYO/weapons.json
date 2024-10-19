@@ -25,11 +25,11 @@
         "val": 5
       }
     ],
-    "type": "weapon",
+    "type": "Melee",
     "license": "Harvester",
     "license_id": "mf_harvester",
     "license_level": 2,
-    "source": "Buona_Sera",
+    "source": "Buona-Sera",
     "sp": 0,
     "synergies": [],
     "id": "mw_butterfly_knife"
@@ -59,6 +59,138 @@
     "sp": 0,
     "synergies": [],
     "id": "mw_ferrofluid_dagger"
+  },
+  {
+    "description": "<p>A single-edge straight sword, the compressed steel blade houses an array of small photonic and sonic emitters. When a blow is struck and afterwards, they lit up in tandem, creating confusing patterns which impair the sensors of opposing mechs and hinder retaliatory attempts.<p>",
+    "mount": "Main",
+    "name": "FLARE SABER",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "on_hit": "Target receives +1 Difficulty when attacking you.",
+    "on_crit": "Target is also Impaired",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "Melee",
+    "license": "Dismal Sylph",
+    "license_id": "mf_dismal_sylph",
+    "license_level": 2,
+    "source": "Buona-Sera",
+    "sp": 1,
+    "synergies": [],
+    "id": "mw_flare_saber"
+  },
+  {
+    "description": "<p>After the impact of a first guidance Bore-head, the emission of multiple smaller, self-propelled follow then signal. The assault, staggered by mere milliseconds, is but a front, for the secondary salvo release pockets of Greywash.</p>",
+    "mount": "Main",
+    "name": "GOVARDHANA PROJECTOR",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3"
+      },
+      {
+        "type": "Burn",
+        "val": 1
+      }
+    ],
+    "effect": "This Weapon counts as both a Launcher and Nexus.",
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "Weapon",
+    "license": "nue",
+    "license_id": "mf_nue",
+    "license_level": 1,
+    "source": "ONRY\u014c",
+    "sp": 0,
+    "synergies": [],
+    "id": "mw_govardhana_projector"
+  },
+  {
+    "description": "Come to me.",
+    "effect_print": "After you hit with this weapon, your target must succeed on a System Save or be pulled 1d3+1 spaces towards you, or as close as possible.",
+    "on_hit": "Your target must succeed on a System Save or be pulled 1d3+1 spaces towards you, or as close as possible.",
+    "mount": "Main",
+    "name": "GRASPING NEXUS",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3 + 1"
+      },
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "type": "Weapon",
+    "license": "Gashadokuro",
+    "license_id": "mf_gashadokuro",
+    "license_level": 1,
+    "source": "ONRY\u014c",
+    "sp": 1,
+    "synergies": [],
+    "id": "mw_grasping_nexus"
+  },
+  {
+    "description": "<p> \"You learn only one thing on the battlefield and one thing only kiddo. It is an art all of humanity has cherished since the dawn of time. It is the art of turning men into corpses.</p>",
+    "effect_print": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum, a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.",
+    "mount": "Superheavy",
+    "name": "GRAVEROBBER ODACHI",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6 + 6"
+      }
+    ],
+    "effect": "<p>Whenever you destroy an enemy, which is not a Grunt, this weapon gains an additional 1d6 Kinetic Damage and +1 Threat for every 2 enemies for the rest of the scene. This effect can stack multiple times, with the Maximum Threat gained being +3.</p>",
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_overkill"
+      },
+      {
+        "id": "tg_ap"
+      }
+    ],
+    "type": "Weapon",
+    "license": "Gashadokuro",
+    "license_id": "mf_gashadokuro",
+    "license_level": 3,
+    "source": "ONRY\u014c",
+    "sp": 0,
+    "synergies": [],
+    "id": "mw_graverobber_odachi"
   },
   {
     "description": "<p> What is known to Union as the Heisoku-Class Projector is theorized to fire a \"smart\" laser, varying the output based on the target, searing enemies and merely heating up allies.<p>",
@@ -113,7 +245,7 @@
         "val": 0
       }
     ],
-    "on_hit": "You consume all charges.",
+    "on_hit": "You consume all Charges.",
     "range": [
       {
         "type": "Range",
@@ -122,14 +254,10 @@
     ],
     "tags": [
       {
-        "id": "tg_heat_self",
-        "val": 1
-      },
-      {
-        "id": "tg_unique"
+        "id": "tg_smart"
       }
     ],
-    "type": "System",
+    "type": "Nexus",
     "sp": 0,
     "synergies": [],
     "counters": [
@@ -139,10 +267,48 @@
         "default_value": 0,
         "min": 0,
         "max": 9
+      },
+      {
+        "id": "tg_unique"
       }
     ],
     "id": "mw_kitsunebi_nexus",
-    "name": "KITSUNEBI_NEXUS"
+    "name": "KITSUNEBI NEXUS"
+  },
+  {
+    "description": "I see you.",
+    "effect_print": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum, a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.",
+    "mount": "Superheavy",
+    "name": "PERYTON NEXUS",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6 + 6"
+      }
+    ],
+    "effect": "When attacking a target that you have a direct Line of Sight on, gain AP and + 1 Accuracy.",
+    "range": [
+      {
+        "type": "Range",
+        "val": 30
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_seeking"
+      },
+      {
+        "id": "tg_ordnance"
+      }
+    ],
+    "type": "Weapon",
+    "license": "nue",
+    "license_id": "mf_nue",
+    "license_level": 3,
+    "source": "ONRY\u014c",
+    "sp": 0,
+    "synergies": [],
+    "id": "mw_peryton_nexus"
   },
   {
     "description": "<p>Small and elegant, these needle-thin knives are made of the same molecular wire used in other SSC products. Here however this has been done to reduce the weight of the blade and handle drastically, allowing a large number of mods to be installed at once. The Comp/Com unit housed in the carrying scabbard is tasked with overseeing the activation codes for various modifications that can be made, taking on any computing or manual activation as needed.<p>",
@@ -154,7 +320,7 @@
         "val": 1
       }
     ],
-    "detail": "<p>This Weapon can take multiple weapon mods, and all Mods attached to this weapon may be used at once, additionally their activations (if required) are now a free action.<p>",
+    "effect": "<p>This Weapon can take multiple weapon mods, and all Mods attached to this weapon may be used at once, additionally their activations (if required) are now a free action.<p>",
     "range": [
       {
         "type": "Threat",
@@ -167,11 +333,11 @@
         "val": 5
       }
     ],
-    "typ": "Melee",
+    "type": "Melee",
     "license": "Harvester",
     "license_id": "mf_harvester",
     "license_level": 3,
-    "source": "Buona_Sera",
+    "source": "Buona-Sera",
     "sp": 0,
     "synergies": [],
     "id": "mw_quick_mod_knife"

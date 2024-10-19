@@ -2,17 +2,15 @@
   {
     "description": "<p>Rather inelegant by SSC standards, directed Micro-Phosphorus charges allow frames to \"disappear\" from digital sensors whilst saying remarkably visible to the naked eye.<p>",
     "effect": "<p>1/round, as a Reaction when an enemy targets your E-Defense, you may force them to target your Evasion instead. If you are hidden or Invisible, you lose that status until the start of the next turn. This system has 6 charges which can be replenished by spending a Repair Cap.<p>",
-    "source": "ONRY\u014c",
-    "id": "mf_kitsune",
-    "license_id": "mf_kitsune",
+    "id": "cb_heat_bleed_elimination",
+    "source": "Buona-Sera",
     "name": "HEAT BLEED ELIMINATION"
   },
   {
     "description": "<p>By exploiting redundant stabilizer systems, streamlining both Armor and installing displacement systems, unparalleled mobility can be achieved.<p>",
     "effect": "<p>Whenever you move by any method that is not Base Movement or a Boost, you may move +1 Space. This also applies to involuntary movement and any effects that would move you are increased by +1, such as Knockback or Raming.<p>",
-    "source": "ONRY\u014c",
-    "id": "mf_kitsune",
-    "license_id": "mf_kitsune",
+    "id": "cb_high_mobility_adaptation",
+    "source": "Buona-Sera",
     "name": "HIGH-MOBILITY ADAPTATION"
   },
   {
@@ -42,9 +40,8 @@
   {
     "description": "<p>To strike first is to dictate the flow of combat. And we can guarantee the enemy won't see you coming.<p>",
     "effect": "<p>You start any Scene Hidden, furthermore you are considered Invisible for the purposes of hiding.<p>",
-    "source": "ONRY\u014c",
-    "id": "mf_kitsune",
-    "license_id": "mf_kitsune",
+    "id": "cb_shinobi_stealth_module",
+    "source": "Buona-Sera",
     "name": "SHINOBI STEALTH MODULE"
   }
 ]

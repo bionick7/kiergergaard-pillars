@@ -2,47 +2,37 @@
 PROGRESS_artw: false
 PROGRESS_flavour: true
 PROGRESS_gameplay: true
-PROGRESS_playtest: false
+PROGRESS_playtest: true
 
 core_system:
-  # Print effect for the printed version
-
-  print_effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus. 
-
   activation: Protocol
   active_effect: <p>For the rest of this scene, the Blade Call Quick Action now recalls all your Auxiliary Thrown weapons. <p>
   active_name: Directional Limiter Override
   description: <p>“Now as we have seen within that blasted vault, laws of physics can be altered with the right materials, enough power or if you’re an abomination that chooses to ignore such restraints that we pitiful mortals have to contend with. As I was saying, I am no God outside the machine, but what if we directed the force used in our Ferro-fluid research towards solid Metal?” - Frederick Neuman, Researcher from the Exotic Materials Division.<p>
   name: Black Polarity Reverser
-  
-passive_effect: <p>Any Auxiliary Thrown weapon that is used as part of an attack may be left on the ground in a space adjacent to the target. Place a marker to remind you of its location. This may override any ability that would automatically return it to you.
-  As long as it is lying on the ground, the weapon is disabled for the purposes of attacking but may still be destroyed or disabled.
-  You may pick it back up as a free Action or using the Blade Call Quick Action. <b> At the end of the scene any Weapons left on the ground are returned to you.<p>
-passive_name: Static Ferrite Handle
+  passive_effect: <p>Any Auxiliary Thrown weapon that is used as part of an attack may be left on the ground in a space adjacent to the target. Place a marker to remind you of its location. This may override any ability that would automatically return it to you.
+    As long as it is lying on the ground, the weapon is disabled for the purposes of attacking but may still be destroyed or disabled.
+    You may pick it back up as a free Action or using the Blade Call Quick Action. <b> At the end of the scene any Weapons left on the ground are returned to you.<p>
+  passive_name: Static Ferrite Handle
+  active_actions:
+  - activation: Quick
+    detail: <p>You activate the ferrite handle and recall your weapon towards you. Choose one Marker left on the ground within Sensors, ignoring Line of Sight requirements. Draw a Line attack originating from the marker towards and you deal 2 AP Kinetic damage to anything caught in the line, triggering Laceration. This will penetrate any terrain it passes through.<p>
+    name: Blade Call
+    use: Mission
 
-active_actions:
-- activation: Quick
-  detail: '<p>You activate the ferrite handle and recall a weapon towards you. Choose one Auxiliary Thrown weapon left on the ground within Sensors. Make a Line attack originating from the marker against all enemies between you and it, gaining Inaccurate for each target past the first. This will penetrate any Object, but the damage the object, and any target past it, receives is halved.<p>'
-  name: Blade Call
-
-  use: Mission  # 1
 description: <p>A modification of the Metalmark that employs Magnetic Rail technology found in the armaments of the Death’s Head and Systems of the Black Witch, the Harvester is an agile frame utilizing Electromagnetic currents in a destructive manner. Less concerned about shielding allies than its forerunner, the focus is to defeat singular targets with pin-point accuracy in a flurry of attacks. <b>
   As trials of utilizing Rail technology with different ammunition it was soon apparent that there was little merit in using anything different than a simple metal rod. However by reducing the velocity and increasing the output of the magnetic components, which were fine-tuned during the Witch-series a more “refined” propelling armament was created. This was faced with a new problem that potential ammunition (which now needed to be more massive) would overload the modified Metalmark Skeleton and thus the executive decision was taken to allow use of the “Ammunition” as melee weapons. Furthermore the Black Polarity Reverser was engineered in order to maximize the destructive output of a singular “shell”, by striking with it twice.<p>
-
+id: mf_harvester
 image_url: https://www.deere.com/assets/images/region-4/products/harvesting/s-series-combines/s-series-hero-r4f120821-v2-1024x375.jpg
-
+license_id: mf_harvester
 license_level: 2
 mechtype:
 - Striker
-source: Buona_Sera
 mounts:
 - Aux/Aux
 - Aux/Aux
 - Main/Aux
+source: Buona-Sera
 stats:
   armor: 0
   edef: 7
@@ -59,10 +49,8 @@ stats:
   structure: 4
   tech_attack: 0
 traits:
-- description: <p>The Thrown Range of Auxiliary Melee weapons is increased by 5. Additionally, if it is thrown as part of an attack, the Weapon gains AP.<p>
-  name: ACCELERATOR RAIL
-- description: <p>1/turn, any Attack against a target deals an additional +1d6 damage, if it has already been damaged by another one of your attack’s during this Turn.<p>
-  name: LACERATION
-y_pos: 35  # Refers to how the artwork is aligned vertically
-id: mf_harvester
-license_id: mf_harvester
+- description: The Thrown Range of Auxiliary Melee weapons is increased by 5. Additionally, if it is thrown as part of an attack, the Weapon gains AP.
+  name: Accelerator Rail
+- description: 1/turn, any Attack against a target deals an additional +1d6 damage, if it has already been damaged by another one of your attack’s during this Turn.
+  name: Laceration
+y_pos: 35

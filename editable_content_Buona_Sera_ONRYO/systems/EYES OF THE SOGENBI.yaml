@@ -1,67 +1,24 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
-
 # Meta information: Fill in to track progress
 PROGRESS_artw: false
-PROGRESS_flavour: false
-PROGRESS_gameplay: false
+PROGRESS_flavour: true
+PROGRESS_gameplay: true
 PROGRESS_playtest: false
-
-# Text will appear in the pdf
-effect_print: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-
-# Can have multiple actions, deldete if not needed
+effect: "Gain the following Invades:"
 actions:
-- activation: _???
-  detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  # Action name
-  name: _???
-
-
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-
-# Can have multiple deployables, deldete if not needed
-deployables:
-- activation: _???
-  detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-
-  evasion: _???
-  hp: _???
-  name: _???
-  size: _???
-  type: Mine  # Can be anything, but typically mine, drone, ...
-  # and so forth ...
-effect_print: once active as a protocol, this system spreads smoke creating soft cover
-  in every space you cross while moving this turn. The smoke last until the end your
-  next turn.
-
-license: _???  # Name of license in frame
-license_id: _??? # Name of license id (kinda redundant, but I don't make the rules)
-license_level: _???
-source: _???  # Manufacturer
-sp: _???  # System points
+- activation: Invade
+  detail: <p>Your target must succeed on a System Save or the next time they break Line of Sight with you, they take 1d3+2 Burn and this effect ends.</p>
+  nam: Glare
+- activation: Invade
+  detail: <p> Your target must succeed on a System Save or whenever they end their turn within your direct Line of Sight, they take 2 AP Energy damage. They may attempt to remove this effect by succeeding on a Systems check as a Quick Action. </p>
+  nam: Glower
+description: Stand there and witness. The enlightenment will burn your eyes, avert them and remain blind.
+license: nue
+license_id: mf_nue
+license_level: 2
+source: ONRYŌ
+sp: 3
 synergies: []
-
-# Example of tag syntax shown below
 tags:
-- id: tg_heat_self
-  val: 1
 - id: tg_unique
 type: System
 id: ms_eyes_of_the_sogenbi

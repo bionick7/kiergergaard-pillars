@@ -1,35 +1,150 @@
 [
   {
     "core_system": {
-      "print_effect": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum, a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.",
+      "activation": "Protocoll",
+      "active_effect": "<p>For the Rest of this scene, your movement ignores Engagement and doesn't trigger Reactions. Furthermore, you can now bank 3 numbers and you can choose which to discard.<p>",
+      "active_name": "Accelerate",
+      "description": "<p>Combined with a Cassandra-Class full-body integrity scanner, the Dismal Sylph stores information gathered in real-time from movement within the combat theater, constructing probability models updated in real time.<p>",
+      "name": "Spliced Haruspex Sensor Constellation",
+      "passive_effect": "<p>When you move into an adjacent space with an Ally or Enemy for the first time on your turn, you roll a d6 and note the result. As a 1/turn Reaction, you may add or subtract the number to the roll of a character within Sensors. These count as Accuracies or Difficulties and may be canceled out by their respective rules, but stack on top of them. That way you can cancel out an enemy Accuracy or improve the Accuracy of an Ally. </br>You can hold up to two Numbers at once and lose one, your choice, at the beginning of your turn. </br>Your mech gains the AI tag if it doesn't already have it, however this does not count towards the maximum number of AI's.<p>",
+      "passive_name": "Mantic Admonition",
+      "use": "Mission"
+    },
+    "description": "<p>The SSC Dismal Sylph is considered a daughter platform to the Swallowtail and Duskwing, it was developed with the aim to bring powerful supportive capabilities to a more \"civil\" audience. Officially the frame is still in development, which is of course a lie, live-target testing has begun. The Dismal sylph is focused on providing battlefield support to its Allies while debilitating enemies. It equips an array of systems to further strengthen this identity. All redundancies, much of the weapon systems and most safety measures have been removed in order to make way for the defining characteristic, the Cassandra Scanner, which not only takes up most of the outer layers of the frame, but also demands extreme power output from the micro-reactors. </br>In order to ease the use of the Cassandra Scanner and to increase survivability for the pilot and the frame, experimental movement systems allow for rapid deployment and protection from incoming fire. Zipping between frontline, unfettered by enemy fire, the Dismal Sylph can be found wherever it is needed, alleviating ailments, striking at the weak links in enemy formations, improving or influencing fire arcs.</p>",
+    "id": "mf_dismal_sylph",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Army2016demo-007.jpg/1200px-Army2016demo-007.jpg",
+    "license_id": "mf_dismal_sylph",
+    "license_level": 2,
+    "mechtype": [
+      "Support",
+      "Striker"
+    ],
+    "source": "Buona-Sera",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "armor": 0,
+      "edef": 6,
+      "evasion": 12,
+      "heatcap": 4,
+      "hp": 6,
+      "repcap": 2,
+      "save": 11,
+      "sensor_range": 10,
+      "size": "1/2",
+      "sp": 6,
+      "speed": 6,
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": 1
+    },
+    "traits": [
+      {
+        "description": "The Dismal Sylph can hover when it moves",
+        "name": "Jester Jet Set"
+      },
+      {
+        "description": "You ignore all the effects of missed Attacks or successful Saves. </br> If you are Immobilized, this Trait has no effects.",
+        "name": "Knave Threat Analyser"
+      },
+      {
+        "description": "You cannot Overwatch or Brace and can only perform a maximum of 3 reactions per round",
+        "name": "Focused Attention"
+      },
+      {
+        "description": "The Dismal Sylph gains +1 Difficulty on Hull Saves.",
+        "name": "Fragile"
+      }
+    ],
+    "y_pos": 35,
+    "name": "DISMAL SYLPH"
+  },
+  {
+    "core_system": {
+      "activation": "Protocol",
+      "active_effect": "<p> You are immediately put into the Danger Zone if you are not. After that, for the Rest of the scene, your mech produces a Blast 3 Area of Mist which moves with you. Line of Sight cannot be drawn into or out of this Zone. Enemies that enter or start their turn in this Zone must make a Systems save or become Slowed.</br> This System ceases to be active if you ever leave the Danger Zone, but can be reactivated as a Free Action when re-entering the Danger Zone. </p>",
+      "active_name": "Open the Gates of Hell",
+      "description": "<p> You remove all limiters from your Systems, allowing them to spill into realspace. As your Reactor burns ever brighter to keep up with power demands of the operating systems, circuits and wiring evaporate, releasing their viral code-base into the air. And the roiling mists come. </p>",
+      "name": "YOMI-Projector",
+      "use": "Mission"
+    },
+    "description": "<p> Only an appendix in The Universal Threat Assessment Manual, due to its rarity, the Gashadokuro PG is only encountered in particularly bloody areas of Unionspace: Battlegrounds, both old and abandoned as well as ongoing Areas of conflict, where the corpses stack. This is the pre-requirement for the creation of this PG, as the process requires destroyed frames with still intact NHP caskets. Through an unknown method, the infected frame begins re-activating and \"consuming\" nearby wreckage and organic material. </br> What emerges is a terrifying Monster, which has often been compared to the BALOR PG by Union Scientists, made up of twisted remains that goes on a rampage, it is in essence an adaptation which favors brute, overwhelming force. The grotesque form is only exasperated when engaged, as it is ripped to shreds by enemy fire yet ceaselessly cannibalizes other combatants in order to continue fighting.</p>",
+    "id": "mf_gashadokuro",
+    "image_url": null,
+    "license_id": "mf_gashadokuro",
+    "license_level": 2,
+    "mechtype": [
+      "Striker",
+      "Defender"
+    ],
+    "source": "ONRY\u014c",
+    "mounts": [
+      "Main",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "armor": 0,
+      "edef": 10,
+      "evasion": 6,
+      "heatcap": 4,
+      "hp": 12,
+      "repcap": 4,
+      "save": 11,
+      "sensor_range": 8,
+      "size": 3,
+      "sp": 6,
+      "speed": 3,
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": 1
+    },
+    "traits": [
+      {
+        "description": "<p>Every time you destroy an enemy with a melee attack, you immediately regain \u00bc of your total HP. </br>You may perform a Full Action next to any remains  to consume it (thus removing it), regaining 1d6+Grit HP. </p>",
+        "name": "Eat The dead"
+      },
+      {
+        "description": "<p>You have Resistance to any Damage from Size 1 and smaller frames. </br>Additionally, adjacent allied characters can use the Gashadokuro as Hard Cover. </p>",
+        "name": "Dread Titan"
+      }
+    ],
+    "y_pos": 35,
+    "name": "GASHADOKURO"
+  },
+  {
+    "core_system": {
       "activation": "Protocol",
       "active_effect": "<p>For the rest of this scene, the Blade Call Quick Action now recalls all your Auxiliary Thrown weapons. <p>",
       "active_name": "Directional Limiter Override",
       "description": "<p>\"Now as we have seen within that blasted vault, laws of physics can be altered with the right materials, enough power or if you're an abomination that chooses to ignore such restraints that we pitiful mortals have to contend with. As I was saying, I am no God outside the machine, but what if we directed the force used in our Ferro-fluid research towards solid Metal?\" - Frederick Neuman, Researcher from the Exotic Materials Division.<p>",
-      "name": "Black Polarity Reverser"
+      "name": "Black Polarity Reverser",
+      "passive_effect": "<p>Any Auxiliary Thrown weapon that is used as part of an attack may be left on the ground in a space adjacent to the target. Place a marker to remind you of its location. This may override any ability that would automatically return it to you. As long as it is lying on the ground, the weapon is disabled for the purposes of attacking but may still be destroyed or disabled. You may pick it back up as a free Action or using the Blade Call Quick Action. <b> At the end of the scene any Weapons left on the ground are returned to you.<p>",
+      "passive_name": "Static Ferrite Handle",
+      "active_actions": [
+        {
+          "activation": "Quick",
+          "detail": "<p>You activate the ferrite handle and recall your weapon towards you. Choose one Marker left on the ground within Sensors, ignoring Line of Sight requirements. Draw a Line attack originating from the marker towards and you deal 2 AP Kinetic damage to anything caught in the line, triggering Laceration. This will penetrate any terrain it passes through.<p>",
+          "name": "Blade Call",
+          "use": "Mission"
+        }
+      ]
     },
-    "passive_effect": "<p>Any Auxiliary Thrown weapon that is used as part of an attack may be left on the ground in a space adjacent to the target. Place a marker to remind you of its location. This may override any ability that would automatically return it to you. As long as it is lying on the ground, the weapon is disabled for the purposes of attacking but may still be destroyed or disabled. You may pick it back up as a free Action or using the Blade Call Quick Action. <b> At the end of the scene any Weapons left on the ground are returned to you.<p>",
-    "passive_name": "Static Ferrite Handle",
-    "active_actions": [
-      {
-        "activation": "Quick",
-        "detail": "<p>You activate the ferrite handle and recall a weapon towards you. Choose one Auxiliary Thrown weapon left on the ground within Sensors. Make a Line attack originating from the marker against all enemies between you and it, gaining Inaccurate for each target past the first. This will penetrate any Object, but the damage the object, and any target past it, receives is halved.<p>",
-        "name": "Blade Call",
-        "use": "Mission"
-      }
-    ],
     "description": "<p>A modification of the Metalmark that employs Magnetic Rail technology found in the armaments of the Death's Head and Systems of the Black Witch, the Harvester is an agile frame utilizing Electromagnetic currents in a destructive manner. Less concerned about shielding allies than its forerunner, the focus is to defeat singular targets with pin-point accuracy in a flurry of attacks. <b> As trials of utilizing Rail technology with different ammunition it was soon apparent that there was little merit in using anything different than a simple metal rod. However by reducing the velocity and increasing the output of the magnetic components, which were fine-tuned during the Witch-series a more \"refined\" propelling armament was created. This was faced with a new problem that potential ammunition (which now needed to be more massive) would overload the modified Metalmark Skeleton and thus the executive decision was taken to allow use of the \"Ammunition\" as melee weapons. Furthermore the Black Polarity Reverser was engineered in order to maximize the destructive output of a singular \"shell\", by striking with it twice.<p>",
+    "id": "mf_harvester",
     "image_url": "https://www.deere.com/assets/images/region-4/products/harvesting/s-series-combines/s-series-hero-r4f120821-v2-1024x375.jpg",
+    "license_id": "mf_harvester",
     "license_level": 2,
     "mechtype": [
       "Striker"
     ],
-    "source": "Buona_Sera",
     "mounts": [
       "Aux/Aux",
       "Aux/Aux",
       "Main/Aux"
     ],
+    "source": "Buona-Sera",
     "stats": {
       "armor": 0,
       "edef": 7,
@@ -48,17 +163,15 @@
     },
     "traits": [
       {
-        "description": "<p>The Thrown Range of Auxiliary Melee weapons is increased by 5. Additionally, if it is thrown as part of an attack, the Weapon gains AP.<p>",
-        "name": "ACCELERATOR RAIL"
+        "description": "The Thrown Range of Auxiliary Melee weapons is increased by 5. Additionally, if it is thrown as part of an attack, the Weapon gains AP.",
+        "name": "Accelerator Rail"
       },
       {
-        "description": "<p>1/turn, any Attack against a target deals an additional +1d6 damage, if it has already been damaged by another one of your attack's during this Turn.<p>",
-        "name": "LACERATION"
+        "description": "1/turn, any Attack against a target deals an additional +1d6 damage, if it has already been damaged by another one of your attack's during this Turn.",
+        "name": "Laceration"
       }
     ],
     "y_pos": 35,
-    "id": "mf_harvester",
-    "license_id": "mf_harvester",
     "name": "HARVESTER"
   },
   {
@@ -119,5 +232,57 @@
     "id": "mf_kitsune",
     "license_id": "mf_kitsune",
     "name": "KITSUNE"
+  },
+  {
+    "core_system": {
+      "activation": "Protocol",
+      "active_effect": "<p> You charge the Thunderhead with your power, priming it to receive your shot. The next single-target attack you perform with one of your Ranged Weapons may be against any target within Range 50 and ignoring Line of Sight requirements. </p>",
+      "active_name": "Raijin's Bolt",
+      "description": "<p> Supercharging the Thunderhead-Guidance System now allows it to \"carry'' physical objects as well for a split-second. This both accelerates and bends the trajectory of any projectile to meet any known foe. </p>",
+      "name": "Thunderhead-Guidance System",
+      "use": "Scene"
+    },
+    "description": "<p>The Nue was long unidentified, but the existence of another long-range ballistic platform designed to mount both firepower and computing systems was theorized among Union Scientists. It was first confirmed after an Urban engagement which nonetheless saw use of tremendous firepower during heavy weather from criminal elements, followed by devastating attacks through the Omni-net. Contrary to most doctrines, the Nue does not immediately aim to destroy its target, rather tormenting it with electronic warfare after a single, well placed hit. </br> The confusion surrounding the existence of this PG is furthermore exacerbated by the visual similarities to the Manticore PG as the heat-dispersion spines have been modified to artificially charge the surrounding atmosphere to create an artificial, Single-cell thunderstorm. Dubbed the Thunderhead and cladding the battlefield in rain, accompanied by the rumble of thunder, the Nue shoots. What follows is a poorly understood process by which the target's position is \"marked\" both within the storm and on an local-/Omni-net basis. Any Electronic attack now is carried via the storm itself, the masses of static energy at the whim of the pilot. </p>",
+    "id": "mf_nue",
+    "image_url": "https://yokai.com/wordpress/wp-content/uploads/2018/03/nue.jpg",
+    "license_id": "mf_nue",
+    "license_level": 2,
+    "mechtype": [
+      "Artillery",
+      "Controller"
+    ],
+    "source": "ONRY\u014c",
+    "mounts": [
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "armor": 0,
+      "edef": 8,
+      "evasion": 7,
+      "heatcap": 5,
+      "hp": 8,
+      "repcap": 3,
+      "save": 11,
+      "sensor_range": 5,
+      "size": 1,
+      "sp": 7,
+      "speed": 3,
+      "stress": 4,
+      "structure": 4,
+      "tech_attack": 1
+    },
+    "traits": [
+      {
+        "description": "<p> 1/round, when you hit an enemy with a Ranged attack, you may mark them with this Trait.  As long as they remain marked, you ignore Line of Sight and Sensor requirements when targeting  them with Invades. Only one Mark may exist at a time and when you mark another character,  the old mark ceases to exist. </p>\n",
+        "name": "Static Remote Access Tunnel"
+      },
+      {
+        "description": "<p> When you take Energy damage, roll a d6. On a 4+, you reduce it to 0 and ignore any additional effects. </br> Additionally, whenever you Invade, deal 1 AP Energy damage. </p>\n",
+        "name": "Lightning Rod"
+      }
+    ],
+    "y_pos": 35,
+    "name": "NUE"
   }
 ]

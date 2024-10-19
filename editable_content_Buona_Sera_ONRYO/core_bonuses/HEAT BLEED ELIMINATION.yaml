@@ -7,7 +7,6 @@ PROGRESS_playtest: false
 
 description: <p>Rather inelegant by SSC standards, directed Micro-Phosphorus charges allow frames to “disappear” from digital sensors whilst saying remarkably visible to the naked eye.<p>
 effect: <p>1/round, as a Reaction when an enemy targets your E-Defense, you may force them to target your Evasion instead. If you are hidden or Invisible, you lose that status until the start of the next turn. This system has 6 charges which can be replenished by spending a Repair Cap.<p>
-source: ONRYŌ
+
 id: cb_heat_bleed_elimination
-id: mf_kitsune
-license_id: mf_kitsune
+source: Buona-Sera

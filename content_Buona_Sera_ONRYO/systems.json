@@ -1,5 +1,55 @@
 [
   {
+    "effect": "<p> When you perform any Reaction, you may expend a charge of this system in order to not lose your reaction for this turn. You must still abide by the limitations of the individual Reaction.<p>",
+    "description": "<p>\"It is immense and protective. That would be the adjective I'd attribute to HESTIA. So here is but a splinter, less than a fraction of her being distilled into this little chip. Even so, the effects produced are impressive as it observes the environment and reacts subconsciously to any change almost instinctively.\"<p>",
+    "id": "ms_argus_module",
+    "license": "Dismal Sylph",
+    "license_id": "mf_dismal_sylph",
+    "license_level": 3,
+    "source": "Buona-Sera",
+    "sp": 2,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "System",
+    "name": "ARGUS MODULE"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Quick",
+        "detail": "<p> You consume a destroyed frame (allied and enemy), removing it from the field, and you gain +1 Armor per frame thus consumed until the end of this scene. These stack and are added unto any pre-existing Armor. </p>",
+        "name": "Stack the Dead"
+      }
+    ],
+    "description": "<p>By copying the original Necro-code and releasing certain parts in controlled bursts, post-natal modifications can be made to the frame. From modifying weapons to repairing the skeletal structure, the most widespread and simple application is the on-the go reinforcement of armor. To onlookers the frame appears to shortly be wreathed in flame, as the molten slag pours over the Hull, however the process utilizes no discernible source of heat.</p>",
+    "license": "gashadokuro",
+    "license_id": "mf_gashadokuro",
+    "license_level": 2,
+    "source": "ONRY\u014c",
+    "sp": 3,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "System",
+    "id": "ms_armor_of_the_kasha",
+    "name": "ARMOR OF THE KASHA"
+  },
+  {
     "effect": "Your Mech Gains the AI property and Predators Instincts.",
     "actions": [
       {
@@ -8,11 +58,19 @@
         "name": "Predators Instincts"
       }
     ],
+    "tags": [
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
     "description": "<p>This NHP was extracted from a strain of the volatile coding found inside the Kaibyo Metavault, which was only briefly open and afterwards closed itself for no apparent reason.</p> <p>The NHP is remarkable in that it draws just enough power from the reactor, never too much, never too little, as anything else would make its task impossible: The act of completely hiding any trace of its Mech's existence. How is not yet entirely understood, but researchers think that BASTET is \"lying\" to reality itself. </br> BASTET exhibits irregular behavior, in the sense that one does not know what will tick them off. They are highly alert and react with extreme prejudice against anything unknown or unaccounted, immediately drawing upon their innate instincts for hiding, stalking and killing. When interacting with Lancer pilots they tend to be both prideful and haughty, yet may develop a deep and respectful partnership over the duration of their continued service. BASTET must be cycled when:  <ol><li> They are able to affect reality not limited to the confines of their designated area of influence (i.e. the licensed Lancers frame)</li> <li> The XXXXX begins rotting. Draft from Visual, scrapped.</li></ol></p>\n",
     "license": "Harvester",
     "license_id": "mf_harvester",
     "license_level": 3,
-    "source": "Buona_Sera",
+    "source": "Buona-Sera",
     "sp": 3,
     "synergies": [],
     "id": "ms_bastet_class_nhp",
@@ -22,17 +80,18 @@
     "effect": "Gain the following Invades:",
     "actions": [
       {
-        "activatio": "Invades",
+        "activation": "Invade",
         "detail": "<p>You disable the self-regulatory measures of the target's reactor. The next time they would inflict Heat upon themselves, they receive double the amount.<p>",
-        "nam": "Inflame"
+        "name": "Inflame"
       },
       {
-        "activatio": "Invade",
+        "activation": "Invade",
         "detail": "<p>You kick safety precautions into overdrive, to the breaking point. You clear your targets burn and then inflict the double amount of Heat.<p>",
-        "nam": "Extinguish"
+        "name": "Extinguish"
       }
     ],
-    "descriptio": "<p>\"Feel the fire, young one. Feel the warmth caressing your skin, see the plumes dancing through the shadows. Now cast it at thine enemy. Sear their skin, Burn their bones and let nothing remain.\"<p>",
+    "description": "<p>\"Feel the fire, young one. Feel the warmth caressing your skin, see the plumes dancing through the shadows. Now cast it at thine enemy. Sear their skin, Burn their bones and let nothing remain.\"<p>",
+    "-id": "tg_invade",
     "licens": "Kitsune",
     "license_id": "mf_kitsune",
     "license_level": 2,
@@ -41,6 +100,62 @@
     "synergies": [],
     "id": "ms_circuit_killer",
     "name": "CIRCUIT KILLER"
+  },
+  {
+    "effect": "Gain the following Invades:",
+    "actions": [
+      {
+        "activation": "Invade",
+        "detail": "<p>Your target must succeed on a System Save or the next time they break Line of Sight with you, they take 1d3+2 Burn and this effect ends.</p>",
+        "nam": "Glare"
+      },
+      {
+        "activation": "Invade",
+        "detail": "<p> Your target must succeed on a System Save or whenever they end their turn within your direct Line of Sight, they take 2 AP Energy damage. They may attempt to remove this effect by succeeding on a Systems check as a Quick Action. </p>",
+        "nam": "Glower"
+      }
+    ],
+    "description": "Stand there and witness. The enlightenment will burn your eyes, avert them and remain blind.",
+    "license": "nue",
+    "license_id": "mf_nue",
+    "license_level": 2,
+    "source": "ONRY\u014c",
+    "sp": 3,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "System",
+    "id": "ms_eyes_of_the_sogenbi",
+    "name": "EYES OF THE SOGENBI"
+  },
+  {
+    "actions": [
+      {
+        "activation": "Reaction",
+        "detail": "You clear all Conditions inflicted by the Action",
+        "frequency": "1/round",
+        "name": "Flash Cure",
+        "trigger": "An adjacent Ally is targeted by a hostile Action which inflicts a Condition."
+      }
+    ],
+    "description": "Gain the Flash Cure Reaction. By expending a charge as a Reaction, you clear all Conditions inflicted by the Action",
+    "name": "FLIGHT-FLIGHT MODULE",
+    "id": "ms_panacea_package",
+    "license": "Dismal Sylph",
+    "license_id": "mf_dismal_sylph",
+    "license_level": 1,
+    "source": "Buona-Sera",
+    "sp": 1,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_reaction"
+      }
+    ],
+    "type": "System"
   },
   {
     "effect": "Gain the AI property and the Tenko Libation Full Action.",
@@ -52,24 +167,39 @@
       }
     ],
     "description": "<p>What was thought of by Union Scientists to be a single NHP revealed itself to be something far more concerning. After initial discovery a data leak was found in the codebase of secured and salvaged INARI instances, probes and experiments to capture whatever was leaking failed.  What followed, after a few days an attack from the Omninet on the facility was conducted by an unknown paracausal entity. The surviving personnel suffered 3rd degree burns, furthermore any contained NHP's were missing. The next opportunity succeeded in tracing and analyzing the data: It was raw information of the NHPs cognition, sent to a greater source. Even after two decades of study, the leak cannot be fully plugged. INARI clones exhibit high degrees of curiosity and activity, showing interest in things some might consider mundane and excellent spatial and thermal recognition abilities. These are harnessed to quickly and precisely run targeting and identification protocols, all the while feeding and consuming information from the target. INARI reacts to pilots often with naivety and affection, but they are not to be trusted, for are always harboring other thoughts.<p>\n",
+    "-id": "tg_unique",
     "license": "Kitsune",
     "license_id": "mf_kitsune",
     "license_level": 3,
     "source": "ONRY\u014c",
     "sp": 3,
     "synergies": [],
-    "tags": [
-      {
-        "id": "tg_limited",
-        "val": 2
-      }
-    ],
     "id": "ms_inari_class_nhp",
     "name": "INARI-CLASS NHP"
   },
   {
+    "effect": "<p>You may, as a free Action, instantly scale any wall, obstacle or terrain feature. This does not cost movement and may be up or down. Any adjacent Allied character may use a reaction to also utilize this effect. You expend 1 charge for each character (you included).<p>",
+    "description": "<p>A combination of chest-mounted grapple systems, the predecessor to the dangerous Harken-Type Cabled Dagger, is able to easily allow  vertical mobility in theaters where this is needed. Firing tungsten-core anchors, the frame is then quickly pulled upwards via high-powered winches and secondary, single-charge thrusters. The force produced is enough to bring along any necessary fire support.<p>",
+    "name": "KAGINAWA RAPPEL",
+    "id": "ms_kaginawa_rappel",
+    "license": "Dismal Sylph",
+    "license_id": "mf_dismal_sylph",
+    "license_level": 1,
+    "source": "Buona-Sera",
+    "sp": 1,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 4
+      }
+    ],
+    "type": "System"
+  },
+  {
     "effect": "<p>You target an enemy frame within Sensors and they must succeed on a Systems Save or take 1 Heat for every character within Blast 3 (you included). Afterwards, any enemies caught within this Area also must succeed on a Systems Save or themselves be targeted by the system, drawing Blast 3's of their own which also propagate the Virus. Each enemy only suffers Heat and the system once but can be counted multiple times if within different Areas.<p>",
     "description": "<p>Building upon the previous code, these newer strains feature modified and improved infectivity and effect. Where before there were whispers of a burning sentience, the voices began to speak themselves. Now it lashes out and propagates in controlled bursts, inflaming surrounding frames, and spreads like a wildfire. Reports say pilots experience increased temperature although no equipment picks up any abnormal increases.<p>",
+    "-id": "tg_unique",
     "licens": "Kitsune",
     "license_id": "mf_kitsune",
     "license_level": 3,
@@ -80,9 +210,85 @@
     "name": "KITSUNE NO YOMEIRI"
   },
   {
+    "effect": "Gain the following Invades:",
+    "actions": [
+      {
+        "activation": "Invade",
+        "detail": "You push your enemy into an uncontrollable Berserker Fury. Whenever any character first moves or is moved into Engagement Range of your target, they must use their Reaction to Skirmish against them. They may perform a Systems Save after every attack to end this effect.",
+        "name": "Enrage"
+      },
+      {
+        "activation": "Invade",
+        "detail": "You reduce power input to the weapon systems and release calming memetic agents over com systems. The enemy is unable to perform Reactions against you or your Allies.",
+        "name": "Appease",
+        "description": "<p>\"There was a voice in my head. It spoke of emptiness and fullness. It ate my mind and filled my eyes with a different vision. I could not pull the trigger.\"<p>"
+      }
+    ],
+    "name": "LIMINAL MIMESIS",
+    "id": "ms_liminal_mimesis",
+    "license": "Dismal Sylph",
+    "license_id": "mf_dismal_sylph",
+    "license_level": 3,
+    "source": "Buona-Sera",
+    "sp": 2,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_invade"
+      }
+    ],
+    "type": "System"
+  },
+  {
+    "effect_print": "Gain the Flash Cure Reaction. Trigger: An adjacent Ally is targeted by a hostile Action which inflicts a Condition. By expending a charge as a Reaction, you clear all Conditions inflicted by the Action.",
+    "effect": "Gain the Flash Cure Reaction",
+    "actions": [
+      {
+        "activation": "Reaction",
+        "trigger": "An adjacent Ally is targeted by a hostile Action which inflicts a Condition.",
+        "detail": "You clear all Conditions inflicted by the Action.",
+        "name": "Panacea Package"
+      }
+    ],
+    "description": "A host liquid-type nanobots designed to identify and resort any defects at the users command, PanaceaTM comes in a dazzling variety of containers for the distinguished Lancer. Be it staff, wand, syringe or whip, YOU can make your friends feel better!",
+    "id": "ms_panacea_package",
+    "license": "Dismal Sylph",
+    "license_id": "mf_dismal_sylph",
+    "license_level": 2,
+    "source": "Buona-Sera",
+    "sp": 2,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      },
+      {
+        "id": "tg_reaction"
+      }
+    ],
+    "type": "System",
+    "name": "PANACEA PACKAGE"
+  },
+  {
     "effect_print": "<p>Target and Allied Frame within Sensors, shielding them from harm. They Gain 2+Grit Overshield, but any damage dealt to this Oveshield before reductions of any kind also deals equivalent Heat to you, no matter the Range.<p>",
     "effect": "<p>Target and Allied Frame within Sensors, shielding them from harm. They Gain 2+Grit Overshield, but any damage dealt to this Oveshield before reductions of any kind also deals equivalent Heat to you, no matter the Range.<p>",
     "description": "<p> A swarm of micro-drones envelopes the target, reducing incoming fire to near 0. The production and Feed-back strain the shielding agent and thus limitations are set in place in order to prevent self-immolation.<p>",
+    "tags": [
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_overshield"
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      },
+      {
+        "id": "tg_quick_action"
+      }
+    ],
     "licens": "Kitsune",
     "license_id": "mf_kitsune",
     "license_level": 2,
@@ -91,6 +297,115 @@
     "synergies": [],
     "id": "ms_shikigami_firewall",
     "name": "SHIKIGAMI FIREWALL"
+  },
+  {
+    "effect": "Your Mech Gains the AI property and Edict of Hate",
+    "actions": [
+      {
+        "activation": "Quick Tech",
+        "detail": "<p>You overcharge your Frame with malicious code spawned from the hatred of the NHP. Nominate an Enemy within sensors. You alway know their location and whether the amount of Hit Points they have remaining. You ignore the effects of Invisible and Intangible when targeting that enemy and deal an additional +1d6 Bonus damage against them. Furthermore, you gain 1 Accuracy against Saves inflicted from Mechs that are not your target. Your target also ignores Invisible and Intangible when attacking you. </br> However, anytime you end your turn and the enemy is still alive, you take 1d6+X AP Energy damage, where X is the number of rounds this system has been active for (the initial activation round is counted), but you take Half Damage if you damaged your target this Round.Additionally, should someone else destroy your target, your Frame immediately takes 1 Structure and 1 Stress, but does not make a Structure or Stress check. If this is enough to trigger a meltdown, you explode immediately.</p>",
+        "name": "Edict of Hate"
+      }
+    ],
+    "description": "Rend them, Flense them, break em Bone and Spirit.",
+    "license": "Gashadokuro",
+    "license_id": "mf_gashadokuro",
+    "license_level": 3,
+    "source": "ONRY\u014c",
+    "sp": 3,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_ai"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "System",
+    "id": "ms_shiva_class_nhp",
+    "name": "SHIVA-CLASS NHP"
+  },
+  {
+    "effect_print": "<p>When you Prime this system as a Protocol, your frame begins emitting an unsettling, low noise of bells. You emit a Burst 2 Area in which all Characters are Impaired and cannot take reactions. When targeting you, they ignore this effect.</br>At the Start of any subsequent turns, you take 2 Heat.</p>",
+    "actions": [
+      {
+        "activation": "Protocol",
+        "detail": "<p> You emit a Burst 2 Area in which all Characters are Impaired and cannot take reactions. When targeting you, they ignore this effect.</br> At the Start of any subsequent turns, you take 2 Heat.</p>",
+        "name": "White Noise Supressant"
+      }
+    ],
+    "description": "<p>\"Soft chime of the bells,</br> lingering noise cuts the mind, </br> endless hunger comes.\"</br> - Haiku found in the code from a Gashadokuro PG frame </p>",
+    "license": "Gashadokuro",
+    "license_id": "mf_gashadokuro",
+    "license_level": 2,
+    "source": "ONRY\u014c",
+    "sp": 2,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "System",
+    "id": "ms_suzu_emitter",
+    "name": "SUZU EMITTER"
+  },
+  {
+    "effect_print": "<p>When you attack with a Melee weapon, you may instead designate a space within your threat. At the beginning of your next turn, you attack the targeted space as a Free Action regardless of range, dealing +1d6 Bonus dmg. However, you may choose to delay your attack further, dealing an additional d6 for every turn you spend not triggering the attack, up to a maximum of 4d4.</p> effect <p>When you attack with a Melee weapon, you may instead designate a space within your threat. At the beginning of your next turn, you attack the targeted space as a Free Action regardless of range, dealing +1d6 Bonus dmg. However, you may choose to delay your attack further, dealing an additional d6 for every turn you spend not triggering the attack, up to a maximum of 4d4.</p>",
+    "description": "\"Time is a fickle thing, if you try to hold it it will slip from your grasp. Try the reverse and it will hold you tighter than any binding.\"",
+    "name": "TEMPORAL SUSPENSION",
+    "id": "ms_temporal_suspension",
+    "license": "Gashadokuro",
+    "license_id": "mf_gashadokuro",
+    "license_level": 1,
+    "source": "ONRY\u014c",
+    "sp": 2,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "System"
+  },
+  {
+    "effect": "Gain the following Invades:",
+    "actions": [
+      {
+        "activation": "Invade",
+        "detail": "<p> You take over the target's Sensors: You may use their Sensors and Line of Sight for Attacks, Tech Actions and Invades. The connection lasts until the end of your next turn. You may extend the duration by taking 2 Heat as a Protocol, the connection being severed if the target succeeds on a Systems Save. </p>",
+        "name": "Visual Greyware"
+      },
+      {
+        "activation": "Invade",
+        "detail": "<p> You overload your targets IFF. For each enemy within your target's Sensors, they take 2 Heat, to a maximum of 6. </p>",
+        "name": "Transponder Hijack"
+      }
+    ],
+    "description": "<p> Now you see it. It has burned you blind and now you see the darkness within you. Purge it and exalt thyself, for the Glory of the Godhead. </p>",
+    "license": "nue",
+    "license_id": "mf_nue",
+    "license_level": 3,
+    "source": "ONRY\u014c",
+    "sp": 2,
+    "synergies": [],
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "type": "System",
+    "id": "ms_visual_system_override",
+    "name": "VISUAL SYSTEM OVERRIDE"
   },
   {
     "effect": "<p>Whenever you gain Heat by any means, reduce it by 1. When you take Structure damage, this System is immediately destroyed and you take 1d6 AP Energy damage and become Immobilized until the end of your next turn. <p>",

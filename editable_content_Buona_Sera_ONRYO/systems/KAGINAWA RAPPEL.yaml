@@ -1,67 +1,18 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
-
-# Meta information: Fill in to track progress
 PROGRESS_artw: false
-PROGRESS_flavour: false
-PROGRESS_gameplay: false
+PROGRESS_flavour: true
+PROGRESS_gameplay: true
 PROGRESS_playtest: false
-
-# Text will appear in the pdf
-effect_print: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-
-# Can have multiple actions, deldete if not needed
-actions:
-- activation: _???
-  detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  # Action name
-  name: _???
-
-
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-
-# Can have multiple deployables, deldete if not needed
-deployables:
-- activation: _???
-  detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-
-  evasion: _???
-  hp: _???
-  name: _???
-  size: _???
-  type: Mine  # Can be anything, but typically mine, drone, ...
-  # and so forth ...
-effect_print: once active as a protocol, this system spreads smoke creating soft cover
-  in every space you cross while moving this turn. The smoke last until the end your
-  next turn.
-
-license: _???  # Name of license in frame
-license_id: _??? # Name of license id (kinda redundant, but I don't make the rules)
-license_level: _???
-source: _???  # Manufacturer
-sp: _???  # System points
-synergies: []
-
-# Example of tag syntax shown below
-tags:
-- id: tg_heat_self
-  val: 1
-- id: tg_unique
-type: System
+effect: <p>You may, as a free Action, instantly scale any wall, obstacle or terrain feature. This does not cost movement and may be up or down. Any adjacent Allied character may use a reaction to also utilize this effect. You expend 1 charge for each character (you included).<p>
+description: <p>A combination of chest-mounted grapple systems, the predecessor to the dangerous Harken-Type Cabled Dagger, is able to easily allow  vertical mobility in theaters where this is needed. Firing tungsten-core anchors, the frame is then quickly pulled upwards via high-powered winches and secondary, single-charge thrusters. The force produced is enough to bring along any necessary fire support.<p>
+name: Kaginawa Rappel
 id: ms_kaginawa_rappel
+license: Dismal Sylph
+license_id: mf_dismal_sylph
+license_level: 1
+source: Buona-Sera
+sp: 1
+synergies: []
+tags:
+- id: tg_limited
+  val: 4
+type: System

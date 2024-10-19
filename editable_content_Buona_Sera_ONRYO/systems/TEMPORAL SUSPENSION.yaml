@@ -1,67 +1,19 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
-
 # Meta information: Fill in to track progress
 PROGRESS_artw: false
-PROGRESS_flavour: false
-PROGRESS_gameplay: false
+PROGRESS_flavour: true
+PROGRESS_gameplay: true
 PROGRESS_playtest: false
-
-# Text will appear in the pdf
-effect_print: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-
-# Can have multiple actions, deldete if not needed
-actions:
-- activation: _???
-  detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  # Action name
-  name: _???
-
-
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-
-# Can have multiple deployables, deldete if not needed
-deployables:
-- activation: _???
-  detail: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-
-  evasion: _???
-  hp: _???
-  name: _???
-  size: _???
-  type: Mine  # Can be anything, but typically mine, drone, ...
-  # and so forth ...
-effect_print: once active as a protocol, this system spreads smoke creating soft cover
-  in every space you cross while moving this turn. The smoke last until the end your
-  next turn.
-
-license: _???  # Name of license in frame
-license_id: _??? # Name of license id (kinda redundant, but I don't make the rules)
-license_level: _???
-source: _???  # Manufacturer
-sp: _???  # System points
+effect_print: <p>When you attack with a Melee weapon, you may instead designate a space within your threat. At the beginning of your next turn, you attack the targeted space as a Free Action regardless of range, dealing +1d6 Bonus dmg. However, you may choose to delay your attack further, dealing an additional d6 for every turn you spend not triggering the attack, up to a maximum of 4d4.</p>
+  effect <p>When you attack with a Melee weapon, you may instead designate a space within your threat. At the beginning of your next turn, you attack the targeted space as a Free Action regardless of range, dealing +1d6 Bonus dmg. However, you may choose to delay your attack further, dealing an additional d6 for every turn you spend not triggering the attack, up to a maximum of 4d4.</p>
+description: “Time is a fickle thing, if you try to hold it it will slip from your grasp. Try the reverse and it will hold you tighter than any binding.”
+name: Temporal Suspension
+id: ms_temporal_suspension
+license: Gashadokuro
+license_id: mf_gashadokuro
+license_level: 1
+source: ONRYŌ
+sp: 2
 synergies: []
-
-# Example of tag syntax shown below
 tags:
-- id: tg_heat_self
-  val: 1
 - id: tg_unique
 type: System
-id: ms_temporal_suspension

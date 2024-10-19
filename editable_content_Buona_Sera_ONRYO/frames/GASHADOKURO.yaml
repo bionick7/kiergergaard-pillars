@@ -1,95 +1,58 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing, so it doesn't get easily overridden
-
 # Meta information
 PROGRESS_artw: false
-PROGRESS_flavour: false
-PROGRESS_gameplay: false
+PROGRESS_flavour: true
+PROGRESS_gameplay: true
 PROGRESS_playtest: false
 
 core_system:
-  # Print effect for the printed version
-  print_effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus. 
-  activation: _???  # Quick, Full, Protocoll, ...
-  active_effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  active_name: _???
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
-  passive_effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  passive_name: Urban Combat Equipment Set
-  integrated:
-  - mw_integrated_weapon  # The core integrated weapon has it's own entry
-  tags:  # referring to the core system
-  - id: tg_limited
-    val: 3
-  use: Mission  # Scene for efficient cores
-description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.</p>
-    # BTW, some HTML tags work in longer text, like <p>Paragraph</p> or </br> for breakline
-image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Army2016demo-007.jpg/1200px-Army2016demo-007.jpg
+  activation: Protocol
+  active_effect: <p> You are immediately put into the Danger Zone if you are not. After that, for the Rest of the scene, your mech produces a Blast 3 Area of Mist which moves with you. Line of Sight cannot be drawn into or out of this Zone. Enemies that enter or start their turn in this Zone must make a Systems save or become Slowed.</br> This System ceases to be active if you ever leave the Danger Zone, but can be reactivated as a Free Action when re-entering the Danger Zone. </p>
+  active_name: Open the Gates of Hell 
+  description: <p> You remove all limiters from your Systems, allowing them to spill into realspace. As your Reactor burns ever brighter to keep up with power demands of the operating systems, circuits and wiring evaporate, releasing their viral code-base into the air. And the roiling mists come. </p>
+  name: YOMI-Projector
+  use: Mission
+
+description: "<p> Only an appendix in The Universal Threat Assessment Manual, due to its rarity, the Gashadokuro PG is only encountered in particularly bloody areas of Unionspace: Battlegrounds, both old and abandoned as well as ongoing Areas of conflict, where the corpses stack. This is the pre-requirement for the creation of this PG, as the process requires destroyed frames with still intact NHP caskets. Through an unknown method, the infected frame begins re-activating and “consuming” nearby wreckage and organic material.
+  </br> What emerges is a terrifying Monster, which has often been compared to the BALOR PG by Union Scientists, made up of twisted remains that goes on a rampage, it is in essence an adaptation which favors brute, overwhelming force. The grotesque form is only exasperated when engaged, as it is ripped to shreds by enemy fire yet ceaselessly cannibalizes other combatants in order to continue fighting.</p>"
+id: mf_gashadokuro 
+
+
+image_url:
+license_id: mf_gashadokuro
 license_level: 2
 mechtype:
-- Defender
 - Striker
-source: _???  # manufactureer
-# Self explenatory, I think
+- Defender
+source: ONRYŌ
+
 mounts:
-- Flex
-- Main/Aux
-# etc.
+- Main
+- Main
+- Heavy
+
 stats:
-  armor: 2
-  edef: 8
-  evasion: 7
-  heatcap: 5
-  hp: 8
+  armor: 0
+  edef: 10
+  evasion: 6
+  heatcap: 4
+  hp: 12
   repcap: 4
-  save: 10
-  sensor_range: 10
-  size: 2
-  sp: 8
-  speed: 4
+  save: 11
+  sensor_range: 8
+  size: 3
+  sp: 6
+  speed: 3
   stress: 4
   structure: 4
-  tech_attack: 0
+  tech_attack: +1
+
 traits:
-- description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
-- description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
-- description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
+- description: <p>Every time you destroy an enemy with a melee attack, you immediately regain ¼ of your total HP.
+    </br>You may perform a Full Action next to any remains  to consume it (thus removing it), regaining 1d6+Grit HP. </p>
+  name: Eat The dead
+
+- description: <p>You have Resistance to any Damage from Size 1 and smaller frames.
+    </br>Additionally, adjacent allied characters can use the Gashadokuro as Hard Cover. </p>
+  name: Dread Titan
+
 y_pos: 35  # Refers to how the artwork is alighned vertically
-id: mf_gashadokuro
-license_id: mf_gashadokuro

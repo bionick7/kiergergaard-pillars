@@ -1,95 +1,53 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing, so it doesn't get easily overridden
-
 # Meta information
 PROGRESS_artw: false
-PROGRESS_flavour: false
-PROGRESS_gameplay: false
+PROGRESS_flavour: true
+PROGRESS_gameplay: true
 PROGRESS_playtest: false
-
 core_system:
-  # Print effect for the printed version
-  print_effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus. 
-  activation: _???  # Quick, Full, Protocoll, ...
-  active_effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  active_name: _???
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
-  passive_effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  passive_name: Urban Combat Equipment Set
-  integrated:
-  - mw_integrated_weapon  # The core integrated weapon has it's own entry
-  tags:  # referring to the core system
-  - id: tg_limited
-    val: 3
-  use: Mission  # Scene for efficient cores
-description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.</p>
-    # BTW, some HTML tags work in longer text, like <p>Paragraph</p> or </br> for breakline
-image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Army2016demo-007.jpg/1200px-Army2016demo-007.jpg
+  activation: Protocol
+  active_effect: <p> You charge the Thunderhead with your power, priming it to receive your shot. The next single-target attack you perform with one of your Ranged Weapons may be against any target within Range 50 and ignoring Line of Sight requirements. </p>
+  active_name: Raijin's Bolt
+  description: <p> Supercharging the Thunderhead-Guidance System now allows it to “carry'' physical objects as well for a split-second. This both accelerates and bends the trajectory of any projectile to meet any known foe. </p>
+  name: Thunderhead-Guidance System
+  use: Scene
+description: <p>The Nue was long unidentified, but the existence of another long-range ballistic platform designed to mount both firepower and computing systems was theorized among Union Scientists. It was first confirmed after an Urban engagement which nonetheless saw use of tremendous firepower during heavy weather from criminal elements, followed by devastating attacks through the Omni-net. Contrary to most doctrines, the Nue does not immediately aim to destroy its target, rather tormenting it with electronic warfare after a single, well placed hit. 
+  </br> The confusion surrounding the existence of this PG is furthermore exacerbated by the visual similarities to the Manticore PG as the heat-dispersion spines have been modified to artificially charge the surrounding atmosphere to create an artificial, Single-cell thunderstorm. Dubbed the Thunderhead and cladding the battlefield in rain, accompanied by the rumble of thunder, the Nue shoots. What follows is a poorly understood process by which the target's position is “marked” both within the storm and on an local-/Omni-net basis. Any Electronic attack now is carried via the storm itself, the masses of static energy at the whim of the pilot. </p>
+id: mf_nue
+image_url: https://yokai.com/wordpress/wp-content/uploads/2018/03/nue.jpg
+license_id: mf_nue
 license_level: 2
 mechtype:
-- Defender
-- Striker
-source: _???  # manufactureer
-# Self explenatory, I think
+- Artillery
+- Controller
+source: ONRYŌ
 mounts:
-- Flex
-- Main/Aux
+- Main
+- Heavy
 # etc.
 stats:
-  armor: 2
+  armor: 0
   edef: 8
   evasion: 7
   heatcap: 5
   hp: 8
-  repcap: 4
-  save: 10
-  sensor_range: 10
-  size: 2
-  sp: 8
-  speed: 4
+  repcap: 3
+  save: 11
+  sensor_range: 5
+  size: 1
+  sp: 7
+  speed: 3
   stress: 4
   structure: 4
-  tech_attack: 0
+  tech_attack: +1
 traits:
-- description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
-- description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
-- description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-    porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-    ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-    a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-    pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-  name: _???
+- description: >
+    <p> 1/round, when you hit an enemy with a Ranged attack, you may mark them with this Trait. 
+    As long as they remain marked, you ignore Line of Sight and Sensor requirements when targeting 
+    them with Invades. Only one Mark may exist at a time and when you mark another character, 
+    the old mark ceases to exist. </p>
+  name: Static Remote Access Tunnel
+- description: >
+    <p> When you take Energy damage, roll a d6. On a 4+, you reduce it to 0 and ignore any additional effects.
+    </br> Additionally, whenever you Invade, deal 1 AP Energy damage. </p>
+  name: Lightning Rod
 y_pos: 35  # Refers to how the artwork is alighned vertically
-id: mf_nue
-license_id: mf_nue

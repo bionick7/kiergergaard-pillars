@@ -1,37 +1,26 @@
-
-# Meta information: Fill in to track progress
 PROGRESS_artw: false
 PROGRESS_flavour: true
 PROGRESS_gameplay: true
 PROGRESS_playtest: false
-
 description: <p>Borrowing the technology found within missiles of the BELLA CIAO line, it was fitted into the hilt of a simple double-edged Terashima knife. However, the prototype was too rigid. Feedback and tandem work with the Enclaves produced a flexible hilt hiding small jets, which allowed a singular precise, mid-air propulsion towards another target.<p>
-
 mount: Aux
-
 name: Butterfly_Knife
 damage:
-  - type: Kinetic
-    val: 1d3
-
+- type: Kinetic
+  val: 1d3
 on_hit: <p>You may immediately make a free additional attack against a second target within range, measuring from the first target hit. This weapon may never benefit from bonus damage, however any additional effects (such as talents or mods) are still applied.<p>
-
 range:
 - type: Threat
   val: 1
 tags:
 - id: tg_inaccurate
 - { id: tg_thrown, val: 5 }
-
 type: Melee
-
 license: Harvester
 license_id: mf_harvester
 license_level: 2
-source: Buona_Sera
+source: Buona-Sera
 sp: 0
 synergies: []
-
-# Example of tag syntax shown below
-type: weapon
+type: Melee
 id: mw_butterfly_knife

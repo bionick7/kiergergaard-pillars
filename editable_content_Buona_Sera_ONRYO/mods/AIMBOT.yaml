@@ -1,44 +1,22 @@
-# IS AUTOGEN
-# remove the above comment as soon as you start manually editing,, so it doesn't get easily overridden
-
 # Meta information: Fill in to track progress
 PROGRESS_artw: false
-PROGRESS_flavour: false
+PROGRESS_flavour: true
 PROGRESS_gameplay: true
 PROGRESS_playtest: false
-
 allowed_types:
-- Melee
 - CQB
 - Rifle
 - Launcher
 - Cannon
 - Nexus
-# remove as needed
-
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-effect: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis libero, 
-  porta nec fringilla et, blandit at enim. Integer tincidunt nibh orci, vel egestas 
-  ipsum lacinia eu. In euismod dapibus ultricies. Sed dictum augue at neque fermentum,
-  a varius purus placerat. Cras at ligula ac lacus iaculis elementum. Ut eu augue 
-  pharetra dui euismod dapibus. In pretium eleifend imperdiet. Aliquam eu tincidunt tellus.
-license: _???
-license_id: _???
-license_level: _???
-restricted_sizes: 
-- Main
-- Aux
-# etc.
-source: _???
-sp: _???
-
-# Example tag
+description: <p>By siphoning just enough information out of a Lock-On to not deplete it, this powerful computational Unit first utilizes it in optimizing targeting vectors and feeding back any new information gathered by the attack, leaving a information deficit of less than 0,001 %. </p>
+effect: When attacking an enemy which is Locked On with the equipped weapon, you gain +1 to the Attack Roll.
+license: Nue
+license_id: mf_nue
+license_level: 1
+source: ONRYŌ
+sp: 2
 tags:
+- id: tg_mod
 - id: tg_unique
-- id: tg_limited
-  val: 4
 id: wm_aimbot

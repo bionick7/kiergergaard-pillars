@@ -4,45 +4,30 @@ PROGRESS_flavour: true
 PROGRESS_gameplay: true
 PROGRESS_playtest: false
 print_effect: <p>When you perform a Tech Action, Invade or gain Heat, this weapon gains a charge. This weapon deals Burn damage equal to the number of charges, which are consumed on attack. The maximum number for these charges is 9.<p>
-
 description: <p>Greywash, modified and cultivated to adapt a thermophile form, lives within the frame, “eating” any Heat. Those who have eaten their full are vented through 9 vents at the end of its spine. At the user's command, they swarm and attack enemies. <p>
-
 effect: <p>When you perform a Tech Action, Invade or gain Heat, this weapon gains a charge. 
   This weapon deals Burn damage equal to the number of charges, which are consumed on attack. 
   The maximum number for these charges is 9.<p>
-
 mount: Main
-
 damage:
-  - type: Energy
-    val: 1
-  - type: Burn
-    val: 0
-
-on_hit: You consume all charges.
-
+- type: Energy
+  val: 1
+- type: Burn
+  val: 0
+on_hit: You consume all Charges.
 range:
 - type: Range
   val: 10
 tags:
 - id: tg_smart
-
 type: Nexus
-
 sp: 0
 synergies: []
-
 counters:
 - id: kitsunebi_nexus_charges
   name: Nexus Charges
   default_value: 0
   min: 0
   max: 9
-
-# Example of tag syntax shown below
-tags:
-- id: tg_heat_self
-  val: 1
 - id: tg_unique
-type: System
 id: mw_kitsunebi_nexus
